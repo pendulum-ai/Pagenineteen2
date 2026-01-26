@@ -2,6 +2,9 @@
   padding-top: var(--header-height);
   width: 100%;
   position: relative;
+  min-height: 100vh;
+  min-height: 100vh;
+  /* inherit display: grid from .split-layout utility class */
 }
 
 .hero-left, .hero-right {
@@ -15,15 +18,15 @@
 .hero-left {
   align-items: flex-start;
   justify-content: flex-start;
-  padding-left: var(--space-xxl); /* Replaces 10vw (~144px) */
+  padding-left: var(--layout-padding-x);
   padding-top: 20vh;
 }
 
 .hero-right {
   align-items: flex-start;
-  padding-left: var(--space-lg);
   justify-content: flex-end;
   padding-bottom: 20vh;
+  /* Ensure right column has standard spacing if needed, but text alignment handles most */
 }
 
 .hero-title {
@@ -37,7 +40,7 @@
 .hero-footer {
   position: absolute;
   bottom: 3rem; /* Custom placement */
-  left: var(--space-xxl);
+  left: var(--layout-padding-x);
   font-size: var(--text-caption);
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -47,7 +50,10 @@
 .hero-description {
   font-size: var(--text-body-lg);
   line-height: var(--leading-normal);
-  max-width: 400px;
+  /* max-width set to enforce exactly 3 lines of text as per design */
+  max-width: 38ch;
+  width: 100%;
+  text-wrap: pretty;
   font-weight: var(--weight-regular);
 }
 

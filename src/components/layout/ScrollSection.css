@@ -17,16 +17,28 @@
 .scroll-text-block {
   position: absolute;
   top: 50%;
-  left: var(--space-xxl); /* Standardized from 10vw */
+  left: var(--layout-padding-x);
   transform: translateY(-50%);
   max-width: 500px;
-  font-size: var(--text-h2); /* Standardized from 2rem */
-  line-height: var(--leading-normal);
-  font-weight: var(--weight-medium);
   color: var(--color-text);
   will-change: opacity, transform, filter;
   z-index: 10;
 }
+
+.scroll-text-block h3 {
+  font-size: var(--text-h2);
+  font-family: var(--font-main); /* Ensure Serif if that's the design, or Sans */
+  font-weight: 500; /* Serif Display */
+  margin-bottom: var(--space-sm);
+  line-height: 1.1;
+}
+
+.scroll-text-block p {
+  font-size: var(--text-body);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
 
 .scroll-dot-container {
   position: absolute;
@@ -70,16 +82,58 @@
 
 @media (max-width: 768px) {
   .sticky-wrapper {
-    grid-template-columns: 1fr;
+    display: block; /* Remove grid, stick to layering */
   }
+
+  /* Hide the central line and orange dot on mobile */
+  .scroll-dot-container {
+    display: none;
+  }
+
+  /* 
+     Mobile Layout:
+     - Visual Area: Fixed at top (50% height)
+     - Content Area: Full screen, transparent, overlays visual
+  */
+  .visual-area {
+    display: flex; /* Restore display */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    z-index: 0;
+    padding-top: var(--header-height);
+    align-items: flex-start; /* Align illustration to top half */
+  }
+
+  /* Ensure illustration doesn't overflow or get too big */
+  .visual-area svg {
+    max-height: 40vh;
+    width: auto;
+  }
+
+  .content-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none; /* Let touches pass if needed, though text needs selection? */
+  }
+
   .scroll-text-block {
-    font-size: var(--text-h2); /* Or slightly smaller if needed */
+    font-size: var(--text-h2); 
     left: var(--space-md);
     right: var(--space-md);
     width: auto;
+    max-width: none;
     text-align: left;
-  }
-  .visual-area {
-    display: none; 
+    /* 
+       Adjust vertical centering for mobile:
+       Text is animated via Y transform, but we want it to feel lower initially.
+       The JS handles the movement, CSS just sets the stage.
+    */
   }
 }

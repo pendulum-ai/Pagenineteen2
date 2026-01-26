@@ -1,24 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
+import ProgressiveBlurBackdrop from "../ui/ProgressiveBlurBackdrop";
 
 const Header = () => {
   return (
     <header className="header">
+      <ProgressiveBlurBackdrop />
+
       <div className="container header-content">
-        <div className="logo">Pagenineteen.ai</div>
+        <div className="logo">
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>pagenineteen.ai</Link>
+        </div>
         <nav className="nav">
-          <a href="#home" className="nav-link">
+          <Link to="/" className="nav-link">
             HOME
-          </a>
-          <a href="#projects" className="nav-link">
+          </Link>
+          <Link to="/projects" className="nav-link">
             PROJECTS
-          </a>
-          <a href="#journal" className="nav-link">
+          </Link>
+          <Link to="/journal" className="nav-link">
             JOURNAL
-          </a>
-          <a href="#team" className="nav-link">
+          </Link>
+          <Link to="/team" className="nav-link">
             TEAM
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

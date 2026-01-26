@@ -21,24 +21,23 @@ const useMorphPoints = (progress, states) => {
     const delay = ((i * 7) % 5) * 0.015; // 0 to 0.06
     
     // MAPPING:
-    // [0 + delay]: Point sits at Center (State 0) until this progress
-    // [0.15]: Arrives at Grid (State 1) together (or we could stagger arrival too, but overlapping arrival is cleaner)
-    // ... standard reading stops ...
-    // [1 - delay]: Collapses back to Center
+    // [0 + delay]: Singularity
+    // [0.16]: State 1 (Multimodal)
+    // [0.32]: State 2 (Fine-tuning)
+    // [0.48]: State 3 (Real-time)
+    // [0.64]: State 4 (Agentic)
+    // [0.80]: State 5 (Interfaces) - NEW
+    // [1 - delay]: Collapse to Singularity
     
-    // Standard stops: 0.15, 0.38, 0.62, 0.85
     const inputRange = [
-        0 + delay,       // Start expanding (Singularity)
-        0.15,            // State 1 (Grid)
-        0.38,            // State 2 (Diagonal)
-        0.62,            // State 3 (Core)
-        0.85,            // State 4 (Frames)
-        1 - delay        // Finish collapsing (Singularity)
+        0 + delay,       // Start
+        0.16,            // State 1
+        0.32,            // State 2
+        0.48,            // State 3
+        0.64,            // State 4
+        0.80,            // State 5
+        1 - delay        // End
     ];
-
-    // Note: Since 'states' has 6 items: [Zero, L1, L2, L3, L4, Zero]
-    // And inputRange has 6 items. Matches perfectly.
-    // Framer Motion automatically clamps: if progress < 0+delay, it uses value at index 0 (Center).
 
     // eslint-disable-next-line
     const x = useTransform(progress, inputRange, xRange);
@@ -61,11 +60,8 @@ const getLayouts = () => {
     const p = (x, y, r = 15, o = 1) => ({ x, y, r, o });
 
     // State 0: "The Singularity"
-    // All points collapsed to the absolute center.
-    // User requested "one orange point" look -> Opacity 1, Radius > 0
     const layoutZero = [];
     for(let i=0; i<12; i++) {
-        // Radius 4 (small dot). When 12 stack, it looks like one solid dot.
         layoutZero.push(p(50, 50, 4, 1)); 
     }
 
@@ -85,7 +81,7 @@ const getLayouts = () => {
         const t = i / 11; 
         const x = 20 + t * 60; 
         const y = 80 - t * 60;
-        const r = 15; // Constant radius as requested
+        const r = 15; 
         layout2.push(p(x, y, r, 1));
     }
 
@@ -93,7 +89,6 @@ const getLayouts = () => {
     const layout3 = [];
     for(let i=0; i<12; i++) {
         if (i < 4) {
-             // Inner 4 points: Make them tiny nucleus dots (r=2) instead of giant rings (r=35)
              layout3.push(p(50 + (i%2 ? -2:2), 50 + (i>1 ? -2:2), 2, 1));
         } else {
              const angle = ((i - 4) / 8) * Math.PI * 2;
@@ -107,19 +102,26 @@ const getLayouts = () => {
         if (i < 6) {
             const col = i % 3;
             const row = Math.floor(i / 3);
-            layout4.push(p(25 + col*10, 25 + row*10, 15, 1)); // Uniform radius 15
+            layout4.push(p(25 + col*10, 25 + row*10, 15, 1)); 
         } else {
             const j = i - 6;
             const col = j % 3;
             const row = Math.floor(j / 3);
-            layout4.push(p(55 + col*10, 55 + row*10, 15, 1)); // Uniform radius 15
+            layout4.push(p(55 + col*10, 55 + row*10, 15, 1)); 
         }
     }
 
-    // Return 6 states: Start -> 4 Shapes -> End
-    // Removed "layoutRing" as user didn't like the flower look. 
-    // Staggering in useMorphPoints now handles the "non-zoom" requirement.
-    return [layoutZero, layout1, layout2, layout3, layout4, layoutZero];
+    // State 5: "Interfaces" - The Ring (Circle)
+    // Represents the "Prosumer Interfaces" - a clean unified circle
+    const layout5 = [];
+    for(let i=0; i<12; i++) {
+        const angle = (i / 12) * Math.PI * 2;
+        // Radius 30 circle centered at 50,50
+        layout5.push(p(50 + Math.cos(angle) * 30, 50 + Math.sin(angle) * 30, 12, 1));
+    }
+
+    // Return 7 states: Start -> 5 Shapes -> End
+    return [layoutZero, layout1, layout2, layout3, layout4, layout5, layoutZero];
 };
 
 const GeometricIllustration = ({ scrollYProgress }) => {
@@ -127,8 +129,8 @@ const GeometricIllustration = ({ scrollYProgress }) => {
   const points = useMorphPoints(scrollYProgress, states);
 
   // Sync overall visibility with the content flow
-  // Fade in at start (0-0.1) and fade out at end (0.9-1.0)
-  const containerOpacity = useTransform(scrollYProgress, [0, 0.1, 0.9, 1], [0, 1, 1, 0]);
+  // Fade in Start (0-0.1), Visible, Fade out End (0.95-1)
+  const containerOpacity = useTransform(scrollYProgress, [0, 0.1, 0.95, 1], [0, 1, 1, 0]);
 
   // DYNAMIC TOPOLOGY LOGIC
   // We want lines to appear when points are close.
@@ -180,7 +182,7 @@ const GeometricIllustration = ({ scrollYProgress }) => {
 
       // Map scroll progress to this pair's specific opacity curve
       // eslint-disable-next-line
-      const opacity = useTransform(scrollYProgress, [0, 0.15, 0.38, 0.62, 0.85, 1], opacities);
+      const opacity = useTransform(scrollYProgress, [0, 0.16, 0.32, 0.48, 0.64, 0.80, 1], opacities);
       
       return { i, j, opacity };
   });

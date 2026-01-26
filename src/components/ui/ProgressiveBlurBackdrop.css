@@ -1,0 +1,56 @@
+/* 
+   Progressive Blur Styling 
+   Uses CSS variables from tokens.css for maintainability.
+*/
+
+.progressive-blur-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.progressive-blur-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  will-change: backdrop-filter;
+}
+
+/* Layer 1: The "Long Tail" */
+.layer-1 {
+  height: var(--blur-layer-1-height); 
+  backdrop-filter: blur(var(--blur-layer-1-radius));
+  -webkit-backdrop-filter: blur(var(--blur-layer-1-radius));
+  
+  mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+}
+
+/* Layer 2: The "Body" */
+.layer-2 {
+  height: var(--blur-layer-2-height);
+  backdrop-filter: blur(var(--blur-layer-2-radius));
+  -webkit-backdrop-filter: blur(var(--blur-layer-2-radius));
+  
+  mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+  opacity: 0.8;
+}
+
+/* Layer 3: The "Intense Core" */
+.layer-3 {
+  height: var(--blur-layer-3-height);
+  backdrop-filter: blur(var(--blur-layer-3-radius));
+  -webkit-backdrop-filter: blur(var(--blur-layer-3-radius));
+  
+  /* Constant intensity at top, fast falloff */
+  mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+}

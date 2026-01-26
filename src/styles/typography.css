@@ -7,31 +7,38 @@
   /* ------------------------- */
   /* FLUID TYPOGRAPHY          */
   /* ------------------------- */
-  /* Clamp explanation: clamp(MIN, PREFERRED, MAX) */
+  /* 
+     Reference Viewport: 1440px
+     1rem = 16px
+  */
 
-  /* Hero Title: 3.5rem -> 5rem */
-  --text-display: clamp(3.5rem, 5vw + 1rem, 5rem);
+  /* Hero Title: ~72px at Desktop (1440px). Unlocked to scale up to ~128px on 4K */
+  --text-display: clamp(3rem, 5vw, 8rem);
 
-  /* Section Headings: 2rem -> 3.5rem */
-  --text-h1: clamp(2rem, 4vw + 0.5rem, 3.5rem);
+  /* "Second Section" (Mission) Text: ~32px at Desktop */
+  --text-h1: clamp(1.5rem, 2.2vw, 2.5rem);
 
-  /* Subheadings: 1.5rem -> 2.5rem */
-  --text-h2: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  /* Secondary Hero Text: ~24px at Desktop */
+  --text-h2: clamp(1.125rem, 1.6vw, 1.75rem);
 
-  /* Body Text */
-  --text-body-lg: 1.25rem;  /* 20px */
-  --text-body: 1rem;        /* 16px */
-  --text-small: 0.875rem;   /* 14px */
-  --text-caption: 0.7rem;   /* 11-12px */
+  /* Body Text / Logo: ~24px or 20px */
+  --text-body-lg: clamp(1rem, 1.4vw, 1.5rem); 
+  
+  /* Standard Body */
+  --text-body: 1rem; 
+
+  /* Small (Menu, Footer): ~12px - 14px */
+  --text-small: clamp(0.75rem, 0.9vw, 0.875rem);
+  --text-caption: 0.75rem;
 
   /* ------------------------- */
   /* WEIGHTS                   */
   /* ------------------------- */
+  /* User requested mostly Medium (500) */
   --weight-light: 300;
   --weight-regular: 400;
   --weight-medium: 500;
   --weight-bold: 700;
-  --weight-black: 900;
   
   /* ------------------------- */
   /* LINE HEIGHTS              */

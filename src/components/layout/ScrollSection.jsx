@@ -3,13 +3,12 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import './ScrollSection.css';
 import GeometricIllustration from '../illustrations/GeometricIllustration';
 
-const ScrollTextBlock = ({ text, index, total, progress }) => {
+const ScrollTextBlock = ({ item, index, total, progress }) => {
   const step = 1 / total;
   const start = index * step;
   const end = start + step;
 
   // Opacity: Fade in quickly, stay visible longer, fade out near the end
-  // Fixed range logic: start -> start+0.1 (fade in), end-0.1 -> end (fade out)
   const opacity = useTransform(
     progress,
     [start, start + 0.1, end - 0.1, end],
@@ -35,7 +34,8 @@ const ScrollTextBlock = ({ text, index, total, progress }) => {
       className="scroll-text-block"
       style={{ opacity, y, filter }}
     >
-      <p>{text}</p>
+      <h3>{item.title}</h3>
+      <p>{item.text}</p>
     </motion.div>
   );
 };
@@ -49,34 +49,67 @@ const ScrollSection = () => {
     offset: ["start start", "end end"]
   });
 
-  // Data for the blocks
+  // Updated Data with Title + Description (5 items)
   const blocks = [
-    "We're a small, London based team building multimodal AI products in production.",
-    "We're principally interested in how AI changes the way we learn and the way we create. We build products to find out.",
-    "Our belief is that multimodal AI becomes valuable when models, tooling, and evaluation are designed as one system.",
-    "We focus on the integration work that makes this true in production."
+    {
+      title: "Multimodal Orchestration",
+      text: "Designing shared architectures that bridge vision, language, and speech models seamlessly. We don't just glue APIs together; we build unified inference pipelines."
+    },
+    {
+      title: "Fine-tuning Pipelines",
+      text: "Building automated workflows for LoRA adaptation and continuous model improvement. From dataset curation to validation, entirely in code."
+    },
+    {
+      title: "Real-time Systems",
+      text: "Pushing the boundaries of latency with streaming inference and instant voice interfaces. Because truly interactive AI must feel instantaneous."
+    },
+    {
+      title: "Agentic Workflows",
+      text: "Creating systems that evaluate themselves, with feedback loops embedded directly in production. Agents that critique, refine, and improve their own outputs."
+    },
+    {
+      title: "(Pro)sumer Interfaces",
+      text: "Crafting tools that don't just work, but feel intuitive and empowering to creative professionals. The interface is the model."
+    }
   ];
 
   // STEPPED ANIMATION LOGIC
-  // Instead of linear mapping, we "snap" to specific target values based on scroll sections.
-  // Ranges roughly correspond to where the text blocks are active.
+  // New Ranges for 5 Items + Start + End
+  // 0-0.05: Intro
+  // 0.10-0.22: Item 1 (0.16 target)
+  // 0.28-0.36: Item 2 (0.32 target)
+  // 0.44-0.52: Item 3 (0.48 target)
+  // 0.60-0.68: Item 4 (0.64 target)
+  // 0.76-0.84: Item 5 (0.80 target)
+  // 0.95-1.0: Outro
   const steppedProgress = useTransform(
     scrollYProgress,
-    // Input ranges (approximate "active" zones for each of the 4 blocks)
-    // Shifted EARLIER to synchronize with text appearance (0-0.1 opacity ramp)
-    // 0-0.05: Intro -> State 1 (Rapid start)
-    // 0.28-0.32: Block 1 -> State 2
-    // 0.53-0.57: Block 2 -> State 3
-    // 0.78-0.82: Block 3 -> State 4
-    [0, 0.01, 0.05, 0.28, 0.32, 0.53, 0.57, 0.78, 0.82, 1],
-    // Output targets
-    [0, 0, 0.15, 0.15, 0.38, 0.38, 0.62, 0.62, 0.85, 0.85] 
+    // Inputs
+    [
+        0, 0.01, 0.05, 
+        0.10, 0.22, 
+        0.28, 0.36, 
+        0.44, 0.52, 
+        0.60, 0.68, 
+        0.76, 0.84, 
+        1
+    ],
+    // Outputs (align with GeometricIllustration states)
+    [
+        0, 0, 0.16,   // Start -> State 1
+        0.16, 0.32,   // State 1 -> State 2
+        0.32, 0.48,   // State 2 -> State 3
+        0.48, 0.64,   // State 3 -> State 4
+        0.64, 0.80,   // State 4 -> State 5
+        0.80, 0.80,   // State 5 Hold
+        1             // End
+    ] 
   );
 
-  // Smooth the stepped jumps with spring physics to create the "S-curve" / "gliding" effect
+  // Smooth the stepped jumps 
   const smoothProgress = useSpring(steppedProgress, {
-    stiffness: 50, // Controls speed of the snap (higher = faster)
-    damping: 15,   // Controls "bounciness" (lower = bouncier, higher = syrupy)
+    stiffness: 50,
+    damping: 15, 
     mass: 1,
     restDelta: 0.001
   });
@@ -85,20 +118,25 @@ const ScrollSection = () => {
     <div ref={containerRef} className="scroll-section-container">
       <div className="sticky-wrapper split-layout">
         
-        <div className="scroll-dot-container">
+        <motion.div 
+            className="scroll-dot-container"
+            style={{ 
+                opacity: useTransform(scrollYProgress, [0.85, 0.95], [1, 0]) 
+            }}
+        >
            <motion.div 
              className="dot scroll-dot"
              style={{
                top: useTransform(scrollYProgress, [0, 1], ["20%", "80%"])
              }}
            />
-        </div>
+        </motion.div>
 
         <div className="content-area hero-left">
-           {blocks.map((text, index) => (
+           {blocks.map((item, index) => (
              <ScrollTextBlock 
                key={index}
-               text={text}
+               item={item} // Pass full object
                index={index}
                total={blocks.length}
                progress={scrollYProgress}

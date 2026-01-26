@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import './Hero.css';
+import BlurReveal from '../ui/BlurReveal';
 
 const Hero = () => {
   const { scrollY } = useScroll();
@@ -18,27 +19,30 @@ const Hero = () => {
       {/* Background Interactive Field Removed as requested */}
 
       <div className="hero-left">
-        <motion.h1 
-          style={{ y: yTitle }}
-          className="hero-title"
-        >
-          An applied<br />
-          multimodal AI lab
-        </motion.h1>
+        <BlurReveal>
+          <motion.h1 
+            style={{ y: yTitle }}
+            className="hero-title"
+          >
+            An applied <br /> multimodal AI lab
+          </motion.h1>
+        </BlurReveal>
         <div className="hero-footer">
-          ONLINE - LONDON - SAN FRANCISCO
+          <BlurReveal delay={0}>
+            ONLINE - LONDON - SAN FRANCISCO
+          </BlurReveal>
         </div>
       </div>
 
       <div className="hero-right">
-        <motion.p 
-          style={{ y: yDesc }}
-          className="hero-description"
-        >
-          We design, ship, and operate end-to-end<br />
-          AI systems. From creative tooling to<br />
-          large-scale asset intelligence.
-        </motion.p>
+        <BlurReveal delay={0.2}>
+          <motion.p 
+            style={{ y: yDesc }}
+            className="hero-description"
+          >
+            We design, ship, and operate end-to-end AI systems. From creative tooling to large-scale asset intelligence.
+          </motion.p>
+        </BlurReveal>
       </div>
     </section>
   );

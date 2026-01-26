@@ -1,52 +1,55 @@
 .mission-section {
   position: relative;
-  height: 300vh; 
-  background-color: var(--color-bg);
+  /* background-color: var(--color-bg); -> Removed to allow ThemeController to be visible */
+  /* Classic Scroll: Height is determined by content + padding */
+  min-height: 100vh; 
+  padding-bottom: 0; /* Reduced to remove gap before next section */
 }
 
-.mission-sticky-content {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  width: 100%;
+.mission-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  overflow: hidden;
+  width: 100%;
+  position: relative;
 }
 
 .mission-left, .mission-right {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding: 0 var(--space-lg);
+  /* Reduced padding to give text more width (was --layout-padding-x which is huge) */
+  padding: 0 var(--space-xl); 
 }
 
-/* Left starts content above horizon */
+/* 
+   Classic Staggered Layout 
+   Left Column: Ends earlier, creates top space breathability
+   Right Column: Starts lower to create the "step" effect
+*/
+
 .mission-left {
-  justify-content: flex-end;
-  padding-bottom: 25vh; 
+  justify-content: flex-start;
+  padding-top: 15vh; /* Starts clearly after Hero fold */ 
+  padding-bottom: var(--space-xl);
   border-right: 1px solid transparent; 
 }
 
-/* Right starts content below horizon */
 .mission-right {
   justify-content: flex-start;
-  padding-top: 75vh;
-  padding-left: var(--space-md);
-  padding-right: var(--space-md);
+  /* Push content down INTENSELY (85vh) so it appears on the "next screen" relative to left content */
+  padding-top: 85vh; 
+  padding-bottom: var(--space-lg);
 }
 
 .mission-text-block {
   width: 100%;
   max-width: none;
-  padding-right: var(--space-md);
 }
 
 .mission-section h2,
 .mission-secondary-text,
 .mission-belief-text {
-  font-size: var(--text-h2);
+  font-size: var(--text-h1);
   line-height: 1.25;
   font-weight: var(--weight-regular);
   color: var(--color-text);
@@ -60,39 +63,27 @@
 
 @media (max-width: 1024px) {
  .mission-right {
-    padding-top: 70vh;
- }
- .mission-left {
-    padding-bottom: 35vh;
+    padding-top: 20vh;
  }
 }
 
 @media (max-width: 768px) {
-  .mission-sticky-content {
+  .mission-content {
     grid-template-columns: 1fr;
-    height: auto; 
-    overflow: visible; 
-    position: relative; 
   }
   
-  .mission-section {
-    height: auto; 
-  }
-
   .mission-left {
-    padding-bottom: var(--space-lg);
-    justify-content: flex-start;
     padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    padding-left: var(--space-md); /* Reset desktop --layout-padding-x */
     padding-right: var(--space-md);
   }
   
   .mission-right {
     padding-top: var(--space-md); 
     padding-bottom: var(--space-lg);
-  }
-  
-  .mission-horizon-container {
-    display: none; 
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
   }
 
   .mission-text-block {

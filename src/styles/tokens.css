@@ -23,6 +23,9 @@
   /* Semantic Spacing */
   --spacing-container: 2rem;
   --header-height: 80px;
+  
+  /* Unified Horizontal Layout Padding (Desktop default) */
+  --layout-padding-x: var(--space-xxl); /* 10rem / 160px */
 
   /* ------------------------- */
   /* BREAKPOINTS (Reference)   */
@@ -32,4 +35,18 @@
      Tablet:  1024px 
      Desktop: 1440px
   */
+  /* ------------------------- */
+  /* PROGRESSIVE BLUR SYSTEM   */
+  /* ------------------------- */
+  /* Layer 1: Long Tail (Subtle) */
+  --blur-layer-1-height: 250%;
+  --blur-layer-1-radius: 4px;
+
+  /* Layer 2: Main Body (Medium) */
+  --blur-layer-2-height: 150%;
+  --blur-layer-2-radius: 12px;
+  
+  /* Layer 3: Intense Core (Top) */
+  --blur-layer-3-height: 100%;
+  --blur-layer-3-radius: 24px;
 }

@@ -41,6 +41,11 @@ Use these for margins, paddings, and gaps.
 | `var(--space-xl)`  | 96px          | Section padding (desktop)           |
 | `var(--space-xxl)` | 160px         | Major layout breathing room         |
 
+- **Fluid Typography**: Defined in `src/styles/typography.css`. Uses `clamp()` for responsive font sizing.
+- **Layout Padding**: Defined in `src/styles/tokens.css` as `--layout-padding-x`. Use this container spacing for all major section alignments to ensure consistency.
+
+## Component Rules
+
 ### Typography Tokens
 
 Font sizes use `clamp()` for automatic responsiveness.
