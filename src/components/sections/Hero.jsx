@@ -6,11 +6,12 @@ const Hero = () => {
   const { scrollY } = useScroll();
 
   // "Advanced" Parallax Configuration
-  // Title moves slower than scroll (pushes down as you scroll), creating "depth" / background feel
-  const yTitle = useTransform(scrollY, [0, 1000], [0, 250]);
+  // Both move UP (negative Y) to "fly away" as requested.
+  // Title moves slower.
+  const yTitle = useTransform(scrollY, [0, 1000], [0, -300]);
   
-  // Description moves faster than scroll (pulls up), creating "foreground" feel
-  const yDesc = useTransform(scrollY, [0, 1000], [0, -150]);
+  // Description moves faster.
+  const yDesc = useTransform(scrollY, [0, 1000], [0, -500]);
   
   return (
     <section className="hero split-layout">

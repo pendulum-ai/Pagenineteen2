@@ -1,0 +1,35 @@
+:root {
+  /* ------------------------- */
+  /* COLORS                    */
+  /* ------------------------- */
+  --color-bg: #FDFCF8;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #555555;
+  --color-accent: #ff5500;
+  --color-border: rgba(26, 26, 26, 0.1);
+  --color-overlay: rgba(255, 255, 255, 0.8);
+
+  /* ------------------------- */
+  /* SPACING                   */
+  /* ------------------------- */
+  --space-2xs: 0.25rem; /* 4px */
+  --space-xs: 0.5rem;   /* 8px */
+  --space-sm: 1rem;     /* 16px */
+  --space-md: 2rem;     /* 32px */
+  --space-lg: 4rem;     /* 64px */
+  --space-xl: 6rem;     /* 96px */
+  --space-xxl: 10rem;   /* 160px */
+
+  /* Semantic Spacing */
+  --spacing-container: 2rem;
+  --header-height: 80px;
+
+  /* ------------------------- */
+  /* BREAKPOINTS (Reference)   */
+  /* ------------------------- */
+  /* 
+     Mobile:  768px
+     Tablet:  1024px 
+     Desktop: 1440px
+  */
+}

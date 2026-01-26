@@ -5,51 +5,50 @@
 }
 
 .hero-left, .hero-right {
-  padding: 4rem 2rem;
+  padding: var(--space-lg) var(--spacing-container);
   display: flex;
   flex-direction: column;
-  /* Remove justify-content: center from shared */
   height: 100%;
   position: relative;
 }
 
 .hero-left {
   align-items: flex-start;
-  justify-content: flex-start; /* Title at top */
-  padding-left: 10vw; 
-  padding-top: 20vh; /* Push title down a bit from very top */
+  justify-content: flex-start;
+  padding-left: var(--space-xxl); /* Replaces 10vw (~144px) */
+  padding-top: 20vh;
 }
 
 .hero-right {
   align-items: flex-start;
-  padding-left: 4rem; 
-  justify-content: flex-end; /* Text at bottom */
-  padding-bottom: 20vh; /* visual balance */
+  padding-left: var(--space-lg);
+  justify-content: flex-end;
+  padding-bottom: 20vh;
 }
 
 .hero-title {
-  font-size: 4.5rem; /* Large */
-  font-weight: 500;
-  line-height: 1.1;
+  font-size: var(--text-display);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-tight);
   letter-spacing: -0.03em;
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-md);
 }
 
 .hero-footer {
   position: absolute;
-  bottom: 3rem;
-  left: 10vw;
-  font-size: 0.7rem;
+  bottom: 3rem; /* Custom placement */
+  left: var(--space-xxl);
+  font-size: var(--text-caption);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   opacity: 0.5;
 }
 
 .hero-description {
-  font-size: 1.25rem;
-  line-height: 1.4;
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-normal);
   max-width: 400px;
-  font-weight: 400;
+  font-weight: var(--weight-regular);
 }
 
 /* Dots */
@@ -62,7 +61,7 @@
 }
 
 .bottom-dot {
-  bottom: 20%; /* Guessing position based on 'split layout' image which has dots on line */
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -78,30 +77,24 @@
 }
 
 @media (max-width: 1024px) {
-  .hero-title {
-    font-size: 3.5rem;
-  }
+  /* Fluid type handles font size changes automatically now */
 }
 
 @media (max-width: 768px) {
   .hero-left, .hero-right {
-    padding: 2rem;
+    padding: var(--space-md);
     height: auto;
     min-height: 50vh;
-  }
-  
-  .hero-title {
-    font-size: 3rem;
   }
   
   .hero-footer {
     position: relative;
     bottom: auto;
     left: auto;
-    margin-top: 2rem;
+    margin-top: var(--space-md);
   }
   
   .hero-right {
-    padding-left: 2rem;
+    padding-left: var(--space-md); /* Consistent padding on mobile */
   }
 }

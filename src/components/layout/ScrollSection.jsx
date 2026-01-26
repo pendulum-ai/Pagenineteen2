@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import './ScrollSection.css';
-import GeometricIllustration from './GeometricIllustration';
+import GeometricIllustration from '../illustrations/GeometricIllustration';
 
 const ScrollTextBlock = ({ text, index, total, progress }) => {
   const step = 1 / total;
@@ -85,7 +85,7 @@ const ScrollSection = () => {
     <div ref={containerRef} className="scroll-section-container">
       <div className="sticky-wrapper split-layout">
         
-        <div className="split-line">
+        <div className="scroll-dot-container">
            <motion.div 
              className="dot scroll-dot"
              style={{
