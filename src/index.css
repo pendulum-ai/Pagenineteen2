@@ -1,0 +1,76 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap");
+
+:root {
+  --color-bg: #FDFCF8;
+  --color-text: #1a1a1a;
+  --color-accent: #ff5500;
+
+  --font-main: "Satoshi", sans-serif;
+
+  --spacing-unit: 1rem;
+  --header-height: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utilities */
+.container {
+  max-width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+/* Split Layout Grid Utility */
+.split-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  position: relative;
+}
+
+.split-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(26, 26, 26, 0.1);
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .split-layout {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .split-line {
+    display: none;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+}

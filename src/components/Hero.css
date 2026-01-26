@@ -1,0 +1,107 @@
+.hero {
+  padding-top: var(--header-height);
+  width: 100%;
+  position: relative;
+}
+
+.hero-left, .hero-right {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  /* Remove justify-content: center from shared */
+  height: 100%;
+  position: relative;
+}
+
+.hero-left {
+  align-items: flex-start;
+  justify-content: flex-start; /* Title at top */
+  padding-left: 10vw; 
+  padding-top: 20vh; /* Push title down a bit from very top */
+}
+
+.hero-right {
+  align-items: flex-start;
+  padding-left: 4rem; 
+  justify-content: flex-end; /* Text at bottom */
+  padding-bottom: 20vh; /* visual balance */
+}
+
+.hero-title {
+  font-size: 4.5rem; /* Large */
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 2rem;
+}
+
+.hero-footer {
+  position: absolute;
+  bottom: 3rem;
+  left: 10vw;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  max-width: 400px;
+  font-weight: 400;
+}
+
+/* Dots */
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.bottom-dot {
+  bottom: 20%; /* Guessing position based on 'split layout' image which has dots on line */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.right-dot {
+  top: 20%;
+  right: 10%;
+}
+
+.right-dot-2 {
+  top: 25%;
+  right: 10%;
+}
+
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-left, .hero-right {
+    padding: 2rem;
+    height: auto;
+    min-height: 50vh;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-footer {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 2rem;
+  }
+  
+  .hero-right {
+    padding-left: 2rem;
+  }
+}
