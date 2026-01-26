@@ -34,9 +34,9 @@
 }
 
 .scroll-text-block p {
-  font-size: var(--text-body);
+  font-size: var(--text-h2); /* Matched to Header size per user request */
   color: var(--color-text-secondary);
-  line-height: 1.5;
+  line-height: 1.4; /* Slightly tighter leading for larger text */
 }
 
 

@@ -4,13 +4,18 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 const ScrollRevealText = ({ children, className }) => {
   const containerRef = useRef(null);
   
-  // Track scroll progress of the text container itself relative to the viewport
+  // Track scroll progress of the text container
+  // Adjusted for slower typing: Ends when text is closer to top (0.25)
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 0.9", "end 0.5"] // Start revealing when top hits 90% view, finish when bottom hits 50%
+    offset: ["start 0.8", "start 0.25"] 
   });
 
   const words = children.split(" ");
+  // Calculate total characters ignoring spaces (visual characters)
+  const totalChars = words.reduce((acc, word) => acc + word.length, 0);
+  
+  let charCount = 0;
 
   return (
     <span ref={containerRef} className={className} style={{ display: 'inline-block', flexWrap: 'wrap' }}>
@@ -18,29 +23,22 @@ const ScrollRevealText = ({ children, className }) => {
         return (
           <span key={wIndex} style={{ display: 'inline-block', marginRight: '0.25em', whiteSpace: 'nowrap' }}>
             {word.split("").map((char, cIndex) => {
-              // Calculate a unique "trigger point" for this character
-              // We distribute them across the scroll range [0, 1]
-              // Flat index helps normalize the progress logic
-              const totalChars = children.length; 
-              // Simple approximation of index in the whole string
-              // (Not perfect but good enough for visual stagger)
-              // We need a stable identifier. 
-              // Let's just use local mapping for now.
-              
-              const globalIndex = wIndex * 5 + cIndex; // Rough estimate
+              // Accurate Global Index
+              const globalIndex = charCount;
+              charCount++; // Increment for next char
+
               const percent = globalIndex / totalChars; 
               
-              // Each char animates over a small slice of the scroll: e.g. [0.1, 0.2]
-              // Start = percent * 0.8 (save 20% for buffer)
-              // End = Start + 0.15
-              const start = percent;
-              const end = start + 0.2;
+              // Each char appears at its specific percentage
+              // We compress the distribution to [0, 0.8] so all animations have time to finish by 1.0
+              // This fixes the "nd" issue where characters ran out of timeline to dim.
+              const start = percent * 0.8;
 
               return (
                 <Char 
                   key={cIndex} 
                   char={char} 
-                  range={[start, end]} 
+                  start={start} 
                   progress={scrollYProgress} 
                 />
               );
@@ -52,16 +50,50 @@ const ScrollRevealText = ({ children, className }) => {
   );
 };
 
-const Char = ({ char, range, progress }) => {
-  const opacity = useTransform(progress, [range[0] - 0.1, range[0], range[1]], [0.1, 0.1, 1]);
-  const blur = useTransform(progress, [range[0], range[1]], ["10px", "0px"]);
-  const y = useTransform(progress, [range[0], range[1]], ["10%", "0%"]);
+// Helper to interpolate between White and Grey based on available intensity (0 to 1)
+const getTargetColor = (intensity) => {
+  // 0 = White (#FFFFFF), 1 = Grey (#555555)
+  // Simple linear interpolation for Grey channel
+  const startVal = 255;
+  const endVal = 85; // Decimal for 0x55
   
-  // Color shift from Dark Grey to White
-  const color = useTransform(progress, [range[0], range[1]], ["#444", "#FFF"]);
+  const currentVal = Math.round(startVal - (startVal - endVal) * intensity);
+  const hex = currentVal.toString(16).padStart(2, '0');
+  return `#${hex}${hex}${hex}`;
+};
+
+const Char = ({ char, start, progress }) => {
+  const opacity = useTransform(progress, [start, start + 0.001], [0, 1]);
+  
+  const holdTime = 0.1; 
+  const restoreStart = 0.9; // Push restore slightly later to keep text dimmed longer
+  const fadeStart = start + holdTime;
+  const timeToFade = restoreStart - fadeStart;
+  
+  let inputs, outputs;
+
+  if (timeToFade <= 0) {
+      // Not enough time to fade before restoration hits.
+      // Behavior: Just stay white.
+      inputs = [start, 1];
+      outputs = ["#FFFFFF", "#FFFFFF"];
+  } else {
+      // Calculate how "deep" the grey should be.
+      // If we have > 0.15s, go full grey.
+      // If we have 0.01s, hardly fade at all to prevent blinking.
+      const rampUp = 0.15;
+      const intensity = Math.min(timeToFade / rampUp, 1);
+      
+      const midColor = getTargetColor(intensity);
+
+      inputs = [start, fadeStart, restoreStart, 1];
+      outputs = ["#FFFFFF", "#FFFFFF", midColor, "#FFFFFF"];
+  }
+  
+  const color = useTransform(progress, inputs, outputs);
 
   return (
-    <motion.span style={{ opacity, filter: blur, y, color, display: 'inline-block' }}>
+    <motion.span style={{ opacity, color, display: 'inline-block' }}>
       {char}
     </motion.span>
   );
