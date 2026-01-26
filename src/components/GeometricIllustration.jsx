@@ -85,7 +85,7 @@ const getLayouts = () => {
         const t = i / 11; 
         const x = 20 + t * 60; 
         const y = 80 - t * 60;
-        const r = 15 + Math.sin(t * Math.PI) * 15; 
+        const r = 15; // Constant radius as requested
         layout2.push(p(x, y, r, 1));
     }
 
@@ -93,7 +93,8 @@ const getLayouts = () => {
     const layout3 = [];
     for(let i=0; i<12; i++) {
         if (i < 4) {
-             layout3.push(p(50 + (i%2 ? -2:2), 50 + (i>1 ? -2:2), 35, 1));
+             // Inner 4 points: Make them tiny nucleus dots (r=2) instead of giant rings (r=35)
+             layout3.push(p(50 + (i%2 ? -2:2), 50 + (i>1 ? -2:2), 2, 1));
         } else {
              const angle = ((i - 4) / 8) * Math.PI * 2;
              layout3.push(p(50 + Math.cos(angle) * 35, 50 + Math.sin(angle) * 35, 10, 0.8));
@@ -106,12 +107,12 @@ const getLayouts = () => {
         if (i < 6) {
             const col = i % 3;
             const row = Math.floor(i / 3);
-            layout4.push(p(25 + col*10, 25 + row*10, 8, 1));
+            layout4.push(p(25 + col*10, 25 + row*10, 15, 1)); // Uniform radius 15
         } else {
             const j = i - 6;
             const col = j % 3;
             const row = Math.floor(j / 3);
-            layout4.push(p(55 + col*10, 55 + row*10, 20, 1));
+            layout4.push(p(55 + col*10, 55 + row*10, 15, 1)); // Uniform radius 15
         }
     }
 
@@ -151,7 +152,11 @@ const GeometricIllustration = ({ scrollYProgress }) => {
   // This is efficient because it's set up once and runs on the compositor/animation frame
   const animatedLines = connections.map(([i, j]) => {
       // Calculate distance between Point I and Point J at each keyframe
-      const dists = states.map(layout => {
+      const dists = states.map((layout, k) => {
+          // CLEANUP: Disable lines for State 3 ("Core")
+          // We force distance to infinity for this specific state index (3)
+          if (k === 3) return 10000;
+
           const p1 = layout[i];
           const p2 = layout[j];
           const dx = p1.x - p2.x;

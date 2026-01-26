@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import './ScrollSection.css';
 import GeometricIllustration from './GeometricIllustration';
 
@@ -8,10 +8,11 @@ const ScrollTextBlock = ({ text, index, total, progress }) => {
   const start = index * step;
   const end = start + step;
 
-  // Opacity: Fade in quickly, stay visible longer, fade out near the top
+  // Opacity: Fade in quickly, stay visible longer, fade out near the end
+  // Fixed range logic: start -> start+0.1 (fade in), end-0.1 -> end (fade out)
   const opacity = useTransform(
     progress,
-    [start, start + 0.1, end - 0.2, end],
+    [start, start + 0.1, end - 0.1, end],
     [0, 1, 1, 0]
   );
 
@@ -56,6 +57,30 @@ const ScrollSection = () => {
     "We focus on the integration work that makes this true in production."
   ];
 
+  // STEPPED ANIMATION LOGIC
+  // Instead of linear mapping, we "snap" to specific target values based on scroll sections.
+  // Ranges roughly correspond to where the text blocks are active.
+  const steppedProgress = useTransform(
+    scrollYProgress,
+    // Input ranges (approximate "active" zones for each of the 4 blocks)
+    // Shifted EARLIER to synchronize with text appearance (0-0.1 opacity ramp)
+    // 0-0.05: Intro -> State 1 (Rapid start)
+    // 0.28-0.32: Block 1 -> State 2
+    // 0.53-0.57: Block 2 -> State 3
+    // 0.78-0.82: Block 3 -> State 4
+    [0, 0.01, 0.05, 0.28, 0.32, 0.53, 0.57, 0.78, 0.82, 1],
+    // Output targets
+    [0, 0, 0.15, 0.15, 0.38, 0.38, 0.62, 0.62, 0.85, 0.85] 
+  );
+
+  // Smooth the stepped jumps with spring physics to create the "S-curve" / "gliding" effect
+  const smoothProgress = useSpring(steppedProgress, {
+    stiffness: 50, // Controls speed of the snap (higher = faster)
+    damping: 15,   // Controls "bounciness" (lower = bouncier, higher = syrupy)
+    mass: 1,
+    restDelta: 0.001
+  });
+
   return (
     <div ref={containerRef} className="scroll-section-container">
       <div className="sticky-wrapper split-layout">
@@ -82,14 +107,12 @@ const ScrollSection = () => {
         </div>
 
         <div className="visual-area hero-right">
-           <GeometricIllustration scrollYProgress={scrollYProgress} />
+           <GeometricIllustration scrollYProgress={smoothProgress} />
         </div>
 
       </div>
     </div>
   );
 };
-
-
 
 export default ScrollSection;
