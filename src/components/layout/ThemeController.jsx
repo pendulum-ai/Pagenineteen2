@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 
 const ThemeController = ({ targetRef }) => {

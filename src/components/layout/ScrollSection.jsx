@@ -8,18 +8,19 @@ const ScrollTextBlock = ({ item, index, total, progress }) => {
   const start = index * step;
   const end = start + step;
 
-  // Opacity: Fade in quickly, stay visible longer, fade out near the end
+  // Opacity: Fade in quickly (0.05), stay visible longer, fade out near the end
   const opacity = useTransform(
     progress,
-    [start, start + 0.1, end - 0.1, end],
+    [start, start + 0.05, end - 0.05, end],
     [0, 1, 1, 0]
   );
 
-  // Y position: Move from slightly below center to way up top
+  // Y position: Move from slightly below center to slightly above
+  // Reduced range for subtler "floating" effect rather than "flying"
   const y = useTransform(
     progress,
     [start, end],
-    ["10vh", "-60vh"]
+    ["10vh", "-10vh"]
   );
 
   // Blur: Only blur during entrance/exit

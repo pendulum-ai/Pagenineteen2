@@ -3,19 +3,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: var(--header-height); /* Keep layout height */
+  height: var(--header-height); 
   display: flex;
   align-items: center;
   z-index: 100;
   /* Remove default background to let the pseudo-element handle the blur */
   background-color: transparent; 
-  /* Creative Transition: "Difference" blend mode automatically inverts the header color
-     based on the background behind it. 
-     White Background -> Header becomes Black.
-     Dark Background (#1A1A1A) -> Header becomes White/Light Grey.
-  */
-  mix-blend-mode: difference;
-  color: white; 
 }
 
 /* Progressive Blur is now handled by src/components/ui/ProgressiveBlurBackdrop.css */
@@ -25,6 +18,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+/* Apply Difference to key elements instead of container to avoid isolation issues */
+.logo-link,
+.nav-link {
+  mix-blend-mode: difference;
+  color: white; 
 }
 
 .logo {
@@ -40,11 +39,6 @@
 
 .nav-link {
   text-decoration: none;
-  /* 
-     MUST be white for mix-blend-mode: difference to work correctly.
-     White Source on White BG -> Black Result.
-     White Source on Dark BG -> White Result.
-  */
   color: white; 
   font-size: var(--text-small);
   font-weight: var(--weight-medium);
@@ -56,4 +50,9 @@
 
 .nav-link:hover {
   opacity: 1;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
 }

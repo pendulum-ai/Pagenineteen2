@@ -1,6 +1,7 @@
 .mission-section {
   position: relative;
-  /* background-color: var(--color-bg); -> Removed to allow ThemeController to be visible */
+  /* Define layout variables for maintainability */
+  --mission-stagger-height: 85vh; 
   /* Classic Scroll: Height is determined by content + padding */
   min-height: 100vh; 
   padding-bottom: 0; /* Reduced to remove gap before next section */
@@ -36,8 +37,8 @@
 
 .mission-right {
   justify-content: flex-start;
-  /* Push content down INTENSELY (85vh) so it appears on the "next screen" relative to left content */
-  padding-top: 85vh; 
+  /* Push content down INTENSELY (var(--mission-stagger-height)) so it appears on the "next screen" relative to left content */
+  padding-top: var(--mission-stagger-height); 
   padding-bottom: var(--space-lg);
 }
 
