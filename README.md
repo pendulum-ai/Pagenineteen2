@@ -1,95 +1,37 @@
-# Pagenineteen2 - Applied Multimodal AI Lab
+# Page Nineteen - AI Agency Website
 
-This codebase has been architected for scalability, modularity, and professional maintenance. Please follow the guidelines below when adding new features or modifying existing ones.
+A high-performance, design-driven website built with **React**, **Vite**, and **Framer Motion**.  
+Key focus on "sticky snap" scroll physics, internal parallax, and synchronized SVG animations.
 
-## 📂 Project Structure
+## 🚀 Quick Start
 
-Code is organized by **domain** rather than technical type:
-
-```
-src/
-├── components/
-│   ├── layout/         # Structural wrappers (Header, Footer, ScrollSection)
-│   ├── sections/       # Page content blocks (Hero, MissionSection)
-│   ├── illustrations/  # Complex visual components (GeometricIllustration)
-│   └── ui/             # Reusable primitives (Buttons, Cards - empty for now)
-├── styles/
-│   ├── tokens.css      # THE SOURCE OF TRUTH (Colors, Spacing)
-│   ├── typography.css  # Font sizes and weights
-│   ├── animations.css  # Transition timings
-│   └── utilities.css   # Helper classes (.container, .split-layout)
-└── App.jsx             # Main composition
+```bash
+npm install
+npm run dev
 ```
 
----
+## 📂 Architecture
 
-## 🎨 Design System Guide
+Code is organized by **domain** in `src/`:
 
-**DO NOT** Use hardcoded pixel values (e.g., `padding: 24px` or `font-size: 18px`).
-**DO** Use the semantic tokens defined in `src/styles`.
+- **`styles/`**: The Design System source of truth.
+  - `tokens.css`: Colors (`--color-accent`) & Spacing (`--space-md`).
+  - `typography.css`: Fluid typography using `clamp()`.
+- **`components/layout/ScrollSection`**: The core "sticky" experience.
+  - **Logic**: Uses `framer-motion` for spring physics (`stiffness: 120`, `damping: 30`) and custom "sticky snap" interpolation.
+  - **Behavior**: Items hold in the center with a "breathing" parallax effect before accelerating away.
+- **`components/illustrations/GeometricIllustration`**:
+  - Stateless SVG component purely driven by `scrollYProgress` props.
 
-### Spacing Tokens
+## 🛠 Design System & Rules
 
-Use these for margins, paddings, and gaps.
+- **Never hardcode values**. Use tokens (`var(--space-md)`, `var(--text-h2)`).
+- **Mobile First**. The layout adapts via fluid typography and flex/grid utilities.
+- **Physics**. The scroll feel is "heavy friction" (controlled, expensive feel), not "floaty".
 
-| Token              | Size (approx) | Usage                               |
-| :----------------- | :------------ | :---------------------------------- |
-| `var(--space-xs)`  | 8px           | Tiny gaps                           |
-| `var(--space-sm)`  | 16px          | Standard button padding / small gap |
-| `var(--space-md)`  | 32px          | Component separation / card padding |
-| `var(--space-lg)`  | 64px          | Section padding (mobile)            |
-| `var(--space-xl)`  | 96px          | Section padding (desktop)           |
-| `var(--space-xxl)` | 160px         | Major layout breathing room         |
+## 📦 Deployment
 
-- **Fluid Typography**: Defined in `src/styles/typography.css`. Uses `clamp()` for responsive font sizing.
-- **Layout Padding**: Defined in `src/styles/tokens.css` as `--layout-padding-x`. Use this container spacing for all major section alignments to ensure consistency.
-
-## Component Rules
-
-### Typography Tokens
-
-Font sizes use `clamp()` for automatic responsiveness.
-
-| Token                 | Usage                             |
-| :-------------------- | :-------------------------------- |
-| `var(--text-display)` | Hero/Main Titles only             |
-| `var(--text-h1)`      | Section Headers                   |
-| `var(--text-h2)`      | Sub-sections / Mission Statements |
-| `var(--text-body)`    | Standard reading text             |
-| `var(--text-small)`   | Navigation, Captions              |
-
-### Colors
-
-| Token                 | Description               |
-| :-------------------- | :------------------------ |
-| `var(--color-bg)`     | Main background           |
-| `var(--color-text)`   | Primary text              |
-| `var(--color-accent)` | Orange accent (`#ff5500`) |
-
----
-
-## 🛠 Workflow Rules (How to not break things)
-
-1.  **Adding a New Section:**
-    - Create a folder/file in `src/components/sections/MyNewSection.jsx`.
-    - Import tokens in its CSS file.
-    - Use `.container` or `.split-layout` utilities for alignment.
-
-2.  **Adding a New Page:**
-    - (Future) Use React Router. Ensure layout wrappers (Header) are outside the route switch if they persist.
-
-3.  **Responsiveness:**
-    - The site is "Mobile-first" compliant but handles desktop gracefully via `clamp()`.
-    - Use `@media (max-width: 768px)` for mobile overrides if fluid typography isn't enough.
-
-4.  **Git/Version Control:**
-    - Keep commits atomic (one feature per commit).
-    - Run `npm run build` before pushing to ensure no import errors.
-
----
-
-## 🚀 Getting Started
-
-1.  `npm install`
-2.  `npm run dev`
-3.  Open `http://localhost:5173`
+```bash
+npm run build
+# Outputs to /dist
+```

@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
+import { motion, useScroll, useTransform, useSpring, useMotionValueEvent } from 'framer-motion';
 
 const ThemeController = ({ targetRef }) => {
     // We target the Goal Section (via ref passed from Home)
@@ -24,6 +24,27 @@ const ThemeController = ({ targetRef }) => {
         [0, 1],
         ["#FFFFFF", "#1A1A1A"]
     );
+
+    // Interpolate Header Text Color (Black -> White)
+    const textColor = useTransform(
+        smoothProgress,
+        [0, 0.5], // Start changing earlier to ensure contrast
+        ["#000000", "#FFFFFF"]
+    );
+
+    // Update CSS variable for Header
+    React.useEffect(() => {
+        // Set default on mount
+        document.documentElement.style.setProperty('--header-text-color', '#000000');
+        return () => {
+            // Reset on unmount
+            document.documentElement.style.setProperty('--header-text-color', '#000000');
+        };
+    }, []);
+
+    useMotionValueEvent(textColor, "change", (latest) => {
+        document.documentElement.style.setProperty('--header-text-color', latest);
+    });
 
     return (
         <motion.div 

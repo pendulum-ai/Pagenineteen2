@@ -1,5 +1,5 @@
 .scroll-section-container {
-  height: 600vh;
+  height: 500vh;
   position: relative;
   width: 100%;
 }
@@ -29,8 +29,20 @@
   font-size: var(--text-h2);
   font-family: var(--font-main); /* Ensure Serif if that's the design, or Sans */
   font-weight: 500; /* Serif Display */
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-sm); /* Matches style of "What we build." in image */
   line-height: 1.1;
+}
+
+/* Special styling for the Intro item in ScrollSection */
+.scroll-text-block.intro-block p {
+  font-size: var(--text-body-lg); /* Matches Hero description */
+  line-height: 1.3;
+  color: var(--color-text); /* Brighter/Main text color */
+}
+
+.scroll-text-block.intro-block h3 {
+  font-size: var(--text-display); /* Hero-like title size */
+  margin-bottom: var(--space-md);
 }
 
 .scroll-text-block p {

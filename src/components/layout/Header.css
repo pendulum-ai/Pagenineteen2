@@ -22,8 +22,9 @@
 /* Apply Difference to key elements instead of container to avoid isolation issues */
 .logo-link,
 .nav-link {
-  mix-blend-mode: difference;
-  color: white; 
+  /* mix-blend-mode: difference; <-- REMOVED: Caused visibility issues on white */
+  color: var(--header-text-color, #000000); /* Default to black */
+  transition: color 0.1s linear; /* Smooth transition if JS lags slightly, but short enough to be felt as instant */
 }
 
 .logo {
@@ -39,7 +40,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: white; 
+  /* color handled by shared rule above */ 
   font-size: var(--text-small);
   font-weight: var(--weight-medium);
   text-transform: uppercase;
@@ -54,5 +55,5 @@
 
 .logo-link {
   text-decoration: none;
-  color: inherit;
+  /* color handled by shared rule above */
 }

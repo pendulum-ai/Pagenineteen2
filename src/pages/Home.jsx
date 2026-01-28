@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Hero from '../components/sections/Hero';
 import MissionSection from '../components/sections/MissionSection';
+
 import ScrollSection from '../components/layout/ScrollSection';
 import GoalSection from '../components/sections/GoalSection';
 import ThemeController from '../components/layout/ThemeController';

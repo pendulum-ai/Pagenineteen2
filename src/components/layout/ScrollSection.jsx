@@ -3,107 +3,140 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import './ScrollSection.css';
 import GeometricIllustration from '../illustrations/GeometricIllustration';
 
-const ScrollTextBlock = ({ item, index, total, progress }) => {
-  const step = 1 / total;
-  const start = index * step;
-  const end = start + step;
+const FRAMES = [
+  {
+    range: [0.02, 0.20], // Extended duration (previously 0.14)
+    title: "What we build.",
+    text: "We don't just train models; we focus on the integration work required to make them true in production.",
+    isIntro: true
+  },
+  {
+    range: [0.23, 0.33],
+    title: "Multimodal Orchestration",
+    text: "Designing shared architectures that bridge vision, language, and speech models seamlessly. We don't just glue APIs together; we build unified inference pipelines."
+  },
+  {
+    range: [0.36, 0.46],
+    title: "Fine-tuning Pipelines",
+    text: "Building automated workflows for LoRA adaptation and continuous model improvement. From dataset curation to validation, entirely in code."
+  },
+  {
+    range: [0.49, 0.59],
+    title: "Real-time Systems",
+    text: "Pushing the boundaries of latency with streaming inference and instant voice interfaces. Because truly interactive AI must feel instantaneous."
+  },
+  {
+    range: [0.62, 0.72],
+    title: "Agentic Workflows",
+    text: "Creating systems that evaluate themselves, with feedback loops embedded directly in production. Agents that critique, refine, and improve their own outputs."
+  },
+  {
+    range: [0.75, 0.85],
+    title: "(Pro)sumer Interfaces",
+    text: "Crafting tools that don't just work, but feel intuitive and empowering to creative professionals. The interface is the model."
+  }
+];
 
-  // Opacity: Fade in quickly (0.05), stay visible longer, fade out near the end
+const ScrollTextBlock = ({ item, progress }) => {
+  const [start, end] = item.range;
+  const duration = end - start;
+  
+  // "Stick" logic: Define a central plateau
+  // Item enters (35%), Holds (30%), Exits (35%)
+  const holdStart = start + duration * 0.35;
+  const holdEnd = end - duration * 0.35;
+
+  const fadeDuration = 0.025; 
+
+  // Opacity: Fade in, Hold through the sticky phase, Fade out
+
+
+  // Y Moves: 4-point interpolation
+  // [Start, HoldStart, HoldEnd, End]
+  
+  // Base values 
+  const yStart = item.isIntro ? "20vh" : "30vh"; 
+  const yEnd = item.isIntro ? "-60vh" : "-30vh"; 
+
+  // Title: Stops in middle
+  const yTitle = useTransform(
+    progress,
+    [start, holdStart, holdEnd, end],
+    [yStart, "0vh", "0vh", yEnd] 
+  );
+
+  // Text: 
+  // 1. Enter: Parallax (enters later/slower)
+  // 2. Hold: Sync (no drift, rock solid)
+  // 3. Exit: Sync (moves EXACTLY with title to prevent "glitchy" separation)
+  const yText = useTransform(
+    progress,
+    [start, holdStart, holdEnd, end],
+    [
+      `calc(${yStart} + 3vh)`, // Enter: Parallax
+      "0vh",                   // Hold: Locked
+      "0vh",                   // Hold: Locked
+      yEnd                     // Exit: Locked with Title
+    ]
+  );
+
+  // Opacity: Fade out EARLY, before the "fly away" acceleration becomes jarring
+  // We fade out at 'holdEnd' essentially
   const opacity = useTransform(
     progress,
-    [start, start + 0.05, end - 0.05, end],
+    [start, start + fadeDuration, holdEnd, end],
     [0, 1, 1, 0]
   );
 
-  // Y position: Move from slightly below center to slightly above
-  // Reduced range for subtler "floating" effect rather than "flying"
-  const y = useTransform(
-    progress,
-    [start, end],
-    ["10vh", "-10vh"]
-  );
-
-  // Blur: Only blur during entrance/exit
+  // Blur: Clean during the entire hold phase
   const filter = useTransform(
     progress,
-    [start, start + 0.05, end - 0.05, end],
+    [start, holdStart, holdEnd, end],
     ["blur(10px)", "blur(0px)", "blur(0px)", "blur(10px)"]
   );
 
   return (
-    <motion.div 
-      className="scroll-text-block"
-      style={{ opacity, y, filter }}
-    >
-      <h3>{item.title}</h3>
-      <p>{item.text}</p>
-    </motion.div>
+    <div className={`scroll-text-block ${item.isIntro ? 'intro-block' : ''}`}>
+      <motion.h3 style={{ opacity, y: yTitle, filter }}>
+        {item.title}
+      </motion.h3>
+      <motion.p style={{ opacity, y: yText, filter }}>
+        {item.text}
+      </motion.p>
+    </div>
   );
 };
 
 const ScrollSection = () => {
   const containerRef = useRef(null);
   
-  // Track scroll progress of the container
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"]
   });
 
-  // Updated Data with Title + Description (5 items)
-  const blocks = [
-    {
-      title: "Multimodal Orchestration",
-      text: "Designing shared architectures that bridge vision, language, and speech models seamlessly. We don't just glue APIs together; we build unified inference pipelines."
-    },
-    {
-      title: "Fine-tuning Pipelines",
-      text: "Building automated workflows for LoRA adaptation and continuous model improvement. From dataset curation to validation, entirely in code."
-    },
-    {
-      title: "Real-time Systems",
-      text: "Pushing the boundaries of latency with streaming inference and instant voice interfaces. Because truly interactive AI must feel instantaneous."
-    },
-    {
-      title: "Agentic Workflows",
-      text: "Creating systems that evaluate themselves, with feedback loops embedded directly in production. Agents that critique, refine, and improve their own outputs."
-    },
-    {
-      title: "(Pro)sumer Interfaces",
-      text: "Crafting tools that don't just work, but feel intuitive and empowering to creative professionals. The interface is the model."
-    }
-  ];
-
-  // STEPPED ANIMATION LOGIC
-  // New Ranges for 5 Items + Start + End
-  // 0-0.05: Intro
-  // 0.10-0.22: Item 1 (0.16 target)
-  // 0.28-0.36: Item 2 (0.32 target)
-  // 0.44-0.52: Item 3 (0.48 target)
-  // 0.60-0.68: Item 4 (0.64 target)
-  // 0.76-0.84: Item 5 (0.80 target)
-  // 0.95-1.0: Outro
+  // STEPPED ANIMATION LOGIC - Synchronized with FRAMES (6 Items -> 6 Visual States)
   const steppedProgress = useTransform(
     scrollYProgress,
-    // Inputs
+    // Keyframes align with the center of each text block's visibility
     [
-        0, 0.01, 0.05, 
-        0.10, 0.22, 
-        0.28, 0.36, 
-        0.44, 0.52, 
-        0.60, 0.68, 
-        0.76, 0.84, 
-        1
+        0, 0.11,      // Intro (Singularity)
+        0.28,         // Tech 1 (Cube)
+        0.41,         // Tech 2 (Snail)
+        0.54,         // Tech 3 (Nucleus)
+        0.67,         // Tech 4 (Frames)
+        0.80,         // Tech 5 (Ring)
+        0.95, 1       // End
     ],
-    // Outputs (align with GeometricIllustration states)
+    // Output Values for GeometricIllustration (0, 0.16, 0.32, 0.48, 0.64, 0.80)
     [
-        0, 0, 0.16,   // Start -> State 1
-        0.16, 0.32,   // State 1 -> State 2
-        0.32, 0.48,   // State 2 -> State 3
-        0.48, 0.64,   // State 3 -> State 4
-        0.64, 0.80,   // State 4 -> State 5
-        0.80, 0.80,   // State 5 Hold
-        1             // End
+        0, 0,         // Intro = Singularity (0)
+        0.16,         // Tech 1 = Cube
+        0.32,         // Tech 2 = Snail
+        0.48,         // Tech 3 = Nucleus
+        0.64,         // Tech 4 = Frames
+        0.80,         // Tech 5 = Ring
+        0.80, 0.80    // Hold Ring until end
     ] 
   );
 
@@ -112,6 +145,16 @@ const ScrollSection = () => {
     stiffness: 50,
     damping: 15, 
     mass: 1,
+    restDelta: 0.001
+  });
+
+  // SMOOTH TEXT SCROLL
+  // TUNED PHYSICS: "Buttery Control"
+  // Stiffness 120 / Damping 30
+  // Returning to softer physics to round off the sharp corners of the snap animation.
+  const smoothTextProgress = useSpring(scrollYProgress, {
+    stiffness: 120,
+    damping: 30,
     restDelta: 0.001
   });
 
@@ -128,19 +171,17 @@ const ScrollSection = () => {
            <motion.div 
              className="dot scroll-dot"
              style={{
-               top: useTransform(scrollYProgress, [0, 1], ["20%", "80%"])
+               top: useTransform(smoothTextProgress, [0, 1], ["20%", "80%"]) // Also smooth the dot
              }}
            />
         </motion.div>
 
         <div className="content-area hero-left">
-           {blocks.map((item, index) => (
+           {FRAMES.map((item, index) => (
              <ScrollTextBlock 
                key={index}
-               item={item} // Pass full object
-               index={index}
-               total={blocks.length}
-               progress={scrollYProgress}
+               item={item} 
+               progress={smoothTextProgress} // Use smooth progress for text
              />
            ))}
         </div>
@@ -155,3 +196,4 @@ const ScrollSection = () => {
 };
 
 export default ScrollSection;
+
