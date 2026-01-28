@@ -31,9 +31,9 @@ const Footer = ({ isVisible }) => {
                 }
             }}
         >
-            <div className="footer-container">
+            <div className="container footer-container">
                 <div className="footer-left">
-                     <span className="brand-name">Page Nineteen</span>
+                     <span className="brand-name">pagenineteen</span>
                      <span className="copyright">© {currentYear}</span>
                 </div>
 

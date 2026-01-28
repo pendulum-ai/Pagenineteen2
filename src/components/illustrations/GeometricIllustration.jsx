@@ -35,8 +35,8 @@ const useMorphPoints = (progress, states) => {
         0.32,            // State 2
         0.48,            // State 3
         0.64,            // State 4
-        0.80,            // State 5
-        1 - delay        // End
+        0.78,            // State 5 (Hold cube shape until here - gives time to see it)
+        0.86 - delay     // End (Fast collapse! 0.78 -> 0.86 is quick)
     ];
 
     // eslint-disable-next-line
@@ -62,7 +62,9 @@ const getLayouts = () => {
     // State 0: "The Singularity"
     const layoutZero = [];
     for(let i=0; i<12; i++) {
-        layoutZero.push(p(50, 50, 4, 1)); 
+        // Only show the first point to avoid visual stacking of 12 translucent rings
+        // creating a dark artifact.
+        layoutZero.push(p(50, 50, 3, i === 0 ? 1 : 0)); 
     }
 
     // State 1: "Foundation" - The Cube/Square
@@ -111,13 +113,29 @@ const getLayouts = () => {
         }
     }
 
-    // State 5: "Interfaces" - The Ring (Circle)
-    // Represents the "Prosumer Interfaces" - a clean unified circle
+    // State 5: "Interfaces" - The Cube (3D Isometric)
     const layout5 = [];
-    for(let i=0; i<12; i++) {
-        const angle = (i / 12) * Math.PI * 2;
-        // Radius 30 circle centered at 50,50
-        layout5.push(p(50 + Math.cos(angle) * 30, 50 + Math.sin(angle) * 30, 12, 1));
+    
+    // Perfect Isometric Cube Coordinates centered at 50,50
+    // Generated via rotation matrices to ensure equal edge lengths
+    const visiblePoints = [
+        { x: 50, y: 50 },
+        { x: 87.3, y: 28.4 },
+        { x: 87.3, y: 71.6 },
+        { x: 50, y: 93.1 },
+        { x: 12.7, y: 28.4 },
+        { x: 50, y: 6.9 },
+        { x: 50, y: 50 },
+        { x: 12.7, y: 71.6 }
+    ];
+
+    visiblePoints.forEach(p => {
+        layout5.push({ x: p.x, y: p.y, r: 4, o: 1 });
+    });
+
+    // Fill remaining 4 points (hidden at center)
+    for(let i=0; i<4; i++) {
+        layout5.push({ x: 50, y: 50, r: 0, o: 0 }); 
     }
 
     // Return 7 states: Start -> 5 Shapes -> End
@@ -129,8 +147,8 @@ const GeometricIllustration = ({ scrollYProgress }) => {
   const points = useMorphPoints(scrollYProgress, states);
 
   // Sync overall visibility with the content flow
-  // Fade in Start (0-0.1), Visible, Fade out End (0.95-1)
-  const containerOpacity = useTransform(scrollYProgress, [0, 0.1, 0.95, 1], [0, 1, 1, 0]);
+  // Fade in Start (0-0.1), Visible, Fade out EARLY (0.85-0.95) to match fast collapse
+  const containerOpacity = useTransform(scrollYProgress, [0, 0.1, 0.85, 0.95], [0, 1, 1, 0]);
 
   // DYNAMIC TOPOLOGY LOGIC
   // We want lines to appear when points are close.
@@ -161,14 +179,18 @@ const GeometricIllustration = ({ scrollYProgress }) => {
 
           const p1 = layout[i];
           const p2 = layout[j];
+
+          // If either point is hidden (opacity ~0), don't connect
+          if (p1.o < 0.1 || p2.o < 0.1) return 10000;
+
           const dx = p1.x - p2.x;
           const dy = p1.y - p2.y;
           return Math.sqrt(dx*dx + dy*dy);
       });
 
       // Threshold for connection
-      // Reduced to 30 to avoid "ghost lines" appearing during dense phases (zoom/collapse)
-      const THRESHOLD = 30;
+      // Increased to 50 to accommodate the longer diagonals of the isometric cube (max edge ~43)
+      const THRESHOLD = 50;  
       
       // Map distances to opacity (0 to 1)
       const opacities = dists.map(d => {

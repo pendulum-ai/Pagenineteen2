@@ -21,7 +21,7 @@
     pointer-events: none; /* Let clicks pass through empty space */
 
     background-color: var(--footer-bg); 
-    padding: var(--space-xl) var(--layout-padding-x);
+    padding: var(--space-xl) 0; /* Vertical padding only, horizontal handled by .container */
     display: flex;
     justify-content: center;
     overflow: visible;
@@ -70,7 +70,7 @@
 .brand-name {
     font-weight: 700;
     font-size: var(--text-body);
-    text-transform: uppercase;
+    /* text-transform: uppercase; Removed to match header logo style */
     letter-spacing: -0.02em;
     color: var(--footer-text);
     transition: color 0.3s ease;

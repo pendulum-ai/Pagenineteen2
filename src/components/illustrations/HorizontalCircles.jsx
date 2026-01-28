@@ -5,7 +5,6 @@ const HorizontalCircles = () => {
   // Config
   const numCircles = 5;
   const radius = 60; // Base radius size
-  const overlap = 0.4; // How much they overlap
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative', overflow: 'hidden' }}>

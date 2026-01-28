@@ -11,7 +11,7 @@
   align-items: center;
   overflow: hidden;
   padding: 10vh 0;
-  z-index: 20; /* Sit above previous section if needed for overlapping transition */
+  z-index: var(--z-mask); /* Sit above previous section if needed for overlapping transition */
 }
 
 .goal-content {

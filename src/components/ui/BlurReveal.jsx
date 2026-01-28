@@ -17,7 +17,7 @@ const BlurReveal = ({ children, delay = 0, duration = 0.8, className = "" }) => 
       }}
       viewport={{ once: false, margin: "-10%" }}
       transition={{ 
-        duration: 1.0, 
+        duration: duration, 
         delay: delay,
         ease: [0.25, 0.4, 0.25, 1] // Smooth ease-out
       }}

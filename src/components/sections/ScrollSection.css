@@ -73,12 +73,12 @@
   transform: translate(-50%, -50%);
 }
 
-.content-area {
+.scroll-content {
   position: relative;
   height: 100%;
 }
 
-.visual-area {
+.scroll-visual {
   position: relative;
   height: 100%;
   display: flex;
@@ -107,7 +107,7 @@
      - Visual Area: Fixed at top (50% height)
      - Content Area: Full screen, transparent, overlays visual
   */
-  .visual-area {
+  .scroll-visual {
     display: flex; /* Restore display */
     position: absolute;
     top: 0;
@@ -120,12 +120,12 @@
   }
 
   /* Ensure illustration doesn't overflow or get too big */
-  .visual-area svg {
+  .scroll-visual svg {
     max-height: 40vh;
     width: auto;
   }
 
-  .content-area {
+  .scroll-content {
     position: absolute;
     top: 0;
     left: 0;

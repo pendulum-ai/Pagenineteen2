@@ -3,58 +3,26 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import './ScrollSection.css';
 import GeometricIllustration from '../illustrations/GeometricIllustration';
 
-const FRAMES = [
-  {
-    range: [0.02, 0.20],
-    title: "What we build.",
-    text: "We don't just train models; we focus on the integration work required to make them true in production.",
-    isIntro: true
-  },
-  {
-    range: [0.23, 0.33],
-    title: "Multimodal Orchestration",
-    text: "Designing shared architectures that bridge vision, language, and speech models seamlessly. We don't just glue APIs together; we build unified inference pipelines."
-  },
-  {
-    range: [0.36, 0.46],
-    title: "Fine-tuning Pipelines",
-    text: "Building automated workflows for LoRA adaptation and continuous model improvement. From dataset curation to validation, entirely in code."
-  },
-  {
-    range: [0.49, 0.59],
-    title: "Real-time Systems",
-    text: "Pushing the boundaries of latency with streaming inference and instant voice interfaces. Because truly interactive AI must feel instantaneous."
-  },
-  {
-    range: [0.62, 0.72],
-    title: "Agentic Workflows",
-    text: "Creating systems that evaluate themselves, with feedback loops embedded directly in production. Agents that critique, refine, and improve their own outputs."
-  },
-  {
-    range: [0.75, 0.85],
-    title: "(Pro)sumer Interfaces",
-    text: "Crafting tools that don't just work, but feel intuitive and empowering to creative professionals. The interface is the model."
-  }
-];
+import { FRAMES } from '../../data/scrollData';
 
 const ScrollTextBlock = ({ item, progress }) => {
   const [start, end] = item.range;
   const duration = end - start;
   
   // "Stick" logic: Define a central plateau
-  // Item enters (35%), Holds (30%), Exits (35%)
-  const holdStart = start + duration * 0.35;
-  const holdEnd = end - duration * 0.35;
+  // Item enters (20%), Holds (60%), Exits (20%)
+  const holdStart = start + duration * 0.20;
+  const holdEnd = end - duration * 0.20;
 
   const fadeDuration = 0.025; 
   
   // Parallax Delay: Proportional to duration
   const textDelay = duration * 0.15; 
 
-  // Base Y values - Symmetric and Tight
-  // "Unfolds from center" -> "Folds to center"
+  // Base Y values - Asymmetric
+  // "Unfolds from center" -> "Folds to center HIGHER"
   const yStart = item.isIntro ? "10vh" : "5vh"; 
-  const yEnd = item.isIntro ? "-10vh" : "-5vh"; 
+  const yEnd = item.isIntro ? "-20vh" : "-15vh"; // User asked for "higher" exit
 
   // --- TRANSFORMS ---
 
@@ -66,21 +34,23 @@ const ScrollTextBlock = ({ item, progress }) => {
     [yStart, "0vh", "0vh", yEnd] 
   );
 
-  // 2. Opacity: STAGGERED & SYMMETRIC
-  // Title: Fades in Fast, Fades out Fast (at the end of the holding phase)
-  // To "Close" properly, it should probably fade out as it starts to move away, mirroring the entry.
+  // 2. Opacity: ASYMMETRIC
+  // Exit Logic: Disappear LATER.
+  // The exit phase is from holdEnd to end.
+  // We want to keep it visible for most of the exit travel.
+  const exitDuration = end - holdEnd;
+  const fadeOutStart = holdEnd + exitDuration * 0.6; // Start fading out after 60% of exit travel
+
   const opacityTitle = useTransform(
     progress,
-    [start, start + fadeDuration, holdEnd, holdEnd + fadeDuration],
+    [start, start + fadeDuration, fadeOutStart, end],
     [0, 1, 1, 0]
   );
 
-  // Text: Fades in later, Fades out with Title (or slightly later? No, strict sync on close usually looks cleaner)
-  // User asked for "close like start". Start has delay. Exit with delay might look "trailing".
-  // Let's keep strict sync on exit for a clean "disappear".
+  // Text: Fades in later, Fades out with Title
   const opacityText = useTransform(
     progress,
-    [start + textDelay, start + fadeDuration + textDelay, holdEnd, holdEnd + fadeDuration],
+    [start + textDelay, start + fadeDuration + textDelay, fadeOutStart, end],
     [0, 1, 1, 0]
   );
 
@@ -133,7 +103,7 @@ const ScrollSection = () => {
         0.48,         // Tech 3 = Nucleus
         0.64,         // Tech 4 = Frames
         0.80,         // Tech 5 = Ring
-        0.80, 0.80    // Hold Ring until end
+        1, 1          // Allow to collapse to Singularity (1)
     ] 
   );
 
@@ -147,11 +117,11 @@ const ScrollSection = () => {
 
   // SMOOTH TEXT SCROLL
   // TUNED PHYSICS: "Buttery Control"
-  // Stiffness 120 / Damping 30
+  // Stiffness 80 / Damping 25 (Softer)
   // Returning to softer physics to round off the sharp corners of the snap animation.
   const smoothTextProgress = useSpring(scrollYProgress, {
-    stiffness: 120,
-    damping: 30,
+    stiffness: 80,
+    damping: 25,
     restDelta: 0.001
   });
 
@@ -173,7 +143,7 @@ const ScrollSection = () => {
            />
         </motion.div>
 
-        <div className="content-area hero-left">
+        <div className="content-area scroll-content">
            {FRAMES.map((item, index) => (
              <ScrollTextBlock 
                key={index}
@@ -183,7 +153,7 @@ const ScrollSection = () => {
            ))}
         </div>
 
-        <div className="visual-area hero-right">
+        <div className="visual-area scroll-visual">
            <GeometricIllustration scrollYProgress={smoothProgress} />
         </div>
 

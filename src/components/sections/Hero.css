@@ -39,7 +39,7 @@
 
 .hero-footer {
   position: absolute;
-  bottom: 3rem; /* Custom placement */
+  bottom: var(--space-lg); /* Custom placement */
   left: var(--layout-padding-x);
   font-size: var(--text-caption);
   text-transform: uppercase;

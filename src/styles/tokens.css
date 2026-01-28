@@ -24,9 +24,20 @@
   --spacing-container: 2rem;
   --header-height: 80px;
   
-  /* Unified Horizontal Layout Padding (Desktop default) */
-  --layout-padding-x: var(--space-xxl); /* 10rem / 160px */
+  /* Unified Horizontal Layout Padding */
+  /* Fluid scaling from Mobile (2rem) to Desktop (10rem) to avoid "cliff" on tablets */
+  --layout-padding-x: clamp(2rem, 8vw, 10rem);
 
+  /* ------------------------- */
+  /* Z-INDEX SYSTEM            */
+  /* ------------------------- */
+  --z-negative: -1;
+  --z-default: 1;
+  --z-sticky: 10;
+  --z-mask: 20;
+  --z-header: 100;
+  --z-modal: 1000;
+  
   /* ------------------------- */
   /* BREAKPOINTS (Reference)   */
   /* ------------------------- */

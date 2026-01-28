@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Hero from '../components/sections/Hero';
 import MissionSection from '../components/sections/MissionSection';
 
-import ScrollSection from '../components/layout/ScrollSection';
+import ScrollSection from '../components/sections/ScrollSection';
 import GoalSection from '../components/sections/GoalSection';
 import ThemeController from '../components/layout/ThemeController';
 

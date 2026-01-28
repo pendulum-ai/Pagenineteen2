@@ -31,6 +31,29 @@
   }
 }
 
+/* ------------------------- */
+/* SHARED COLUMN STYLES      */
+/* ------------------------- */
+/* Standardizing the left/right logic found in Hero and Mission */
+.col-left, .col-right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+
+.col-left {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: var(--layout-padding-x);
+}
+
+.col-right {
+  align-items: flex-start;
+  /* Default to start, override if needed */
+  padding-right: var(--layout-padding-x); 
+}
+
 /* Helper to center content content vertically/horizontally */
 .flex-center {
   display: flex;

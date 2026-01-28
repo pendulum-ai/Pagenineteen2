@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   /* Reduced padding to give text more width (was --layout-padding-x which is huge) */
-  padding: 0 var(--space-xl); 
+  padding: 0 var(--layout-padding-x); 
 }
 
 /* 

@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValueEvent } from 'framer-motion';
 
+import { THEME_CONFIG } from '../../config/themeConfig';
+
 const ThemeController = ({ targetRef }) => {
     // We target the Goal Section (via ref passed from Home)
     
@@ -22,14 +24,14 @@ const ThemeController = ({ targetRef }) => {
     const backgroundColor = useTransform(
         smoothProgress, 
         [0, 1],
-        ["#FFFFFF", "#1A1A1A"]
+        [THEME_CONFIG.light.background, THEME_CONFIG.dark.background]
     );
 
     // Interpolate Header Text Color (Black -> White)
     const textColor = useTransform(
         smoothProgress,
         [0, 0.5], // Start changing earlier to ensure contrast
-        ["#000000", "#FFFFFF"]
+        [THEME_CONFIG.light.text, THEME_CONFIG.dark.text]
     );
 
     // Update CSS variable for Header
