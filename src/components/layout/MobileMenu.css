@@ -1,0 +1,150 @@
+/* MobileMenu.css */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh; /* Dynamic viewport height for mobile browsers */
+  background: var(--color-bg); /* Match site background */
+  /* backdrop-filter: blur(20px) saturate(180%); <-- Removed per request for solid BG */
+  /* -webkit-backdrop-filter: blur(20px) saturate(180%); */
+  z-index: 9999; /* Highest priority */
+  display: flex;
+  flex-direction: column;
+  padding: 0; /* Reset global padding */
+  box-sizing: border-box;
+}
+
+/* Dark mode support if you have a class for it on body/root */
+:global(.dark-mode) .mobile-menu-overlay {
+  background: #1a1a1a; /* Assuming dark mode bg */
+  color: #ffffff;
+}
+
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* Removed margin-top offset as we want to control header explicitly */
+}
+
+/* Close Button & Logo Header */
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between; /* Space between Logo and Close Btn */
+  align-items: center;
+  height: var(--header-height); /* Match header height */
+  width: 100%;
+  padding-right: 1.5rem; 
+  padding-left: 1.5rem;
+  /* Ensure header doesn't shrink */
+  flex-shrink: 0;
+}
+
+/* Ensure container takes full height and pushes footer down */
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Make nav grow to push footer down */
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: 0 1.5rem;
+  margin-top: var(--space-lg);
+  flex-grow: 1; /* Pushes footer to bottom */
+}
+
+.mobile-nav-item-wrapper {
+  overflow: hidden; /* For future reveal effects if needed */
+}
+
+.mobile-nav-link {
+  font-family: var(--font-primary, sans-serif);
+  font-size: 3rem; /* Large, bold typography */
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5); /* Inactive: 50% dark */
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+:global(.dark-mode) .mobile-nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.mobile-nav-link.active {
+  color: #000000; /* Active: Black */
+}
+
+:global(.dark-mode) .mobile-nav-link.active {
+  color: #ffffff;
+}
+
+/* Close Button Internal */
+/* Removed duplicate header block */
+/* .mobile-menu-header rule is defined above with justify-content: space-between */
+
+.mobile-close-btn {
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* Reusing the cross style */
+.mobile-close-line {
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 2px;
+  position: absolute;
+}
+
+.mobile-close-line:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.mobile-close-line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.mobile-menu-footer {
+  margin-bottom: var(--space-xl);
+  padding: 0 1.5rem; /* Match horizontal padding */
+}
+
+.menu-divider {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: var(--space-md);
+}
+
+:global(.dark-mode) .menu-divider {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-links {
+  display: flex;
+  gap: var(--space-md);
+  font-size: var(--text-sm, 0.875rem);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary, #666);
+}
+
+:global(.dark-mode) .social-links {
+  color: #aaa;
+}

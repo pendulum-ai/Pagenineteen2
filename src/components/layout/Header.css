@@ -57,3 +57,48 @@
   text-decoration: none;
   /* color handled by shared rule above */
 }
+
+/* === Mobile & Responsive === */
+.menu-toggle {
+  display: none; /* Hidden on desktop */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 48px; /* Increased touch target */
+  height: 48px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 100001; /* Extremely high z-index to ensure it's on top */
+  pointer-events: auto; /* Force clickable */
+  gap: 6px;
+  padding: 0;
+  position: relative; /* Ensure z-index works */
+}
+
+.hamburger-line {
+  width: 24px;
+  height: 2px;
+  background-color: var(--header-text-color, #000);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Hamburger Animation State */
+.menu-toggle.open .hamburger-line:nth-child(1) {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.menu-toggle.open .hamburger-line:nth-child(2) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+}
