@@ -26,7 +26,7 @@ export const FRAMES = [
     text: "Creating systems that evaluate themselves, with feedback loops embedded directly in production. Agents that critique, refine, and improve their own outputs."
   },
   {
-    range: [0.75, 0.85],
+    range: [0.75, 0.98],
     title: "(Pro)sumer Interfaces",
     text: "Crafting tools that don't just work, but feel intuitive and empowering to creative professionals. The interface is the model."
   }

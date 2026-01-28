@@ -13,7 +13,8 @@
     /* THEME LOGIC */
     --footer-bg: transparent; 
     --footer-text: var(--color-text);
-    --footer-text-secondary: var(--color-text-secondary);
+    /* Made lighter/more transparent for "thin & transparent" look */
+    --footer-text-secondary: rgba(26, 26, 26, 0.5); 
     --footer-border: rgba(0,0,0,0.1); 
     --footer-hover: var(--color-text);
 
@@ -30,7 +31,8 @@
 .site-footer[data-theme="dark"] {
     --footer-bg: transparent;
     --footer-text: #ffffff;
-    --footer-text-secondary: rgba(255, 255, 255, 0.6);
+    /* More transparent for dark theme */
+    --footer-text-secondary: rgba(255, 255, 255, 0.4);
     --footer-border: rgba(255, 255, 255, 0.1); 
     --footer-hover: #ffffff;
 }
@@ -95,14 +97,15 @@
 
 .group-label {
     font-size: var(--text-small);
-    font-weight: 600;
+    font-weight: 400; /* Thinner */
     margin-right: var(--space-sm);
-    color: var(--footer-text);
+    color: var(--footer-text-secondary); /* Same as links */
     transition: color 0.3s ease;
 }
 
 .footer-link {
     font-size: var(--text-small);
+    font-weight: 400; /* Thinner */
     color: var(--footer-text-secondary);
     text-decoration: none;
     transition: color 0.2s ease;

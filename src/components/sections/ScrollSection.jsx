@@ -132,7 +132,7 @@ const ScrollSection = () => {
         <motion.div 
             className="scroll-dot-container"
             style={{ 
-                opacity: useTransform(scrollYProgress, [0.85, 0.95], [1, 0]) 
+                opacity: useTransform(scrollYProgress, [0.95, 1], [1, 0]) 
             }}
         >
            <motion.div 
