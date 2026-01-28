@@ -17,17 +17,15 @@ const GoalSection = ({ id }) => {
   return (
     <section ref={containerRef} id={id} className="goal-section" data-theme="dark">
       <div className="goal-content container">
-        
         <motion.div style={{ y: yText }} className="goal-text-wrapper">
           <ScrollRevealText className="goal-title">
             Our principle goal is to ship reliable, repeatable systems across research, infrastructure, and product
           </ScrollRevealText>
         </motion.div>
+      </div>
 
-        <div className="goal-illustration-wrapper">
-           <HorizontalCircles />
-        </div>
-
+      <div className="goal-illustration-wrapper">
+          <HorizontalCircles />
       </div>
     </section>
   );
