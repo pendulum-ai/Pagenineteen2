@@ -5,7 +5,7 @@ import GeometricIllustration from '../illustrations/GeometricIllustration';
 
 const FRAMES = [
   {
-    range: [0.02, 0.20], // Extended duration (previously 0.14)
+    range: [0.02, 0.20],
     title: "What we build.",
     text: "We don't just train models; we focus on the integration work required to make them true in production.",
     isIntro: true
@@ -47,60 +47,57 @@ const ScrollTextBlock = ({ item, progress }) => {
   const holdEnd = end - duration * 0.35;
 
   const fadeDuration = 0.025; 
-
-  // Opacity: Fade in, Hold through the sticky phase, Fade out
-
-
-  // Y Moves: 4-point interpolation
-  // [Start, HoldStart, HoldEnd, End]
   
-  // Base values 
-  const yStart = item.isIntro ? "20vh" : "30vh"; 
-  const yEnd = item.isIntro ? "-60vh" : "-30vh"; 
+  // Parallax Delay: Proportional to duration
+  const textDelay = duration * 0.15; 
 
-  // Title: Stops in middle
-  const yTitle = useTransform(
+  // Base Y values - Symmetric and Tight
+  // "Unfolds from center" -> "Folds to center"
+  const yStart = item.isIntro ? "10vh" : "5vh"; 
+  const yEnd = item.isIntro ? "-10vh" : "-5vh"; 
+
+  // --- TRANSFORMS ---
+
+  // 1. Vertical Movement (Y): SYNCHRONIZED
+  // Symmetric movement: Enters from +Y, Exits to -Y
+  const yMove = useTransform(
     progress,
     [start, holdStart, holdEnd, end],
     [yStart, "0vh", "0vh", yEnd] 
   );
 
-  // Text: 
-  // 1. Enter: Parallax (enters later/slower)
-  // 2. Hold: Sync (no drift, rock solid)
-  // 3. Exit: Sync (moves EXACTLY with title to prevent "glitchy" separation)
-  const yText = useTransform(
+  // 2. Opacity: STAGGERED & SYMMETRIC
+  // Title: Fades in Fast, Fades out Fast (at the end of the holding phase)
+  // To "Close" properly, it should probably fade out as it starts to move away, mirroring the entry.
+  const opacityTitle = useTransform(
     progress,
-    [start, holdStart, holdEnd, end],
-    [
-      `calc(${yStart} + 3vh)`, // Enter: Parallax
-      "0vh",                   // Hold: Locked
-      "0vh",                   // Hold: Locked
-      yEnd                     // Exit: Locked with Title
-    ]
-  );
-
-  // Opacity: Fade out EARLY, before the "fly away" acceleration becomes jarring
-  // We fade out at 'holdEnd' essentially
-  const opacity = useTransform(
-    progress,
-    [start, start + fadeDuration, holdEnd, end],
+    [start, start + fadeDuration, holdEnd, holdEnd + fadeDuration],
     [0, 1, 1, 0]
   );
 
-  // Blur: Clean during the entire hold phase
+  // Text: Fades in later, Fades out with Title (or slightly later? No, strict sync on close usually looks cleaner)
+  // User asked for "close like start". Start has delay. Exit with delay might look "trailing".
+  // Let's keep strict sync on exit for a clean "disappear".
+  const opacityText = useTransform(
+    progress,
+    [start + textDelay, start + fadeDuration + textDelay, holdEnd, holdEnd + fadeDuration],
+    [0, 1, 1, 0]
+  );
+
+  // Blur: Symmetric
   const filter = useTransform(
     progress,
-    [start, holdStart, holdEnd, end],
+    [start, holdStart, holdEnd, holdEnd + fadeDuration],
     ["blur(10px)", "blur(0px)", "blur(0px)", "blur(10px)"]
   );
 
   return (
     <div className={`scroll-text-block ${item.isIntro ? 'intro-block' : ''}`}>
-      <motion.h3 style={{ opacity, y: yTitle, filter }}>
+      <motion.h3 style={{ opacity: opacityTitle, y: yMove, filter }}>
         {item.title}
       </motion.h3>
-      <motion.p style={{ opacity, y: yText, filter }}>
+      
+      <motion.p style={{ opacity: opacityText, y: yMove, filter }}>
         {item.text}
       </motion.p>
     </div>

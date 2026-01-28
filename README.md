@@ -22,6 +22,9 @@ Code is organized by **domain** in `src/`:
   - **Behavior**: Items hold in the center with a "breathing" parallax effect before accelerating away.
 - **`components/illustrations/GeometricIllustration`**:
   - Stateless SVG component purely driven by `scrollYProgress` props.
+- **`components/layout/Footer`**:
+  - **Fixed Overlay**: Uses a global sentinel (`50vh`) in `App.jsx` to create space. The footer sits _behind_ content conceptually but _visually_ appears in the gap.
+  - **Adaptive Theming**: automatically switches between Dark/Light modes based on route (Dark on Home, Light elsewhere).
 
 ## 🛠 Design System & Rules
 
