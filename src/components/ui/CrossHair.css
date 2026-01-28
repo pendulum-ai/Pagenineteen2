@@ -1,0 +1,178 @@
+/* Container: Fixed overlay, non-interactive */
+.crosshair-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 40; /* Below Nav (usually 100), above background */
+  pointer-events: none;
+}
+
+/* Vertical Line */
+.cross-vertical-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: var(--color-border);
+  transform: translateX(-50%);
+  opacity: 0.6;
+}
+
+/* 
+  Horizontal Group 
+  Positions the horizontal line and the center groupp
+  Initial Position: 85vh from top (as per previous design)
+*/
+/* 
+  Horizontal Group 
+  Positions the horizontal line and the center groupp
+  Initial Position: 92vh from top (as per previous design)
+*/
+.crosshair-horizontal-group {
+  position: absolute;
+  top: 92vh; 
+  left: 0;
+  width: 100%;
+  height: 0; /* Wrapper doesn't need height */
+}
+
+/* The actual horizontal line */
+.cross-horizontal-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--color-border);
+  opacity: 0.6;
+}
+
+/* Extra dot on the horizontal line */
+.line-dot {
+  position: absolute;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-accent); /* Orange */
+  border-radius: 50%;
+  margin-top: -2px; /* Center without transform, as motion overrides it */
+  transform: translateX(-50%); /* Only centering X initially */
+}
+
+/* Individual Parallax Circle */
+.parallax-circle {
+  position: absolute; /* Stack them initially */
+  width: 120px;
+  height: 120px;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  opacity: 0.5;
+  /* Center them */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Optional: Slight variation in default size or opacity per circle if needed */
+.parallax-circle-0 { width: 100px; height: 100px; opacity: 0.3; }
+.parallax-circle-1 { width: 140px; height: 140px; opacity: 0.4; }
+.parallax-circle-2 { width: 180px; height: 180px; opacity: 0.5; } /* Center/Largest */
+.parallax-circle-3 { width: 140px; height: 140px; opacity: 0.4; }
+.parallax-circle-4 { width: 100px; height: 100px; opacity: 0.3; }
+
+/* 
+  Center Intersection Group 
+  Centered horizontally, anchored to the horizontal group vertically
+*/
+.crosshair-center {
+  position: absolute;
+  top: 0; /* Aligns with horizontal line */
+  left: 50%;
+  transform: translate(-50%, -50%); /* True center of the intersection */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Central Orange Dot */
+.center-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Decorative Outer Circle */
+.center-circle {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  /* opacity: 0.4; Removed to fix "blur/dirty" outcome */
+  /* Center explicitly so we can animate width/height without shifting */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 
+  Rays Container 
+  Rotates around the center
+*/
+.rays-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* No visual size, just a rotation anchor */
+}
+
+/* Ray Styles */
+.ray {
+  position: absolute;
+  /* Anchor at exact center of the container (which is centered in screen) */
+  top: 50%;
+  left: 50%; 
+  margin-top: -0.5px; /* Center the 1px height vertically */
+  height: 1px;
+  background-color: var(--color-border);
+  opacity: 0.6;
+  transform-origin: 0 50%; /* Rotate around the start point (center of crosshair) */
+}
+
+/* Ray 1 Configuration: Long ray pointing initially towards top-right */
+.ray-1 {
+  width: 150vmax; /* Safe length to go off screen on any device */
+  /* rotation controlled by JS */
+}
+
+/* Ray 2 Configuration: Another ray */
+.ray-2 {
+  width: 150vmax;
+  /* rotation controlled by JS */
+}
+
+/* Dot on Ray 1 */
+.ray-dot {
+  position: absolute;
+  left: 250px; /* Distance from center */
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Mobile: Hide completely as requested */
+@media (max-width: 768px) {
+  .crosshair-container {
+    display: none;
+  }
+}

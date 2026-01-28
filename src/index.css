@@ -34,33 +34,10 @@ html {
 }
 
 /* Global Visual Elements */
-.split-line {
-  position: fixed;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background-color: var(--color-border);
-  transform: translateX(-50%);
-  z-index: 50;
-  pointer-events: none;
-}
-
-.cross-horizontal {
-  display: none;
-  position: fixed;
-  top: 85%;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: var(--color-border);
-  transform: translateY(-50%);
-  z-index: 50;
-  pointer-events: none;
-}
+/* Global Visual Elements */
+/* .split-line and .cross-horizontal replaced by CrossHair component */
 
 @media (max-width: 768px) {
-  .split-line {
-    display: none;
-  }
+  /* Mobile adjustments handled in components */
 }
+

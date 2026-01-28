@@ -2,7 +2,7 @@ export const THEME_CONFIG = {
     // Colors used for interpolation in ThemeController
     // These should ideally match the CSS tokens for strict consistency
     light: {
-        background: "#FFFFFF",
+        background: "#FDFCF8",
         text: "#000000"
     },
     dark: {

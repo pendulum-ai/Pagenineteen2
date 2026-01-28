@@ -77,6 +77,15 @@ The core "sticky" experience.
 - **Behavior**: Sit _behind_ the page content (`z-index: -1`). Revealed by a transparent "sentinel" div at the bottom of the page.
 - **Theming**: Auto-switches Dark/Light based on the route.
 
+### `src/components/ui/CrossHair`
+
+- **Purpose**: Global orientation overlay.
+- **Features**:
+  - Vertical line moves/fades based on scroll section.
+  - Horizontal line + Growing Rays animation on Hero.
+  - Parallax effect on horizontal elements.
+  - Responsive: Hidden on mobile (<768px).
+
 ---
 
 ## 📦 Build & Deploy
