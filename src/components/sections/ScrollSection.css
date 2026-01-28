@@ -116,13 +116,24 @@
     height: 50vh;
     z-index: 0;
     padding-top: var(--header-height);
-    align-items: flex-start; /* Align illustration to top half */
+    align-items: center; /* Center vertically in the top half */
+    justify-content: center; /* Center horizontally */
   }
 
   /* Ensure illustration doesn't overflow or get too big */
   .scroll-visual svg {
-    max-height: 40vh;
-    width: auto;
+    max-height: 70vh; /* Increased from 55vh to give plenty of vertical room */
+    width: 100% !important; 
+    max-width: none; /* Remove width cap on mobile */
+    height: auto;
+    
+    /* 
+       The SVG content (coordinates) sits in the middle 40-60% of the viewBox.
+       To make appearance "Big", we scale the whole vector graphic up.
+       transform-origin center ensures it grows from the middle.
+    */
+    transform: scale(1.6); 
+    transform-origin: center center;
   }
 
   .scroll-content {
@@ -142,10 +153,14 @@
     width: auto;
     max-width: none;
     text-align: left;
+    
     /* 
-       Adjust vertical centering for mobile:
-       Text is animated via Y transform, but we want it to feel lower initially.
-       The JS handles the movement, CSS just sets the stage.
+       Mobile Placement:
+       Graphic is centered in top 50vh, but scaled up (extends to ~60vh).
+       We place text starting at 62vh to clear it safely.
+       Remove desktop vertical centering.
     */
+    top: 62vh;
+    transform: translateY(0);
   }
 }

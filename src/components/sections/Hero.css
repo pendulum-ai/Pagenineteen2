@@ -90,9 +90,15 @@
   .hero-left, .hero-right {
     padding: var(--space-md);
     height: auto;
-    min-height: 50vh;
+    min-height: auto; /* Allow natural height to bring text closer */
+    padding-bottom: 0; /* Remove bottom padding to tighten spacing */
   }
   
+  .hero-left {
+      padding-top: 15vh; /* Keep some top breathing room for the title */
+      padding-bottom: var(--space-lg); /* Space between title/footer and description */
+  }
+
   .hero-footer {
     position: relative;
     bottom: auto;
@@ -102,5 +108,8 @@
   
   .hero-right {
     padding-left: var(--space-md); /* Consistent padding on mobile */
+    justify-content: flex-start; /* Move text to top of section so it's visible */
+    padding-top: 0; /* Remove top padding to sit closer to L-section */
+    min-height: auto; /* Allow it to shrink if needed, or keep 50vh if design dictates */
   }
 }

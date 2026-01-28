@@ -7,6 +7,33 @@
   height: 100vh;
   z-index: 40; /* Below Nav (usually 100), above background */
   pointer-events: none;
+  overflow: hidden; /* Critical for mobile to clip long rays */
+}
+
+/* ... existing code ... */
+
+/* Mobile: Hide completely as requested -> NOW ENABLED & OPTIMIZED */
+@media (max-width: 768px) {
+  .crosshair-container {
+    display: block; /* Show it! */
+    z-index: 30; /* Ensure it doesn't fight with mobile menu */
+  }
+
+  /* Bring the dot closer to center so it's visible on narrow screens */
+  .ray-dot {
+    left: 100px; 
+  }
+
+  /* Adjust horizontal line start position for mobile if needed */
+  .crosshair-horizontal-group {
+    top: 85vh; /* Slightly higher on mobile to be seen earlier */
+  }
+  
+  /* Make center circle slightly smaller on mobile start */
+  .center-circle {
+    /* width/height are controlled by JS motion, but we can limit max-width if needed 
+       or rely on the JS values being reasonable (32px is fine) */
+  }
 }
 
 /* Vertical Line */
@@ -170,9 +197,20 @@
   transform: translate(-50%, -50%);
 }
 
-/* Mobile: Hide completely as requested */
+/* Mobile: OPTIMIZED for visibility */
 @media (max-width: 768px) {
   .crosshair-container {
-    display: none;
+    display: block;
+    z-index: 30; /* Below mobile header/menu */
+  }
+
+  /* Bring the dot closer to center so it's visible on narrow screens */
+  .ray-dot {
+    left: 100px; 
+  }
+
+  /* Adjust horizontal line start position for mobile to be seen earlier */
+  .crosshair-horizontal-group {
+    top: 80vh; 
   }
 }
