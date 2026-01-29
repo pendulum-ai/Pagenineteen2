@@ -1,166 +1,152 @@
 .scroll-section-container {
-  height: 500vh;
+  /* No fixed height, let content dictate it */
   position: relative;
   width: 100%;
 }
 
 .sticky-wrapper {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  position: relative;
+  width: 100%;
+}
+
+/* --- Left Column: Text (Scrolly) --- */
+.scroll-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20vh; /* Extra space at bottom */
 }
 
 .scroll-text-block {
-  position: absolute;
-  top: 50%;
-  left: var(--layout-padding-x);
-  transform: translateY(-50%);
-  max-width: 500px;
+  /* Occupy full screen height to isolate each point */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: var(--layout-padding-x);
+  padding-right: var(--space-md);
+  max-width: 550px;
+  
+  /* Text styling */
   color: var(--color-text);
-  will-change: opacity, transform, filter;
-  z-index: 10;
+  opacity: 0.3; /* Default state: dimmed */
+  transition: opacity 0.5s ease;
 }
+
+/* Active state logic can be handled via JS viewport detection 
+   OR we just let them remain visible. 
+   Plan: Keep them visible but maybe dimmed when not in focus? 
+   For now, let's keep them fully opaque for simplicity unless requested.
+   Update: Logic in Plan said "Natural flow", so standard opacity is fine.
+   Let's set default opacity to 1 for now to ensure visibility. */
+.scroll-text-block {
+  opacity: 1; 
+}
+
 
 .scroll-text-block h3 {
   font-size: var(--text-h2);
-  font-family: var(--font-main); /* Ensure Serif if that's the design, or Sans */
-  font-weight: 500; /* Serif Display */
-  margin-bottom: var(--space-sm); /* Matches style of "What we build." in image */
+  font-family: var(--font-main);
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
   line-height: 1.1;
 }
 
-/* Special styling for the Intro item in ScrollSection */
-.scroll-text-block.intro-block p {
-  font-size: var(--text-body-lg); /* Matches Hero description */
-  line-height: 1.3;
-  color: var(--color-text); /* Brighter/Main text color */
+.scroll-text-block p {
+  font-size: var(--text-h3); /* Slightly larger for readability */
+  color: var(--color-text-secondary);
+  line-height: 1.5;
 }
 
+/* Intro specific overrides */
+.scroll-text-block.intro-block p {
+  font-size: var(--text-body-lg);
+  color: var(--color-text);
+}
 .scroll-text-block.intro-block h3 {
-  font-size: var(--text-display); /* Hero-like title size */
+  font-size: var(--text-display);
   margin-bottom: var(--space-md);
 }
 
-.scroll-text-block p {
-  font-size: var(--text-h2); /* Matched to Header size per user request */
-  color: var(--color-text-secondary);
-  line-height: 1.4; /* Slightly tighter leading for larger text */
+/* --- Right Column: Visual (Sticky) --- */
+.scroll-visual {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
 }
 
-
+/* Line decoration logic (Optional, adapting from old layout) */
 .scroll-dot-container {
   position: absolute;
   left: 50%;
   top: 0;
   bottom: 0;
   width: 1px;
+  background: var(--color-border); /* Static line */
   transform: translateX(-50%);
-  pointer-events: none;
+  z-index: 1;
 }
 
-.scroll-dot {
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  width: 10px;
-  height: 10px;
-  background-color: var(--color-accent);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.scroll-content {
-  position: relative;
-  height: 100%;
-}
-
-.scroll-visual {
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.diagram-caption {
-  font-size: var(--text-small);
-  opacity: 0.6;
-  margin-top: var(--space-sm);
-}
-
+/* Mobile Layout */
 @media (max-width: 768px) {
   .sticky-wrapper {
-    display: block; /* Remove grid, stick to layering */
+    display: block; /* Stack vertically */
   }
 
-  /* Hide the central line and orange dot on mobile */
   .scroll-dot-container {
     display: none;
   }
 
-  /* 
-     Mobile Layout:
-     - Visual Area: Fixed at top (50% height)
-     - Content Area: Full screen, transparent, overlays visual
-  */
+  /* 1. Visual is Sticky at the Top */
   .scroll-visual {
-    display: flex; /* Restore display */
-    position: absolute;
+    position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 50vh;
-    z-index: 0;
-    padding-top: var(--header-height);
-    align-items: center; /* Center vertically in the top half */
-    justify-content: center; /* Center horizontally */
+    height: 50vh; /* Occupy top half */
+    z-index: 0;   /* Sit behind text */
+    background: transparent;
   }
 
-  /* Ensure illustration doesn't overflow or get too big */
   .scroll-visual svg {
-    max-height: 70vh; /* Increased from 55vh to give plenty of vertical room */
-    width: 100% !important; 
-    max-width: none; /* Remove width cap on mobile */
-    height: auto;
-    
-    /* 
-       The SVG content (coordinates) sits in the middle 40-60% of the viewBox.
-       To make appearance "Big", we scale the whole vector graphic up.
-       transform-origin center ensures it grows from the middle.
-    */
-    transform: scale(1.6); 
-    transform-origin: center center;
+    transform: scale(1.4); /* Make it pop */
+    max-height: 60vh;
   }
 
+  /* 2. Text Scrolls Over */
   .scroll-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position: relative;
     z-index: 10;
-    pointer-events: none; /* Let touches pass if needed, though text needs selection? */
+    margin-top: -10vh; /* Slight overlap start */
+    padding-bottom: 10vh;
+    pointer-events: none; /* Let touches pass to background if needed, but text needs selection. Re-enable pointer events on blocks. */
   }
 
   .scroll-text-block {
-    font-size: var(--text-h2); 
-    left: var(--space-md);
-    right: var(--space-md);
-    width: auto;
-    max-width: none;
-    text-align: left;
+    pointer-events: auto;
+    min-height: 80vh; /* Card height */
+    justify-content: flex-end; /* Align to bottom of the 'card' area */
+    padding-bottom: 10vh;      /* Push text up a bit */
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
     
-    /* 
-       Mobile Placement:
-       Graphic is centered in top 50vh, but scaled up (extends to ~60vh).
-       We place text starting at 62vh to clear it safely.
-       Remove desktop vertical centering.
-    */
-    top: 62vh;
-    transform: translateY(0);
+    /* Visual separation styles for text against illustration */
+    /* Add a gradient fade to black at the bottom to make text readable? 
+       Or just trust appropriate contrast? 
+       Let's add a subtle text-shadow or backdrop logic if needed. 
+       For "Ideal" feel: Cards look good. */
+  }
+  
+  /* Make text blocks stand out over the illustration */
+  .scroll-text-block h3, 
+  .scroll-text-block p {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5); /* Helps legibility over complex shapes */
   }
 }
+
