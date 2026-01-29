@@ -8,19 +8,19 @@ const ScrollTextBlock = ({ item }) => {
   return (
     <div className={`scroll-text-block ${item.isIntro ? 'intro-block' : ''}`}>
       <motion.h3 
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ amount: 0.5, margin: "-10% 0px -10% 0px" }}
-        transition={{ duration: 0.6 }}
+        initial={{ opacity: 0, y: 40, filter: "blur(10px)" }}
+        whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        viewport={{ amount: 0.5, margin: "-10% 0px -10% 0px", once: false }}
+        transition={{ duration: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
       >
         {item.title}
       </motion.h3>
       
       <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ amount: 0.5, margin: "-10% 0px -10% 0px" }}
-        transition={{ duration: 0.6, delay: 0.1 }}
+        initial={{ opacity: 0, y: 40, filter: "blur(10px)" }}
+        whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        viewport={{ amount: 0.5, margin: "-10% 0px -10% 0px", once: false }}
+        transition={{ duration: 0.8, ease: [0.25, 0.4, 0.25, 1], delay: 0.1 }}
       >
         {item.text}
       </motion.p>
