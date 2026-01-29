@@ -70,8 +70,8 @@ const ScrollSection = () => {
   );
 
   // Mobile Delay: Fade in visual AFTER the first text block (What we build)
-  // First block ends around 0.2. So we fade in 0.15 -> 0.25.
-  const mobileOpacityRaw = useTransform(scrollYProgress, [0.15, 0.25], [0, 1]);
+  // Adjusted to [0.05, 0.2] to ensure it starts appearing sooner but still feels delayed.
+  const mobileOpacityRaw = useTransform(scrollYProgress, [0.05, 0.2], [0, 1]);
   const visualOpacity = isMobile ? mobileOpacityRaw : 1;
 
   return (
