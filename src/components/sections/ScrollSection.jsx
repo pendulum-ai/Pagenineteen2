@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import './ScrollSection.css';
 import GeometricIllustration from '../illustrations/GeometricIllustration';
@@ -30,14 +30,6 @@ const ScrollTextBlock = ({ item }) => {
 
 const ScrollSection = () => {
   const containerRef = useRef(null);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
   
   // Track scroll of the entire container to drive the illustration
   const { scrollYProgress } = useScroll({
@@ -69,10 +61,9 @@ const ScrollSection = () => {
     [0, 0.16, 0.32, 0.48, 0.64, 0.85] 
   );
 
-  // Mobile Delay: Fade in visual AFTER the first text block (What we build)
-  // Adjusted to [0.05, 0.2] to ensure it starts appearing sooner but still feels delayed.
-  const mobileOpacityRaw = useTransform(scrollYProgress, [0.05, 0.2], [0, 1]);
-  const visualOpacity = isMobile ? mobileOpacityRaw : 1;
+  // Mobile Delay: Removed JS fade. Relying on CSS margin-top: 20vh for the "gap".
+  // This ensures the element is visible as soon as it enters the viewport.
+  const visualOpacity = 1;
 
   return (
     <div ref={containerRef} className="scroll-section-container">
