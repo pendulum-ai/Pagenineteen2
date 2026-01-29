@@ -97,7 +97,8 @@
 /* Mobile Layout */
 @media (max-width: 768px) {
   .sticky-wrapper {
-    display: block; /* Stack vertically */
+    display: flex;       /* Use flex instead of block */
+    flex-direction: column-reverse; /* Put Visual (2nd in DOM) at the TOP */
   }
 
   .scroll-dot-container {
@@ -123,9 +124,9 @@
   .scroll-content {
     position: relative;
     z-index: 10;
-    margin-top: -10vh; /* Slight overlap start */
-    padding-bottom: 10vh;
-    pointer-events: none; /* Let touches pass to background if needed, but text needs selection. Re-enable pointer events on blocks. */
+    margin-top: -10vh; /* Determine overlap: Text starts rising over bottom of image */
+    padding-bottom: 20vh; /* Ensure last item clears */
+    pointer-events: none; 
   }
 
   .scroll-text-block {
@@ -135,12 +136,6 @@
     padding-bottom: 10vh;      /* Push text up a bit */
     padding-left: var(--space-md);
     padding-right: var(--space-md);
-    
-    /* Visual separation styles for text against illustration */
-    /* Add a gradient fade to black at the bottom to make text readable? 
-       Or just trust appropriate contrast? 
-       Let's add a subtle text-shadow or backdrop logic if needed. 
-       For "Ideal" feel: Cards look good. */
   }
   
   /* Make text blocks stand out over the illustration */
