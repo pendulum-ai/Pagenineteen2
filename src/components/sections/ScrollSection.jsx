@@ -63,7 +63,6 @@ const ScrollSection = () => {
 
   // Mobile Delay: Removed JS fade. Relying on CSS margin-top: 20vh for the "gap".
   // This ensures the element is visible as soon as it enters the viewport.
-  const visualOpacity = 1;
 
   return (
     <div ref={containerRef} className="scroll-section-container">
@@ -77,9 +76,9 @@ const ScrollSection = () => {
         </div>
 
         {/* Right Column: Visual (Sticky) */}
-        <motion.div style={{ opacity: visualOpacity }} className="visual-area scroll-visual">
+        <div className="visual-area scroll-visual">
            <GeometricIllustration scrollYProgress={animatedProgress} />
-        </motion.div>
+        </div>
         
         {/* Decorative Line (Desktop only) */}
         <div className="scroll-dot-container" />
