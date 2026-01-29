@@ -3,6 +3,8 @@
 A high-performance, design-driven website built with **React**, **Vite**, and **Framer Motion**.  
 Key focus on "sticky snap" scroll physics, internal parallax, and synchronized SVG animations.
 
+[**🚀 View Live Demo**](https://pagenineteen2.vercel.app)
+
 ---
 
 ## 🚀 Quick Start
@@ -59,6 +61,10 @@ npm run dev
 
 ## 📂 Architecture Overview
 
+### `src/pages/`
+
+Route-based page components (e.g., `Home`, `Journal`, `Article`).
+
 ### `src/styles/`
 
 - **`tokens.css`**: The core DNA. Colors, Spacing, Z-Index.
@@ -89,6 +95,15 @@ The core "sticky" experience.
 ---
 
 ## 📦 Build & Deploy
+
+### Vercel Deployment (Live)
+
+The project is deployed and synchronized with Vercel.
+**Live URL:** [https://pagenineteen2.vercel.app](https://pagenineteen2.vercel.app)
+
+Auto-deploys are enabled for the `main` branch.
+
+### Manual Build
 
 ```bash
 npm run build
