@@ -97,26 +97,27 @@
 /* Mobile Layout */
 @media (max-width: 768px) {
   .sticky-wrapper {
-    display: flex;       /* Use flex instead of block */
-    flex-direction: column-reverse; /* Put Visual (2nd in DOM) at the TOP */
+    display: flex;       
+    flex-direction: column-reverse; 
+    margin-top: 20vh; /* Delay appearance after horizontal line */
   }
 
   .scroll-dot-container {
     display: none;
   }
 
-  /* 1. Visual is Sticky at the Top */
+  /* 1. Visual is Sticky in the CENTER */
   .scroll-visual {
     position: sticky;
-    top: 0;
+    top: 25vh;    /* Center vertically: (100vh - 50vh) / 2 = 25vh */
     width: 100%;
-    height: 50vh; /* Occupy top half */
-    z-index: 0;   /* Sit behind text */
+    height: 50vh; 
+    z-index: 0;   
     background: transparent;
   }
 
   .scroll-visual svg {
-    transform: scale(1.4); /* Make it pop */
+    transform: scale(1.4); 
     max-height: 60vh;
   }
 
@@ -124,21 +125,20 @@
   .scroll-content {
     position: relative;
     z-index: 10;
-    margin-top: -10vh; /* Determine overlap: Text starts rising over bottom of image */
-    padding-bottom: 20vh; /* Ensure last item clears */
+    margin-top: -10vh; 
+    padding-bottom: 20vh; 
     pointer-events: none; 
   }
 
   .scroll-text-block {
     pointer-events: auto;
-    min-height: 80vh; /* Card height */
-    justify-content: flex-end; /* Align to bottom of the 'card' area */
-    padding-bottom: 10vh;      /* Push text up a bit */
+    min-height: 80vh; 
+    justify-content: flex-end; 
+    padding-bottom: 10vh;      
     padding-left: var(--space-md);
     padding-right: var(--space-md);
   }
   
-  /* Make text blocks stand out over the illustration */
   .scroll-text-block h3, 
   .scroll-text-block p {
     text-shadow: none; 
