@@ -64,6 +64,9 @@ const ScrollSection = () => {
   // Mobile Delay: Removed JS fade. Relying on CSS margin-top: 20vh for the "gap".
   // This ensures the element is visible as soon as it enters the viewport.
 
+  // Fade out the vertical decorative line at the end of the section specific for desktop
+  const lineOpacity = useTransform(scrollYProgress, [0.9, 1], [1, 0]);
+
   return (
     <div ref={containerRef} className="scroll-section-container">
       <div className="sticky-wrapper">
@@ -81,7 +84,7 @@ const ScrollSection = () => {
         </div>
         
         {/* Decorative Line (Desktop only) */}
-        <div className="scroll-dot-container" />
+        <motion.div style={{ opacity: lineOpacity }} className="scroll-dot-container" />
 
       </div>
     </div>
