@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import './ScrollSection.css';
 import GeometricIllustration from '../illustrations/GeometricIllustration';
@@ -30,6 +30,14 @@ const ScrollTextBlock = ({ item }) => {
 
 const ScrollSection = () => {
   const containerRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
   
   // Track scroll of the entire container to drive the illustration
   const { scrollYProgress } = useScroll({
@@ -61,6 +69,11 @@ const ScrollSection = () => {
     [0, 0.16, 0.32, 0.48, 0.64, 0.85] 
   );
 
+  // Mobile Delay: Fade in visual AFTER the first text block (What we build)
+  // First block ends around 0.2. So we fade in 0.15 -> 0.25.
+  const mobileOpacityRaw = useTransform(scrollYProgress, [0.15, 0.25], [0, 1]);
+  const visualOpacity = isMobile ? mobileOpacityRaw : 1;
+
   return (
     <div ref={containerRef} className="scroll-section-container">
       <div className="sticky-wrapper">
@@ -73,9 +86,9 @@ const ScrollSection = () => {
         </div>
 
         {/* Right Column: Visual (Sticky) */}
-        <div className="visual-area scroll-visual">
+        <motion.div style={{ opacity: visualOpacity }} className="visual-area scroll-visual">
            <GeometricIllustration scrollYProgress={animatedProgress} />
-        </div>
+        </motion.div>
         
         {/* Decorative Line (Desktop only) */}
         <div className="scroll-dot-container" />

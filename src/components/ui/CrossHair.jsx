@@ -2,7 +2,7 @@ import React from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import './CrossHair.css';
 
-const CrossHair = ({ verticalLineOpacity }) => {
+const CrossHair = () => {
   // Track scroll on the whole page to drive the animation over Hero + Mission
   const { scrollY } = useScroll();
 
@@ -69,11 +69,11 @@ const CrossHair = ({ verticalLineOpacity }) => {
       initial="hidden"
       animate="visible"
     >
-       {/* 
-        Vertical Line (Static relative to screen, usually centered) 
-        Now controlled by parent's opacity prop (Goal Section fade)
+      {/* 
+        Vertical Line (Static relative to screen) 
+        Now synced with horizontal lines using the same opacity logic.
       */}
-      <motion.div style={{ opacity: verticalLineOpacity }} className="cross-vertical-line"></motion.div>
+      <motion.div style={{ opacity }} className="cross-vertical-line"></motion.div>
 
       <motion.div style={{ opacity, width: '100%', height: '100%' }} className="crosshair-scroll-wrapper">
 
