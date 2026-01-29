@@ -59,7 +59,7 @@
     font-size: 3.5rem; /* Increased from 2.5rem */
   }
   .goal-text-wrapper {
-    margin-bottom: 20vh;
+    margin-bottom: 0; /* Centered visually */
     position: relative;
     z-index: 10; /* Ensure text is above the background graphic */
   }
@@ -80,7 +80,7 @@
   .goal-illustration-wrapper > div {
     transform: rotate(90deg);
     position: absolute;
-    top: 80%; /* Moved down from 50% to clear text */
+    top: 50%; /* Centered vertically relative to the section */
     left: 50%;
     /* 
        Swap dimensions for rotation:
