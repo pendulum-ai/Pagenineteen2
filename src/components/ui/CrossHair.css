@@ -211,6 +211,6 @@
 
   /* Adjust horizontal line start position for mobile to be seen earlier */
   .crosshair-horizontal-group {
-    top: 80vh; 
+    top: 90vh; 
   }
 }
