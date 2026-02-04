@@ -22,7 +22,7 @@ const Header = () => {
           top: 0,
           left: 0,
           width: '100%',
-          height: 'var(--header-height)',
+          height: 'calc(var(--header-height) + env(safe-area-inset-top, 0px))',
           zIndex: 90, // Below header (100)
           pointerEvents: 'none'
         }}

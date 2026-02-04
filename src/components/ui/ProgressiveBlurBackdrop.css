@@ -29,8 +29,9 @@
   backdrop-filter: blur(var(--blur-layer-1-radius));
   -webkit-backdrop-filter: blur(var(--blur-layer-1-radius));
   
-  mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+  /* Start fade AFTER the safe area + header top part */
+  mask-image: linear-gradient(to bottom, black calc(env(safe-area-inset-top, 0px) + 20%), transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black calc(env(safe-area-inset-top, 0px) + 20%), transparent 100%);
 }
 
 /* Layer 2: The "Body" */
@@ -39,8 +40,8 @@
   backdrop-filter: blur(var(--blur-layer-2-radius));
   -webkit-backdrop-filter: blur(var(--blur-layer-2-radius));
   
-  mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black calc(env(safe-area-inset-top, 0px) + 20%), transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black calc(env(safe-area-inset-top, 0px) + 20%), transparent 100%);
   opacity: 0.8;
 }
 
@@ -50,7 +51,7 @@
   backdrop-filter: blur(var(--blur-layer-3-radius));
   -webkit-backdrop-filter: blur(var(--blur-layer-3-radius));
   
-  /* Constant intensity at top, fast falloff */
-  mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+  /* Keep top area solid */
+  mask-image: linear-gradient(to bottom, black calc(env(safe-area-inset-top, 0px)), transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black calc(env(safe-area-inset-top, 0px)), transparent 100%);
 }
