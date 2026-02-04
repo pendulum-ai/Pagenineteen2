@@ -114,6 +114,7 @@
     height: 50vh; 
     z-index: 0;   
     background: transparent;
+    overflow: hidden; /* Prevent scaled SVG from overflowing */
   }
 
   .scroll-visual svg {
