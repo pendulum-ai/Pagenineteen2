@@ -168,7 +168,7 @@
 
 .sticky-back-content {
   position: sticky;
-  top: 200px; /* Adjust top offset */
+  top: 108px; /* Aligns with padding-top + small buffer for header */
   width: 100%;
   display: flex;
   justify-content: flex-start; /* Align left within its column */
