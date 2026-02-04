@@ -62,7 +62,7 @@ export const projects = [
     ],
     stack: ['WebRTC', 'VAD', 'Whisper', 'LLM', 'TTS'],
     bgColor: '#F5F0EB',
-    visualType: 'wave',
-    screenshotUrl: 'https://placehold.co/1200x800/e2e2e2/e2e2e2'
+    visualType: 'voice',
+    screenshotUrl: '/images/Amble.jpg'
   }
 ];
