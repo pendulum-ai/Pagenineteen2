@@ -241,9 +241,18 @@
     position: static;
   }
 
-  /* Fix for mobile spacing "stacking" issue */
+  /* Fix for mobile spacing "stacking" issue - Standardized 32px rhythm */
+  .project-description {
+    margin-bottom: 32px;
+  }
+
   .project-meta-col {
     margin-bottom: 0;
-    padding-bottom: 60px; /* Use padding to force height increase inside motion.div wrapper */
+    padding-bottom: 32px; /* Standardized vertical rhythm */
+  }
+
+  .project-links {
+    margin-top: 0; /* Disable auto push */
+    padding-top: 32px; /* Standardized spacing from content above */
   }
 }
