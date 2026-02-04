@@ -144,32 +144,109 @@
 }
 
 /* Article Detail Updates */
-/* Removed max-width constraint to match global 1440px layout */
+/* Article Detail Updates */
+/* Grid Layout: [Sticky Nav (240px)] [Content (1fr, max approx 900-1000px)] */
 .article-detail-container {
+  display: grid;
+  grid-template-columns: 240px 1fr; /* Fixed width for nav, rest for content */
+  gap: 60px;
   position: relative; 
   padding-top: 100px;
+  max-width: 1440px; /* Use full site width */
+  margin: 0 auto;
 }
 
 /* Sticky Back Navigation */
+/* Now lives inside the first grid column */
 .sticky-back-nav {
-  position: absolute;
-  /* Position inside the container's left padding gutter */
-  left: 10px; 
-  top: 0;
-  height: 100%;
+  position: relative; /* Reset from absolute */
+  left: auto;
+  top: auto;
+  height: 100%; /* Spans full height of grid cell */
   display: block; 
-  pointer-events: none;
 }
 
 .sticky-back-content {
   position: sticky;
-  top: 300px; 
-  width: max-content; 
-  min-width: 0;
+  top: 200px; /* Adjust top offset */
+  width: 100%;
   display: flex;
-  justify-content: flex-start; /* Align left */
-  padding-right: 0;
-  pointer-events: auto;
+  justify-content: flex-start; /* Align left within its column */
+  padding-right: 20px;
+}
+
+.article-content-wrapper {
+  /* This would need to wrap the header/body in JSX, OR we just style .article-header and .article-body to align if we don't change JSX. 
+     Actually, since ArticleDetail.jsx just dumps children, let's treat the grid carefully.
+     WAIT: ArticleDetail.jsx structure:
+     <div className="article-detail-container">
+        <StickyNav />
+        <header />
+        <div className="article-cover-image" />
+        <div className="article-body" />
+        <footer />
+     </div>
+     
+     If we use grid on the container, all direct children become grid items.
+     Children are:
+     1. .sticky-back-nav
+     2. header.article-header
+     3. div.article-cover-image
+     4. div.article-body
+     5. div.article-footer
+     
+     We want 1 to be in Col 1.
+     We want 2, 3, 4, 5 to be in Col 2.
+  */
+}
+
+/* Assign Grid Columns */
+.sticky-back-nav {
+  grid-column: 1;
+  grid-row: 1 / span 5; /* Span all potential content rows */
+}
+
+.article-header,
+.article-cover-image,
+.article-body,
+.article-footer {
+  grid-column: 2;
+  max-width: 900px; /* Optimal reading width, but wider than before */
+}
+
+/* Typography Overrides (from deleted block) */
+.article-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem); /* Slightly larger max */
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.article-body {
+  font-size: 1.25rem; /* Larger comfortable reading size */
+  line-height: 1.7;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .article-detail-container {
+    grid-template-columns: 1fr; /* Stack vertically */
+    padding-left: 0; /* Let global padding handle it, or reset */
+    gap: 0;
+  }
+  
+  .sticky-back-nav {
+    display: none; /* Hide sticky nav on mobile/tablet */
+  }
+  
+  .article-header,
+  .article-cover-image,
+  .article-body,
+  .article-footer {
+    grid-column: 1;
+    max-width: 100%;
+  }
 }
 
 .sticky-back-link {
@@ -434,178 +511,6 @@
   .journal-action {
     display: none; /* Keep action hidden or move it */
   }
-}
-
-/* =========================================
-   Article Detail View
-   ========================================= */
-
-.article-detail-container {
-  max-width: 800px; /* Constrain reading width for better UX */
-  padding-top: 140px;
-}
-
-.article-nav {
-  margin-bottom: 60px;
-}
-
-.back-link {
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: inherit;
-  opacity: 0.5;
-  transition: opacity 0.2s ease;
-  font-weight: 500;
-}
-
-.back-link:hover {
-  opacity: 1;
-}
-
-.article-header {
-  margin-bottom: 60px;
-}
-
-.article-meta-top {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 24px;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 600;
-  opacity: 0.5;
-}
-
-.article-tag {
-  color: #000;
-  opacity: 1;
-  border: 1px solid rgba(0,0,0,0.1);
-  padding: 4px 10px;
-  border-radius: 100px;
-}
-
-.article-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  line-height: 1.1;
-  font-weight: 400;
-  letter-spacing: -0.03em;
-  margin-bottom: 40px;
-}
-
-.article-author {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  border-top: 1px solid rgba(0,0,0,0.1);
-  padding-top: 24px;
-}
-
-.author-avatar {
-  width: 40px;
-  height: 40px;
-  background: #f0f0f0;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 0.8rem;
-}
-
-.author-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.author-name {
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-.author-role {
-  font-size: 0.8rem;
-  opacity: 0.5;
-}
-
-.article-cover-image {
-  margin-bottom: 80px;
-  border-radius: 4px;
-  overflow: hidden;
-  width: 100%;
-}
-
-.article-cover-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Typography for the content */
-.article-body {
-  font-size: 1.125rem;
-  line-height: 1.7;
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.article-body p {
-  margin-bottom: 24px;
-}
-
-.article-body h2 {
-  font-size: 2rem;
-  margin-top: 60px;
-  margin-bottom: 24px;
-  font-weight: 400;
-  letter-spacing: -0.02em;
-}
-
-.article-body h3 {
-  font-size: 1.5rem;
-  margin-top: 40px;
-  margin-bottom: 16px;
-  font-weight: 500;
-}
-
-.article-body ul {
-  margin-bottom: 24px;
-  padding-left: 20px;
-}
-
-.article-body li {
-  margin-bottom: 8px;
-}
-
-.article-body blockquote {
-  border-left: 2px solid #000;
-  padding-left: 24px;
-  margin: 40px 0;
-  font-size: 1.5rem;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 1.4;
-}
-
-.article-footer {
-  margin-top: 100px;
-  padding-top: 60px;
-  border-top: 1px solid rgba(0,0,0,0.1);
-}
-
-.back-link-large {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: inherit;
-  font-weight: 400;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  padding-bottom: 4px;
-  transition: all 0.3s ease;
-}
-
-.back-link-large:hover {
-  border-color: #000;
-  padding-right: 20px;
 }
 
 @media (max-width: 768px) {
