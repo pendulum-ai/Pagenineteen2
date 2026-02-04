@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useCursor } from '../../context/CursorContext';
 import './ProjectCard.css';
 
 const ProjectCard = ({ project, priority = false }) => {
   const containerRef = useRef(null);
+  const { setCursor } = useCursor();
   const [isMobile, setIsMobile] = React.useState(false);
 
   React.useLayoutEffect(() => {
@@ -55,7 +57,13 @@ const ProjectCard = ({ project, priority = false }) => {
       {/* 3. Main Grid: Image (Left) + Content (Right) */}
       <div className="project-main-grid">
         <div className="project-media-col">
-          <div className="project-image-wrapper">
+          <div 
+            className="project-image-wrapper"
+            onMouseEnter={() => setCursor('project-view', 'View Project')}
+            onMouseLeave={() => setCursor('default')}
+            onClick={() => project.link && window.open(project.link, '_blank')}
+            style={{ cursor: 'none' }} // Ensure system cursor is hidden here too
+          >
             <picture>
               <source srcSet={project.screenshotUrl} type="image/webp" />
               <img 
@@ -64,7 +72,7 @@ const ProjectCard = ({ project, priority = false }) => {
                 className="project-image" 
                 loading={priority ? "eager" : "lazy"}
                 decoding="async"
-                fetchpriority={priority ? "high" : "auto"}
+                fetchPriority={priority ? "high" : "auto"}
               />
             </picture>
           </div>

@@ -20,6 +20,7 @@ body {
   line-height: var(--leading-normal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: none; /* Hide default cursor for custom cursor */
   /* overflow-x: hidden; */ /* Removing potential sticky blocker */
   /* Hide scrollbar for Firefox, IE/Edge */
   scrollbar-width: none;
