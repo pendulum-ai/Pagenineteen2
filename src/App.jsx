@@ -5,6 +5,7 @@ import ScrollToTop from './components/utils/ScrollToTop';
 import Header from './components/layout/Header';
 import GlobalBackground from './components/layout/GlobalBackground';
 import Footer from './components/layout/Footer';
+import ErrorBoundary from './components/utils/ErrorBoundary';
 
 // Lazy-loaded pages for code splitting
 const Home = lazy(() => import('./pages/Home'));
@@ -32,32 +33,34 @@ function App() {
 
   return (
     <Router>
-      <ScrollToTop />
-      <div className="App">
-        <GlobalBackground />
-        <Header />
-        
-        <main>
-          <Suspense fallback={<PageLoader />}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/journal" element={<Journal />} />
-              <Route path="/journal/:slug" element={<ArticleDetail />} />
-              <Route path="/team" element={<Team />} />
-            </Routes>
-          </Suspense>
+      <ErrorBoundary>
+        <ScrollToTop />
+        <div className="App">
+          <GlobalBackground />
+          <Header />
           
-          {/* Sentinel to trigger footer appearance */}
-          <div 
-            ref={footerSentinelRef} 
-            className="footer-sentinel" 
-            style={{ height: '50vh', width: '100%', pointerEvents: 'none' }} 
-          />
-        </main>
-        
-        <Footer isVisible={isFooterInView} />
-      </div>
+          <main>
+            <Suspense fallback={<PageLoader />}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/journal" element={<Journal />} />
+                <Route path="/journal/:slug" element={<ArticleDetail />} />
+                <Route path="/team" element={<Team />} />
+              </Routes>
+            </Suspense>
+            
+            {/* Sentinel to trigger footer appearance */}
+            <div 
+              ref={footerSentinelRef} 
+              className="footer-sentinel" 
+              style={{ height: '50vh', width: '100%', pointerEvents: 'none' }} 
+            />
+          </main>
+          
+          <Footer isVisible={isFooterInView} />
+        </div>
+      </ErrorBoundary>
     </Router>
   );
 }
