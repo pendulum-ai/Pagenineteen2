@@ -30,7 +30,8 @@
   justify-content: center;
   padding-left: var(--layout-padding-x);
   padding-right: var(--space-md);
-  max-width: 550px;
+  /* Unlocked width: Allow it to grow on large screens (was 550px) */
+  max-width: clamp(550px, 45vw, 900px); 
   
   /* Text styling */
   color: var(--color-text);
@@ -39,30 +40,56 @@
   pointer-events: none; /* Let clicks pass through to potential interactive elements if any */
 }
 
+/* 
+   SCALING LOGIC:
+   We use the global fluid variables which are already clamped (e.g., --text-h2, --text-display).
+   They scale from a base size up to a large desktop size. 
+   On 4K screens, they will hit their upper bound, which is much larger than the previous fixed sizes.
+*/
+
 .scroll-text-block h3 {
-  font-size: var(--text-h2);
+  /* Was fixed --text-h2. Now ensuring it uses the fluid variable correctly */
+  font-size: var(--text-h2); 
   font-family: var(--font-main);
   font-weight: 500;
   margin-bottom: var(--space-sm);
   line-height: 1.1;
   pointer-events: auto; /* Re-enable text selection */
+  /* Ensure it doesn't break words unnecessarily on huge text */
+  text-wrap: balance; 
+  /* Visual enhancement: Slightly tighter tracking for large display text */
+  letter-spacing: -0.02em;
 }
 
 .scroll-text-block p {
-  font-size: var(--text-h3); /* Slightly larger for readability */
+  /* Use fluid body-lg for better readability on large screens */
+  font-size: var(--text-body-lg); 
   color: var(--color-text-secondary);
   line-height: 1.5;
   pointer-events: auto; /* Re-enable text selection */
+  max-width: 90%; /* Prevent lines from getting unreadably long (80-100 chars perfect) */
+  text-wrap: pretty;
 }
 
-/* Intro specific overrides */
-.scroll-text-block.intro-block p {
-  font-size: var(--text-body-lg);
-  color: var(--color-text);
+/* Intro specific overrides ("What we build") */
+.scroll-text-block.intro-block {
+   /* Allow the intro to be even wider if needed for the "2 lines" goal */
+   max-width: clamp(600px, 50vw, 1200px);
 }
+
+.scroll-text-block.intro-block p {
+  /* Intro subtext needs to be large and legible */
+  font-size: clamp(1.125rem, 1.5vw, 1.75rem); /* Custom fluid scale for this specific intro */
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
 .scroll-text-block.intro-block h3 {
-  font-size: var(--text-display);
+  /* The massive "What we build" title */
+  font-size: var(--text-display); /* Scales from 3rem -> 8rem */
   margin-bottom: var(--space-md);
+  /* Force it to try to stay on 2 lines where possible */
+  white-space: pre-line; /* Respects manual breaks if data has them, otherwise wraps */
 }
 
 /* --- Right Column: Visual (Sticky) --- */
