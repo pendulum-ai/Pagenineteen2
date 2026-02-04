@@ -19,7 +19,7 @@ export const projects = [
     stack: ['React Flow', 'Diffusers', 'LoRA', 'Flux', 'SDXL'],
     bgColor: '#FAF9F6',
     visualType: 'particles',
-    screenshotUrl: 'https://placehold.co/1200x800/e2e2e2/1a1a1a?text=Lightnote+Interface'
+    screenshotUrl: '/images/Lightnote.jpg'
   },
   {
     id: 'pendulum',
@@ -41,7 +41,7 @@ export const projects = [
     stack: ['Vector DB', 'CLIP', 'LLM Metadata', 'DAG', 'Kandji'],
     bgColor: '#F0F2F0',
     visualType: 'network',
-    screenshotUrl: 'https://placehold.co/1200x800/e2e2e2/1a1a1a?text=Pendulum+Search'
+    screenshotUrl: 'https://placehold.co/1200x800/e2e2e2/e2e2e2'
   },
   {
     id: 'amble',
@@ -63,6 +63,6 @@ export const projects = [
     stack: ['WebRTC', 'VAD', 'Whisper', 'LLM', 'TTS'],
     bgColor: '#F5F0EB',
     visualType: 'wave',
-    screenshotUrl: 'https://placehold.co/1200x800/e2e2e2/1a1a1a?text=Amble+App'
+    screenshotUrl: 'https://placehold.co/1200x800/e2e2e2/e2e2e2'
   }
 ];
