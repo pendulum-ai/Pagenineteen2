@@ -1,16 +1,26 @@
-import React, { useRef } from 'react';
+import React, { useRef, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useInView } from 'framer-motion';
 import ScrollToTop from './components/utils/ScrollToTop';
 import Header from './components/layout/Header';
 import GlobalBackground from './components/layout/GlobalBackground';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import ProjectDetail from './pages/ProjectDetail';
-import Journal from './pages/Journal';
-import ArticleDetail from './pages/ArticleDetail';
-import Team from './pages/Team';
 import Footer from './components/layout/Footer';
+
+// Lazy-loaded pages for code splitting
+const Home = lazy(() => import('./pages/Home'));
+const Projects = lazy(() => import('./pages/Projects'));
+const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
+const Journal = lazy(() => import('./pages/Journal'));
+const ArticleDetail = lazy(() => import('./pages/ArticleDetail'));
+const Team = lazy(() => import('./pages/Team'));
+
+// Minimal loading state (matches site background)
+const PageLoader = () => (
+  <div style={{ 
+    minHeight: '100vh', 
+    backgroundColor: 'var(--color-bg, #FDFCF8)' 
+  }} />
+);
 
 function App() {
   const footerSentinelRef = useRef(null);
@@ -28,13 +38,15 @@ function App() {
         <Header />
         
         <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/journal" element={<Journal />} />
-            <Route path="/journal/:slug" element={<ArticleDetail />} />
-            <Route path="/team" element={<Team />} />
-          </Routes>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/journal" element={<Journal />} />
+              <Route path="/journal/:slug" element={<ArticleDetail />} />
+              <Route path="/team" element={<Team />} />
+            </Routes>
+          </Suspense>
           
           {/* Sentinel to trigger footer appearance */}
           <div 

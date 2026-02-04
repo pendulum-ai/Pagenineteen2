@@ -23,8 +23,8 @@
   width: 100%;
   max-width: 1440px;
   /* Use the global padding variable to ensure alignment with Header/Grid */
-  padding-left: var(--spacing-container-padding);
-  padding-right: var(--spacing-container-padding);
+  padding-left: var(--layout-padding-x);
+  padding-right: var(--layout-padding-x);
 }
 
 .philosophy-text-wrapper {

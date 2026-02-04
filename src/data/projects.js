@@ -19,7 +19,8 @@ export const projects = [
     stack: ['React Flow', 'Diffusers', 'LoRA', 'Flux', 'SDXL'],
     bgColor: '#FAF9F6',
     visualType: 'particles',
-    screenshotUrl: '/images/Lightnote.jpg'
+    screenshotUrl: '/images/Lightnote.webp',
+    screenshotFallback: '/images/Lightnote.jpg'
   },
   {
     id: 'pendulum',
@@ -41,7 +42,8 @@ export const projects = [
     stack: ['Vector DB', 'CLIP', 'LLM Metadata', 'DAG', 'Kandji'],
     bgColor: '#F0F2F0',
     visualType: 'network',
-    screenshotUrl: '/images/Pendulum.jpg'
+    screenshotUrl: '/images/Pendulum.webp',
+    screenshotFallback: '/images/Pendulum.jpg'
   },
   {
     id: 'amble',
@@ -63,6 +65,7 @@ export const projects = [
     stack: ['WebRTC', 'VAD', 'Whisper', 'LLM', 'TTS'],
     bgColor: '#F5F0EB',
     visualType: 'voice',
-    screenshotUrl: '/images/Amble.jpg'
+    screenshotUrl: '/images/Amble.webp',
+    screenshotFallback: '/images/Amble.jpg'
   }
 ];

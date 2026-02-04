@@ -3,8 +3,8 @@
   padding-top: 200px;
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: var(--spacing-container-padding);
-  padding-right: var(--spacing-container-padding);
+  padding-left: var(--layout-padding-x);
+  padding-right: var(--layout-padding-x);
   padding-bottom: 200px;
 }
 

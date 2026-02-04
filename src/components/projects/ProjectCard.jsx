@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { useScroll, useTransform } from "framer-motion";
 import './ProjectCard.css';
 
 const ProjectCard = ({ project }) => {
@@ -56,11 +56,16 @@ const ProjectCard = ({ project }) => {
       <div className="project-main-grid">
         <div className="project-media-col">
           <div className="project-image-wrapper">
-            <img 
-              src={project.screenshotUrl} 
-              alt={`${project.title} Interface`} 
-              className="project-image" 
-            />
+            <picture>
+              <source srcSet={project.screenshotUrl} type="image/webp" />
+              <img 
+                src={project.screenshotFallback || project.screenshotUrl.replace('.webp', '.jpg')} 
+                alt={`${project.title} Interface`} 
+                className="project-image" 
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
 

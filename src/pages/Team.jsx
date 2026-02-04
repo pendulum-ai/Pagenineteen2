@@ -56,6 +56,8 @@ const Team = () => {
                        src={member.image} 
                        alt={member.name} 
                        className="card-image"
+                       loading="lazy"
+                       decoding="async"
                      />
                   </div>
                   
