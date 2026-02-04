@@ -147,8 +147,8 @@ const GeometricIllustration = ({ scrollYProgress }) => {
   const points = useMorphPoints(scrollYProgress, states);
 
   // Sync overall visibility with the content flow
-  // Fade in Start (0-0.1), Visible, Fade out EARLY (0.85-0.95) to match fast collapse
-  const containerOpacity = useTransform(scrollYProgress, [0, 0.1, 0.85, 0.95], [0, 1, 1, 0]);
+  // Simply fade in at the start and keep it visible.
+  const containerOpacity = useTransform(scrollYProgress, [0, 0.05], [0, 1]);
 
   // DYNAMIC TOPOLOGY LOGIC
   // We want lines to appear when points are close.
