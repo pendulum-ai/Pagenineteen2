@@ -4,6 +4,14 @@ import { useLocation } from 'react-router-dom';
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
+  // 1. Disable browser's default scroll restoration on mount
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+  }, []);
+
+  // 2. Scroll to top on route change
   useEffect(() => {
     window.scrollTo({
       top: 0,

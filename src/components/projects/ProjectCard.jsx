@@ -1,46 +1,54 @@
-import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useRef, useState } from 'react';
+import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { useCursor } from '../../context/CursorContext';
+// import DigitalImage from '../ui/DigitalImage'; // Disabled for now, using standard <img>
 import './ProjectCard.css';
 
-const ProjectCard = ({ project, priority = false }) => {
+const ProjectCard = ({ project }) => { // priority removed
   const containerRef = useRef(null);
+  const imageContainerRef = useRef(null); // Ref for InView detection
   const { setCursor } = useCursor();
-  const [isMobile, setIsMobile] = React.useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isHovered, setIsHovered] = useState(false); // Local hover state
 
+  // Mobile Detection
   React.useLayoutEffect(() => {
     const checkMobile = () => setIsMobile(window.matchMedia("(max-width: 768px)").matches);
     checkMobile();
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
+
+  // Scroll InView Detection for Mobile
+  const isInView = useInView(imageContainerRef, { 
+    margin: "-20% 0px -20% 0px", // Trigger when mostly in center
+    amount: 0.5 
+  });
   
+  // Parallax Logic
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "end start"]
   });
 
-
-
-  // Parallax Transforms (Unified Direction & Softened)
-  // All elements now move slightly UP (negative) or stay near 0 to avoid "splitting" the card.
-  // We strictly avoid positive values (downward movement) which caused the crash.
-  
   const yTitleRaw = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const ySeparatorRaw = useTransform(scrollYProgress, [0, 1], [0, -40]);
-  
   const yTaglineRaw = useTransform(scrollYProgress, [0, 1], [0, -30]);
   const yDescRaw = useTransform(scrollYProgress, [0, 1], [0, -20]);
   const yFocusRaw = useTransform(scrollYProgress, [0, 1], [0, -10]);
-  const yStackRaw = useTransform(scrollYProgress, [0, 1], [0, 0]); // Stack stays relatively grounded
+  const yStackRaw = useTransform(scrollYProgress, [0, 1], [0, 0]); 
 
-  // Apply conditional logic AFTER hooks
   const yTitle = isMobile ? 0 : yTitleRaw;
   const ySeparator = isMobile ? 0 : ySeparatorRaw;
   const yTagline = isMobile ? 0 : yTaglineRaw;
   const yDesc = isMobile ? 0 : yDescRaw;
   const yFocus = isMobile ? 0 : yFocusRaw;
   const yStack = isMobile ? 0 : yStackRaw;
+
+  // Determine active state for Digital Image
+  // Desktop: Hover triggers it.
+  // Mobile: Scrolling into view triggers it.
+  const isDigitalActive = isMobile ? isInView : isHovered;
 
   return (
     <div ref={containerRef} className="project-card">
@@ -58,23 +66,32 @@ const ProjectCard = ({ project, priority = false }) => {
       <div className="project-main-grid">
         <div className="project-media-col">
           <div 
+            ref={imageContainerRef}
             className="project-image-wrapper"
-            onMouseEnter={() => setCursor('project-view', 'View Project')}
-            onMouseLeave={() => setCursor('default')}
+            onMouseEnter={() => {
+              setCursor('project-view', 'View Project');
+              setIsHovered(true);
+            }}
+            onMouseLeave={() => {
+              setCursor('default');
+              setIsHovered(false);
+            }}
             onClick={() => project.link && window.open(project.link, '_blank')}
-            style={{ cursor: 'none' }} // Ensure system cursor is hidden here too
+            style={{ cursor: 'none' }} 
           >
-            <picture>
-              <source srcSet={project.screenshotUrl} type="image/webp" />
-              <img 
-                src={project.screenshotFallback || project.screenshotUrl.replace('.webp', '.jpg')} 
-                alt={`${project.title} Interface`} 
-                className="project-image" 
-                loading={priority ? "eager" : "lazy"}
-                decoding="async"
-                fetchPriority={priority ? "high" : "auto"}
-              />
-            </picture>
+             {/* Reverted to standard Image for now */}
+             <picture>
+               <source 
+                 srcSet={project.screenshotUrl?.replace('.jpg', '.webp')} 
+                 type="image/webp" 
+               />
+               <img 
+                 src={project.screenshotUrl} 
+                 alt={project.title} 
+                 className="project-image"
+                 loading="lazy"
+               />
+             </picture>
           </div>
         </div>
 
@@ -93,7 +110,6 @@ const ProjectCard = ({ project, priority = false }) => {
             )}
           </motion.div>
 
-          {/* Separate Metadata Layers for Cascade Effect */}
           <motion.div style={{ y: yFocus }}>
             <div className="project-meta-col">
               <span className="meta-label">System Focus</span>
@@ -116,7 +132,6 @@ const ProjectCard = ({ project, priority = false }) => {
             </div>
           </motion.div>
 
-          {/* Static Links - Anchored to bottom */}
           <div className="project-links">
              {project.link && (
                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">

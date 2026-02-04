@@ -201,8 +201,12 @@
   border-radius: 1px;
   background-color: #f0f0f0;
   box-shadow: 0 4px 20px rgba(0,0,0,0.03);
-  overflow: hidden; /* Clips the zoomed image */
+  overflow: hidden; 
   position: relative;
+  /* Performance & Containment fixes */
+  contain: size layout paint;
+  transform: translateZ(0); 
+  will-change: transform;
 }
 
 .project-image {
@@ -214,9 +218,11 @@
   transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.project-image-wrapper:hover .project-image {
-  transform: scale(1.05); /* Slightly stronger zoom inside the frame */
-}
+/* .project-image-wrapper:hover .project-image {
+  transform: scale(1.05); 
+} 
+Removed to prevent conflict with Digital WebGL effect
+*/
 
 /* Responsive */
 /* Responsive */
