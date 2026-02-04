@@ -41,7 +41,7 @@ export const projects = [
     stack: ['Vector DB', 'CLIP', 'LLM Metadata', 'DAG', 'Kandji'],
     bgColor: '#F0F2F0',
     visualType: 'network',
-    screenshotUrl: 'https://placehold.co/1200x800/e2e2e2/e2e2e2'
+    screenshotUrl: '/images/Pendulum.jpg'
   },
   {
     id: 'amble',
