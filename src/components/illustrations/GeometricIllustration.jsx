@@ -148,7 +148,8 @@ const GeometricIllustration = ({ scrollYProgress }) => {
 
   // Sync overall visibility with the content flow
   // Simply fade in at the start and keep it visible.
-  const containerOpacity = useTransform(scrollYProgress, [0, 0.05], [0, 1]);
+  // UPDATE: User reported issues with visibility. Removed fade-in to ensure it's always seen.
+  const containerOpacity = useTransform(scrollYProgress, [0, 0.01], [1, 1]);
 
   // DYNAMIC TOPOLOGY LOGIC
   // We want lines to appear when points are close.
