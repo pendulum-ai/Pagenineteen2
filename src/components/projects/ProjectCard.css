@@ -240,4 +240,9 @@
   .project-media-col {
     position: static;
   }
+
+  /* Fix for mobile spacing "stacking" issue */
+  .project-meta-col {
+    margin-bottom: 48px; /* Increased from 32px for better separation on mobile */
+  }
 }
