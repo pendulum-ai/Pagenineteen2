@@ -52,7 +52,11 @@ const Team = () => {
                   className="team-card"
                 >
                   <div className="card-visual">
-                     <div className="visual-placeholder"></div>
+                     <img 
+                       src={member.image} 
+                       alt={member.name} 
+                       className="card-image"
+                     />
                   </div>
                   
                   <div className="card-info">
@@ -62,12 +66,12 @@ const Team = () => {
                     </div>
                     
                     <div className="card-details">
+                      <p className="detail-bio">
+                        {member.bio}
+                      </p>
                       <p className="detail-previous">
                         <span className="label-previous">Previously</span> 
                         {member.previously}
-                      </p>
-                      <p className="detail-bio">
-                        {member.bio}
                       </p>
                     </div>
 

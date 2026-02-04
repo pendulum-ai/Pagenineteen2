@@ -39,6 +39,14 @@ const ArticleDetail = () => {
 
   return (
     <div className="journal-container article-detail-container">
+      <div className="sticky-back-nav">
+        <div className="sticky-back-content">
+            <Link to="/journal" className="sticky-back-link">
+                <span className="sticky-arrow">&larr;</span> Go back to articles
+            </Link>
+        </div>
+      </div>
+
       <div className="article-nav">
         <Link to="/journal" className="back-link">
           &larr; Journal

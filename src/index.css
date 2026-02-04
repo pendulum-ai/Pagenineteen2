@@ -36,7 +36,7 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */ /* Removed to prevent scroll-up animation on page load */
   /* Hide scrollbar for Firefox, IE/Edge */
   scrollbar-width: none;
   -ms-overflow-style: none;

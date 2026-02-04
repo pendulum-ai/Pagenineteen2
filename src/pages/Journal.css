@@ -146,6 +146,61 @@
 /* Article Detail Updates */
 .article-detail-container {
   max-width: 900px; /* More focused reading width */
+  position: relative; /* Anchor for sticky nav */
+}
+
+/* Sticky Back Navigation */
+.sticky-back-nav {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  height: 100%;
+  display: none;
+  pointer-events: none;
+}
+
+.sticky-back-content {
+  position: sticky;
+  top: 300px; 
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  pointer-events: auto;
+}
+
+.sticky-back-link {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.4;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: right;
+  line-height: 1.4;
+}
+
+.sticky-back-link:hover {
+  opacity: 1;
+}
+
+.sticky-arrow {
+  transition: transform 0.3s ease;
+}
+
+.sticky-back-link:hover .sticky-arrow {
+  transform: translateX(-4px);
+}
+
+@media (min-width: 1400px) {
+  .sticky-back-nav {
+    display: block;
+  }
 }
 
 .article-header {

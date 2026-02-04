@@ -8,7 +8,7 @@ const ScrollRevealTextLightBg = ({ children, className }) => {
   // Adjusted for slower typing: Ends when text is closer to top (0.25)
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 0.8", "start 0.25"] 
+    offset: ["start 0.9", "start 0.1"] 
   });
 
   const words = children.split(" ");

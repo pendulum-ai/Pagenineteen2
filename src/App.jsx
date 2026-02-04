@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useInView } from 'framer-motion';
+import ScrollToTop from './components/utils/ScrollToTop';
 import Header from './components/layout/Header';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -14,12 +15,13 @@ function App() {
   const footerSentinelRef = useRef(null);
   // Detect when the sentinel (bottom of page) is in view
   const isFooterInView = useInView(footerSentinelRef, { 
-    amount: 0.1, // Trigger when even a little bit is visible
-    margin: "0px 0px -50px 0px" // Slight offset adjustments if needed
+    amount: 0, // Trigger immediately when sentinel enters viewport
+    margin: "0px" // Remove offset to ensure standard behavioral triggering
   });
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Header />
         

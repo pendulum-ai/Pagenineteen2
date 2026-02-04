@@ -52,11 +52,13 @@ const ProjectCard = ({ project }) => {
       {/* 3. Main Grid: Image (Left) + Content (Right) */}
       <div className="project-main-grid">
         <div className="project-media-col">
-          <img 
-            src={project.screenshotUrl} 
-            alt={`${project.title} Interface`} 
-            className="project-image" 
-          />
+          <div className="project-image-wrapper">
+            <img 
+              src={project.screenshotUrl} 
+              alt={`${project.title} Interface`} 
+              className="project-image" 
+            />
+          </div>
         </div>
 
         <div className="project-content-col">
