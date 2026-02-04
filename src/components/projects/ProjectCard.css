@@ -218,11 +218,10 @@
   transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-/* .project-image-wrapper:hover .project-image {
+/* Restored Zoom Effect (safe to use with standard <img>) */
+.project-image-wrapper:hover .project-image {
   transform: scale(1.05); 
-} 
-Removed to prevent conflict with Digital WebGL effect
-*/
+}
 
 /* Responsive */
 /* Responsive */
