@@ -49,10 +49,10 @@
 
 .scroll-text-block h3 {
   /* Was fixed --text-h2. Now ensuring it uses the fluid variable correctly */
-  font-size: var(--text-h2); 
+  font-size: var(--text-h1); 
   font-family: var(--font-main);
   font-weight: 500;
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
   line-height: 1.1;
   pointer-events: auto; /* Re-enable text selection */
   /* Ensure it doesn't break words unnecessarily on huge text */

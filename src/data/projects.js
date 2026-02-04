@@ -3,48 +3,66 @@ export const projects = [
     id: 'lightnote',
     title: 'Lightnote',
     tagline: 'Composable creative workflows for generative media',
-    description: 'A canvas-based environment that allows users to compose fine-tuned generative models and AI tools into repeatable creative workflows. Developed in partnership with WPP, Ogilvy, and AKQA.',
-    link: '#',
-    github: '#',
+    description: [
+      'Lightnote explores what creative software looks like when AI is native to the interface rather than layered on top.',
+      'We are building a canvas-based environment that allows users to compose fine-tuned generative models and AI tools into repeatable creative workflows.',
+      'Lightnote is an ongoing testbed for understanding how creative professionals interact with multimodal systems when composition becomes the primary abstraction.'
+    ],
+    link: 'https://google.com', // Placeholder for tldraw-like demo
+    github: 'https://google.com',
     focus: [
       'Automated LoRA fine-tuning pipelines',
       'Support for multiple model families (Flux, SDXL)',
-      'Workflow-specific tools: Inpainting, style transfer',
-      'Canvas-style interface for composing models'
+      'Workflow-specific tools: Inpainting, style transfer, background removal',
+      'Canvas-style interface for composing models and tools'
     ],
     stack: ['React Flow', 'Diffusers', 'LoRA', 'Flux', 'SDXL'],
-    bgColor: '#FAF9F6' // Warm off-white
+    bgColor: '#FAF9F6',
+    visualType: 'particles',
+    screenshotUrl: 'https://placehold.co/1200x800/e2e2e2/1a1a1a?text=Lightnote+Interface'
   },
   {
     id: 'pendulum',
     title: 'Pendulum',
-    tagline: 'Large-scale multimodal asset search and organization',
-    description: 'A system for indexing, organizing, and retrieving multimodal assets across images and text. It solves the blank page problem by allowing creatives to instantly retrieve relevant assets from massive libraries using natural language.',
-    link: '#',
-    github: '#',
+    tagline: 'Large-scale multimodal asset search and organisation',
+    description: [
+      'Pendulum is a system for indexing, organising, and retrieving multimodal assets across images and text.',
+      'We are actively developing Pendulum to explore how multimodal retrieval can function both as a standalone product and as infrastructure for generative systems.',
+      'The system is designed to ingest, index, and organise millions of assets while remaining flexible for downstream generative use cases.'
+    ],
+    link: 'https://search-app-teal.vercel.app/',
+    github: 'https://google.com',
     focus: [
-      'Metadata extraction using LLMs & vision models',
-      'Plain-text indexing combined with vectors',
-      'Scalable distributed ingestion pipeline',
-      'Natural-language retrieval integrated into RAG'
+      'Metadata extraction using LLMs and vision-language models',
+      'Plain-text indexing combined with vector embeddings',
+      'Scalable distributed ingestion pipeline for media workloads',
+      'Natural-language retrieval integrated into multimodal RAG'
     ],
     stack: ['Vector DB', 'CLIP', 'LLM Metadata', 'DAG', 'Kandji'],
-    bgColor: '#F0F2F0' // Cool off-white
+    bgColor: '#F0F2F0',
+    visualType: 'network',
+    screenshotUrl: 'https://placehold.co/1200x800/e2e2e2/1a1a1a?text=Pendulum+Search'
   },
   {
     id: 'amble',
     title: 'Amble',
     tagline: 'Real-time, personalised language learning',
-    description: 'A voice-first language learning app that adapts to you in real-time. Amble converses with you, adjusts difficulty based on your pronunciation and vocabulary, and generates personalized listening and reading experiences on topics you care about.',
-    link: '#',
+    description: [
+      'Amble explores how agentic systems and real-time voice interfaces can deliver genuinely personalised learning experiences.',
+      'We are building Amble as a live environment for testing adaptive learning systems driven by continuous feedback.',
+      'Amble continues to inform our work on evaluation-driven agentic workflows in consumer-facing systems.'
+    ],
+    link: 'https://www.amble.app/',
     github: null,
     focus: [
-      'Voice Activity Detection (VAD) & Diarization',
-      'Low-latency speech-to-speech pipeline',
-      'Adaptive curriculum generation',
-      'Real-time pronunciation feedback'
+      'Real-time conversational voice agents built on WebRTC',
+      'Orchestration across STT, LLMs, and TTS',
+      'Voice activity detection and real-time translation',
+      'Agentic content-production pipelines with auto-eval loops'
     ],
     stack: ['WebRTC', 'VAD', 'Whisper', 'LLM', 'TTS'],
-    bgColor: '#F5F0EB' // Warm beige
+    bgColor: '#F5F0EB',
+    visualType: 'wave',
+    screenshotUrl: 'https://placehold.co/1200x800/e2e2e2/1a1a1a?text=Amble+App'
   }
 ];

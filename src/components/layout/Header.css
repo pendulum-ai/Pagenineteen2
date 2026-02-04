@@ -45,12 +45,13 @@
   font-weight: var(--weight-medium);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  /* Opacity removed for crisp blend mode calculation */
+  opacity: 0.5; /* Inactive state is transparent */
   transition: opacity var(--duration-fast) var(--ease-default);
 }
 
-.nav-link:hover {
-  opacity: 1;
+.nav-link:hover,
+.nav-link.active {
+  opacity: 1; /* Hover and Active state are fully opaque */
 }
 
 .logo-link {

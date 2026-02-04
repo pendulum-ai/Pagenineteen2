@@ -3,10 +3,12 @@ import './Team.css';
 import BlurReveal from '../components/ui/BlurReveal';
 
 import { teamMembers } from '../data/team';
+import TeamPhilosophySection from '../components/sections/TeamPhilosophySection';
 
 const Team = () => {
   return (
     <div className="team-container">
+
       <div className="team-header-section">
         <BlurReveal>
            <h1 className="team-title">Team</h1>
@@ -82,6 +84,17 @@ const Team = () => {
           </div>
         </div>
       </div>
+      
+      <BlurReveal delay={0.4}>
+        <div className="section-divider" style={{ 
+          width: '100%', 
+          height: '1px', 
+          backgroundColor: 'rgba(26, 26, 26, 0.1)', 
+          margin: '160px 0 60px 0' 
+        }}></div>
+      </BlurReveal>
+
+      <TeamPhilosophySection />
     </div>
   );
 };

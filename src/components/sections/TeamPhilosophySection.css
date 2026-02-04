@@ -1,0 +1,58 @@
+/* Team Philosophy Section */
+/* Matches GoalSection structure but for Light Theme */
+
+.team-philosophy-section {
+  color: var(--color-text); /* #1a1a1a */
+  min-height: 80vh; /* Slightly less than full viewport to allow flow */
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 60px 0 120px 0;
+}
+
+.philosophy-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  /* Use the global padding variable to ensure alignment with Header/Grid */
+  padding-left: var(--spacing-container-padding);
+  padding-right: var(--spacing-container-padding);
+}
+
+.philosophy-text-wrapper {
+  max-width: 95%; /* Use most of the width */
+}
+
+.philosophy-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem); /* Slightly smaller than GoalSection to fit more text */
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+/* Mobile override matches Team.css mobile padding */
+@media (max-width: 768px) {
+  .philosophy-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .philosophy-title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+  }
+  
+  .team-philosophy-section {
+    padding: 80px 0;
+    min-height: auto;
+  }
+}

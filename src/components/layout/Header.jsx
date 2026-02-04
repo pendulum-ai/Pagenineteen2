@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import ProgressiveBlurBackdrop from "../ui/ProgressiveBlurBackdrop";
 import MobileMenu from "./MobileMenu";
@@ -7,6 +7,7 @@ import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const location = useLocation();
 
   return (
     <>
@@ -42,10 +43,10 @@ const Header = () => {
                  Actually, let's just leave the links as they are in my previous tool call, which was manual.
                  Wait, I noticed I used hardcoded links in the previous `Header.jsx` update tool output.
                  I will stick to that to be safe. */ }
-             <Link to="/" className="nav-link">HOME</Link>
-             <Link to="/projects" className="nav-link">PROJECTS</Link>
-             <Link to="/journal" className="nav-link">JOURNAL</Link>
-             <Link to="/team" className="nav-link">TEAM</Link>
+             <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>HOME</Link>
+             <Link to="/projects" className={`nav-link ${location.pathname.startsWith('/projects') ? 'active' : ''}`}>PROJECTS</Link>
+             <Link to="/journal" className={`nav-link ${location.pathname.startsWith('/journal') ? 'active' : ''}`}>JOURNAL</Link>
+             <Link to="/team" className={`nav-link ${location.pathname.startsWith('/team') ? 'active' : ''}`}>TEAM</Link>
           </nav>
 
           {/* Mobile Menu Toggle */}
