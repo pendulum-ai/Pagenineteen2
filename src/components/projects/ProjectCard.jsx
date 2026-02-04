@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from "framer-motion";
 import './ProjectCard.css';
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, priority = false }) => {
   const containerRef = useRef(null);
   const [isMobile, setIsMobile] = React.useState(false);
 
@@ -62,8 +62,9 @@ const ProjectCard = ({ project }) => {
                 src={project.screenshotFallback || project.screenshotUrl.replace('.webp', '.jpg')} 
                 alt={`${project.title} Interface`} 
                 className="project-image" 
-                loading="lazy"
+                loading={priority ? "eager" : "lazy"}
                 decoding="async"
+                fetchpriority={priority ? "high" : "auto"}
               />
             </picture>
           </div>

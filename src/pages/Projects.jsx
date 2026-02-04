@@ -22,7 +22,7 @@ const Projects = () => {
       <div className="projects-list">
         {projects.map((project, index) => (
           <BlurReveal key={project.id} delay={0.2 + (index * 0.1)} yOffset={30}>
-            <ProjectCard project={project} index={index} />
+            <ProjectCard project={project} index={index} priority={index === 0} />
           </BlurReveal>
         ))}
       </div>
