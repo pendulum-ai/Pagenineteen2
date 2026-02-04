@@ -11,26 +11,7 @@ const Header = () => {
 
   return (
     <>
-      {/* 
-        Dedicated Status Bar "Shield" Layer.
-        Guarantees the area behind the status bar is blurred and slightly tinted,
-        fixing the "hole" issue on iOS Safari.
-      */}
-      <div 
-        className="status-bar-blur"
-        style={{
-           position: 'fixed',
-           top: 0,
-           left: 0,
-           width: '100%',
-           height: 'env(safe-area-inset-top)',
-           backgroundColor: 'rgba(253, 252, 248, 0.85)', // Matches --color-bg with high opacity
-           backdropFilter: 'blur(20px)',
-           WebkitBackdropFilter: 'blur(20px)',
-           zIndex: 91,
-           pointerEvents: 'none'
-        }}
-      />
+
 
       {/* 
         Progressive Fade Blur.

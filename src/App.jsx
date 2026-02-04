@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useInView } from 'framer-motion';
 import ScrollToTop from './components/utils/ScrollToTop';
 import Header from './components/layout/Header';
+import GlobalBackground from './components/layout/GlobalBackground';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
@@ -23,6 +24,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className="App">
+        <GlobalBackground />
         <Header />
         
         <main>
