@@ -80,7 +80,8 @@
 
 /* Metadata Cols */
 .project-meta-col {
-  margin-bottom: 60px; /* Increased from 32px to compensate for reduced parallax spacing */
+  margin-bottom: 0;
+  padding-bottom: 60px; /* Increased from 32px to compensate for reduced parallax spacing, using padding to prevent collapse */
 }
 
 .project-meta-col:last-child {
