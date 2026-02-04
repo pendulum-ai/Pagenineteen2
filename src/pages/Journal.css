@@ -144,30 +144,31 @@
 }
 
 /* Article Detail Updates */
+/* Removed max-width constraint to match global 1440px layout */
 .article-detail-container {
-  max-width: 1200px; /* Increased from 900px to fix "squashed" look */
   position: relative; 
-  padding-top: 100px; /* Reduced top padding slightly */
+  padding-top: 100px;
 }
 
 /* Sticky Back Navigation */
 .sticky-back-nav {
   position: absolute;
-  right: 100%;
+  /* Position inside the container's left padding gutter */
+  left: 10px; 
   top: 0;
   height: 100%;
-  display: block; /* Force display on desktop to ensure it's visible */
+  display: block; 
   pointer-events: none;
 }
 
 .sticky-back-content {
   position: sticky;
   top: 300px; 
-  width: max-content; /* Allow width to fit text without squashing */
-  min-width: 200px;
+  width: max-content; 
+  min-width: 0;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 60px; /* More breathing room between nav and content */
+  justify-content: flex-start; /* Align left */
+  padding-right: 0;
   pointer-events: auto;
 }
 
