@@ -12,8 +12,30 @@ const Header = () => {
   return (
     <>
       {/* 
-        Independent fixed container for the blur effect. 
-        Separated from the header to avoid mix-blend-mode conflicts and z-index isolation.
+        Dedicated Status Bar "Shield" Layer.
+        Guarantees the area behind the status bar is blurred and slightly tinted,
+        fixing the "hole" issue on iOS Safari.
+      */}
+      <div 
+        className="status-bar-blur"
+        style={{
+           position: 'fixed',
+           top: 0,
+           left: 0,
+           width: '100%',
+           height: 'env(safe-area-inset-top)',
+           backgroundColor: 'rgba(253, 252, 248, 0.85)', // Matches --color-bg with high opacity
+           backdropFilter: 'blur(20px)',
+           WebkitBackdropFilter: 'blur(20px)',
+           zIndex: 91,
+           pointerEvents: 'none'
+        }}
+      />
+
+      {/* 
+        Progressive Fade Blur.
+        Starts effectively below the status bar (visually) or blends with it.
+        We extend it to top: 0 still for desktop/other devices, but the status bar layer sits on top.
       */}
       <div 
         className="header-blur-backdrop" 
@@ -22,8 +44,8 @@ const Header = () => {
           top: 0,
           left: 0,
           width: '100%',
-          height: 'calc(var(--header-height) + env(safe-area-inset-top, 0px))',
-          zIndex: 90, // Below header (100)
+          height: 'var(--header-height)', // Revert to standard height, status bar layer handles the extra top bit if needed, or we can keep it extended. let's stick to standard to avoid double-darkening.
+          zIndex: 90, // Below status bar layer
           pointerEvents: 'none'
         }}
       >
