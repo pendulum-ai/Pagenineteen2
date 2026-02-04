@@ -243,6 +243,7 @@
 
   /* Fix for mobile spacing "stacking" issue */
   .project-meta-col {
-    margin-bottom: 48px; /* Increased from 32px for better separation on mobile */
+    margin-bottom: 0;
+    padding-bottom: 60px; /* Use padding to force height increase inside motion.div wrapper */
   }
 }
