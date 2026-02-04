@@ -20,14 +20,17 @@ const ProjectCard = ({ project }) => {
 
 
 
-  // Parallax Transforms (Always call hooks unconditionally!)
-  const yTitleRaw = useTransform(scrollYProgress, [0, 1], [0, -300]);
-  const ySeparatorRaw = useTransform(scrollYProgress, [0, 1], [0, -150]);
+  // Parallax Transforms (Unified Direction & Softened)
+  // All elements now move slightly UP (negative) or stay near 0 to avoid "splitting" the card.
+  // We strictly avoid positive values (downward movement) which caused the crash.
   
-  const yTaglineRaw = useTransform(scrollYProgress, [0, 1], [0, -60]);
-  const yDescRaw = useTransform(scrollYProgress, [0, 1], [0, 0]);
-  const yFocusRaw = useTransform(scrollYProgress, [0, 1], [0, 120]);
-  const yStackRaw = useTransform(scrollYProgress, [0, 1], [0, 250]);
+  const yTitleRaw = useTransform(scrollYProgress, [0, 1], [0, -50]);
+  const ySeparatorRaw = useTransform(scrollYProgress, [0, 1], [0, -40]);
+  
+  const yTaglineRaw = useTransform(scrollYProgress, [0, 1], [0, -30]);
+  const yDescRaw = useTransform(scrollYProgress, [0, 1], [0, -20]);
+  const yFocusRaw = useTransform(scrollYProgress, [0, 1], [0, -10]);
+  const yStackRaw = useTransform(scrollYProgress, [0, 1], [0, 0]); // Stack stays relatively grounded
 
   // Apply conditional logic AFTER hooks
   const yTitle = isMobile ? 0 : yTitleRaw;
