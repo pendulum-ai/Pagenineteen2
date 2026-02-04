@@ -1,50 +1,86 @@
 import React from 'react';
 import './Team.css';
+import BlurReveal from '../components/ui/BlurReveal';
 
 import { teamMembers } from '../data/team';
 
 const Team = () => {
   return (
     <div className="team-container">
-      <div className="team-header">
-        <h1 className="team-title">Team</h1>
-        <p className="team-description">
-          We are a small, senior team with experience building and operating AI systems at scale.
-          <br /><br />
-          The team emerged from the South Park Commons Founder Fellowship and is backed by 
-          Shine Capital. We operate as a tightly integrated unit, working best when owning complex 
-          surfaces end-to-end.
-        </p>
+      <div className="team-header-section">
+        <BlurReveal>
+           <h1 className="team-title">Team</h1>
+        </BlurReveal>
+        <BlurReveal delay={0.1}>
+           <p className="team-subtitle">
+             We are a small, senior team with experience building and operating AI systems at scale.
+           </p>
+        </BlurReveal>
       </div>
       
-      <div className="team-grid">
-        {teamMembers.map((member) => (
-          <div key={member.id} className="team-member">
-            <div className="member-image-placeholder"></div>
-            
-            <div className="member-info">
-              <h3 className="member-name">{member.name}</h3>
-              <p className="member-role">{member.role}</p>
-              
-              <div className="member-details">
-                <p className="detail-row">
-                  <span className="detail-label">Previously:</span>
-                  <span className="detail-text">{member.previously}</span>
+      <div className="team-content-wrapper">
+        {/* Left Column: Sticky Info */}
+        <aside className="team-sidebar">
+          <div className="sticky-content">
+            <BlurReveal delay={0.2}>
+              <div className="sidebar-section">
+                <div className="sidebar-tag">
+                  <span className="tag-dot"></span>
+                  LEADERSHIP
+                </div>
+                <p className="sidebar-description">
+                  The team emerged from the South Park Commons Founder Fellowship and is backed by 
+                  Shine Capital. We operate as a tightly integrated unit, working best when owning complex 
+                  surfaces end-to-end.
                 </p>
-                <p className="member-bio">{member.bio}</p>
               </div>
-              
-              <div className="member-social">
-                <a href={member.linkedin} className="social-link">
-                  Linkedin
-                  <svg className="social-arrow" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 9L9 1M9 1H1M9 1V9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
+            </BlurReveal>
           </div>
-        ))}
+        </aside>
+
+        {/* Right Column: Grid */}
+        <div className="team-grid-section">
+          <div className="team-grid">
+            {teamMembers.map((member, index) => (
+              <BlurReveal key={member.id} delay={0.3 + (index * 0.1)}>
+                <a 
+                  href={member.linkedin}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="team-card"
+                >
+                  <div className="card-visual">
+                     <div className="visual-placeholder"></div>
+                  </div>
+                  
+                  <div className="card-info">
+                    <div className="info-header">
+                      <h3 className="card-name">{member.name}</h3>
+                      <p className="card-role">{member.role}</p>
+                    </div>
+                    
+                    <div className="card-details">
+                      <p className="detail-previous">
+                        <span className="label-previous">Previously</span> 
+                        {member.previously}
+                      </p>
+                      <p className="detail-bio">
+                        {member.bio}
+                      </p>
+                    </div>
+
+                    <div className="card-linkedin-link">
+                      LINKEDIN
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" className="link-arrow">
+                        <path d="M1 9L9 1M9 1H1M9 1V9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </BlurReveal>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

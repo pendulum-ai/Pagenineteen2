@@ -5,7 +5,7 @@ export const teamMembers = [
     role: 'Founding Engineer', 
     previously: 'Google, Oxford, LSE, Fulbright, Woven',
     bio: 'Focusing on systems architecture and product strategy.',
-    linkedin: '#'
+    linkedin: 'https://www.linkedin.com/'
   },
   { 
     id: 2, 
@@ -13,7 +13,7 @@ export const teamMembers = [
     role: 'Founding Product', 
     previously: 'Spotify, Oxford, LSE',
     bio: 'Building interfaces that bridge human intent and model capability.',
-    linkedin: '#'
+    linkedin: 'https://www.linkedin.com/'
   },
   { 
     id: 3, 
@@ -21,7 +21,7 @@ export const teamMembers = [
     role: 'Founding Engineer', 
     previously: 'Stanford, Meta',
     bio: 'Specializing in large-scale infrastructure and distributed systems.',
-    linkedin: '#'
+    linkedin: 'https://www.linkedin.com/'
   },
   { 
     id: 4, 
@@ -29,6 +29,6 @@ export const teamMembers = [
     role: 'Founding Research', 
     previously: 'Google, Meta',
     bio: 'Deep learning research and model optimization.',
-    linkedin: '#'
+    linkedin: 'https://www.linkedin.com/'
   }
 ];
