@@ -47,11 +47,7 @@ const ArticleDetail = () => {
         </div>
       </div>
 
-      <div className="article-nav">
-        <Link to="/journal" className="back-link">
-          &larr; Journal
-        </Link>
-      </div>
+
 
       <header className="article-header">
         <BlurReveal delay={0}>
