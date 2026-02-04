@@ -15,7 +15,7 @@ const BlurReveal = ({ children, delay = 0, duration = 0.8, className = "" }) => 
         filter: "blur(0px)",
         y: 0 
       }}
-      viewport={{ once: false, margin: "-10%" }}
+      viewport={{ once: true, margin: "-10%" }}
       transition={{ 
         duration: duration, 
         delay: delay,
