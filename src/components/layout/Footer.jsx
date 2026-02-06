@@ -8,7 +8,9 @@ const Footer = ({ isVisible }) => {
     const location = useLocation();
 
     // Determine theme based on route
-    const isDarkTheme = location.pathname === '/';
+    // Dark theme for pages ending with dark sections (Home V1, HomeV2)
+    const darkThemeRoutes = ['/', '/home-v2'];
+    const isDarkTheme = darkThemeRoutes.includes(location.pathname);
     const theme = isDarkTheme ? 'dark' : 'light';
 
     return (

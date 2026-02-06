@@ -1,28 +1,5 @@
 export const projects = [
   {
-    id: 'lightnote',
-    title: 'Lightnote',
-    tagline: 'Composable creative workflows for generative media',
-    description: [
-      'Lightnote explores what creative software looks like when AI is native to the interface rather than layered on top.',
-      'We are building a canvas-based environment that allows users to compose fine-tuned generative models and AI tools into repeatable creative workflows.',
-      'Lightnote is an ongoing testbed for understanding how creative professionals interact with multimodal systems when composition becomes the primary abstraction.'
-    ],
-    link: 'https://google.com', // Placeholder for tldraw-like demo
-    github: 'https://google.com',
-    focus: [
-      'Automated LoRA fine-tuning pipelines',
-      'Support for multiple model families (Flux, SDXL)',
-      'Workflow-specific tools: Inpainting, style transfer, background removal',
-      'Canvas-style interface for composing models and tools'
-    ],
-    stack: ['React Flow', 'Diffusers', 'LoRA', 'Flux', 'SDXL'],
-    bgColor: '#FAF9F6',
-    visualType: 'particles',
-    screenshotUrl: '/images/Lightnote.webp',
-    screenshotFallback: '/images/Lightnote.jpg'
-  },
-  {
     id: 'pendulum',
     title: 'Pendulum',
     tagline: 'Large-scale multimodal asset search and organisation',
@@ -67,5 +44,28 @@ export const projects = [
     visualType: 'voice',
     screenshotUrl: '/images/Amble.webp',
     screenshotFallback: '/images/Amble.jpg'
+  },
+  {
+    id: 'lightnote',
+    title: 'Lightnote',
+    tagline: 'Composable creative workflows for generative media',
+    description: [
+      'Lightnote explores what creative software looks like when AI is native to the interface rather than layered on top.',
+      'We are building a canvas-based environment that allows users to compose fine-tuned generative models and AI tools into repeatable creative workflows.',
+      'Lightnote is an ongoing testbed for understanding how creative professionals interact with multimodal systems when composition becomes the primary abstraction.'
+    ],
+    link: 'https://google.com', // Placeholder for tldraw-like demo
+    github: 'https://google.com',
+    focus: [
+      'Automated LoRA fine-tuning pipelines',
+      'Support for multiple model families (Flux, SDXL)',
+      'Workflow-specific tools: Inpainting, style transfer, background removal',
+      'Canvas-style interface for composing models and tools'
+    ],
+    stack: ['React Flow', 'Diffusers', 'LoRA', 'Flux', 'SDXL'],
+    bgColor: '#FAF9F6',
+    visualType: 'particles',
+    screenshotUrl: '/images/Lightnote.webp',
+    screenshotFallback: '/images/Lightnote.jpg'
   }
 ];

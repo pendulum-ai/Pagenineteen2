@@ -3,7 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import ProgressiveBlurBackdrop from "../ui/ProgressiveBlurBackdrop";
 import MobileMenu from "./MobileMenu";
-// import { navLinks } from '../../config/navigation'; // Optional if we want to map over links in desktop nav too
+import LogoIcon from "../ui/LogoIcon";
+import { navLinks } from '../../config/navigation';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -36,20 +37,20 @@ const Header = () => {
       <header className="header">
         <div className="container header-content">
           <div className="logo">
-            <Link to="/" className="logo-link">pagenineteen.ai</Link>
+            <Link to="/" className="logo-link"><LogoIcon />pagenineteen.ai</Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="nav desktop-nav">
-             {/* Using hardcoded for now or import. Let's use the explicit links to match the previous structure for safety unless user wants refactor. 
-                 User asked for "elegant", let's keep it simple first. 
-                 Actually, let's just leave the links as they are in my previous tool call, which was manual.
-                 Wait, I noticed I used hardcoded links in the previous `Header.jsx` update tool output.
-                 I will stick to that to be safe. */ }
-             <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>HOME</Link>
-             <Link to="/projects" className={`nav-link ${location.pathname.startsWith('/projects') ? 'active' : ''}`}>PROJECTS</Link>
-             <Link to="/journal" className={`nav-link ${location.pathname.startsWith('/journal') ? 'active' : ''}`}>JOURNAL</Link>
-             <Link to="/team" className={`nav-link ${location.pathname.startsWith('/team') ? 'active' : ''}`}>TEAM</Link>
+            {navLinks.map((link) => (
+              <Link 
+                key={link.path}
+                to={link.path} 
+                className={`nav-link ${location.pathname === link.path ? 'active' : ''}`}
+              >
+                {link.label.toUpperCase()}
+              </Link>
+            ))}
           </nav>
 
           {/* Mobile Menu Toggle */}

@@ -52,11 +52,18 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* Global Visual Elements */
+/* Global Footer Safe Zone */
+/* Ensures all page content has safe spacing for the fixed parallax footer */
+main {
+  padding-bottom: var(--footer-height);
+}
+
 /* Global Visual Elements */
 /* .split-line and .cross-horizontal replaced by CrossHair component */
 
 @media (max-width: 768px) {
-  /* Mobile adjustments handled in components */
+  :root {
+    --footer-height: 100px; /* Smaller footer on mobile */
+  }
 }
 

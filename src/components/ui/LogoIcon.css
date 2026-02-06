@@ -1,0 +1,42 @@
+/**
+ * LogoIcon Styles
+ * 
+ * Модульные стили для иконки логотипа.
+ * Использует 1em для автоматического масштабирования под размер шрифта родителя.
+ */
+
+.logo-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Размер = высота текста (line-height adjusted) */
+  /* Используем 0.85em для визуального баланса с текстом */
+  width: 0.85em;
+  height: 0.85em;
+  
+  /* Вертикальное выравнивание по центру текста */
+  vertical-align: middle;
+  
+  /* Небольшой отступ справа от иконки */
+  margin-right: 0.35em;
+  
+  /* Чуть сдвигаем вниз для оптического центрирования */
+  position: relative;
+  top: -0.02em;
+  
+  /* Гладкий рендеринг */
+  flex-shrink: 0;
+}
+
+.logo-icon__svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  
+  /* Цвет из дизайн-системы */
+  fill: var(--color-accent, #ff5500);
+  
+  /* Анти-алиасинг для сглаживания краёв */
+  shape-rendering: geometricPrecision;
+}

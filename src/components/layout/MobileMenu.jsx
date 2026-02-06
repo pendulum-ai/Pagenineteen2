@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { navLinks, socialLinks } from '../../config/navigation';
+import LogoIcon from '../ui/LogoIcon';
 import './MobileMenu.css';
 
 const menuVariants = {
@@ -113,7 +114,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
           <div className="mobile-menu-container">
             <div className="mobile-menu-header">
               <div className="logo">
-                <Link to="/" className="logo-link" onClick={onClose}>pagenineteen.ai</Link>
+                <Link to="/" className="logo-link" onClick={onClose}><LogoIcon />pagenineteen.ai</Link>
               </div>
               <button 
                 className="mobile-close-btn" 

@@ -1,0 +1,152 @@
+/* ===================================
+   Horizontal Projects Section
+   Unified horizontal track:
+   [Intro] → [Project 1] → [Project 2] → [Project 3]
+   ==================================== */
+
+.horizontal-projects-container {
+  position: relative;
+  /* Spacer before section for CrossHair to fade */
+  margin-top: 10vh;
+}
+
+.horizontal-sticky-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-bg);
+  z-index: 10;
+}
+
+/* Gradient fade at top edge for smooth transition */
+.horizontal-sticky-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    var(--color-bg) 0%,
+    var(--color-bg) 20%,
+    transparent 100%
+  );
+  z-index: 20;
+  pointer-events: none;
+}
+
+/* Horizontal Track - all elements in one row */
+.horizontal-track {
+  display: flex;
+  gap: 15vw;
+  padding-left: var(--layout-padding-x);
+  padding-right: 30vw;
+  align-items: center;
+  height: 100%;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* ===================================
+   Intro Card (Projects + description)
+   Styled like Hero
+   ==================================== */
+
+.horizontal-intro-card {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  /* Keep left side compact so first project is partially visible */
+  min-width: 45vw;
+  max-width: 50vw;
+  padding-right: 5vw;
+}
+
+.horizontal-intro-title {
+  font-size: var(--text-display);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.03em;
+  margin: 0 0 var(--space-lg) 0;
+  color: var(--color-text);
+}
+
+.horizontal-intro-description {
+  font-size: var(--text-h2);
+  line-height: 1.3;
+  font-weight: var(--weight-regular);
+  color: var(--color-text-secondary);
+  margin: 0;
+  /* Constrain width like Hero description */
+  max-width: 38ch;
+  text-wrap: pretty;
+}
+
+/* ===================================
+   Mobile Fallback
+   ==================================== */
+
+.horizontal-projects-mobile-fallback {
+  padding: 80px 0;
+}
+
+.horizontal-projects-mobile-fallback .projects-header {
+  margin-bottom: 60px;
+}
+
+.horizontal-projects-mobile-fallback .projects-section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: var(--weight-medium);
+  margin: 0 0 16px 0;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+}
+
+.horizontal-projects-mobile-fallback .projects-section-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.7;
+  max-width: 38ch;
+  margin: 0;
+  color: var(--color-text);
+}
+
+.horizontal-projects-mobile-fallback .projects-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===================================
+   Responsive
+   ==================================== */
+
+@media (min-width: 2560px) {
+  .horizontal-intro-card {
+    min-width: 40vw;
+    max-width: 45vw;
+  }
+  
+  .horizontal-intro-description {
+    font-size: var(--text-h1);
+  }
+}
+
+@media (max-width: 1440px) {
+  .horizontal-intro-card {
+    min-width: 50vw;
+    max-width: 55vw;
+  }
+}
+
+@media (max-width: 1280px) {
+  .horizontal-intro-description {
+    font-size: var(--text-h3);
+  }
+}

@@ -5,7 +5,7 @@
   margin: 0 auto;
   padding-left: var(--layout-padding-x);
   padding-right: var(--layout-padding-x);
-  padding-bottom: 200px;
+  padding-bottom: 120px;
 }
 
 .journal-header {
@@ -175,30 +175,7 @@
   padding-right: 20px;
 }
 
-.article-content-wrapper {
-  /* This would need to wrap the header/body in JSX, OR we just style .article-header and .article-body to align if we don't change JSX. 
-     Actually, since ArticleDetail.jsx just dumps children, let's treat the grid carefully.
-     WAIT: ArticleDetail.jsx structure:
-     <div className="article-detail-container">
-        <StickyNav />
-        <header />
-        <div className="article-cover-image" />
-        <div className="article-body" />
-        <footer />
-     </div>
-     
-     If we use grid on the container, all direct children become grid items.
-     Children are:
-     1. .sticky-back-nav
-     2. header.article-header
-     3. div.article-cover-image
-     4. div.article-body
-     5. div.article-footer
-     
-     We want 1 to be in Col 1.
-     We want 2, 3, 4, 5 to be in Col 2.
-  */
-}
+/* .article-content-wrapper ruleset removed as it was empty */
 
 /* Assign Grid Columns */
 .sticky-back-nav {
@@ -477,6 +454,7 @@
     padding-top: 100px;
     padding-left: 20px; /* Explicit mobile padding as requested */
     padding-right: 20px;
+    padding-bottom: 80px;
   }
 
   .journal-header {

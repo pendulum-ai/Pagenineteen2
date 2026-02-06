@@ -1,7 +1,7 @@
 export const FRAMES = [
   {
     range: [0.02, 0.20],
-    title: "What we build.",
+    title: "How we built.",
     text: "We don't just train models; we focus on the integration work required to make them true in production.",
     isIntro: true
   },

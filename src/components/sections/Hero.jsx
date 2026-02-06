@@ -29,7 +29,7 @@ const Hero = () => {
         </BlurReveal>
         <div className="hero-footer">
           <BlurReveal delay={0}>
-            ONLINE - LONDON - SAN FRANCISCO
+            London / New York
           </BlurReveal>
         </div>
       </div>

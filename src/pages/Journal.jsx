@@ -74,10 +74,8 @@ const Journal = () => {
 
       <div className="journal-list">
         {visibleArticles.map((article, index) => (
-            // DEV NOTE: All links temporarily point to the same article for design refinement
-            // We override the slug here just for the Link, but pass the real article data for display
             <BlurReveal key={article.id} delay={index * 0.1} yOffset={20}>
-               <JournalCard article={{ ...article, slug: 'immersive-language-learning' }} />
+               <JournalCard article={article} />
             </BlurReveal>
         ))}
       </div>

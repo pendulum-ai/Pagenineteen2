@@ -3,31 +3,18 @@ import { motion, useTransform } from 'framer-motion';
 
 // Interpolate array of points with extra properties (r: radius, o: opacity)
 const useMorphPoints = (progress, states) => {
-  const numPoints = states[0].length;
-  const interpolatedPoints = [];
+  // Create a static array of indices to map over, ensuring hook order is preserved.
+  // We know there are exactly 12 points in the layouts.
+  const indices = useMemo(() => Array.from({ length: 12 }, (_, i) => i), []);
 
-  for (let i = 0; i < numPoints; i++) {
+  return indices.map(i => {
     const xRange = states.map(s => s[i].x);
     const yRange = states.map(s => s[i].y);
     const rRange = states.map(s => s[i].r);
     const oRange = states.map(s => s[i].o);
     
     // PER-POINT STAGGERING (The "Organic Explosion" logic)
-    // To avoid the "visual zoom" effect where everything moves linearly together,
-    // we give each point a different start/end time for the Big Bang phase.
-    
-    // Delay: some points start moving at 0.00, others wait until ~0.08
-    // We use a pseudo-random pattern based on index to distribute delays
     const delay = ((i * 7) % 5) * 0.015; // 0 to 0.06
-    
-    // MAPPING:
-    // [0 + delay]: Singularity
-    // [0.16]: State 1 (Multimodal)
-    // [0.32]: State 2 (Fine-tuning)
-    // [0.48]: State 3 (Real-time)
-    // [0.64]: State 4 (Agentic)
-    // [0.80]: State 5 (Interfaces) - NEW
-    // [1 - delay]: Collapse to Singularity
     
     const inputRange = [
         0 + delay,       // Start
@@ -35,23 +22,22 @@ const useMorphPoints = (progress, states) => {
         0.32,            // State 2
         0.48,            // State 3
         0.64,            // State 4
-        0.78,            // State 5 (Hold cube shape until here - gives time to see it)
-        0.86 - delay     // End (Fast collapse! 0.78 -> 0.86 is quick)
+        0.78,            // State 5
+        0.86 - delay     // End 
     ];
 
-    // eslint-disable-next-line
+    // ESLint rule disabled because we are mapping over a constant array
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const x = useTransform(progress, inputRange, xRange);
-    // eslint-disable-next-line
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const y = useTransform(progress, inputRange, yRange);
-    // eslint-disable-next-line
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const r = useTransform(progress, inputRange, rRange);
-    // eslint-disable-next-line
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const o = useTransform(progress, inputRange, oRange);
 
-    interpolatedPoints.push({ x, y, r, o, id: i });
-  }
-
-  return interpolatedPoints;
+    return { x, y, r, o, id: i };
+  });
 };
 
 // 12 points is a good balance for these shapes

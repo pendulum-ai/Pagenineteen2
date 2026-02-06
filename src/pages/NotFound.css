@@ -1,0 +1,116 @@
+.system-404-container {
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg);
+    position: relative;
+    overflow: hidden;
+    color: var(--color-text);
+}
+
+.graphic-layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    z-index: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-ring {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-border); /* Subtle grey ring base */
+    border-radius: 50%;
+    position: absolute;
+    /* Optional: Add a small accent segment or leave it subtle */
+}
+
+/* Add a pseudo-element for the "active" part of the ring if desired, 
+   or keep it ultra minimal. Let's make the ring subtle grey and the dot orange. */
+
+.accent-dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    position: absolute;
+    /* Position slightly off-center or on the ring? 
+       Let's put it floating near the ring track */
+    top: 0; 
+    margin-top: -3px; /* half height */
+}
+
+/* Let's attach the dot to the rotating ring for motion */
+.circle-ring::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--color-accent);
+}
+
+.content-layer {
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.status-code {
+    font-family: var(--font-main);
+    font-weight: 300; /* Thin */
+    font-size: var(--text-h2); /* Small relative to before */
+    letter-spacing: 0.05em;
+    margin: 0;
+    color: var(--color-text);
+}
+
+.divider {
+    width: 1px;
+    height: 40px;
+    background-color: var(--color-border);
+    margin: var(--space-xs) 0;
+}
+
+.status-message {
+    font-family: var(--font-main);
+    font-size: var(--text-small);
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.back-link {
+    margin-top: var(--space-md);
+    text-decoration: none;
+    font-family: var(--font-main);
+    font-size: var(--text-small);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px; /* Pill shape */
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}

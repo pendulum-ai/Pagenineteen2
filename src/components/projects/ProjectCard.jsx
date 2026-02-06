@@ -4,7 +4,7 @@ import { useCursor } from '../../context/CursorContext';
 // import DigitalImage from '../ui/DigitalImage'; // Disabled for now, using standard <img>
 import './ProjectCard.css';
 
-const ProjectCard = ({ project }) => { // priority removed
+const ProjectCard = ({ project }) => {
   const containerRef = useRef(null);
   const imageContainerRef = useRef(null); // Ref for InView detection
   const { setCursor } = useCursor();
@@ -82,7 +82,7 @@ const ProjectCard = ({ project }) => { // priority removed
              {/* Reverted to standard Image for now */}
              <picture>
                <source 
-                 srcSet={project.screenshotUrl?.replace('.jpg', '.webp')} 
+                 srcSet={project.screenshotUrl?.replace(/\.(jpg|png)$/, '.webp')} 
                  type="image/webp" 
                />
                <img 

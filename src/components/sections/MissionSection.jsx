@@ -12,7 +12,7 @@ const MissionSection = () => {
           <div className="mission-text-block text-align-fix">
             <BlurReveal>
               <h2>
-                We design, ship, and operate end-to-end AI systems. From creative tooling to large-scale asset intelligence.
+                Page Nineteen is a small, London based lab exploring how AI changes the way we learn and the way we create.
               </h2>
             </BlurReveal>
             <BlurReveal delay={0.2}>
@@ -34,12 +34,7 @@ const MissionSection = () => {
               </p>
             </BlurReveal>
 
-            {/* Part 2 - Split as requested, appearing slightly later */}
-            <BlurReveal delay={0.5}>
-              <p className="mission-belief-text">
-                We focus on the integration work that makes this true in production.
-              </p>
-            </BlurReveal>
+
           </div>
         </div>
 

@@ -23,6 +23,7 @@
   /* Semantic Spacing */
   --spacing-container: 2rem;
   --header-height: 80px;
+  --footer-height: 120px; /* Safe zone for fixed parallax footer */
   
   /* Unified Horizontal Layout Padding */
   /* Fluid scaling from Mobile (2rem) to Desktop (10rem) to avoid "cliff" on tablets */

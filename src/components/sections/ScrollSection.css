@@ -3,6 +3,9 @@
   position: relative;
   width: 100%;
   overflow: visible; /* Ensure sticky works */
+  /* Overlap the end of HorizontalProjects section */
+  margin-top: -50vh;
+  z-index: 15; /* Above horizontal-sticky-wrapper (z-index: 10) */
 }
 
 .sticky-wrapper {
@@ -107,7 +110,9 @@
 }
 
 /* Line decoration logic (Optional, adapting from old layout) */
+/* DISABLED: CrossHair component already provides the vertical center line */
 .scroll-dot-container {
+  display: none; /* Prevent duplicate line with CrossHair */
   position: absolute;
   left: 50%;
   top: 0;
@@ -123,7 +128,7 @@
   .sticky-wrapper {
     display: flex;       
     flex-direction: column-reverse; 
-    margin-top: 20vh; /* Delay appearance after horizontal line */
+    margin-top: 60px; /* Delay appearance after horizontal line */
   }
 
   .scroll-dot-container {
@@ -151,7 +156,7 @@
     position: relative;
     z-index: 10;
     margin-top: -10vh; 
-    padding-bottom: 20vh; 
+    padding-bottom: 60px; 
     pointer-events: none; 
   }
 
