@@ -113,6 +113,14 @@
   color: var(--color-text);
 }
 
+/* Mobile: Project title smaller than "Projects" section title */
+@media (max-width: 768px) {
+  .h-project-title {
+    font-size: clamp(1.5rem, 6vw, 2rem);  /* Smaller than --text-display */
+    margin: 0 0 8px 0;
+  }
+}
+
 .h-project-tagline {
   font-size: clamp(1rem, 1.3vw, 1.25rem);
   opacity: 0.9;
@@ -146,9 +154,7 @@
   margin-bottom: 20px;
 }
 
-.h-project-meta-col {
-  /* No extra spacing needed */
-}
+/* No extra spacing needed for col */
 
 .h-meta-label {
   display: block;

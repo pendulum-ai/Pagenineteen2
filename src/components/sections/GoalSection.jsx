@@ -8,11 +8,16 @@ const GoalSection = ({ id }) => {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start end", "end end"]
+    offset: ["start end", "end start"]  // Extended range: entire section visibility
   });
 
-  // Parallax for text: Moves slightly slower than scroll to feel "heavy"
-  const yText = useTransform(scrollYProgress, [0, 1], ["10%", "-10%"]);
+  // Parallax for text: Moves UP slower than scroll (feels "heavy")
+  // Increased from ±10% to ±20% for more noticeable effect
+  const yText = useTransform(scrollYProgress, [0, 1], ["20%", "-20%"]);
+
+  // Parallax for pattern: Moves opposite direction (UP faster)
+  // Creates depth separation between text and background
+  const yPattern = useTransform(scrollYProgress, [0, 1], ["-15%", "25%"]);
 
   return (
     <section ref={containerRef} id={id} className="goal-section" data-theme="dark">
@@ -24,9 +29,9 @@ const GoalSection = ({ id }) => {
         </motion.div>
       </div>
 
-      <div className="goal-illustration-wrapper">
+      <motion.div style={{ y: yPattern }} className="goal-illustration-wrapper">
           <HorizontalCircles />
-      </div>
+      </motion.div>
     </section>
   );
 };

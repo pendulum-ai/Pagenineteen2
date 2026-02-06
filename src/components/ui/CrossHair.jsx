@@ -43,10 +43,14 @@ const CrossHair = ({ verticalLineOpacity, verticalLineScaleY }) => {
   // Restored: Move UP slowly as we scroll.
   const yParallax = useTransform(scrollY, [0, 3000], [0, -250]); 
 
+  // Detect mobile for responsive timing
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
+
   // 3. Opacity Logic
-  // Fade out earlier to avoid overlap with Section 3 (Geometric).
-  // Reverted range to 1600-2200px.
-  const opacity = useTransform(scrollY, [1600, 2200], [1, 0]);
+  // Fade out horizontal rays/line. Later on mobile to stay visible longer above Projects.
+  const fadeStart = isMobile ? 800 : 1600;
+  const fadeEnd = isMobile ? 1200 : 2200;
+  const opacity = useTransform(scrollY, [fadeStart, fadeEnd], [1, 0]);
 
   // Ray Opacity: Fade in immediately
   // We want to see them growing from 0, so we fade in right away.

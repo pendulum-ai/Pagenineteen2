@@ -16,23 +16,31 @@ const HomeV2 = () => {
   const goalRef = useRef(null);
   const horizontalProjectsRef = useRef(null);
 
+  // Detect mobile for responsive timing
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
+
   // CrossHair visibility: fade out BEFORE projects section enters
   const { scrollYProgress: projectsFader } = useScroll({
     target: horizontalProjectsRef,
     offset: ["start 1.2", "end 0.2"]  // Start when section is 20% below viewport
   });
 
-  // Fade OUT quickly before projects appear, stay hidden, fade IN when third project exits
+  // Fade OUT quickly before projects appear, stay hidden, fade IN when projects section ends
+  // Mobile: line returns later (90%) to not interfere with reading Lightnote
+  // Desktop: line returns earlier (60%) when third project starts exiting
+  const fadeInStart = isMobile ? 0.88 : 0.60;
+  const fadeInEnd = isMobile ? 0.98 : 0.75;
+  
   const projectsLineOpacity = useTransform(
     projectsFader, 
-    [0, 0.02, 0.60, 0.75],  // Fade back in from 60-75% (earlier reveal)
+    [0, 0.02, fadeInStart, fadeInEnd],
     [1, 0, 0, 1]
   );
   
   // ScaleY: Line collapses to center (slower than opacity for dramatic effect)
   const projectsLineScaleY = useTransform(
     projectsFader,
-    [0, 0.03, 0.58, 0.75],  // Scale back slightly before opacity
+    [0, 0.03, fadeInStart - 0.02, fadeInEnd],
     [1, 0, 0, 1]
   );
 

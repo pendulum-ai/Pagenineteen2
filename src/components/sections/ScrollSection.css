@@ -3,8 +3,8 @@
   position: relative;
   width: 100%;
   overflow: visible; /* Ensure sticky works */
-  /* Overlap the end of HorizontalProjects section */
-  margin-top: -50vh;
+  /* Overlap the end of HorizontalProjects section - increased for earlier appearance */
+  margin-top: -150vh;
   z-index: 15; /* Above horizontal-sticky-wrapper (z-index: 10) */
 }
 
@@ -125,6 +125,11 @@
 
 /* Mobile Layout */
 @media (max-width: 768px) {
+  /* Remove overlap on mobile - don't start until Projects section fully scrolled */
+  .scroll-section-container {
+    margin-top: 20vh; /* Positive margin - creates gap after Projects */
+  }
+
   .sticky-wrapper {
     display: flex;       
     flex-direction: column-reverse; 
