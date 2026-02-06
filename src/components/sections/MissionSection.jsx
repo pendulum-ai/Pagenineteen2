@@ -15,11 +15,7 @@ const MissionSection = () => {
                 Page Nineteen is a small, London based lab exploring how AI changes the way we learn and the way we create.
               </h2>
             </BlurReveal>
-            <BlurReveal delay={0.2}>
-              <p className="mission-secondary-text">
-                We're principally interested in how AI changes the way we learn and the way we create. We build products to find out.
-              </p>
-            </BlurReveal>
+
           </div>
         </div>
 
