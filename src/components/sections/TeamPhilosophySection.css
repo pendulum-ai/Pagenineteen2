@@ -8,23 +8,18 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start; /* Start from top - no gap after divider */
+  align-items: stretch;
   overflow: hidden;
-  padding: 60px 0 120px 0;
+  padding: 0 0 120px 0;
 }
 
 .philosophy-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 100%;
+  align-items: stretch;
+  justify-content: flex-start; /* Start from top */
   width: 100%;
-  max-width: 1440px;
-  /* Use the global padding variable to ensure alignment with Header/Grid */
-  padding-left: var(--layout-padding-x);
-  padding-right: var(--layout-padding-x);
 }
 
 /* Ensure wrapper takes full available width */
@@ -40,7 +35,9 @@
   font-weight: 500;
   letter-spacing: -0.02em;
   color: var(--color-text);
-  width: 100%; /* Ensure text block is full width */
+  width: 100%; /* Full width */
+  white-space: pre-wrap; /* Preserve newlines for paragraph spacing */
+  /* Removed max-width: 85% - let it use full container width */
 }
 
 /* Mobile override matches Team.css mobile padding */
@@ -52,11 +49,11 @@
 
   .philosophy-title {
     font-size: 2.25rem;
-    line-height: 1.1;
+    line-height: 1.15;
   }
   
   .team-philosophy-section {
-    padding: 80px 0;
+    padding: 0 0 75vh 0; /* Scroll buffer for animation completion */
     min-height: auto;
   }
 }

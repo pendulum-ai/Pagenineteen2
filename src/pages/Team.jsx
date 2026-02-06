@@ -21,26 +21,7 @@ const Team = () => {
       </div>
       
       <div className="team-content-wrapper">
-        {/* Left Column: Sticky Info */}
-        <aside className="team-sidebar">
-          <div className="sticky-content">
-            <BlurReveal delay={0.2}>
-              <div className="sidebar-section">
-                <div className="sidebar-tag">
-                  <span className="tag-dot"></span>
-                  LEADERSHIP
-                </div>
-                <p className="sidebar-description">
-                  The team emerged from the South Park Commons Founder Fellowship and is backed by 
-                  Shine Capital. We operate as a tightly integrated unit, working best when owning complex 
-                  surfaces end-to-end.
-                </p>
-              </div>
-            </BlurReveal>
-          </div>
-        </aside>
-
-        {/* Right Column: Grid */}
+        {/* Team Grid - Full Width */}
         <div className="team-grid-section">
           <div className="team-grid">
             {teamMembers.map((member, index) => (
@@ -92,12 +73,7 @@ const Team = () => {
       </div>
       
       <BlurReveal delay={0.4}>
-        <div className="section-divider" style={{ 
-          width: '100%', 
-          height: '1px', 
-          backgroundColor: 'rgba(26, 26, 26, 0.1)', 
-          margin: '160px 0 60px 0' 
-        }}></div>
+        <div className="team-section-divider"></div>
       </BlurReveal>
 
       <TeamPhilosophySection />

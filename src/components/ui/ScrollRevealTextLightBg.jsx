@@ -5,44 +5,55 @@ const ScrollRevealTextLightBg = ({ children, className }) => {
   const containerRef = useRef(null);
   
   // Track scroll progress of the text container
-  // Adjusted for slower typing: Ends when text is closer to top (0.25)
+  // Animation starts when element enters viewport, ends when element is about to leave
+  // Using "end" ensures animation can complete even on small screens
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 0.9", "start 0.1"] 
+    offset: ["start 0.9", "end 0.3"] // Start when entering, end when bottom of text reaches 30% from top
   });
 
-  const words = children.split(" ");
+  // Split by double newlines for paragraphs, then by spaces for words
+  const paragraphs = children.split(/\n\n/);
   // Calculate total characters ignoring spaces (visual characters)
-  const totalChars = words.reduce((acc, word) => acc + word.length, 0);
+  const allWords = children.replace(/\n/g, ' ').split(/\s+/).filter(w => w);
+  const totalChars = allWords.reduce((acc, word) => acc + word.length, 0);
   
   let charCount = 0;
 
   return (
-    <span ref={containerRef} className={className} style={{ display: 'inline-block', flexWrap: 'wrap' }}>
-      {words.map((word, wIndex) => {
+    <span ref={containerRef} className={className} style={{ display: 'block', width: '100%' }}>
+      {paragraphs.map((para, pIndex) => {
+        const words = para.split(/\s+/).filter(w => w);
         return (
-          <span key={wIndex} style={{ display: 'inline-block', marginRight: '0.25em', whiteSpace: 'nowrap' }}>
-            {word.split("").map((char, cIndex) => {
-              // Accurate Global Index
-              const globalIndex = charCount;
-              charCount++; // Increment for next char
-
-              const percent = globalIndex / totalChars; 
-              
-              // Each char appears at its specific percentage
-              // We compress the distribution to [0, 0.8] so all animations have time to finish by 1.0
-              const start = percent * 0.8;
-
+          <React.Fragment key={pIndex}>
+            {pIndex > 0 && <><br /><br /></>}
+            {words.map((word, wIndex) => {
               return (
-                <Char 
-                  key={cIndex} 
-                  char={char} 
-                  start={start} 
-                  progress={scrollYProgress} 
-                />
+                <span key={wIndex} style={{ display: 'inline', marginRight: '0.25em' }}>
+                  {word.split("").map((char, cIndex) => {
+                    // Accurate Global Index
+                    const globalIndex = charCount;
+                    charCount++; // Increment for next char
+
+                    const percent = globalIndex / totalChars; 
+                    
+                    // Each char appears at its specific percentage
+                    // We compress the distribution to [0, 0.8] so all animations have time to finish by 1.0
+                    const start = percent * 0.8;
+
+                    return (
+                      <Char 
+                        key={cIndex} 
+                        char={char} 
+                        start={start} 
+                        progress={scrollYProgress} 
+                      />
+                    );
+                  })}
+                </span>
               );
             })}
-          </span>
+          </React.Fragment>
         );
       })}
     </span>
@@ -64,8 +75,8 @@ const getTargetColor = (intensity) => {
 const Char = ({ char, start, progress }) => {
   const opacity = useTransform(progress, [start, start + 0.001], [0, 1]);
   
-  const holdTime = 0.1; 
-  const restoreStart = 0.9; // Push restore slightly later to keep text dimmed longer
+  const holdTime = 0.05; // Shorter hold before starting to fade
+  const restoreStart = 0.7; // Start restoring to black earlier (was 0.9)
   const fadeStart = start + holdTime;
   const timeToFade = restoreStart - fadeStart;
   
