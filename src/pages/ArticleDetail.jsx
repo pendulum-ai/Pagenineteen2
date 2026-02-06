@@ -1,41 +1,134 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { articles } from '../data/journal';
 import BlurReveal from '../components/ui/BlurReveal';
 import JournalCard from '../components/ui/JournalCard';
-import './Journal.css'; // Reusing the journal styles
+import { request } from '../lib/datocms';
+import { StructuredText, Image } from 'react-datocms';
+import './Journal.css';
 
-const ContentBlock = ({ block }) => {
-  const isHeading = block.type === 'heading';
-  const isQuote = block.type === 'quote';
-  
-  // User Feedback: Text should not jump. Removed BlurReveal for stable reading.
-  // We use a simple div with the class for styling.
-  return (
-    <div className={`article-block block-${block.type}`}>
-      {isHeading && <h2>{block.text}</h2>}
-      {isQuote && <blockquote>"{block.text}"</blockquote>}
-      {block.type === 'paragraph' && <p>{block.text}</p>}
-    </div>
-  );
+// GraphQL query to fetch a single article by slug (with image blocks)
+const ARTICLE_QUERY = `
+  query ArticleBySlug($slug: String!) {
+    article(filter: { slug: { eq: $slug } }) {
+      id
+      slug
+      title
+      date
+      tag
+      excerpt
+      readingTime
+      content {
+        value
+        blocks {
+          __typename
+          ... on ImageBlockRecord {
+            id
+            image {
+              url
+              alt
+              width
+              height
+            }
+            caption
+          }
+        }
+      }
+    }
+    allArticles(first: 10, orderBy: date_DESC) {
+      id
+      slug
+      title
+      date
+      tag
+      excerpt
+      readingTime
+    }
+  }
+`;
+
+// Helper to format date
+const formatDate = (dateString) => {
+  if (!dateString) return '';
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 };
 
 const ArticleDetail = () => {
   const { slug } = useParams();
-  
-  // In a real CMS, we'd fetch based on slug. 
-  // For now, we force the master article if the slug matches, or fallback to find.
-  const article = articles.find(a => a.slug === slug) || articles[0];
+  const [article, setArticle] = useState(null);
+  const [nextArticle, setNextArticle] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
+    const fetchArticle = async () => {
+      try {
+        setIsLoading(true);
+        const data = await request({ 
+          query: ARTICLE_QUERY,
+          variables: { slug }
+        });
+        
+        if (!data.article) {
+          setError('Article not found');
+          setIsLoading(false);
+          return;
+        }
+
+        // Transform article data
+        const articleData = {
+          ...data.article,
+          date: formatDate(data.article.date),
+        };
+        
+        setArticle(articleData);
+
+        // Find next article
+        const allArticles = data.allArticles.map(a => ({
+          ...a,
+          date: formatDate(a.date),
+        }));
+        
+        const currentIndex = allArticles.findIndex(a => a.slug === slug);
+        const next = allArticles[currentIndex + 1] || allArticles[0];
+        setNextArticle(next);
+        
+        setIsLoading(false);
+      } catch (err) {
+        console.error('Failed to fetch article:', err);
+        setError('Failed to load article. Please try again later.');
+        setIsLoading(false);
+      }
+    };
+
+    fetchArticle();
     window.scrollTo(0, 0);
   }, [slug]);
 
-  if (!article) return null;
+  if (isLoading) {
+    return (
+      <div className="journal-container article-detail-container">
+        <div className="journal-loading">
+          <div className="loading-indicator">
+            <span className="loader-dot"></span>
+            <span className="loader-dot"></span>
+            <span className="loader-dot"></span>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
-  // Find next article for the "Read Next" section
-  const currentIndex = articles.findIndex(a => a.id === article.id);
-  const nextArticle = articles[currentIndex + 1] || articles[0];
+  if (error || !article) {
+    return (
+      <div className="journal-container article-detail-container">
+        <div className="journal-error">
+          <p>{error || 'Article not found'}</p>
+          <Link to="/journal" className="back-link">← Back to Journal</Link>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="journal-container article-detail-container">
@@ -46,8 +139,6 @@ const ArticleDetail = () => {
             </Link>
         </div>
       </div>
-
-
 
       <header className="article-header">
         <BlurReveal delay={0}>
@@ -63,35 +154,47 @@ const ArticleDetail = () => {
       </header>
 
       <article className="article-body">
-         {/* 
-            Modular Content Rendering:
-            Static blocks for stable reading.
-         */}
-         {article.contentBlocks ? (
-             article.contentBlocks.map((block, i) => (
-                 <ContentBlock key={i} block={block} />
-             ))
-         ) : (
-             <div dangerouslySetInnerHTML={{ __html: article.content }} />
+         {/* Render DatoCMS Structured Text content with image block support */}
+         {article.content && article.content.value && (
+           <StructuredText 
+             data={article.content}
+             renderBlock={({ record }) => {
+               if (record.__typename === 'ImageBlockRecord') {
+                 return (
+                   <figure className="article-image-block">
+                     {record.image && (
+                       <img 
+                         src={record.image.url} 
+                         alt={record.image.alt || ''} 
+                         width={record.image.width}
+                         height={record.image.height}
+                       />
+                     )}
+                     {record.caption && (
+                       <figcaption>{record.caption}</figcaption>
+                     )}
+                   </figure>
+                 );
+               }
+               return null;
+             }}
+           />
          )}
       </article>
 
-      <div className="article-footer">
-        <div className="next-article-config">
-            <BlurReveal delay={0.2} yOffset={20}>
-                {/* Minimal variant with custom label in the first column */}
-                <JournalCard 
-                    // CMS PREPARATION:
-                    // Currently forcing the link to the master article so the user
-                    // always sees the rich "Immersive Language Learning" content.
-                    // In the future, remove the `slug` override to link to the actual next article.
-                    article={{ ...nextArticle, slug: 'immersive-language-learning' }} 
-                    variant="minimal" 
-                    label="READ NEXT" 
-                />
-            </BlurReveal>
+      {nextArticle && (
+        <div className="article-footer">
+          <div className="next-article-config">
+              <BlurReveal delay={0.2} yOffset={20}>
+                  <JournalCard 
+                      article={nextArticle} 
+                      variant="minimal" 
+                      label="READ NEXT" 
+                  />
+              </BlurReveal>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
