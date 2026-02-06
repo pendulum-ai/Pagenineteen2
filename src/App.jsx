@@ -93,12 +93,17 @@ function AppContent() {
       <main>
         <Suspense fallback={<PageLoader />}>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home-v2" element={<HomeV2 />} />
-            <Route path="/projects" element={<Projects />} />
+            {/* Main pages */}
+            <Route path="/" element={<HomeV2 />} />
             <Route path="/journal" element={<Journal />} />
             <Route path="/journal/:slug" element={<ArticleDetail />} />
+            
+            {/* Hidden pages (still accessible via direct URL) */}
+            <Route path="/home-legacy" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/team" element={<Team />} />
+            
+            {/* 404 */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
