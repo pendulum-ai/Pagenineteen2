@@ -113,7 +113,5 @@
     min-height: auto; /* Allow it to shrink if needed, or keep 50vh if design dictates */
   }
 
-  .desktop-br {
-    display: none;
-  }
+
 }
