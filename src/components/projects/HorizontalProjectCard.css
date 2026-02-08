@@ -100,11 +100,13 @@
 .h-project-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Aligns content to top, allowing padding to push it down */
-  padding-top: clamp(60px, 8vh, 100px); /* Push content down below image top line */
+  justify-content: center; /* Changed back to center to allow padding-bottom adjustment if needed, or we can use padding-top to offset */
+  padding-top: 0; /* Removing large top padding to allow centering */
   height: 100%;
   max-height: 70vh;
   overflow: hidden;
+  /* Visual adjustment: move slightly up from absolute center */
+  padding-bottom: 40px; 
 }
 
 .h-project-title {
