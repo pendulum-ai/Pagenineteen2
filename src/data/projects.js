@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 'pendulum',
-    title: 'lightnote',
+    title: 'pendulum',
     tagline: 'Large-scale multimodal asset search and organization',
     description: "Pendulum indexes, organizes, and retrieves assets across images and text. It's designed to scale to millions of assets while staying flexible for downstream generative use cases.",
     link: 'https://search-app-teal.vercel.app/',
@@ -39,7 +39,7 @@ export const projects = [
   },
   {
     id: 'lightnote',
-    title: 'Lightnote',
+    title: 'lightnote',
     tagline: 'Composable creative workflows for generative media',
     description: "Lightnote explores what creative software looks like when AI is native to the interface rather than layered on top. A canvas-based environment for composing fine-tuned generative models and AI tools into repeatable creative workflows.",
     link: 'https://google.com', // Placeholder for tldraw-like demo
