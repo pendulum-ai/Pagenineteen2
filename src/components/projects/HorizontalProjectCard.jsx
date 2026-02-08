@@ -82,12 +82,11 @@ const HorizontalProjectCard = ({ project, index, scrollProgress }) => {
         style={{ cursor: 'none' }}
       >
         <picture>
-          <source 
-            srcSet={project.screenshotUrl?.replace(/\.(jpg|png)$/, '.webp')} 
-            type="image/webp" 
-          />
+          {project.screenshotUrl?.endsWith('.webp') && (
+            <source srcSet={project.screenshotUrl} type="image/webp" />
+          )}
           <img 
-            src={project.screenshotUrl} 
+            src={project.screenshotFallback || project.screenshotUrl} 
             alt={project.title} 
             className={`h-project-image ${isHovered ? 'hovered' : ''}`}
             loading={index === 0 ? "eager" : "lazy"}

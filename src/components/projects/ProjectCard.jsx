@@ -81,12 +81,11 @@ const ProjectCard = ({ project }) => {
           >
              {/* Reverted to standard Image for now */}
              <picture>
-               <source 
-                 srcSet={project.screenshotUrl?.replace(/\.(jpg|png)$/, '.webp')} 
-                 type="image/webp" 
-               />
+               {project.screenshotUrl?.endsWith('.webp') && (
+                 <source srcSet={project.screenshotUrl} type="image/webp" />
+               )}
                <img 
-                 src={project.screenshotUrl} 
+                 src={project.screenshotFallback || project.screenshotUrl} 
                  alt={project.title} 
                  className="project-image"
                  loading="lazy"
