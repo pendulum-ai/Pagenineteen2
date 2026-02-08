@@ -90,4 +90,8 @@
   .mission-text-block {
      padding-right: 0;
   }
+
+  .desktop-br {
+    display: none;
+  }
 }
