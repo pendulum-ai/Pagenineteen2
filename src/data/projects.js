@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 'pendulum',
-    title: 'Pendulum',
+    title: 'lightnote',
     tagline: 'Large-scale multimodal asset search and organization',
     description: "Pendulum indexes, organizes, and retrieves assets across images and text. It's designed to scale to millions of assets while staying flexible for downstream generative use cases.",
     link: 'https://search-app-teal.vercel.app/',
@@ -20,7 +20,7 @@ export const projects = [
   },
   {
     id: 'amble',
-    title: 'Amble',
+    title: 'amble',
     tagline: 'Real-time, personalized language learning',
     description: "Amble gets to know each user, their proficiency and their interests, and bends curriculums around them. Built on real-time voice interfaces and adaptive learning driven by continuous feedback.",
     link: 'https://www.amble.app/',
