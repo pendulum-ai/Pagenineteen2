@@ -3,10 +3,7 @@ export const projects = [
     id: 'pendulum',
     title: 'Pendulum',
     tagline: 'Large-scale multimodal asset search and organization',
-    description: [
-      'Pendulum indexes, organizes, and retrieves assets across images and text.',
-      "It's designed to scale to millions of assets while staying flexible for downstream generative use cases."
-    ],
+    description: "Pendulum indexes, organizes, and retrieves assets across images and text. It's designed to scale to millions of assets while staying flexible for downstream generative use cases.",
     link: 'https://search-app-teal.vercel.app/',
     github: 'https://google.com',
     focus: [
@@ -25,10 +22,7 @@ export const projects = [
     id: 'amble',
     title: 'Amble',
     tagline: 'Real-time, personalized language learning',
-    description: [
-      'Amble gets to know each user, their proficiency and their interests, and bends curriculums around them.',
-      'Built on real-time voice interfaces and adaptive learning driven by continuous feedback.'
-    ],
+    description: "Amble gets to know each user, their proficiency and their interests, and bends curriculums around them. Built on real-time voice interfaces and adaptive learning driven by continuous feedback.",
     link: 'https://www.amble.app/',
     github: null,
     focus: [
@@ -47,10 +41,7 @@ export const projects = [
     id: 'lightnote',
     title: 'Lightnote',
     tagline: 'Composable creative workflows for generative media',
-    description: [
-      'Lightnote explores what creative software looks like when AI is native to the interface rather than layered on top.',
-      'A canvas-based environment for composing fine-tuned generative models and AI tools into repeatable creative workflows.'
-    ],
+    description: "Lightnote explores what creative software looks like when AI is native to the interface rather than layered on top. A canvas-based environment for composing fine-tuned generative models and AI tools into repeatable creative workflows.",
     link: 'https://google.com', // Placeholder for tldraw-like demo
     github: 'https://google.com',
     focus: [
