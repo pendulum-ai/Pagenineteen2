@@ -1,33 +1,33 @@
 export const FRAMES = [
   {
     range: [0.02, 0.20],
-    title: "How we built.",
-    text: "We don't just train models; we focus on the integration work required to make them true in production.",
+    title: "Our work.",
+    text: "The way we build is constantly changing.",
     isIntro: true
   },
   {
     range: [0.23, 0.33],
-    title: "Multimodal Orchestration",
-    text: "Designing shared architectures that bridge vision, language, and speech models seamlessly. We don't just glue APIs together; we build unified inference pipelines."
+    title: "Multimodal orchestration",
+    text: "AI systems are moving beyond single-modality models. We build shared architectures that bridge vision, language, and speech into unified pipelines."
   },
   {
     range: [0.36, 0.46],
-    title: "Fine-tuning Pipelines",
-    text: "Building automated workflows for LoRA adaptation and continuous model improvement. From dataset curation to validation, entirely in code."
+    title: "Fine-tuning pipelines",
+    text: "Fine-tuning is becoming continuous, not one-off. Our workflows automate LoRA adaptation from dataset curation to validation, entirely in code."
   },
   {
     range: [0.49, 0.59],
-    title: "Real-time Systems",
-    text: "Pushing the boundaries of latency with streaming inference and instant voice interfaces. Because truly interactive AI must feel instantaneous."
+    title: "Real-time systems",
+    text: "Users expect AI to feel instant. We build streaming inference and voice interfaces designed around low latency."
   },
   {
     range: [0.62, 0.72],
-    title: "Agentic Workflows",
-    text: "Creating systems that evaluate themselves, with feedback loops embedded directly in production. Agents that critique, refine, and improve their own outputs."
+    title: "Agentic workflows",
+    text: "Production systems increasingly need to evaluate themselves. We embed feedback loops directly into deployment, with agents that critique and refine their own outputs."
   },
   {
     range: [0.75, 0.98],
-    title: "(Pro)sumer Interfaces",
-    text: "Crafting tools that don't just work, but feel intuitive and empowering to creative professionals. The interface is the model."
+    title: "Design first",
+    text: "AI is moving from backend capability to consumer experience. Our goal is to build tools where the model disappears into the interface."
   }
 ];
