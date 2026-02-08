@@ -12,7 +12,7 @@ export const FRAMES = [
   },
   {
     range: [0.36, 0.46],
-    title: "Fine-tuning pipelines",
+    title: "Fine-tuned",
     text: "Fine-tuning is becoming continuous, not one-off. Our workflows automate LoRA adaptation from dataset curation to validation, entirely in code."
   },
   {
