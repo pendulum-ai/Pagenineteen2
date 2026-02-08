@@ -108,11 +108,11 @@
 }
 
 .h-project-title {
-  font-size: clamp(2.5rem, 3.5vw, 4rem); /* Increased size for better visual hierarchy */
-  font-weight: 400; /* Lighter weight for cleaner look */
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  font-weight: 500;
   margin: 0 0 24px 0;
-  line-height: 1;
-  letter-spacing: -0.03em;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
   color: var(--color-text);
 }
 
