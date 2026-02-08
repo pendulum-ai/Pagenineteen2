@@ -100,18 +100,19 @@
 .h-project-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Aligns content to top, allowing padding to push it down */
+  padding-top: clamp(60px, 8vh, 100px); /* Push content down below image top line */
   height: 100%;
   max-height: 70vh;
   overflow: hidden;
 }
 
 .h-project-title {
-  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
-  font-weight: 500;
+  font-size: clamp(2.5rem, 3.5vw, 4rem); /* Increased size for better visual hierarchy */
+  font-weight: 400; /* Lighter weight for cleaner look */
   margin: 0 0 24px 0;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  line-height: 1;
+  letter-spacing: -0.03em;
   color: var(--color-text);
 }
 
@@ -124,20 +125,20 @@
 }
 
 .h-project-tagline {
-  font-size: clamp(1rem, 1.3vw, 1.25rem);
+  font-size: clamp(1.1rem, 1.4vw, 1.4rem);
   opacity: 0.9;
-  margin: 0 0 40px 0;
+  margin: 0 0 32px 0;
   font-weight: 400;
   color: var(--color-text);
   line-height: 1.3;
 }
 
 .h-project-description {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .h-project-description p {
-  font-size: clamp(0.9rem, 1vw, 1rem);
+  font-size: clamp(0.95rem, 1.05vw, 1.1rem);
   line-height: 1.6;
   opacity: 0.8;
   margin-bottom: 20px;
@@ -153,7 +154,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 0; /* Removed bottom margin as links follow immediately */
 }
 
 /* No extra spacing needed for col */
@@ -163,9 +164,9 @@
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  opacity: 0.5;
-  margin-bottom: 12px;
-  font-weight: 700;
+  opacity: 0.4;
+  margin-bottom: 8px; /* Tighter spacing */
+  font-weight: 600;
 }
 
 .h-meta-list {
@@ -196,32 +197,46 @@
 .h-stack-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 0; /* Remove gap for inline text flow */
 }
 
+/* Variant 3: Inline Text Stack Tags */
 .h-stack-tag {
-  font-size: 0.75rem;
-  background: rgba(0, 0, 0, 0.04);
-  padding: 5px 10px;
-  border-radius: 100px;
-  font-weight: 500;
-  opacity: 0.8;
-  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 400;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
   cursor: default;
+  color: var(--color-text);
 }
 
 .h-stack-tag:hover {
-  background-color: #ffffff;
-  color: #ff5500;
+  background-color: transparent;
+  color: var(--color-text);
   opacity: 1;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: none;
+}
+
+.h-stack-tag::after {
+  content: "/";
+  margin: 0 8px;
+  opacity: 0.4;
+  color: var(--color-text);
+}
+
+.h-stack-tag:last-child::after {
+  display: none;
 }
 
 /* Links */
 .h-project-links {
   display: flex;
   gap: 24px;
-  margin-top: auto;
+  margin-top: 48px; /* Fixed spacing from content instead of auto */
+  padding-top: 0;
 }
 
 .h-project-link {
