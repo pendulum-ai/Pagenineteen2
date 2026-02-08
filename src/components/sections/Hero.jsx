@@ -40,7 +40,7 @@ const Hero = () => {
             style={{ y: yDesc }}
             className="hero-description"
           >
-            We design, ship, and operate end-to-end AI systems. From creative tooling to large-scale asset intelligence.
+            Building at the intersection of language, vision, and sound.
           </motion.p>
         </BlurReveal>
       </div>
