@@ -120,7 +120,7 @@ const Journal = () => {
         </BlurReveal>
         <BlurReveal delay={0.1}>
             <p className="journal-description">
-            Ongoing writing, research papers, and exploration notes from the team. We believe in building in public and sharing our architectural learnings.
+            Writing and notes from the team.
             </p>
         </BlurReveal>
       </div>
