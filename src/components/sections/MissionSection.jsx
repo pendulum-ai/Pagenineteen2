@@ -12,7 +12,7 @@ const MissionSection = () => {
           <div className="mission-text-block text-align-fix">
             <BlurReveal>
               <h2>
-                Page Nineteen is a small, London based lab exploring how AI changes the way we learn and the way we create.
+                Page Nineteen is a small, London based lab exploring how AI changes the way we learn <br /> and the way we create.
               </h2>
             </BlurReveal>
 
