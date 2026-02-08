@@ -111,14 +111,16 @@ const HorizontalProjectCard = ({ project, index, scrollProgress }) => {
         </div>
 
         <div className="h-project-meta">
-          <div className="h-project-meta-col">
-            <span className="h-meta-label">System Focus</span>
-            <ul className="h-meta-list">
-              {project.focus.slice(0, 3).map((item, idx) => (
-                <li key={idx}>{item}</li>
-              ))}
-            </ul>
-          </div>
+            {/* 
+            <div className="h-project-meta-col">
+              <span className="h-meta-label">System Focus</span>
+              <ul className="h-meta-list">
+                {project.focus.slice(0, 3).map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            */}
 
           <div className="h-project-meta-col">
             <span className="h-meta-label">Core Stack</span>

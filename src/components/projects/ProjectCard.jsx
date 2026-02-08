@@ -35,14 +35,14 @@ const ProjectCard = ({ project }) => {
   const ySeparatorRaw = useTransform(scrollYProgress, [0, 1], [0, -40]);
   const yTaglineRaw = useTransform(scrollYProgress, [0, 1], [0, -30]);
   const yDescRaw = useTransform(scrollYProgress, [0, 1], [0, -20]);
-  const yFocusRaw = useTransform(scrollYProgress, [0, 1], [0, -10]);
+  // const yFocusRaw = useTransform(scrollYProgress, [0, 1], [0, -10]);
   const yStackRaw = useTransform(scrollYProgress, [0, 1], [0, 0]); 
 
   const yTitle = isMobile ? 0 : yTitleRaw;
   const ySeparator = isMobile ? 0 : ySeparatorRaw;
   const yTagline = isMobile ? 0 : yTaglineRaw;
   const yDesc = isMobile ? 0 : yDescRaw;
-  const yFocus = isMobile ? 0 : yFocusRaw;
+  // const yFocus = isMobile ? 0 : yFocusRaw;
   const yStack = isMobile ? 0 : yStackRaw;
 
   // Determine active state for Digital Image
@@ -110,6 +110,7 @@ const ProjectCard = ({ project }) => {
             )}
           </motion.div>
 
+          {/*
           <motion.div style={{ y: yFocus }}>
             <div className="project-meta-col">
               <span className="meta-label">System Focus</span>
@@ -120,6 +121,7 @@ const ProjectCard = ({ project }) => {
               </ul>
             </div>
           </motion.div>
+          */}
             
           <motion.div style={{ y: yStack }}>
             <div className="project-meta-col">

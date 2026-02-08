@@ -11,7 +11,9 @@
   justify-content: flex-start; /* Start from top - no gap after divider */
   align-items: stretch;
   overflow: hidden;
-  padding: 0 0 120px 0;
+  /* Scroll buffer: animation needs element to scroll from 90% to 30% of viewport
+     Adding 60vh ensures the text can scroll far enough for animation to complete */
+  padding: 0 0 60vh 0;
 }
 
 .philosophy-content {
