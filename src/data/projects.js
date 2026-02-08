@@ -65,7 +65,7 @@ export const projects = [
     stack: ['React Flow', 'Diffusers', 'LoRA', 'Flux', 'SDXL'],
     bgColor: '#FAF9F6',
     visualType: 'particles',
-    screenshotUrl: '/images/Lightnote_v2.jpg',
+    screenshotUrl: '/images/Lightnote_v2.webp',
     screenshotFallback: '/images/Lightnote_v2.jpg'
   }
 ];
