@@ -40,7 +40,7 @@ const Hero = () => {
             style={{ y: yDesc }}
             className="hero-description"
           >
-            Building at the intersection of <br className="desktop-br" /> language, vision, and sound.
+            Building at the intersection of language, <br className="desktop-br" /> vision, and sound.
           </motion.p>
         </BlurReveal>
       </div>
