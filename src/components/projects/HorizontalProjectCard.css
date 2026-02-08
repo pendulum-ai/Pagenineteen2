@@ -107,7 +107,7 @@
 .h-project-title {
   font-size: clamp(1.8rem, 2.5vw, 2.5rem);
   font-weight: 500;
-  margin: 0 0 12px 0;
+  margin: 0 0 24px 0;
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--color-text);
@@ -116,7 +116,7 @@
 /* Mobile: Project title smaller than "Projects" section title */
 @media (max-width: 768px) {
   .h-project-title {
-    font-size: clamp(1.5rem, 6vw, 2rem);  /* Smaller than --text-display */
+    font-size: clamp(1.5rem, 6vw, 2rem); /* Smaller than --text-display */
     margin: 0 0 8px 0;
   }
 }
@@ -124,21 +124,21 @@
 .h-project-tagline {
   font-size: clamp(1rem, 1.3vw, 1.25rem);
   opacity: 0.9;
-  margin: 0 0 20px 0;
+  margin: 0 0 40px 0;
   font-weight: 400;
   color: var(--color-text);
   line-height: 1.3;
 }
 
 .h-project-description {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .h-project-description p {
   font-size: clamp(0.9rem, 1vw, 1rem);
   line-height: 1.6;
   opacity: 0.8;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: var(--color-text);
 }
 
@@ -162,7 +162,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   opacity: 0.5;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   font-weight: 700;
 }
 
