@@ -2,11 +2,10 @@ export const projects = [
   {
     id: 'pendulum',
     title: 'Pendulum',
-    tagline: 'Large-scale multimodal asset search and organisation',
+    tagline: 'Large-scale multimodal asset search and organization',
     description: [
-      'Pendulum is a system for indexing, organising, and retrieving multimodal assets across images and text.',
-      'We are actively developing Pendulum to explore how multimodal retrieval can function both as a standalone product and as infrastructure for generative systems.',
-      'The system is designed to ingest, index, and organise millions of assets while remaining flexible for downstream generative use cases.'
+      'Pendulum indexes, organizes, and retrieves assets across images and text.',
+      "It's designed to scale to millions of assets while staying flexible for downstream generative use cases."
     ],
     link: 'https://search-app-teal.vercel.app/',
     github: 'https://google.com',
@@ -25,11 +24,10 @@ export const projects = [
   {
     id: 'amble',
     title: 'Amble',
-    tagline: 'Real-time, personalised language learning',
+    tagline: 'Real-time, personalized language learning',
     description: [
-      'Amble explores how agentic systems and real-time voice interfaces can deliver genuinely personalised learning experiences.',
-      'We are building Amble as a live environment for testing adaptive learning systems driven by continuous feedback.',
-      'Amble continues to inform our work on evaluation-driven agentic workflows in consumer-facing systems.'
+      'Amble gets to know each user, their proficiency and their interests, and bends curriculums around them.',
+      'Built on real-time voice interfaces and adaptive learning driven by continuous feedback.'
     ],
     link: 'https://www.amble.app/',
     github: null,

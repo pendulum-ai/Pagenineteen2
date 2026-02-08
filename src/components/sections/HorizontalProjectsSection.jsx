@@ -143,8 +143,7 @@ const HorizontalProjectsSection = () => {
               className="horizontal-intro-description"
               style={{ y: descriptionY }}
             >
-              Each system below is live and in active development, serving as a proving ground 
-              for different aspects of the same underlying multimodal architecture.
+              Exploring how new technology can address longstanding human needs.
             </motion.p>
           </div>
           
