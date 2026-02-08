@@ -49,8 +49,7 @@ export const projects = [
     tagline: 'Composable creative workflows for generative media',
     description: [
       'Lightnote explores what creative software looks like when AI is native to the interface rather than layered on top.',
-      'We are building a canvas-based environment that allows users to compose fine-tuned generative models and AI tools into repeatable creative workflows.',
-      'Lightnote is an ongoing testbed for understanding how creative professionals interact with multimodal systems when composition becomes the primary abstraction.'
+      'A canvas-based environment for composing fine-tuned generative models and AI tools into repeatable creative workflows.'
     ],
     link: 'https://google.com', // Placeholder for tldraw-like demo
     github: 'https://google.com',
