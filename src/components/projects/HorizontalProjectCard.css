@@ -21,10 +21,12 @@
 /* Blur reveal states */
 .h-project-card.blur-hidden {
   filter: blur(10px);
+  opacity: 0.7; /* Visible but subtle - content never disappears */
 }
 
 .h-project-card.visible {
   filter: blur(0);
+  opacity: 1;
 }
 
 /* Responsive breakpoints */

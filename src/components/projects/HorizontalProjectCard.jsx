@@ -13,10 +13,16 @@ const HorizontalProjectCard = ({ project, index, scrollProgress }) => {
   useEffect(() => {
     if (index === 0) return; // First card already visible
     
+    // Fallback: if Observer doesn't fire within 3s, show anyway
+    const fallbackTimer = setTimeout(() => {
+      setIsVisible(true);
+    }, 3000);
+    
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
+          clearTimeout(fallbackTimer);
           observer.disconnect(); // Only trigger once
         }
       },
@@ -30,7 +36,10 @@ const HorizontalProjectCard = ({ project, index, scrollProgress }) => {
       observer.observe(cardRef.current);
     }
     
-    return () => observer.disconnect();
+    return () => {
+      clearTimeout(fallbackTimer);
+      observer.disconnect();
+    };
   }, [index]);
 
   // Strong per-card parallax effect

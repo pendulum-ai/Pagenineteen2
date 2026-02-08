@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useScroll, useTransform } from 'framer-motion';
 
 import Hero from '../components/sections/Hero';
@@ -17,7 +17,14 @@ const HomeV2 = () => {
   const horizontalProjectsRef = useRef(null);
 
   // Detect mobile for responsive timing
-  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
+  const [isMobile, setIsMobile] = useState(false);
+  
+  useEffect(() => {
+    const check = () => setIsMobile(window.matchMedia("(max-width: 768px)").matches);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
 
   // CrossHair visibility: fade out BEFORE projects section enters
   const { scrollYProgress: projectsFader } = useScroll({
