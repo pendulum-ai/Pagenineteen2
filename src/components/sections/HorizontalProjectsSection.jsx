@@ -143,8 +143,9 @@ const HorizontalProjectsSection = () => {
               className="horizontal-intro-description"
               style={{ y: descriptionY }}
             >
-              Exploring how new technology can address longstanding human needs.
-            </motion.p>
+            <p className="projects-section-description">
+                Exploring how new technology can address longstanding human needs.
+              </p>
           </div>
           
           {/* Project cards */}
