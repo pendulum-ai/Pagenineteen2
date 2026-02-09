@@ -8,12 +8,15 @@ const Analytics = () => {
   useEffect(() => {
     // Initialize PostHog only if the API key is present
     const apiKey = import.meta.env.VITE_POSTHOG_KEY;
-    const apiHost = import.meta.env.VITE_POSTHOG_HOST || 'https://eu.i.posthog.com';
+    // Use local proxy /ingest to bypass ad blockers
+    const apiHost = '/ingest';
+    const uiHost = 'https://eu.posthog.com'; // For links to dashboard if needed
 
     if (apiKey && !posthog.__loaded) {
-      console.log('PostHog: Initializing with host:', apiHost);
+      console.log('PostHog: Initializing with proxy host:', apiHost);
       posthog.init(apiKey, {
         api_host: apiHost,
+        ui_host: uiHost,
         person_profiles: 'identified_only',
         capture_pageview: false, // We handle pageviews manually for SPA
         debug: true, // Enable debug mode to see events in console
