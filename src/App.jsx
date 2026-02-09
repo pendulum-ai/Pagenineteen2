@@ -17,6 +17,9 @@ const ArticleDetail = lazy(() => import('./pages/ArticleDetail'));
 const Team = lazy(() => import('./pages/Team'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
+// PostHog Analytics
+import Analytics from './components/utils/Analytics';
+
 // Minimal loading state (matches site background)
 const PageLoader = () => (
   <div style={{ 
@@ -121,6 +124,7 @@ function App() {
         <CursorProvider>
           <CustomCursor />
           <ScrollToTop />
+          <Analytics />
           <AppContent />
         </CursorProvider>
       </ErrorBoundary>
