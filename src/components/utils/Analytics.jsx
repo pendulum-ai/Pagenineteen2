@@ -11,17 +11,25 @@ const Analytics = () => {
     const apiHost = import.meta.env.VITE_POSTHOG_HOST || 'https://eu.i.posthog.com';
 
     if (apiKey && !posthog.__loaded) {
+      console.log('PostHog: Initializing with host:', apiHost);
       posthog.init(apiKey, {
         api_host: apiHost,
-        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+        person_profiles: 'identified_only',
         capture_pageview: false, // We handle pageviews manually for SPA
+        debug: true, // Enable debug mode to see events in console
+        loaded: (ph) => {
+          console.log('PostHog: Loaded successfully', ph);
+        },
       });
+    } else {
+      console.log('PostHog: Skipped init (No Key or already loaded)', { apiKey: !!apiKey, loaded: !!posthog.__loaded });
     }
   }, []);
 
   useEffect(() => {
     // Track page views on route change
     if (posthog.__loaded) {
+      console.log('PostHog: Capturing pageview', location.pathname);
       posthog.capture('$pageview');
     }
   }, [location]);
