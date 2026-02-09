@@ -22,27 +22,25 @@ export default async function handler(req, res) {
 
   try {
     // Construct the destination URL
-    // We expect the path to be passed or we infer it.
-    // If request is to /ph-new/e/, and we rewrite to /api/ph,
-    // we need to know the suffix "/e/".
+    const { path, ...queryParams } = req.query; // Separate 'path' from other params
+    const pathString = Array.isArray(path) ? path.join('/') : (path || '');
     
-    // Changing vercel.json to:
-    // "source": "/ph-new/:path*", "destination": "/api/ph?path=:path*"
-    
-    const { path } = req.query;
-    const pathString = Array.isArray(path) ? path.join('/') : path;
-    
-    if (!pathString) {
-      return res.status(400).json({ error: 'No path provided' });
+    if (!pathString && !req.url.includes('static')) { 
+       // Allow empty path if it's just a check, but usually PostHog sends /e/ or /decide/
+       // If path is empty, we might just be pinging.
     }
 
-    const url = `${target}/${pathString}`;
+    // Reconstruct query string
+    const queryString = new URLSearchParams(queryParams).toString();
+    const url = `${target}/${pathString}${queryString ? '?' + queryString : ''}`;
     
+    console.log(`Proxying to: ${url}`); // Helpful for Vercel logs
+
     const response = await fetch(url, {
       method: req.method,
       headers: {
         ...req.headers,
-        host: 'eu.i.posthog.com', // Override host
+        host: 'eu.i.posthog.com',
       },
       body: req.method !== 'GET' && req.method !== 'HEAD' ? JSON.stringify(req.body) : undefined,
     });
