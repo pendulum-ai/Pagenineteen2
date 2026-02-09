@@ -1,8 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/ph-new/:path*",
-      "destination": "https://eu.i.posthog.com/:path*"
+      "source": "/ph-new/static/:path(.*)",
+      "destination": "https://eu-assets.i.posthog.com/static/:path"
+    },
+    {
+      "source": "/ph-new/:path(.*)",
+      "destination": "https://eu.i.posthog.com/:path"
     },
     {
       "source": "/(.*)",
