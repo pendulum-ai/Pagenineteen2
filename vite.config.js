@@ -6,10 +6,10 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api/ph': {
+      '/ph-new': {
         target: 'https://eu.i.posthog.com',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/ph/, ''),
+        rewrite: (path) => path.replace(/^\/ph-new/, ''),
       },
     },
   },
