@@ -32,6 +32,11 @@ const Team = () => {
                   rel="noopener noreferrer"
                   className="team-card"
                 >
+                  <div className="card-top-section">
+                    <h3 className="card-name">{member.name}</h3>
+                    <div className="card-separator"></div>
+                  </div>
+
                   <div className="card-visual">
                      <img 
                        src={member.image} 
@@ -44,7 +49,7 @@ const Team = () => {
                   
                   <div className="card-info">
                     <div className="info-header">
-                      <h3 className="card-name">{member.name}</h3>
+                      {/* Name moved up */}
                       <p className="card-role">{member.role}</p>
                     </div>
                     

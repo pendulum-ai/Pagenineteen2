@@ -47,101 +47,126 @@
 .team-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
-  gap: clamp(24px, 3vw, 48px); /* Responsive gap scales with viewport */
+  column-gap: clamp(48px, 5vw, 100px); /* Significantly larger gap to shrink photos & add air */
+  row-gap: clamp(64px, 6vw, 96px);
 }
 
 /* Team Card */
 .team-card {
   display: flex;
   flex-direction: column;
-  gap: clamp(16px, 2vw, 24px); /* Modular spacing */
+  gap: 0; /* Control spacing manually via sections */
   cursor: pointer;
   height: 100%;
   text-decoration: none;
   color: inherit;
 }
 
+/* Top Section: Name + Divider */
+.card-top-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Reduced specific gap */
+  margin-bottom: 24px; /* Space between divider and image */
+  min-height: 50px; /* Reduced from 80px to pull name closer to line, still allows 2 lines */
+  justify-content: space-between;
+}
+
+.card-name {
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  font-weight: 400; /* Lighter, more editorial */
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.card-separator {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-text);
+  opacity: 0.2;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform-origin: left;
+}
+
+.team-card:hover .card-separator {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* Visual Section */
 .card-visual {
   width: 100%;
-  max-width: 80%; /* Reduce avatar size by 20% */
-  aspect-ratio: 3/4; /* Portrait format instead of square */
+  max-width: 100%; /* Full width relative to column */
+  aspect-ratio: 1/1; /* Square aspect ratio */
   border-radius: 1px;
   overflow: hidden;
   background-color: #F8F8F8;
   transform: translateZ(0); 
+  margin-bottom: 16px; /* Space below image */
 }
 
-/* Image Styling with Proper Centering */
+/* Image Styling */
 .card-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%; /* Center person vertically - adjustable */
+  object-position: center 20%;
   display: block;
-  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.7s cubic-bezier(0.2, 1, 0.3, 1);
   will-change: transform;
+  filter: grayscale(100%); /* Editorial style: B&W by default? Optional, remove if not desired. Let's keep color for now based on user request "update pictures", but maybe they want B&W? Reference was colored sketch. Let's stick to color. */
+  filter: none; 
 }
 
-/* Hover Effect: Scale Image */
+/* Hover Effect */
 .team-card:hover .card-image {
-  transform: scale(1.05); /* Slight zoom inside the frame */
+  transform: scale(1.03);
 }
 
-/* Typography Hierarchy - Responsive and Modular */
-
+/* Info Section */
 .card-info {
   display: flex;
   flex-direction: column;
-  gap: clamp(12px, 1.5vw, 16px);
-  padding-top: 8px;
+  gap: 12px;
   flex-grow: 1;
 }
 
-/* Name & Role Grouping */
 .info-header {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.card-name {
-  font-size: clamp(1.25rem, 2vw, 1.75rem); /* Scales down for compact layout */
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  color: var(--color-text);
-  line-height: 1.1;
-}
-
 .card-role {
-  font-size: clamp(0.65rem, 0.8vw, 0.7rem);
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 600;
-  color: var(--color-text-secondary);
-  opacity: 0.8;
+  color: var(--color-accent); /* Highlight role */
+  opacity: 1;
   font-family: var(--font-mono, monospace);
+  margin-bottom: 4px;
 }
 
 /* Details Section */
 .card-details {
   display: flex;
   flex-direction: column;
-  gap: clamp(12px, 1.5vw, 16px);
-  margin-top: 4px;
+  gap: 8px;
 }
 
-/* Bio Block - Truncated to 2 Lines */
+/* Bio */
 .detail-bio {
-  font-size: clamp(0.85rem, 1vw, 1rem);
+  font-size: 0.85rem;
   line-height: 1.5;
-  color: var(--color-text);
+  color: var(--color-text-secondary);
   font-weight: 400;
-  opacity: 0.9;
   
-  /* Text truncation utility */
+  /* Text truncation */
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Limit to 2 lines */
-  line-clamp: 2; /* Standard property for compatibility */
+  -webkit-line-clamp: 3; /* Allow slightly more text */
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -277,37 +302,36 @@
 
   .team-grid {
     grid-template-columns: repeat(2, 1fr); /* 2x2 grid on mobile */
-    gap: 40px 16px; /* Increased row gap */
+    column-gap: 12px; /* reduced gap for 2 columns on small screens */
+    row-gap: 48px;
   }
   
   /* Left-aligned card on mobile */
   .team-card {
-    align-items: flex-start;
     text-align: left;
+    /* align-items: stretch; (Default) - Ensures separator is full width */
   }
   
   /* Smaller photo on mobile - full width of column */
   .card-visual {
     aspect-ratio: 1/1;
     max-width: 100%; /* Fill column width */
-    margin: 0;
+    margin-bottom: 12px; /* Restore spacing between image and text */
   }
   
-  /* Left-aligned text details on mobile */
+  /* Reset Details width */
   .card-details {
-    align-items: flex-start;
-    text-align: left;
     width: 100%;
   }
   
-  /* Left-aligned LinkedIn link on mobile */
+  /* Ensure Link aligns left */
   .card-linkedin-link {
     justify-content: flex-start;
   }
   
-  /* Optical alignment - shift text right to match portrait center */
+  /* Remove shifted alignment - align with image/name */
   .card-info {
-    padding-left: 16px; /* Visual fine-tuning to align with portrait */
+    padding-left: 0; 
   }
   
   .team-header-section {
@@ -318,7 +342,7 @@
      font-size: 1.5rem;
   }
   
-  /* Smaller text on mobile cards */
+  /* Typography Scaling */
   .card-name {
     font-size: 1.1rem;
   }
@@ -329,15 +353,11 @@
   
   .detail-bio {
     font-size: 0.75rem;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
+    -webkit-line-clamp: 4; /* Allow more lines on mobile as needed */
+    line-clamp: 4;
   }
   
-  .detail-label {
-    font-size: 0.55rem;
-  }
-  
-  .detail-value {
+  .detail-previous {
     font-size: 0.7rem;
   }
   
