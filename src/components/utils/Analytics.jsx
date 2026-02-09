@@ -8,8 +8,8 @@ const Analytics = () => {
   useEffect(() => {
     // Initialize PostHog only if the API key is present
     const apiKey = import.meta.env.VITE_POSTHOG_KEY;
-    // Use local proxy /ingest to bypass ad blockers
-    const apiHost = '/ingest';
+    // Use local proxy /api/ph to bypass ad blockers
+    const apiHost = '/api/ph';
     const uiHost = 'https://eu.posthog.com'; // For links to dashboard if needed
 
     if (apiKey && !posthog.__loaded) {
