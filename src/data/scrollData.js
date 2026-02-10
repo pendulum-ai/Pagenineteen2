@@ -27,7 +27,7 @@ export const FRAMES = [
   },
   {
     range: [0.75, 0.98],
-    title: "Design first",
-    text: "AI is moving from backend capability to consumer experience. Our goal is to build tools where the model disappears into the interface."
+    title: "Prosumer interfaces",
+    text: "We design AI products that feel native to the people who use them. Interfaces where the complexity lives in the backend, not the experience."
   }
 ];
