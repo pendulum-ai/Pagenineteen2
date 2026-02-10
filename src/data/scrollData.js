@@ -2,7 +2,7 @@ export const FRAMES = [
   {
     range: [0.02, 0.20],
     title: "Our work.",
-    text: "The way we build is constantly changing.",
+    text: "Where we spend our time.",
     isIntro: true
   },
   {
