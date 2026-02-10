@@ -24,7 +24,7 @@ const GoalSection = ({ id }) => {
       <div className="goal-content container">
         <motion.div style={{ y: yText }} className="goal-text-wrapper">
           <ScrollRevealText className="goal-title">
-            Our principle goal is to ship reliable, repeatable systems across research, infrastructure, and product
+            The best technology starts with very old human needs. From model to interface, it disappears into the experience.
           </ScrollRevealText>
         </motion.div>
       </div>
