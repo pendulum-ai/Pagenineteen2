@@ -1,5 +1,4 @@
 import willImg from '../assets/images/team/Will.webp';
-import zoImg from '../assets/images/team/Zo.webp';
 import louisImg from '../assets/images/team/Louis.webp';
 import tarikImg from '../assets/images/team/Tarik.webp';
 import ollyImg from '../assets/images/team/Oliver.webp';
@@ -10,27 +9,18 @@ export const teamMembers = [
   { 
     id: 1, 
     name: 'William Usdin', 
-    role: 'Co-founder', 
-    previously: 'Google, Oxford, LSE, Fulbright',
-    bio: 'Product, strategy, and operations.',
+    role: 'Founder, CEO', 
+    previously: 'Google, Oxford, Fulbright',
+    bio: 'Product and strategy.',
     linkedin: 'https://www.linkedin.com/in/williamusdin/',
     image: willImg
-  },
-  { 
-    id: 2, 
-    name: 'Zo Ahmed', 
-    role: 'Co-founder', 
-    previously: 'Spotify, Twitter, Oxford, LSE',
-    bio: 'Product and engineering.',
-    linkedin: 'https://www.linkedin.com/in/zoahmed1/',
-    image: zoImg
   },
   { 
     id: 3, 
     name: 'Louis Marion', 
     role: 'Founding Engineer', 
     previously: 'Meta, Babylon, Darktrace, Stanford',
-    bio: 'ML and AI.',
+    bio: 'ML and infrastructure.',
     linkedin: 'https://www.linkedin.com/in/louismarion1/',
     image: louisImg
   },
@@ -38,26 +28,17 @@ export const teamMembers = [
     id: 4, 
     name: 'Tarik Altuncu', 
     role: 'Founding Engineer', 
-    previously: 'Imperial College (PhD)',
-    bio: 'Machine Learning and AI.',
+    previously: 'Imperial College, PhD',
+    bio: 'Machine Learning.',
     linkedin: 'https://www.linkedin.com/in/tarikaltuncu/',
     image: tarikImg
   },
   { 
-    id: 5, 
-    name: 'Oliver Mayes', 
-    role: 'Designer', 
-    previously: 'Bumble, Motorway',
-    bio: 'Product Design.',
-    linkedin: 'https://www.linkedin.com/in/omayes/',
-    image: ollyImg
-  },
-  { 
     id: 6, 
-    name: 'Altaibayar Tseveen', 
-    role: 'Frontend', 
-    previously: 'Software Engineer',
-    bio: 'Frontend Engineering.',
+    name: 'Altai Tseveen', 
+    role: 'Founding Engineer', 
+    previously: 'Google, Meta',
+    bio: 'iOS and Android.',
     linkedin: 'https://www.linkedin.com/in/altaibayar/',
     image: altaiImg
   },
@@ -65,9 +46,18 @@ export const teamMembers = [
     id: 7, 
     name: 'Pedro Ferreira Martins', 
     role: 'Founding Engineer', 
-    previously: 'Amble',
-    bio: 'Software Engineering.',
+    previously: 'Amazon Polly and Alexa',
+    bio: 'Voice and NLP.',
     linkedin: 'https://www.linkedin.com/in/pedro-ferreira-martins-004020170/',
     image: pedroImg
+  },
+  { 
+    id: 5, 
+    name: 'Oliver Mayes', 
+    role: 'Founding Designer', 
+    previously: 'Bumble, Motorway',
+    bio: 'Design Engineer.',
+    linkedin: 'https://www.linkedin.com/in/omayes/',
+    image: ollyImg
   }
 ];

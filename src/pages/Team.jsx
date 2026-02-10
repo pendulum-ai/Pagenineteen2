@@ -81,7 +81,7 @@ const Team = () => {
         <div className="team-section-divider"></div>
       </BlurReveal>
 
-      <TeamPhilosophySection />
+      {/* <TeamPhilosophySection /> */}
     </div>
   );
 };
