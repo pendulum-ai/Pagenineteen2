@@ -31,11 +31,10 @@
 }
 
 .goal-title {
-  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-  line-height: 1.3;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  max-width: 800px;
+  font-size: clamp(2.25rem, 4.5vw, 4.5rem);
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -0.02em;
 }
 
 .text-grey {
@@ -57,7 +56,7 @@
 
 @media (max-width: 768px) {
   .goal-title {
-    font-size: 1.5rem; /* Changed from 3.5rem */
+    font-size: 2.6rem; /* 75% of original 3.5rem is ~2.6rem */
   }
   .goal-text-wrapper {
     margin-bottom: 0; /* Centered visually */
