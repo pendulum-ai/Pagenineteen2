@@ -44,7 +44,7 @@
 
 .mission-text-block {
   width: 100%;
-  max-width: 650px; /* Prevent text from spanning too wide on large (4K) screens, preserving MacBook line breaks */
+  max-width: 750px; /* Gently constrain width on 4K, allow MacBook layout to breathe */
 }
 
 .mission-section h2,
@@ -55,7 +55,7 @@
   font-weight: var(--weight-regular);
   color: var(--color-text);
   margin-bottom: var(--space-md);
-  text-wrap: pretty;
+  text-wrap: balance; /* Magically prevents single-word orphans (the "gap tooth") */
 }
 
 .mission-belief-text {
