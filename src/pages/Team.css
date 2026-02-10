@@ -62,7 +62,7 @@
   color: inherit;
   
   /* Prevent images from getting too large in 3-col layout */
-  max-width: 380px; 
+  max-width: 250px; 
   margin-inline: auto; /* Center the card in the grid cell */
   width: 100%;
 }
