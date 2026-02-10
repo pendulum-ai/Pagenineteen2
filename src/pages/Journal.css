@@ -274,7 +274,8 @@
 }
 
 .article-subtitle {
-  font-size: 1.5rem;
+  font-family: var(--font-main);
+  font-size: 1.75rem;
   font-weight: 400;
   line-height: 1.4;
   color: var(--color-text);

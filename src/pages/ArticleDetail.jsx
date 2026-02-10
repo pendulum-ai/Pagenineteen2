@@ -154,7 +154,9 @@ const ArticleDetail = () => {
         </BlurReveal>
 
         {article.excerpt && (
+            <BlurReveal delay={0.2}>
               <p className="article-subtitle">{article.excerpt}</p>
+            </BlurReveal>
         )}
       </header>
 
