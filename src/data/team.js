@@ -19,7 +19,7 @@ export const teamMembers = [
     id: 3, 
     name: 'Louis Marion', 
     role: 'Founding Engineer', 
-    previously: 'Meta, Babylon, Darktrace, Stanford',
+    previously: 'Meta, Stanford, Darktrace',
     bio: 'ML and infrastructure.',
     linkedin: 'https://www.linkedin.com/in/louismarion1/',
     image: louisImg
