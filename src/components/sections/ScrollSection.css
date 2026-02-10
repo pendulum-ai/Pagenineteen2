@@ -204,5 +204,13 @@
   .scroll-text-block p {
     text-shadow: none; 
   }
+
+  .scroll-text-block h3 {
+    font-size: clamp(1.5rem, 6.5vw, 2.5rem);
+  }
+
+  .scroll-text-block p {
+    font-size: clamp(1rem, 4.5vw, 1.3rem);
+  }
 }
 
