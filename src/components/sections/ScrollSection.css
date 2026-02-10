@@ -207,6 +207,7 @@
 
   .scroll-text-block h3 {
     font-size: clamp(1.5rem, 6.5vw, 2.5rem);
+    text-wrap: pretty; /* Prioritize fullness over balance on mobile */
   }
 
   .scroll-text-block p {

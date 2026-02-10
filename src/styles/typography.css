@@ -13,7 +13,7 @@
   */
 
   /* Hero Title: ~72px at Desktop (1440px). Unlocked to scale up to ~128px on 4K */
-  --text-display: clamp(2.25rem, 5vw, 8rem);
+  --text-display: clamp(3rem, 5vw, 8rem);
 
   /* "Second Section" (Mission) Text: ~32px at Desktop */
   --text-h1: clamp(1.5rem, 2.2vw, 2.5rem);
@@ -46,4 +46,11 @@
   --leading-tight: 1.1;
   --leading-normal: 1.5;
   --leading-relaxed: 1.75;
+}
+
+@media (max-width: 768px) {
+  :root {
+    /* Mobile Override: Start at 3rem (perfect for iPhone 16), scale aggressively for Pro Max */
+    --text-display: clamp(3rem, 13vw, 5.5rem);
+  }
 }
