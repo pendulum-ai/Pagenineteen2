@@ -281,6 +281,7 @@
   color: var(--color-text);
   opacity: 0.8;
   margin-top: 24px;
+  margin-bottom: 20px;
   max-width: 800px;
 }
 
