@@ -82,6 +82,7 @@ const ArticleDetail = () => {
         };
         
         setArticle(articleData);
+        console.log('Article Data:', articleData); // DEBUG: Check if excerpt exists
 
         // Find next article
         const allArticles = data.allArticles.map(a => ({
@@ -151,6 +152,10 @@ const ArticleDetail = () => {
         <BlurReveal delay={0.1}>
             <h1 className="article-title">{article.title}</h1>
         </BlurReveal>
+
+        {article.excerpt && (
+              <p className="article-subtitle">{article.excerpt}</p>
+        )}
       </header>
 
       <article className="article-body">
