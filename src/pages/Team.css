@@ -46,8 +46,8 @@
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
-  column-gap: clamp(48px, 5vw, 100px); /* Significantly larger gap to shrink photos & add air */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop for 6 items */
+  column-gap: clamp(40px, 4vw, 80px); /* Adjusted gap for 3 columns */
   row-gap: clamp(64px, 6vw, 96px);
 }
 
@@ -60,6 +60,11 @@
   height: 100%;
   text-decoration: none;
   color: inherit;
+  
+  /* Prevent images from getting too large in 3-col layout */
+  max-width: 380px; 
+  margin-inline: auto; /* Center the card in the grid cell */
+  width: 100%;
 }
 
 /* Top Section: Name + Divider */
