@@ -24,7 +24,7 @@ const Hero = () => {
             style={{ y: yTitle }}
             className="hero-title"
           >
-            An applied <br /> multimodal <br className="desktop-br" /> AI lab
+            An applied <br /> multimodal <br /> AI lab
           </motion.h1>
         </BlurReveal>
         <div className="hero-footer">
