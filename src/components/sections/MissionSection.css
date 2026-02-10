@@ -44,7 +44,7 @@
 
 .mission-text-block {
   width: 100%;
-  max-width: none;
+  max-width: 650px; /* Prevent text from spanning too wide on large (4K) screens, preserving MacBook line breaks */
 }
 
 .mission-section h2,
