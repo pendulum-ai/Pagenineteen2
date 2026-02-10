@@ -99,6 +99,10 @@
       padding-bottom: var(--space-lg); /* Space between title/footer and description */
   }
 
+  .hero-description {
+    max-width: 100%; /* Allow full width usage on mobile */
+  }
+
   .hero-footer {
     position: relative;
     bottom: auto;
