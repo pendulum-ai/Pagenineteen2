@@ -59,6 +59,7 @@ const ProjectCard = ({ project }) => {
                  alt={project.title} 
                  className="project-image"
                  loading="lazy"
+                 sizes="(max-width: 768px) calc(100vw - 2rem), (max-width: 1024px) 50vw, 637px"
                />
              </picture>
           </div>

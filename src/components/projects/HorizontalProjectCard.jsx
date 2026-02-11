@@ -99,6 +99,7 @@ const HorizontalProjectCard = ({ project, index, scrollProgress }) => {
             alt={project.title} 
             className={`h-project-image ${isHovered ? 'hovered' : ''}`}
             loading={index === 0 ? "eager" : "lazy"}
+            sizes="(max-width: 768px) 100vw, 455px"
           />
         </picture>
       </div>
