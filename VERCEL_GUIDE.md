@@ -2,25 +2,28 @@
 
 This guide explains two methods to deploy the website: **Online (Automatic)** and **Offline (Manual)**.
 
+**Live Domain:** [https://pagenineteen.ai](https://pagenineteen.ai) (Primary)
+**Staging Domain:** [https://pagenineteen2.vercel.app](https://pagenineteen2.vercel.app) (Backup)
+
 ---
 
 ## 1. Online Updates (Recommended)
 
 **Best for**: Routine updates, collaboration, and ensuring code is backed up.
 
-When you push changes to GitHub, Vercel automatically detects them and updates the live site.
+When you push changes to GitHub, Vercel automatically detects them and updates both the live site (`pagenineteen.ai`) and the staging site.
 
 ### Steps:
 
-1.  **Make changes** to your code locally.
+1.  **Make changes** to your code locally (e.g. reorder projects).
 2.  **Commit and Push**:
     ```bash
     git add .
-    git commit -m "Description of changes"
+    git commit -m "Reorder projects: Amble first"
     git push origin main
     ```
 3.  **Wait**: Vercel will automatically build and deploy (usually 1-2 minutes).
-4.  **Verify**: Check your live URL (e.g., `pagenineteen2.vercel.app`).
+4.  **Verify**: Check [pagenineteen.ai](https://pagenineteen.ai).
 
 ---
 
@@ -57,13 +60,21 @@ vercel
 
 #### B. Production Deployment (Live)
 
-Updating the main live website immediately.
+Updating the main live website (`pagenineteen.ai`) immediately.
 
 ```bash
 vercel --prod
 ```
 
 ---
+
+## Domain Information
+
+The custom domain `pagenineteen.ai` is connected via Vercel DNS.
+
+- **Provider**: GoDaddy
+- **DNS Host**: Vercel (`ns1.vercel-dns.com`, etc. or A/CNAME records)
+- **www redirect**: Active (pagenineteen.ai -> www.pagenineteen.ai)
 
 ## Troubleshooting
 

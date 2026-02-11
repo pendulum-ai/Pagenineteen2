@@ -1,24 +1,5 @@
 export const projects = [
   {
-    id: 'pendulum',
-    title: 'pendulum',
-    tagline: 'Large-scale multimodal asset search and organization',
-    description: "Pendulum indexes, organizes, and retrieves assets across images and text. It's designed to scale to millions of assets while staying flexible for downstream generative use cases.",
-    link: 'https://search-app-teal.vercel.app/',
-    github: 'https://google.com',
-    focus: [
-      'Metadata extraction using LLMs and vision-language models',
-      'Plain-text indexing combined with vector embeddings',
-      'Scalable distributed ingestion pipeline for media workloads',
-      'Natural-language retrieval integrated into multimodal RAG'
-    ],
-    stack: ['Vector DB', 'CLIP', 'LLM Metadata', 'DAG', 'Kandji'],
-    bgColor: '#F0F2F0',
-    visualType: 'network',
-    screenshotUrl: '/images/Pendulum.webp',
-    screenshotFallback: '/images/Pendulum.jpg'
-  },
-  {
     id: 'amble',
     title: 'amble',
     tagline: 'Real-time, personalized language learning',
@@ -36,6 +17,25 @@ export const projects = [
     visualType: 'voice',
     screenshotUrl: '/images/Amble.webp',
     screenshotFallback: '/images/Amble.jpg'
+  },
+  {
+    id: 'pendulum',
+    title: 'pendulum',
+    tagline: 'Large-scale multimodal asset search and organization',
+    description: "Pendulum indexes, organizes, and retrieves assets across images and text. It's designed to scale to millions of assets while staying flexible for downstream generative use cases.",
+    link: 'https://search-app-teal.vercel.app/',
+    github: 'https://google.com',
+    focus: [
+      'Metadata extraction using LLMs and vision-language models',
+      'Plain-text indexing combined with vector embeddings',
+      'Scalable distributed ingestion pipeline for media workloads',
+      'Natural-language retrieval integrated into multimodal RAG'
+    ],
+    stack: ['Vector DB', 'CLIP', 'LLM Metadata', 'DAG', 'Kandji'],
+    bgColor: '#F0F2F0',
+    visualType: 'network',
+    screenshotUrl: '/images/Pendulum.webp',
+    screenshotFallback: '/images/Pendulum.jpg'
   },
   {
     id: 'lightnote',
