@@ -3,7 +3,13 @@ import { motion, useMotionValue } from 'framer-motion';
 import { useCursor } from '../../context/CursorContext';
 import './CustomCursor.css';
 
+// Module-level touch detection (evaluated once, stable reference)
+const IS_TOUCH_DEVICE = typeof window !== 'undefined' && (
+  'ontouchstart' in window || navigator.maxTouchPoints > 0
+);
+
 const CustomCursor = () => {
+
   const { cursorType, cursorText, setCursor } = useCursor();
   const [isVisible, setIsVisible] = useState(false);
   const cursorTypeRef = useRef(cursorType);
@@ -94,8 +100,8 @@ const CustomCursor = () => {
     }
   };
 
-  // Only render if visible (checked via state)
-  if (!isVisible) return null;
+  // Don't render on touch devices or when cursor is outside window
+  if (IS_TOUCH_DEVICE || !isVisible) return null;
 
   return (
     <motion.div

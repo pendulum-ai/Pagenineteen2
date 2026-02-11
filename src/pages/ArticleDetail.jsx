@@ -82,7 +82,6 @@ const ArticleDetail = () => {
         };
         
         setArticle(articleData);
-        console.log('Article Data:', articleData); // DEBUG: Check if excerpt exists
 
         // Find next article
         const allArticles = data.allArticles.map(a => ({

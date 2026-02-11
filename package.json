@@ -10,16 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-three/drei": "^10.7.7",
-    "@react-three/fiber": "^9.5.0",
     "framer-motion": "^12.29.2",
     "graphql-request": "^7.4.0",
     "posthog-js": "^1.343.0",
     "react": "^19.2.0",
     "react-datocms": "^7.2.14",
     "react-dom": "^19.2.0",
-    "react-router-dom": "^7.13.0",
-    "three": "^0.182.0"
+    "react-router-dom": "^7.13.0"
   },
   "devDependencies": {
     "@datocms/cma-client-node": "^5.2.8",

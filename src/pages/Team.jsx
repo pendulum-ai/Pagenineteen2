@@ -3,7 +3,6 @@ import './Team.css';
 import BlurReveal from '../components/ui/BlurReveal';
 
 import { teamMembers } from '../data/team';
-import TeamPhilosophySection from '../components/sections/TeamPhilosophySection';
 
 const Team = () => {
   return (
@@ -80,8 +79,6 @@ const Team = () => {
       <BlurReveal delay={0.4}>
         <div className="team-section-divider"></div>
       </BlurReveal>
-
-      {/* <TeamPhilosophySection /> */}
     </div>
   );
 };

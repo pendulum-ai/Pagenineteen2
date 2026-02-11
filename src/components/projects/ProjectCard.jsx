@@ -1,29 +1,13 @@
-import React, { useRef, useState } from 'react';
-import { motion, useScroll, useTransform, useInView } from "framer-motion";
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useCursor } from '../../context/CursorContext';
-// import DigitalImage from '../ui/DigitalImage'; // Disabled for now, using standard <img>
+import useIsMobile from '../../hooks/useIsMobile';
 import './ProjectCard.css';
 
 const ProjectCard = ({ project }) => {
   const containerRef = useRef(null);
-  const imageContainerRef = useRef(null); // Ref for InView detection
   const { setCursor } = useCursor();
-  const [isMobile, setIsMobile] = useState(false);
-  const [isHovered, setIsHovered] = useState(false); // Local hover state
-
-  // Mobile Detection
-  React.useLayoutEffect(() => {
-    const checkMobile = () => setIsMobile(window.matchMedia("(max-width: 768px)").matches);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
-
-  // Scroll InView Detection for Mobile
-  const isInView = useInView(imageContainerRef, { 
-    margin: "-20% 0px -20% 0px", // Trigger when mostly in center
-    amount: 0.5 
-  });
+  const isMobile = useIsMobile();
   
   // Parallax Logic
   const { scrollYProgress } = useScroll({
@@ -35,20 +19,13 @@ const ProjectCard = ({ project }) => {
   const ySeparatorRaw = useTransform(scrollYProgress, [0, 1], [0, -40]);
   const yTaglineRaw = useTransform(scrollYProgress, [0, 1], [0, -30]);
   const yDescRaw = useTransform(scrollYProgress, [0, 1], [0, -20]);
-  // const yFocusRaw = useTransform(scrollYProgress, [0, 1], [0, -10]);
   const yStackRaw = useTransform(scrollYProgress, [0, 1], [0, 0]); 
 
   const yTitle = isMobile ? 0 : yTitleRaw;
   const ySeparator = isMobile ? 0 : ySeparatorRaw;
   const yTagline = isMobile ? 0 : yTaglineRaw;
   const yDesc = isMobile ? 0 : yDescRaw;
-  // const yFocus = isMobile ? 0 : yFocusRaw;
   const yStack = isMobile ? 0 : yStackRaw;
-
-  // Determine active state for Digital Image
-  // Desktop: Hover triggers it.
-  // Mobile: Scrolling into view triggers it.
-  const isDigitalActive = isMobile ? isInView : isHovered;
 
   return (
     <div ref={containerRef} className="project-card">
@@ -66,16 +43,9 @@ const ProjectCard = ({ project }) => {
       <div className="project-main-grid">
         <div className="project-media-col">
           <div 
-            ref={imageContainerRef}
             className="project-image-wrapper"
-            onMouseEnter={() => {
-              setCursor('project-view', 'View Project');
-              setIsHovered(true);
-            }}
-            onMouseLeave={() => {
-              setCursor('default');
-              setIsHovered(false);
-            }}
+            onMouseEnter={() => setCursor('project-view', 'View Project')}
+            onMouseLeave={() => setCursor('default')}
             onClick={() => project.link && window.open(project.link, '_blank')}
             style={{ cursor: 'none' }} 
           >

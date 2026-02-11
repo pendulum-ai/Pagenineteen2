@@ -9,7 +9,6 @@ import { CursorProvider } from './context/CursorContext';
 import CustomCursor from './components/ui/CustomCursor';
 
 // Lazy-loaded pages for code splitting
-const Home = lazy(() => import('./pages/Home'));
 const HomeV2 = lazy(() => import('./pages/HomeV2'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Journal = lazy(() => import('./pages/Journal'));
@@ -102,7 +101,6 @@ function AppContent() {
             <Route path="/journal/:slug" element={<ArticleDetail />} />
             
             {/* Hidden pages (still accessible via direct URL) */}
-            <Route path="/home-legacy" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/team" element={<Team />} />
             

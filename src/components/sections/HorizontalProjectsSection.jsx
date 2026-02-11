@@ -1,22 +1,15 @@
-import React, { useRef, useState, useLayoutEffect } from 'react';
+import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { projects } from '../../data/projects';
 import HorizontalProjectCard from '../projects/HorizontalProjectCard';
 import ProjectCard from '../projects/ProjectCard';
 import BlurReveal from '../ui/BlurReveal';
+import useIsMobile from '../../hooks/useIsMobile';
 import './HorizontalProjectsSection.css';
 
 const HorizontalProjectsSection = () => {
   const containerRef = useRef(null);
-  const [isMobile, setIsMobile] = useState(false);
-
-  // Mobile detection
-  useLayoutEffect(() => {
-    const checkMobile = () => setIsMobile(window.matchMedia("(max-width: 1024px)").matches);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
+  const isMobile = useIsMobile(1024);
 
   // Track scroll for the entire container
   const { scrollYProgress } = useScroll({
