@@ -3,9 +3,12 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import './GoalSection.css';
 import ScrollRevealText from '../ui/ScrollRevealText';
 import HorizontalCircles from '../illustrations/HorizontalCircles';
+import useIsMobile from '../../hooks/useIsMobile';
 
 const GoalSection = ({ id }) => {
   const containerRef = useRef(null);
+  const isMobile = useIsMobile();
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "end start"]  // Extended range: entire section visibility
@@ -30,7 +33,7 @@ const GoalSection = ({ id }) => {
       </div>
 
       <motion.div style={{ y: yPattern }} className="goal-illustration-wrapper">
-          <HorizontalCircles />
+          <HorizontalCircles isMobile={isMobile} />
       </motion.div>
     </section>
   );

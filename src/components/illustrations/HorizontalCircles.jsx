@@ -1,7 +1,7 @@
 import React, { useRef, useMemo } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-const HorizontalCircles = () => {
+const HorizontalCircles = ({ isMobile = false }) => {
   const containerRef = useRef(null);
   
   const { scrollYProgress } = useScroll({
@@ -84,6 +84,7 @@ const HorizontalCircles = () => {
             data={conn} 
             progress={scrollYProgress} 
             cols={cols}
+            isMobile={isMobile}
           />
         ))}
 
@@ -94,6 +95,7 @@ const HorizontalCircles = () => {
             data={node} 
             progress={scrollYProgress} 
             cols={cols}
+            isMobile={isMobile}
           />
         ))}
       </svg>
@@ -103,16 +105,19 @@ const HorizontalCircles = () => {
 
 // --- Subcomponents ---
 
-const NeuralConnection = ({ data, progress, cols }) => {
+const NeuralConnection = ({ data, progress, cols, isMobile }) => {
   // Wave Logic
   const normPos = data.c / cols;
   
   // Adjusted timing: finishes much earlier to avoid getting stuck
-  // Start ranges from -0.1 to 0.4 (approx)
   const start = -0.1 + normPos * 0.5;
   const end = start + 0.3;
 
-  const opacity = useTransform(progress, [start, start + 0.15, end], [0.1, 0.6, 0.1]);
+  // Mobile: dampen peak opacity to reduce visual noise under text
+  const peakOpacity = isMobile ? 0.25 : 0.6;
+  const restOpacity = isMobile ? 0.05 : 0.1;
+
+  const opacity = useTransform(progress, [start, start + 0.15, end], [restOpacity, peakOpacity, restOpacity]);
   
   return (
     <motion.line
@@ -125,21 +130,28 @@ const NeuralConnection = ({ data, progress, cols }) => {
   );
 };
 
-const NeuralNode = ({ data, progress, cols }) => {
+const NeuralNode = ({ data, progress, cols, isMobile }) => {
   const normPos = data.c / cols;
   
   // Synced with connections
   const start = -0.1 + normPos * 0.5;
   const end = start + 0.3;
 
-  // Visuals
+  // Visuals — mobile: less intense colors and smaller radii
   const baseColor = data.isActive ? "#FF5500" : "#FFFFFF";
-  const baseRadius = data.isActive ? 4 : 2;
-  const baseOpacity = data.isActive ? 0.9 : 0.3;
+  const baseRadius = data.isActive ? (isMobile ? 3 : 4) : 2;
 
-  // Animation
-  const scale = useTransform(progress, [start, start + 0.15, end], [0.8, 1.5, 1]);
-  const opacity = useTransform(progress, [start, start + 0.15, end], [0.1, 1, baseOpacity]);
+  // Mobile: much lower peak opacity so dots don't compete with text
+  const baseOpacity = data.isActive
+    ? (isMobile ? 0.3 : 0.9)
+    : (isMobile ? 0.15 : 0.3);
+  const peakOpacity = isMobile ? 0.4 : 1;
+  const restOpacity = isMobile ? 0.05 : 0.1;
+
+  // Animation — mobile: subtler scale pulse
+  const peakScale = isMobile ? 1.15 : 1.5;
+  const scale = useTransform(progress, [start, start + 0.15, end], [0.8, peakScale, 1]);
+  const opacity = useTransform(progress, [start, start + 0.15, end], [restOpacity, peakOpacity, baseOpacity]);
 
   return (
     <motion.circle

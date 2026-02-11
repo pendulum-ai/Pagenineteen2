@@ -74,6 +74,24 @@
     z-index: 0;
     margin-top: 0;
     overflow: hidden;
+
+    /* Fade grid in text zone: transparent at top → visible at bottom */
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.08) 0%,        /* Nearly invisible at very top */
+      rgba(0, 0, 0, 0.15) 25%,        /* Very subtle through text area */
+      rgba(0, 0, 0, 0.35) 55%,        /* Starts becoming visible below text */
+      rgba(0, 0, 0, 0.7) 75%,         /* Strong in lower portion */
+      rgba(0, 0, 0, 1) 100%           /* Full intensity at bottom */
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.08) 0%,
+      rgba(0, 0, 0, 0.15) 25%,
+      rgba(0, 0, 0, 0.35) 55%,
+      rgba(0, 0, 0, 0.7) 75%,
+      rgba(0, 0, 0, 1) 100%
+    );
   }
 
   /* Rotate the inner container of the component */
