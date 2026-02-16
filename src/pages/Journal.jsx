@@ -114,6 +114,9 @@ const Journal = () => {
 
   return (
     <div className="journal-container">
+      {/* React 19 native document metadata */}
+      <title>Journal — Page Nineteen</title>
+      <meta name="description" content="Articles, notes, and updates from Page Nineteen — an applied multimodal AI lab based in London." />
       <div className="journal-header">
         <BlurReveal delay={0}>
             <h1 className="journal-title">Journal</h1>

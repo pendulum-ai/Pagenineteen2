@@ -132,6 +132,9 @@ const ArticleDetail = () => {
 
   return (
     <div className="journal-container article-detail-container">
+      {/* React 19 native document metadata — dynamic per article */}
+      <title>{article.title} — Page Nineteen Journal</title>
+      <meta name="description" content={article.excerpt || `${article.title} — an article from Page Nineteen's journal.`} />
       <div className="sticky-back-nav">
         <div className="sticky-back-content">
             <Link to="/journal" className="sticky-back-link">

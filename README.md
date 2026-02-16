@@ -1,9 +1,9 @@
 # Page Nineteen - AI Agency Website
 
-A high-performance, design-driven website built with **React**, **Vite**, and **Framer Motion**.  
+A high-performance, design-driven website built with **React 19**, **Vite**, and **Framer Motion**.  
 Key focus on "sticky snap" scroll physics, internal parallax, and synchronized SVG animations.
 
-[**🚀 View Live Demo**](https://pagenineteen2.vercel.app)
+[**🚀 View Live**](https://pagenineteen.ai)
 
 ---
 

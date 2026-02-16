@@ -68,6 +68,10 @@ const HomeV2 = () => {
 
   return (
     <>
+      {/* React 19 native document metadata */}
+      <title>Page Nineteen — Applied Multimodal AI Lab | London</title>
+      <meta name="description" content="Page Nineteen is an applied multimodal AI lab based in London. Building at the intersection of language, vision, and sound. Projects: Amble, Pendulum, Lightnote." />
+
       <ThemeController targetRef={goalRef} />
       <CrossHair verticalLineOpacity={lineOpacity} verticalLineScaleY={lineScaleY} />
       <Hero />

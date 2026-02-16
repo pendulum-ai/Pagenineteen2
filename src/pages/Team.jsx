@@ -7,6 +7,9 @@ import { teamMembers } from '../data/team';
 const Team = () => {
   return (
     <div className="team-container">
+      {/* React 19 native document metadata */}
+      <title>Team — Page Nineteen</title>
+      <meta name="description" content="Meet the team behind Page Nineteen — a small, senior team with experience building and operating AI systems at scale." />
 
       <div className="team-header-section">
         <BlurReveal>

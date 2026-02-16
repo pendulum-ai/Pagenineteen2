@@ -7,6 +7,9 @@ import BlurReveal from '../components/ui/BlurReveal';
 const Projects = () => {
   return (
     <div className="projects-container">
+      {/* React 19 native document metadata */}
+      <title>Projects — Page Nineteen</title>
+      <meta name="description" content="Amble, Pendulum, Lightnote — applied AI projects by Page Nineteen. Real-time language learning, multimodal asset search, and composable creative workflows." />
       <div className="projects-header">
         <BlurReveal delay={0}>
           <h1 className="projects-title">Projects</h1>
