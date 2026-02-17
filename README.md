@@ -1,6 +1,6 @@
 # Page Nineteen - AI Agency Website
 
-A high-performance, design-driven website built with **React 19**, **Vite**, and **Framer Motion**.  
+A high-performance, design-driven website built with **React 19**, **Vite 7**, and **Framer Motion**.  
 Key focus on "sticky snap" scroll physics, internal parallax, and synchronized SVG animations.
 
 [**🚀 View Live**](https://pagenineteen.ai)
@@ -63,7 +63,7 @@ npm run dev
 
 ### `src/pages/`
 
-Route-based page components (e.g., `Home`, `Journal`, `Article`).
+Route-based page components: `HomeV2`, `Journal`, `ArticleDetail`, `Team`, `Projects`, `NotFound`.
 
 ### `src/styles/`
 
@@ -75,12 +75,13 @@ Route-based page components (e.g., `Home`, `Journal`, `Article`).
 
 The core "sticky" experience.
 
-- **Logic**: `stiffness: 120`, `damping: 30` (Heavy physics).
+- **Logic**: `stiffness: 50`, `damping: 15` (Smooth physics).
 - **Data**: Content matches `src/data/scrollData.js`.
 
 ### `src/components/layout/Footer`
 
-- **Behavior**: Sit _behind_ the page content (`z-index: -1`). Revealed by a transparent "sentinel" div at the bottom of the page.
+- **Behavior**: Fixed overlay at `z-index: 100` with `pointer-events: none`. Clicks pass through empty space; actual links remain interactive via `pointer-events: auto` on `.footer-container`.
+- **Visibility**: Controlled by `isVisible` prop — appears only when user scrolls near the bottom of the page.
 - **Theming**: Auto-switches Dark/Light based on the route.
 
 ### `src/components/ui/CrossHair`
@@ -99,7 +100,8 @@ The core "sticky" experience.
 ### Vercel Deployment (Live)
 
 The project is deployed and synchronized with Vercel.
-**Live URL:** [https://pagenineteen2.vercel.app](https://pagenineteen2.vercel.app)
+**Live URL:** [https://pagenineteen.ai](https://pagenineteen.ai)
+**Staging URL:** [https://pagenineteen2.vercel.app](https://pagenineteen2.vercel.app)
 
 Auto-deploys are enabled for the `main` branch.
 
@@ -109,3 +111,15 @@ Auto-deploys are enabled for the `main` branch.
 npm run build
 # Outputs to /dist
 ```
+
+---
+
+## 📖 Documentation Index
+
+| File              | Audience               | Purpose                                                      |
+| ----------------- | ---------------------- | ------------------------------------------------------------ |
+| `CLAUDE.md`       | AI Agent               | Complete map of editable content, safety rules, task recipes |
+| `CLIENT_GUIDE.md` | Client (non-technical) | How to set up, edit, and deploy using AI assistant           |
+| `CMS_GUIDE.md`    | Client / Dev           | How to add Journal articles via DatoCMS                      |
+| `VERCEL_GUIDE.md` | Dev                    | Hosting, domains, manual deployment                          |
+| `SEO_STATUS.md`   | Dev                    | SEO optimization progress and recommendations                |

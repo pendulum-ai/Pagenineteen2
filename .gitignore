@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 .vercel
 .env
+
+# IDE / AI agent
+.cursor/
+.cursorignore
+.gemini/

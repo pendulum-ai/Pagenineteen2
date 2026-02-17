@@ -74,10 +74,23 @@ The custom domain `pagenineteen.ai` is connected via Vercel DNS.
 
 - **Provider**: GoDaddy
 - **DNS Host**: Vercel (`ns1.vercel-dns.com`, etc. or A/CNAME records)
-- **www redirect**: Active (pagenineteen.ai -> www.pagenineteen.ai)
+- **Canonical domain**: `pagenineteen.ai` (without www)
+- **www redirect**: `www.pagenineteen.ai` → `pagenineteen.ai` (verify in Vercel Dashboard → Domains)
+
+## PostHog Analytics Proxy
+
+The `vercel.json` file contains rewrite rules that proxy PostHog analytics through the site domain (`/ph-new/*`). This avoids ad-blockers and improves tracking accuracy. Do not remove these rules.
 
 ## Troubleshooting
 
 - **Build Failures**: Run `npm run build` locally to see if there are errors before deploying.
 - **Missing Content**: Ensure `datocms` environment variables are set in Vercel Project Settings.
 - **Cache Issues**: If changes aren't showing, try `vercel --prod --force` to rebuild without cache.
+
+---
+
+## See Also
+
+- **[README.md](./README.md)** — Technical architecture docs
+- **[CLAUDE.md](./CLAUDE.md)** — AI agent instructions with full content map
+- **[CMS_GUIDE.md](./CMS_GUIDE.md)** — How to add Journal articles via DatoCMS
