@@ -46,7 +46,7 @@
 Articles are managed through **DatoCMS** dashboard (not in code).
 
 - Dashboard: https://admin.datocms.com
-- Guide: See `CMS_GUIDE.md` in this repo
+- Guide: See `docs/CMS_GUIDE.md` in this repo
 
 ---
 
@@ -84,7 +84,7 @@ Articles are managed through **DatoCMS** dashboard (not in code).
 - Text strings inside `HorizontalProjectsSection.jsx` (section title and subtitle only, NOT animation/layout code)
 - `src/assets/images/team/*` — Team member photos (`.webp` format)
 - `public/images/*` — Project screenshots
-- `CMS_GUIDE.md`, `CLIENT_GUIDE.md` — Documentation
+- `docs/CMS_GUIDE.md`, `docs/CLIENT_GUIDE.md` — Documentation
 
 ---
 
@@ -143,7 +143,7 @@ Articles are managed through **DatoCMS** dashboard (not in code).
 
 ### Add a Journal article
 
-See `CMS_GUIDE.md` — articles are managed through the DatoCMS dashboard, not in code.
+See `docs/CMS_GUIDE.md` — articles are managed through the DatoCMS dashboard, not in code.
 
 ---
 
@@ -181,11 +181,13 @@ git push origin main # Deploy the revert
 
 ```
 ├── CLAUDE.md              ← You are here (AI agent instructions)
-├── CLIENT_GUIDE.md        ← Step-by-step guide for the client
-├── CMS_GUIDE.md           ← How to use DatoCMS for articles
-├── VERCEL_GUIDE.md        ← Deployment details and domain info
-├── SEO_STATUS.md          ← SEO optimization status
 ├── README.md              ← Technical architecture docs
+│
+├── docs/
+│   ├── CLIENT_GUIDE.md    ← Step-by-step guide for the client
+│   ├── CMS_GUIDE.md       ← How to use DatoCMS for articles
+│   ├── VERCEL_GUIDE.md    ← Deployment details and domain info
+│   └── SEO_STATUS.md      ← SEO optimization status
 │
 ├── src/
 │   ├── data/

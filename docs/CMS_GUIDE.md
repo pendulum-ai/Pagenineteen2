@@ -63,4 +63,4 @@ For deployment instructions (both automatic and manual), see **[VERCEL_GUIDE.md]
 ## See Also
 
 - **[CLIENT_GUIDE.md](./CLIENT_GUIDE.md)** — Step-by-step guide for editing the website
-- **[CLAUDE.md](./CLAUDE.md)** — AI agent instructions with full content map
+- **[CLAUDE.md](../CLAUDE.md)** — AI agent instructions with full content map

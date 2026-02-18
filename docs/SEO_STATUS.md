@@ -44,4 +44,4 @@
 ## See Also
 
 - **[VERCEL_GUIDE.md](./VERCEL_GUIDE.md)** — Deployment and domain configuration
-- **[README.md](./README.md)** — Technical architecture docs
+- **[README.md](../README.md)** — Technical architecture docs

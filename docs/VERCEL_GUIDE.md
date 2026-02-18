@@ -91,6 +91,6 @@ The `vercel.json` file contains rewrite rules that proxy PostHog analytics throu
 
 ## See Also
 
-- **[README.md](./README.md)** — Technical architecture docs
-- **[CLAUDE.md](./CLAUDE.md)** — AI agent instructions with full content map
+- **[README.md](../README.md)** — Technical architecture docs
+- **[CLAUDE.md](../CLAUDE.md)** — AI agent instructions with full content map
 - **[CMS_GUIDE.md](./CMS_GUIDE.md)** — How to add Journal articles via DatoCMS

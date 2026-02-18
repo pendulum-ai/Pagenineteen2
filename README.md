@@ -116,10 +116,10 @@ npm run build
 
 ## 📖 Documentation Index
 
-| File              | Audience               | Purpose                                                      |
-| ----------------- | ---------------------- | ------------------------------------------------------------ |
-| `CLAUDE.md`       | AI Agent               | Complete map of editable content, safety rules, task recipes |
-| `CLIENT_GUIDE.md` | Client (non-technical) | How to set up, edit, and deploy using AI assistant           |
-| `CMS_GUIDE.md`    | Client / Dev           | How to add Journal articles via DatoCMS                      |
-| `VERCEL_GUIDE.md` | Dev                    | Hosting, domains, manual deployment                          |
-| `SEO_STATUS.md`   | Dev                    | SEO optimization progress and recommendations                |
+| File                   | Audience               | Purpose                                                      |
+| ---------------------- | ---------------------- | ------------------------------------------------------------ |
+| `CLAUDE.md`            | AI Agent               | Complete map of editable content, safety rules, task recipes |
+| `docs/CLIENT_GUIDE.md` | Client (non-technical) | How to set up, edit, and deploy using AI assistant           |
+| `docs/CMS_GUIDE.md`    | Client / Dev           | How to add Journal articles via DatoCMS                      |
+| `docs/VERCEL_GUIDE.md` | Dev                    | Hosting, domains, manual deployment                          |
+| `docs/SEO_STATUS.md`   | Dev                    | SEO optimization progress and recommendations                |
