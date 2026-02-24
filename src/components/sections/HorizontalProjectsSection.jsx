@@ -85,11 +85,6 @@ const HorizontalProjectsSection = () => {
             <BlurReveal delay={0}>
               <h2 className="projects-section-title">Projects</h2>
             </BlurReveal>
-            <BlurReveal delay={0.1}>
-              <p className="projects-section-description">
-                Work built to address longstanding human needs. <br /> How we learn. How we create.
-              </p>
-            </BlurReveal>
           </div>
           
           <div className="projects-list">
@@ -131,12 +126,6 @@ const HorizontalProjectsSection = () => {
             >
               Projects
             </motion.h2>
-            <motion.p 
-              className="horizontal-intro-description"
-              style={{ y: descriptionY }}
-            >
-              Work built to address longstanding human needs. <br /> How we learn. How we create.
-            </motion.p>
           </div>
           
           {/* Project cards */}

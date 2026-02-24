@@ -21,8 +21,8 @@ export const projects = [
   {
     id: 'pendulum',
     title: 'pendulum',
-    tagline: 'Large-scale multimodal asset search and organization',
-    description: "Pendulum indexes, organizes, and retrieves assets across images and text. It's designed to scale to millions of assets while staying flexible for downstream generative use cases.",
+    tagline: 'Multimodal asset search at enterprise scale',
+    description: "An enterprise system for indexing, organizing, and retrieving multimodal assets at scale. Built to handle millions of assets across images and text, with flexibility for downstream generative workflows. Developed with R/GA, WPP, and Kering.",
     link: 'https://search-app-teal.vercel.app/',
     github: 'https://google.com', // TODO: Replace with real GitHub URL
     focus: [

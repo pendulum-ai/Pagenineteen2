@@ -12,7 +12,7 @@ const MissionSection = () => {
           <div className="mission-text-block text-align-fix">
             <BlurReveal>
               <h2>
-                Page Nineteen is a small, full stack AI team building products at the intersection of education and creativity.
+                Page Nineteen is a small London based team building new ways for people to learn and create.
               </h2>
             </BlurReveal>
 
