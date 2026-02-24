@@ -48,9 +48,8 @@
 }
 
 .hero-description {
-  font-size: var(--text-body-lg);
+  font-size: clamp(1.15rem, 1.7vw, 1.75rem);
   line-height: var(--leading-normal);
-  /* max-width set to enforce exactly 3 lines of text as per design */
   max-width: 38ch;
   width: 100%;
   text-wrap: pretty;

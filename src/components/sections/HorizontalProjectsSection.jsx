@@ -87,7 +87,7 @@ const HorizontalProjectsSection = () => {
             </BlurReveal>
             <BlurReveal delay={0.1}>
               <p className="projects-section-description">
-                Exploring how new technology can address longstanding human needs.
+                Work built to address longstanding human needs. <br /> How we learn. How we create.
               </p>
             </BlurReveal>
           </div>
@@ -135,7 +135,7 @@ const HorizontalProjectsSection = () => {
               className="horizontal-intro-description"
               style={{ y: descriptionY }}
             >
-              Exploring how new technology <br /> can address longstanding human needs.
+              Work built to address longstanding human needs. <br /> How we learn. How we create.
             </motion.p>
           </div>
           

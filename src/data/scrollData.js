@@ -6,28 +6,23 @@ export const FRAMES = [
     isIntro: true
   },
   {
-    range: [0.23, 0.33],
+    range: [0.23, 0.35],
     title: "Multimodal orchestration",
-    text: "AI systems are moving beyond single-modality models. We build shared architectures that bridge vision, language, and speech into unified pipelines."
+    text: "Vision, language, and speech in a single pipeline."
   },
   {
-    range: [0.36, 0.46],
-    title: "Fine-tuned pipelines",
-    text: "Fine-tuning is becoming continuous, not one-off. Our workflows automate LoRA adaptation from dataset curation to validation, entirely in code."
-  },
-  {
-    range: [0.49, 0.59],
+    range: [0.38, 0.50],
     title: "Real-time systems",
-    text: "Users expect AI to feel instant. We build streaming inference and voice interfaces designed around low latency."
+    text: "Streaming inference designed around low latency."
   },
   {
-    range: [0.62, 0.72],
+    range: [0.53, 0.65],
     title: "Agentic workflows",
-    text: "Production systems increasingly need to evaluate themselves. We embed feedback loops directly into deployment, with agents that critique and refine their own outputs."
+    text: "Feedback loops embedded directly into deployment."
   },
   {
-    range: [0.75, 0.98],
+    range: [0.68, 0.98],
     title: "Prosumer interfaces",
-    text: "We design AI products that feel native to the people who use them. Interfaces where the complexity lives in the backend, not the experience."
+    text: "Complexity in the backend, not the experience."
   }
 ];

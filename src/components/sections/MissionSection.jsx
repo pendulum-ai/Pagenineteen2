@@ -12,7 +12,7 @@ const MissionSection = () => {
           <div className="mission-text-block text-align-fix">
             <BlurReveal>
               <h2>
-                Page Nineteen is a small, London based lab exploring how AI changes the way we learn <br className="desktop-br" /> and the way we create.
+                Page Nineteen is a small, London based team building products at the intersection of education and creativity.
               </h2>
             </BlurReveal>
 
@@ -26,7 +26,7 @@ const MissionSection = () => {
             {/* Part 1 */}
             <BlurReveal delay={0.3}>
               <p className="mission-belief-text">
-                Our belief is that multimodal AI becomes valuable when models, tooling, and evaluation are designed as one system.
+                We design, build, and ship AI products from model to interface.
               </p>
             </BlurReveal>
 

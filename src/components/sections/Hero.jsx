@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import './Hero.css';
 import BlurReveal from '../ui/BlurReveal';
@@ -10,9 +10,22 @@ const Hero = () => {
   // Both move UP (negative Y) to "fly away" as requested.
   // Title moves slower.
   const yTitle = useTransform(scrollY, [0, 1000], [0, -300]);
-  
+
   // Description moves faster.
   const yDesc = useTransform(scrollY, [0, 1000], [0, -500]);
+
+  const [londonTime, setLondonTime] = useState(() =>
+    new Date().toLocaleTimeString('en-GB', { timeZone: 'Europe/London', hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true }).toUpperCase()
+  );
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setLondonTime(
+        new Date().toLocaleTimeString('en-GB', { timeZone: 'Europe/London', hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true }).toUpperCase()
+      );
+    }, 1000);
+    return () => clearInterval(id);
+  }, []);
   
   return (
     <section className="hero split-layout">
@@ -24,14 +37,9 @@ const Hero = () => {
             style={{ y: yTitle }}
             className="hero-title"
           >
-            An applied <br /> multimodal <br /> AI lab
+            An applied <br /> multimodal <br /> AI studio
           </motion.h1>
         </BlurReveal>
-        <div className="hero-footer">
-          <BlurReveal delay={0}>
-            London / New York
-          </BlurReveal>
-        </div>
       </div>
 
       <div className="hero-right">
@@ -40,7 +48,7 @@ const Hero = () => {
             style={{ y: yDesc }}
             className="hero-description"
           >
-            Building at the intersection of language, <br className="desktop-br" /> vision, and sound.
+            London, England&nbsp;&nbsp;{londonTime}
           </motion.p>
         </BlurReveal>
       </div>
