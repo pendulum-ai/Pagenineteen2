@@ -3,7 +3,8 @@
 This guide explains two methods to deploy the website: **Online (Automatic)** and **Offline (Manual)**.
 
 **Live Domain:** [https://pagenineteen.ai](https://pagenineteen.ai) (Primary)
-**Staging Domain:** [https://pagenineteen2.vercel.app](https://pagenineteen2.vercel.app) (Backup)
+**Vercel URL:** [https://pagenineteen2-kappa.vercel.app](https://pagenineteen2-kappa.vercel.app) (Fallback)
+**Vercel Team:** Pendulum (`lightnote`)
 
 ---
 
@@ -11,7 +12,7 @@ This guide explains two methods to deploy the website: **Online (Automatic)** an
 
 **Best for**: Routine updates, collaboration, and ensuring code is backed up.
 
-When you push changes to GitHub, Vercel automatically detects them and updates both the live site (`pagenineteen.ai`) and the staging site.
+When you push changes to GitHub, Vercel automatically detects them and updates the live site (`pagenineteen.ai`).
 
 ### Steps:
 
@@ -22,7 +23,7 @@ When you push changes to GitHub, Vercel automatically detects them and updates b
     git commit -m "Reorder projects: Amble first"
     git push origin main
     ```
-3.  **Wait**: Vercel will automatically build and deploy (usually 1-2 minutes).
+3.  **Wait**: Vercel will automatically build and deploy (usually 20-30 seconds).
 4.  **Verify**: Check [pagenineteen.ai](https://pagenineteen.ai).
 
 ---
@@ -47,6 +48,7 @@ This method deploys directly from your computer to Vercel.
     ```bash
     vercel link
     ```
+    When asked for scope, choose **Pendulum** (`lightnote`).
 
 ### How to Deploy:
 
@@ -70,21 +72,32 @@ vercel --prod
 
 ## Domain Information
 
-The custom domain `pagenineteen.ai` is connected via Vercel DNS.
+The custom domain `pagenineteen.ai` is connected via Vercel on the **Pendulum** team.
 
-- **Provider**: GoDaddy
-- **DNS Host**: Vercel (`ns1.vercel-dns.com`, etc. or A/CNAME records)
+- **Registrar**: GoDaddy
+- **DNS**: A-record / CNAME pointing to Vercel
 - **Canonical domain**: `pagenineteen.ai` (without www)
-- **www redirect**: `www.pagenineteen.ai` → `pagenineteen.ai` (verify in Vercel Dashboard → Domains)
+- **www**: `www.pagenineteen.ai` (also configured)
 
 ## PostHog Analytics Proxy
 
 The `vercel.json` file contains rewrite rules that proxy PostHog analytics through the site domain (`/ph-new/*`). This avoids ad-blockers and improves tracking accuracy. Do not remove these rules.
 
+## Environment Variables
+
+Required environment variables are configured in **Vercel Dashboard → Project Settings → Environment Variables**:
+
+| Variable                 | Purpose                                        |
+| ------------------------ | ---------------------------------------------- |
+| `VITE_DATOCMS_API_TOKEN` | DatoCMS read-only API token (Journal articles) |
+| `VITE_POSTHOG_KEY`       | PostHog analytics project key                  |
+
+These must be set for Production, Preview, and Development environments.
+
 ## Troubleshooting
 
 - **Build Failures**: Run `npm run build` locally to see if there are errors before deploying.
-- **Missing Content**: Ensure `datocms` environment variables are set in Vercel Project Settings.
+- **Missing Content**: Ensure `VITE_DATOCMS_API_TOKEN` is set in Vercel Project Settings.
 - **Cache Issues**: If changes aren't showing, try `vercel --prod --force` to rebuild without cache.
 
 ---
@@ -94,3 +107,4 @@ The `vercel.json` file contains rewrite rules that proxy PostHog analytics throu
 - **[README.md](../README.md)** — Technical architecture docs
 - **[CLAUDE.md](../CLAUDE.md)** — AI agent instructions with full content map
 - **[CMS_GUIDE.md](./CMS_GUIDE.md)** — How to add Journal articles via DatoCMS
+- **[MIGRATION.md](./MIGRATION.md)** — Details of the Feb 2026 Vercel migration

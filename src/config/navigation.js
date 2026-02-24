@@ -8,6 +8,7 @@ export const navLinks = [
   // { path: '/projects', label: 'Projects' },
 ];
 
+// TODO: Replace '#' with real social media URLs when available
 export const socialLinks = [
   { label: 'Instagram', url: '#' },
   { label: 'Twitter', url: '#' },

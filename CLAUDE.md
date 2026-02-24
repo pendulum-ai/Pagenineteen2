@@ -9,7 +9,7 @@
 
 - **Stack**: React 19 + Vite 7 + Framer Motion
 - **CMS**: DatoCMS (headless, for Journal articles)
-- **Hosting**: Vercel (auto-deploys from `main` branch)
+- **Hosting**: Vercel — **Pendulum team** (`lightnote`), auto-deploys from `main` branch
 - **Analytics**: PostHog
 - **Live URL**: https://pagenineteen.ai
 - **Font**: Satoshi (via Fontshare CDN)
@@ -38,7 +38,7 @@
 | **Team members**     | `src/data/team.js`         | `{ id, name, role, previously, bio, linkedin, image }`                                                                        |
 | **Projects**         | `src/data/projects.js`     | `{ id, title, tagline, description, link, github, focus[], stack[], bgColor, visualType, screenshotUrl, screenshotFallback }` |
 | **Navigation links** | `src/config/navigation.js` | `navLinks`: `{ path, label }` — header nav items. ⚠️ Some pages are hidden with comments (see file)                           |
-| **Social links**     | `src/config/navigation.js` | `socialLinks`: `{ label, url }` — footer social icons                                                                         |
+| **Social links**     | `src/config/navigation.js` | `socialLinks`: `{ label, url }` — footer social icons. ⚠️ Currently placeholders (`#`), not yet connected to Footer           |
 | **Scroll sections**  | `src/data/scrollData.js`   | `FRAMES` array: `{ range[], title, text, isIntro? }` — the "Our work" scroll experience                                       |
 
 ### 📰 Journal Articles
@@ -70,6 +70,7 @@ Articles are managed through **DatoCMS** dashboard (not in code).
 - `src/lib/datocms.js` — DatoCMS API client configuration
 - `src/App.jsx` — Root component with routing, PostHog init, theme/cursor providers
 - `src/main.jsx` — Entry point
+- `scripts/*` — Developer CMS migration scripts (add_article, delete_all_articles, init_cms, etc.). **NEVER run these** — they modify the DatoCMS schema and data directly
 - `vite.config.js` — Build configuration
 - `vercel.json` — Hosting configuration
 - `index.html` — SEO meta tags (modify only if SEO changes are explicitly requested)
@@ -85,6 +86,11 @@ Articles are managed through **DatoCMS** dashboard (not in code).
 - `src/assets/images/team/*` — Team member photos (`.webp` format)
 - `public/images/*` — Project screenshots
 - `docs/CMS_GUIDE.md`, `docs/CLIENT_GUIDE.md` — Documentation
+
+### ⚠️ Known Issues
+
+- **Footer social links are hardcoded** in `src/components/layout/Footer.jsx` (lines 45-46). They do NOT read from `socialLinks` in `navigation.js`. To change footer links, you must edit `Footer.jsx` directly (layout zone — do with caution).
+- **Placeholder links** in `src/data/projects.js`: Lightnote `link` and both Lightnote/Pendulum `github` fields point to `google.com`. Replace with real URLs when available.
 
 ---
 

@@ -3,7 +3,7 @@ export const projects = [
     id: 'amble',
     title: 'amble',
     tagline: 'Real-time, personalized language learning',
-    description: "Amble gets to know each user, their proficiency and their interests, and builds curriculums around them. Built on real-time voice interfaces and adaptive learning driven by continuous feedback.",
+    description: "Amble gets to know each user, their proficiency and their interests, and bends curriculums around them. Built on real-time voice interfaces and adaptive learning driven by continuous feedback.",
     link: 'https://www.amble.app/',
     github: null,
     focus: [
@@ -22,9 +22,9 @@ export const projects = [
     id: 'pendulum',
     title: 'pendulum',
     tagline: 'Large-scale multimodal asset search and organization',
-    description: "Pendulum indexes, organizes, and retrieves assets across images and text. Designed alongside R/GA, WPP and Kering to scale to millions of assets while staying flexible for downstream generative use cases.",
-    link: 'https://www.pndlm.xyz/',
-    github: null,
+    description: "Pendulum indexes, organizes, and retrieves assets across images and text. It's designed to scale to millions of assets while staying flexible for downstream generative use cases.",
+    link: 'https://search-app-teal.vercel.app/',
+    github: 'https://google.com', // TODO: Replace with real GitHub URL
     focus: [
       'Metadata extraction using LLMs and vision-language models',
       'Plain-text indexing combined with vector embeddings',
@@ -41,9 +41,9 @@ export const projects = [
     id: 'lightnote',
     title: 'lightnote',
     tagline: 'Composable creative workflows for generative media',
-    description: "An exploration of what creative software looks like when AI is native to the interface rather than layered on top. Composable workflows for fine-tuned generative models.",
-    link: 'https://google.com', // Placeholder for tldraw-like demo
-    github: 'https://google.com',
+    description: "Lightnote explores what creative software looks like when AI is native to the interface rather than layered on top. A canvas-based environment for composing fine-tuned generative models and AI tools into repeatable creative workflows.",
+    link: 'https://google.com', // TODO: Replace with real demo URL
+    github: 'https://google.com', // TODO: Replace with real GitHub URL
     focus: [
       'Automated LoRA fine-tuning pipelines',
       'Support for multiple model families (Flux, SDXL)',

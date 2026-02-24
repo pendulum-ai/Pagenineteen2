@@ -63,7 +63,7 @@ npm run dev
 
 ### `src/pages/`
 
-Route-based page components: `HomeV2`, `Journal`, `ArticleDetail`, `Team`, `Projects`, `NotFound`.
+Route-based page components: `HomeV2`, `Journal`, `ArticleDetail`, `Team`, `Projects` (hidden from nav), `NotFound`.
 
 ### `src/styles/`
 
