@@ -12,7 +12,7 @@ const MissionSection = () => {
           <div className="mission-text-block text-align-fix">
             <BlurReveal>
               <h2>
-                Page Nineteen is a small, London based team building products at the intersection of education and creativity.
+                Page Nineteen is a small, full stack AI team building products at the intersection of education and creativity.
               </h2>
             </BlurReveal>
 
@@ -26,7 +26,7 @@ const MissionSection = () => {
             {/* Part 1 */}
             <BlurReveal delay={0.3}>
               <p className="mission-belief-text">
-                We design, build, and ship AI products from model to interface.
+                We design, ship, and operate products from model to interface.
               </p>
             </BlurReveal>
 
