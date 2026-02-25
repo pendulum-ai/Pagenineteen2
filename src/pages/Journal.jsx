@@ -121,11 +121,6 @@ const Journal = () => {
         <BlurReveal delay={0}>
             <h1 className="journal-title">Journal</h1>
         </BlurReveal>
-        <BlurReveal delay={0.1}>
-            <p className="journal-description">
-            Writing and notes from the team.
-            </p>
-        </BlurReveal>
       </div>
 
       {error && (
