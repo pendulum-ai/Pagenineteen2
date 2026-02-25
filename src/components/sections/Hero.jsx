@@ -26,25 +26,25 @@ const Hero = () => {
     }, 1000);
     return () => clearInterval(id);
   }, []);
-  
+
   return (
     <section className="hero split-layout">
       {/* Background Interactive Field Removed as requested */}
 
       <div className="hero-left">
         <BlurReveal>
-          <motion.h1 
+          <motion.h1
             style={{ y: yTitle }}
             className="hero-title"
           >
-            An applied <br /> multimodal <br /> AI studio
+            An applied <br /> multimodal <br /> AI lab
           </motion.h1>
         </BlurReveal>
       </div>
 
       <div className="hero-right">
         <BlurReveal delay={0.2}>
-          <motion.p 
+          <motion.p
             style={{ y: yDesc }}
             className="hero-description"
           >
