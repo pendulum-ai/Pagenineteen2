@@ -1,33 +1,33 @@
 export const FRAMES = [
   {
     range: [0.02, 0.20],
-    title: "How we build.",
-    text: "From problem to product.",
+    title: "How we operate.",
+    text: "",
     isIntro: true
   },
   {
     range: [0.22, 0.32],
-    title: "The problem.",
-    text: "Every product starts with a human need that predates the technology. Learning a second language. Making something original. Retrieving the right reference at the right moment."
+    title: "Small teams, dependable systems.",
+    text: "We are a small, senior team shipping production systems across voice, vision, and language. We don't separate ML from product."
   },
   {
     range: [0.35, 0.45],
-    title: "The experience.",
-    text: "We design the product people want to use before writing a line of code. The interface leads. The infrastructure follows."
+    title: "Interface first.",
+    text: "We design the experience before the architecture. The interface sets the constraints. Models and infrastructure are orchestrated to serve it."
   },
   {
     range: [0.48, 0.58],
-    title: "The models.",
-    text: "No single model does everything well. We select, combine, and orchestrate across vision, language, and speech."
+    title: "Orchestration over abstraction.",
+    text: "No single model solves the problem. We select, combine, and coordinate across systems. Multimodal products are built through orchestration."
   },
   {
     range: [0.61, 0.71],
-    title: "The latency.",
-    text: "We treat speed as a feature. Streaming inference, real-time voice, sub-second response. When the technology disappears, the product works."
+    title: "Latency is product.",
+    text: "Streaming inference, real-time interaction, sub-second response. If it feels slow, it is slow. Performance is part of design."
   },
   {
     range: [0.74, 0.98],
-    title: "The product.",
-    text: "We ship it, put it in front of real people, and keep building."
+    title: "Ship and refine.",
+    text: "We put systems in front of real users early. We optimize under real-world constraints. We build systems that hold up in production."
   }
 ];
