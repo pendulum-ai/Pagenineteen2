@@ -405,6 +405,13 @@
   opacity: 0.8;
 }
 
+/* Horizontal rules (thematic breaks) */
+.article-body hr {
+  border: none;
+  border-top: 1px solid var(--color-border, rgba(0,0,0,0.12));
+  margin: 3em 0 2em;
+}
+
 .article-block {
   margin-bottom: 40px;
   display: block;
