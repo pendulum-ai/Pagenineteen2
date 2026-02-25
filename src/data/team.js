@@ -9,9 +9,9 @@ export const teamMembers = [
   { 
     id: 1, 
     name: 'William Usdin', 
-    role: 'Founder, CEO', 
+    role: 'Founder & CEO', 
     previously: 'Google, Oxford, Fulbright',
-    bio: 'Product and strategy.',
+    bio: 'Product, GTM, Ops.',
     linkedin: 'https://www.linkedin.com/in/williamusdin/',
     image: willImg
   },
@@ -20,7 +20,7 @@ export const teamMembers = [
     name: 'Louis Marion', 
     role: 'Founding Engineer', 
     previously: 'Meta, Stanford, Darktrace',
-    bio: 'ML and infrastructure.',
+    bio: 'Machine Learning.',
     linkedin: 'https://www.linkedin.com/in/louismarion1/',
     image: louisImg
   },

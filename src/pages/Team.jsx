@@ -17,7 +17,7 @@ const Team = () => {
         </BlurReveal>
         <BlurReveal delay={0.1}>
            <p className="team-subtitle">
-             We are a small, senior team with experience building and operating AI systems at scale.
+             We're a small, senior team. ML researchers, engineers, and product working as one.
            </p>
         </BlurReveal>
       </div>
