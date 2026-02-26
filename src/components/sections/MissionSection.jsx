@@ -26,7 +26,7 @@ const MissionSection = () => {
             {/* Part 1 */}
             <BlurReveal delay={0.3}>
               <p className="mission-belief-text">
-                We run real-time voice, vision, and language systems in production.
+                Real-time voice, vision, and language systems in production.
               </p>
             </BlurReveal>
 
