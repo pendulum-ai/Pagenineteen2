@@ -23,8 +23,8 @@ export const projects = [
     title: 'pendulum',
     tagline: 'Multimodal asset search at enterprise scale',
     description: "An enterprise system for indexing, organizing, and retrieving multimodal assets at scale. Built to handle millions of assets across images and text, with flexibility for downstream generative workflows. Developed with R/GA, WPP, and Kering.",
-    link: 'https://search-app-teal.vercel.app/',
-    github: 'https://google.com', // TODO: Replace with real GitHub URL
+    link: 'https://www.pndlm.xyz/',
+    github: null,
     focus: [
       'Metadata extraction using LLMs and vision-language models',
       'Plain-text indexing combined with vector embeddings',
