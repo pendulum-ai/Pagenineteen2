@@ -11,6 +11,8 @@ const ARTICLES_QUERY = `
       id
       slug
       title
+      subcopy
+      authorName
       date
       tag
       excerpt
@@ -50,6 +52,8 @@ const Journal = () => {
           id: article.id,
           slug: article.slug,
           title: article.title,
+          subcopy: article.subcopy,
+          authorName: article.authorName,
           date: formatDate(article.date),
           tag: article.tag,
           excerpt: article.excerpt,

@@ -17,6 +17,8 @@ const ARTICLE_QUERY = `
       tag
       excerpt
       readingTime
+      authorName
+      subcopy
       content {
         value
         blocks {
@@ -42,6 +44,8 @@ const ARTICLE_QUERY = `
       tag
       excerpt
       readingTime
+      authorName
+      subcopy
     }
   }
 `;
@@ -155,9 +159,15 @@ const ArticleDetail = () => {
             <h1 className="article-title">{article.title}</h1>
         </BlurReveal>
 
-        {article.excerpt && (
+        {article.subcopy && (
             <BlurReveal delay={0.2}>
-              <p className="article-subtitle">{article.excerpt}</p>
+              <p className="article-subtitle">{article.subcopy}</p>
+            </BlurReveal>
+        )}
+
+        {article.authorName && (
+            <BlurReveal delay={0.3}>
+              <span className="article-author">{article.authorName}</span>
             </BlurReveal>
         )}
       </header>

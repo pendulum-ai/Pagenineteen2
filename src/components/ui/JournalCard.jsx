@@ -21,6 +21,12 @@ const JournalCard = ({ article, variant = 'default', label }) => {
       <div className="journal-content">
         {isMinimal && <span className="journal-label-minimal">{label || 'READ NEXT'}</span>}
         <h2 className="journal-item-title">{article.title}</h2>
+        {article.subcopy && (
+          <p className="journal-item-subcopy">{article.subcopy}</p>
+        )}
+        {article.authorName && (
+          <span className="journal-item-author">{article.authorName}</span>
+        )}
         <p className="journal-item-excerpt">{article.excerpt}</p>
       </div>
 
