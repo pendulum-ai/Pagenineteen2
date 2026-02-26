@@ -1,7 +1,7 @@
 export const FRAMES = [
   {
     range: [0.02, 0.20],
-    title: "Interaction defines architecture",
+    title: "How we operate",
     text: "",
     isIntro: true
   },
