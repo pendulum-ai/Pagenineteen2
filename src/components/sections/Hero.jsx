@@ -35,7 +35,7 @@ const Hero = () => {
             style={{ y: yDesc }}
             className="hero-description"
           >
-            Real-time voice, vision, and language systems in production.
+            Building at the intersection of language, vision, and sound.
           </motion.p>
         </BlurReveal>
       </div>
