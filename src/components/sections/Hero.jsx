@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import './Hero.css';
 import BlurReveal from '../ui/BlurReveal';
@@ -13,19 +13,6 @@ const Hero = () => {
 
   // Description moves faster.
   const yDesc = useTransform(scrollY, [0, 1000], [0, -500]);
-
-  const [londonTime, setLondonTime] = useState(() =>
-    new Date().toLocaleTimeString('en-GB', { timeZone: 'Europe/London', hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true }).toUpperCase()
-  );
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setLondonTime(
-        new Date().toLocaleTimeString('en-GB', { timeZone: 'Europe/London', hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true }).toUpperCase()
-      );
-    }, 1000);
-    return () => clearInterval(id);
-  }, []);
 
   return (
     <section className="hero split-layout">
@@ -48,7 +35,7 @@ const Hero = () => {
             style={{ y: yDesc }}
             className="hero-description"
           >
-            London, England&nbsp;&nbsp;{londonTime}
+            Real-time voice, vision, and language systems in production.
           </motion.p>
         </BlurReveal>
       </div>
