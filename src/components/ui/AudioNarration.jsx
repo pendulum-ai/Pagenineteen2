@@ -76,14 +76,12 @@ const AudioNarration = ({ content, slug }) => {
     return { text: t, estimatedDuration: estimateDuration(t) };
   }, [content]);
 
+  const staticPath = slug && STATIC_AUDIO[slug];
+
   // Clean up on unmount
   useEffect(() => {
     return () => {
       if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current = null;
-      }
       if (blobUrlRef.current) {
         URL.revokeObjectURL(blobUrlRef.current);
       }
@@ -100,53 +98,28 @@ const AudioNarration = ({ content, slug }) => {
     }
   }, []);
 
-  const wireAudio = useCallback((audio) => {
-    audioRef.current = audio;
-
-    audio.addEventListener('ended', () => {
-      setStatus('idle');
-      setProgress(0);
-      setCurrentTime(0);
-      if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
-    });
-
-    audio.addEventListener('loadedmetadata', () => {
-      setDuration(audio.duration);
-    });
-
-    audio.addEventListener('playing', () => {
-      setStatus('playing');
-      animFrameRef.current = requestAnimationFrame(updateProgress);
-    });
-  }, [updateProgress]);
-
   const handlePlay = () => {
-    // If we already have audio loaded, just resume
-    if (audioRef.current && status === 'paused') {
-      audioRef.current.play();
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    // Resume from pause
+    if (status === 'paused') {
+      audio.play();
       setStatus('playing');
       animFrameRef.current = requestAnimationFrame(updateProgress);
       return;
     }
-
-    if (!text) return;
-
-    const staticPath = slug && STATIC_AUDIO[slug];
 
     if (staticPath) {
-      // Static file: create Audio and play() synchronously in the tap handler
-      // so iOS Safari honours the user gesture
-      const audio = new Audio(staticPath);
-      wireAudio(audio);
-      audio.play().catch((err) => {
-        console.error('Narration error:', err);
-        setStatus('idle');
-      });
+      // Static file: src is already set on the <audio> element, just play
+      audio.play();
       setStatus('playing');
+      animFrameRef.current = requestAnimationFrame(updateProgress);
       return;
     }
 
-    // Dynamic: fetch from API (async — may not work on iOS without static file)
+    // Dynamic: fetch from API
+    if (!text) return;
     setStatus('loading');
     fetch('/api/narrate', {
       method: 'POST',
@@ -160,8 +133,7 @@ const AudioNarration = ({ content, slug }) => {
       .then((blob) => {
         const url = URL.createObjectURL(blob);
         blobUrlRef.current = url;
-        const audio = new Audio(url);
-        wireAudio(audio);
+        audio.src = url;
         return audio.play();
       })
       .then(() => {
@@ -175,10 +147,24 @@ const AudioNarration = ({ content, slug }) => {
   };
 
   const handlePause = () => {
-    if (audioRef.current) {
-      audioRef.current.pause();
+    const audio = audioRef.current;
+    if (audio) {
+      audio.pause();
       setStatus('paused');
       if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
+    }
+  };
+
+  const handleEnded = () => {
+    setStatus('idle');
+    setProgress(0);
+    setCurrentTime(0);
+    if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
+  };
+
+  const handleLoadedMetadata = () => {
+    if (audioRef.current) {
+      setDuration(audioRef.current.duration);
     }
   };
 
@@ -189,6 +175,16 @@ const AudioNarration = ({ content, slug }) => {
 
   return (
     <div className="audio-narration">
+      {/* Real DOM audio element for iOS Safari compatibility */}
+      <audio
+        ref={audioRef}
+        src={staticPath || undefined}
+        preload={staticPath ? 'metadata' : 'none'}
+        playsInline
+        onEnded={handleEnded}
+        onLoadedMetadata={handleLoadedMetadata}
+      />
+
       {status === 'idle' && (
         <button className="audio-narration__btn" onClick={handlePlay}>
           <PlayIcon />
