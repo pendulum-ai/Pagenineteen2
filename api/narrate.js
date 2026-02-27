@@ -1,4 +1,4 @@
-const VOICE_ID = '21m00Tcm4TlvDq8ikWAM'; // Rachel
+const VOICE_ID = '1hlpeD1ydbI2ow0Tt3EW';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {

@@ -171,6 +171,7 @@ const ArticleDetail = () => {
               <span className="article-author">{article.authorName}</span>
             </BlurReveal>
         )}
+
       </header>
 
       <article className="article-body">
@@ -202,7 +203,7 @@ const ArticleDetail = () => {
          )}
       </article>
 
-      {article.content && <AudioNarration content={article.content} />}
+      {article.content && <AudioNarration content={article.content} slug={article.slug} />}
 
       {nextArticle && (
         <div className="article-footer">
