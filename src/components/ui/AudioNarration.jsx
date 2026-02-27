@@ -111,8 +111,13 @@ const AudioNarration = ({ content, slug }) => {
     }
 
     if (staticPath) {
-      // Static file: src is already set on the <audio> element, just play
-      audio.play();
+      // Static file: set src on tap and play immediately
+      audio.src = staticPath;
+      audio.load();
+      audio.play().catch((err) => {
+        console.error('Narration error:', err);
+        setStatus('idle');
+      });
       setStatus('playing');
       animFrameRef.current = requestAnimationFrame(updateProgress);
       return;
@@ -178,8 +183,7 @@ const AudioNarration = ({ content, slug }) => {
       {/* Real DOM audio element for iOS Safari compatibility */}
       <audio
         ref={audioRef}
-        src={staticPath || undefined}
-        preload={staticPath ? 'metadata' : 'none'}
+        preload="none"
         playsInline
         onEnded={handleEnded}
         onLoadedMetadata={handleLoadedMetadata}

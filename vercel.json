@@ -9,7 +9,7 @@
       "destination": "https://eu.i.posthog.com/:path"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!audio/).*)",
       "destination": "/index.html"
     }
   ]
