@@ -1,0 +1,124 @@
+.audio-narration {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: var(--z-sticky);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  padding: 10px 20px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.audio-narration--active {
+  border-radius: 100px;
+}
+
+/* Button */
+.audio-narration__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text);
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  padding: 0;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.audio-narration__btn:hover {
+  opacity: 1;
+}
+
+.audio-narration__btn--loading {
+  cursor: default;
+  opacity: 0.4;
+}
+
+.audio-narration__icon {
+  flex-shrink: 0;
+}
+
+/* Loading dots */
+.audio-narration__dots {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.audio-narration__dot {
+  width: 4px;
+  height: 4px;
+  background-color: currentColor;
+  border-radius: 50%;
+  animation: narration-bounce 1.4s infinite ease-in-out both;
+}
+
+.audio-narration__dot:nth-child(1) { animation-delay: -0.32s; }
+.audio-narration__dot:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes narration-bounce {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1); }
+}
+
+/* Player (expanded state) */
+.audio-narration__player {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.audio-narration__progress-wrap {
+  width: 120px;
+  height: 2px;
+  background: var(--color-border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.audio-narration__progress-bar {
+  height: 100%;
+  background: var(--color-text);
+  opacity: 0.4;
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+
+.audio-narration__time {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  opacity: 0.4;
+  font-family: var(--font-mono, monospace);
+  white-space: nowrap;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .audio-narration {
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    text-align: center;
+  }
+
+  .audio-narration__player {
+    justify-content: center;
+  }
+
+  .audio-narration__progress-wrap {
+    flex: 1;
+  }
+}

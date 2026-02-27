@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import BlurReveal from '../components/ui/BlurReveal';
 import JournalCard from '../components/ui/JournalCard';
+import AudioNarration from '../components/ui/AudioNarration';
 import { request } from '../lib/datocms';
 import { StructuredText, Image } from 'react-datocms';
 import './Journal.css';
@@ -200,6 +201,8 @@ const ArticleDetail = () => {
            />
          )}
       </article>
+
+      {article.content && <AudioNarration content={article.content} />}
 
       {nextArticle && (
         <div className="article-footer">
