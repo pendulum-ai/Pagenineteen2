@@ -100,7 +100,27 @@ const AudioNarration = ({ content, slug }) => {
     }
   }, []);
 
-  const handlePlay = async () => {
+  const wireAudio = useCallback((audio) => {
+    audioRef.current = audio;
+
+    audio.addEventListener('ended', () => {
+      setStatus('idle');
+      setProgress(0);
+      setCurrentTime(0);
+      if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
+    });
+
+    audio.addEventListener('loadedmetadata', () => {
+      setDuration(audio.duration);
+    });
+
+    audio.addEventListener('playing', () => {
+      setStatus('playing');
+      animFrameRef.current = requestAnimationFrame(updateProgress);
+    });
+  }, [updateProgress]);
+
+  const handlePlay = () => {
     // If we already have audio loaded, just resume
     if (audioRef.current && status === 'paused') {
       audioRef.current.play();
@@ -111,51 +131,47 @@ const AudioNarration = ({ content, slug }) => {
 
     if (!text) return;
 
-    setStatus('loading');
+    const staticPath = slug && STATIC_AUDIO[slug];
 
-    try {
-      let audioUrl;
-      const staticPath = slug && STATIC_AUDIO[slug];
-
-      if (staticPath) {
-        // Use pre-generated static file — no API call needed
-        audioUrl = staticPath;
-      } else {
-        // Generate on the fly via ElevenLabs API
-        const response = await fetch('/api/narrate', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ text }),
-        });
-
-        if (!response.ok) throw new Error('TTS failed');
-
-        const blob = await response.blob();
-        audioUrl = URL.createObjectURL(blob);
-        blobUrlRef.current = audioUrl;
-      }
-
-      const audio = new Audio(audioUrl);
-      audioRef.current = audio;
-
-      audio.addEventListener('ended', () => {
+    if (staticPath) {
+      // Static file: create Audio and play() synchronously in the tap handler
+      // so iOS Safari honours the user gesture
+      const audio = new Audio(staticPath);
+      wireAudio(audio);
+      audio.play().catch((err) => {
+        console.error('Narration error:', err);
         setStatus('idle');
-        setProgress(0);
-        setCurrentTime(0);
-        if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
       });
-
-      audio.addEventListener('loadedmetadata', () => {
-        setDuration(audio.duration);
-      });
-
-      await audio.play();
       setStatus('playing');
-      animFrameRef.current = requestAnimationFrame(updateProgress);
-    } catch (err) {
-      console.error('Narration error:', err);
-      setStatus('idle');
+      return;
     }
+
+    // Dynamic: fetch from API (async — may not work on iOS without static file)
+    setStatus('loading');
+    fetch('/api/narrate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text }),
+    })
+      .then((response) => {
+        if (!response.ok) throw new Error('TTS failed');
+        return response.blob();
+      })
+      .then((blob) => {
+        const url = URL.createObjectURL(blob);
+        blobUrlRef.current = url;
+        const audio = new Audio(url);
+        wireAudio(audio);
+        return audio.play();
+      })
+      .then(() => {
+        setStatus('playing');
+        animFrameRef.current = requestAnimationFrame(updateProgress);
+      })
+      .catch((err) => {
+        console.error('Narration error:', err);
+        setStatus('idle');
+      });
   };
 
   const handlePause = () => {
