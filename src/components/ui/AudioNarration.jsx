@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import './AudioNarration.css';
 
@@ -65,7 +65,6 @@ const AudioNarration = ({ content, slug }) => {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const audioRef = useRef(null);
-  const animFrameRef = useRef(null);
 
   const { text, estimatedDuration } = useMemo(() => {
     const dast = content?.value?.document || content?.value;
@@ -78,21 +77,10 @@ const AudioNarration = ({ content, slug }) => {
 
   useEffect(() => {
     return () => {
-      if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
       if (audioRef.current) {
         audioRef.current.pause();
       }
     };
-  }, []);
-
-  const updateProgress = useCallback(() => {
-    const audio = audioRef.current;
-    if (audio && !audio.paused) {
-      setCurrentTime(audio.currentTime);
-      setDuration(audio.duration || 0);
-      setProgress(audio.duration ? audio.currentTime / audio.duration : 0);
-      animFrameRef.current = requestAnimationFrame(updateProgress);
-    }
   }, []);
 
   const handlePlay = () => {
@@ -103,7 +91,6 @@ const AudioNarration = ({ content, slug }) => {
     if (status === 'paused') {
       audio.play();
       setStatus('playing');
-      animFrameRef.current = requestAnimationFrame(updateProgress);
       return;
     }
 
@@ -119,7 +106,6 @@ const AudioNarration = ({ content, slug }) => {
         });
       }
       setStatus('playing');
-      animFrameRef.current = requestAnimationFrame(updateProgress);
       return;
     }
 
@@ -143,7 +129,6 @@ const AudioNarration = ({ content, slug }) => {
       })
       .then(() => {
         setStatus('playing');
-        animFrameRef.current = requestAnimationFrame(updateProgress);
       })
       .catch((err) => {
         console.error('Narration error:', err);
@@ -156,7 +141,15 @@ const AudioNarration = ({ content, slug }) => {
     if (audio) {
       audio.pause();
       setStatus('paused');
-      if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
+    }
+  };
+
+  const handleTimeUpdate = () => {
+    const audio = audioRef.current;
+    if (audio) {
+      setCurrentTime(audio.currentTime);
+      setDuration(audio.duration || 0);
+      setProgress(audio.duration ? audio.currentTime / audio.duration : 0);
     }
   };
 
@@ -164,7 +157,6 @@ const AudioNarration = ({ content, slug }) => {
     setStatus('idle');
     setProgress(0);
     setCurrentTime(0);
-    if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
   };
 
   const handleLoadedMetadata = () => {
@@ -184,6 +176,7 @@ const AudioNarration = ({ content, slug }) => {
         preload="none"
         playsInline
         webkit-playsinline=""
+        onTimeUpdate={handleTimeUpdate}
         onEnded={handleEnded}
         onLoadedMetadata={handleLoadedMetadata}
       />
