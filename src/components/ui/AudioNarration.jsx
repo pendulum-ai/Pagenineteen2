@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
+import { createPortal } from 'react-dom';
 import './AudioNarration.css';
 
 // Extract plain text from DatoCMS DAST structured text
@@ -28,7 +29,6 @@ function formatTime(seconds) {
   return `${m}:${s.toString().padStart(2, '0')}`;
 }
 
-// Estimate TTS duration from word count (~150 words/min for ElevenLabs)
 function estimateDuration(text) {
   const words = text.split(/\s+/).filter(Boolean).length;
   return Math.round((words / 150) * 60);
@@ -47,7 +47,7 @@ const PauseIcon = () => (
   </svg>
 );
 
-// Map of article slugs that have pre-generated audio files in /public/audio/
+// Pre-generated static audio files
 const STATIC_AUDIO = {
   'a-permanent-platform-for-personal-histories': '/audio/a-permanent-platform-for-personal-histories.mp3',
   'a-present-future-of-creative-software': '/audio/a-present-future-of-creative-software.mp3',
@@ -59,16 +59,30 @@ const STATIC_AUDIO = {
   'the-science-behind-amble': '/audio/the-science-behind-amble.mp3',
 };
 
+// Shared AudioContext (created on first user interaction)
+let audioCtx = null;
+function getAudioContext() {
+  if (!audioCtx) {
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  }
+  // Resume if suspended (iOS suspends by default)
+  if (audioCtx.state === 'suspended') {
+    audioCtx.resume();
+  }
+  return audioCtx;
+}
+
 const AudioNarration = ({ content, slug }) => {
   const [status, setStatus] = useState('idle'); // idle | loading | playing | paused
   const [progress, setProgress] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const audioRef = useRef(null);
-  const blobUrlRef = useRef(null);
+  const sourceRef = useRef(null);
+  const bufferRef = useRef(null);
+  const startTimeRef = useRef(0);
+  const pauseOffsetRef = useRef(0);
   const animFrameRef = useRef(null);
 
-  // Extract text and estimate duration
   const { text, estimatedDuration } = useMemo(() => {
     const dast = content?.value?.document || content?.value;
     if (!dast) return { text: '', estimatedDuration: 0 };
@@ -78,72 +92,91 @@ const AudioNarration = ({ content, slug }) => {
 
   const staticPath = slug && STATIC_AUDIO[slug];
 
-  // Clean up on unmount
   useEffect(() => {
     return () => {
       if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
-      if (blobUrlRef.current) {
-        URL.revokeObjectURL(blobUrlRef.current);
+      if (sourceRef.current) {
+        try { sourceRef.current.stop(); } catch (e) { /* already stopped */ }
       }
     };
   }, []);
 
   const updateProgress = useCallback(() => {
-    const audio = audioRef.current;
-    if (audio && !audio.paused) {
-      setCurrentTime(audio.currentTime);
-      setDuration(audio.duration || 0);
-      setProgress(audio.duration ? audio.currentTime / audio.duration : 0);
+    if (!bufferRef.current || !audioCtx) return;
+    const elapsed = audioCtx.currentTime - startTimeRef.current + pauseOffsetRef.current;
+    const dur = bufferRef.current.duration;
+    setCurrentTime(Math.min(elapsed, dur));
+    setDuration(dur);
+    setProgress(dur ? Math.min(elapsed / dur, 1) : 0);
+    if (elapsed < dur) {
       animFrameRef.current = requestAnimationFrame(updateProgress);
     }
   }, []);
 
-  const handlePlay = () => {
-    const audio = audioRef.current;
-    if (!audio) return;
-
-    // Resume from pause
-    if (status === 'paused') {
-      audio.play();
-      setStatus('playing');
-      animFrameRef.current = requestAnimationFrame(updateProgress);
-      return;
-    }
-
-    if (staticPath) {
-      // Static file: set src on tap and play immediately
-      audio.src = staticPath;
-      audio.load();
-      audio.play().catch((err) => {
-        console.error('Narration error:', err);
+  const playBuffer = useCallback((buffer, offset = 0) => {
+    const ctx = getAudioContext();
+    const source = ctx.createBufferSource();
+    source.buffer = buffer;
+    source.connect(ctx.destination);
+    source.onended = () => {
+      // Only reset if it played to the end (not stopped for pause)
+      const elapsed = ctx.currentTime - startTimeRef.current + pauseOffsetRef.current;
+      if (elapsed >= buffer.duration - 0.1) {
         setStatus('idle');
-      });
-      setStatus('playing');
-      animFrameRef.current = requestAnimationFrame(updateProgress);
+        setProgress(0);
+        setCurrentTime(0);
+        pauseOffsetRef.current = 0;
+        if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
+      }
+    };
+    sourceRef.current = source;
+    startTimeRef.current = ctx.currentTime;
+    source.start(0, offset);
+    setDuration(buffer.duration);
+    setStatus('playing');
+    animFrameRef.current = requestAnimationFrame(updateProgress);
+  }, [updateProgress]);
+
+  const handlePlay = () => {
+    // Resume from pause
+    if (status === 'paused' && bufferRef.current) {
+      playBuffer(bufferRef.current, pauseOffsetRef.current);
       return;
     }
 
-    // Dynamic: fetch from API
-    if (!text) return;
+    // Already have decoded buffer, replay from start
+    if (bufferRef.current && status === 'idle') {
+      pauseOffsetRef.current = 0;
+      playBuffer(bufferRef.current, 0);
+      return;
+    }
+
+    if (!text && !staticPath) return;
+
     setStatus('loading');
-    fetch('/api/narrate', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text }),
-    })
-      .then((response) => {
-        if (!response.ok) throw new Error('TTS failed');
-        return response.blob();
+
+    // Unlock AudioContext on this user gesture
+    const ctx = getAudioContext();
+
+    const fetchUrl = staticPath || '/api/narrate';
+    const fetchOpts = staticPath
+      ? {}
+      : {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text }),
+        };
+
+    fetch(fetchUrl, fetchOpts)
+      .then((res) => {
+        if (!res.ok) throw new Error('Audio fetch failed');
+        return res.arrayBuffer();
       })
-      .then((blob) => {
-        const url = URL.createObjectURL(blob);
-        blobUrlRef.current = url;
-        audio.src = url;
-        return audio.play();
-      })
-      .then(() => {
-        setStatus('playing');
-        animFrameRef.current = requestAnimationFrame(updateProgress);
+      .then((arrayBuffer) => ctx.decodeAudioData(arrayBuffer))
+      .then((decodedBuffer) => {
+        bufferRef.current = decodedBuffer;
+        pauseOffsetRef.current = 0;
+        playBuffer(decodedBuffer, 0);
       })
       .catch((err) => {
         console.error('Narration error:', err);
@@ -152,43 +185,22 @@ const AudioNarration = ({ content, slug }) => {
   };
 
   const handlePause = () => {
-    const audio = audioRef.current;
-    if (audio) {
-      audio.pause();
+    if (sourceRef.current && audioCtx) {
+      const elapsed = audioCtx.currentTime - startTimeRef.current + pauseOffsetRef.current;
+      pauseOffsetRef.current = elapsed;
+      try { sourceRef.current.stop(); } catch (e) { /* ok */ }
+      sourceRef.current = null;
       setStatus('paused');
       if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
     }
   };
 
-  const handleEnded = () => {
-    setStatus('idle');
-    setProgress(0);
-    setCurrentTime(0);
-    if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
-  };
-
-  const handleLoadedMetadata = () => {
-    if (audioRef.current) {
-      setDuration(audioRef.current.duration);
-    }
-  };
-
   if (!content?.value || !text) return null;
 
-  // Show actual duration once loaded, otherwise estimate
   const displayDuration = duration > 0 ? formatTime(duration) : formatTime(estimatedDuration);
 
-  return (
+  return createPortal(
     <div className="audio-narration">
-      {/* Real DOM audio element for iOS Safari compatibility */}
-      <audio
-        ref={audioRef}
-        preload="none"
-        playsInline
-        onEnded={handleEnded}
-        onLoadedMetadata={handleLoadedMetadata}
-      />
-
       {status === 'idle' && (
         <button className="audio-narration__btn" onClick={handlePlay}>
           <PlayIcon />
@@ -203,7 +215,7 @@ const AudioNarration = ({ content, slug }) => {
             <span className="audio-narration__dot" />
             <span className="audio-narration__dot" />
           </span>
-          Generating
+          Loading
         </span>
       )}
 
@@ -229,7 +241,8 @@ const AudioNarration = ({ content, slug }) => {
           </span>
         </div>
       )}
-    </div>
+    </div>,
+    document.body
   );
 };
 
