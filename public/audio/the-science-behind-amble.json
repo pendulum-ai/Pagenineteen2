@@ -1,0 +1,5127 @@
+[
+  {
+    "word": "Our",
+    "start": 0,
+    "end": 0.209
+  },
+  {
+    "word": "Method.",
+    "start": 0.279,
+    "end": 0.871
+  },
+  {
+    "word": "Amble",
+    "start": 1.196,
+    "end": 1.637
+  },
+  {
+    "word": "is",
+    "start": 1.672,
+    "end": 1.776
+  },
+  {
+    "word": "built",
+    "start": 1.846,
+    "end": 2.101
+  },
+  {
+    "word": "on",
+    "start": 2.171,
+    "end": 2.276
+  },
+  {
+    "word": "decades",
+    "start": 2.368,
+    "end": 2.868
+  },
+  {
+    "word": "of",
+    "start": 2.914,
+    "end": 2.972
+  },
+  {
+    "word": "research",
+    "start": 3.042,
+    "end": 3.599
+  },
+  {
+    "word": "into",
+    "start": 3.669,
+    "end": 3.866
+  },
+  {
+    "word": "how",
+    "start": 3.947,
+    "end": 4.098
+  },
+  {
+    "word": "humans",
+    "start": 4.168,
+    "end": 4.598
+  },
+  {
+    "word": "truly",
+    "start": 4.656,
+    "end": 5.016
+  },
+  {
+    "word": "acquire",
+    "start": 5.062,
+    "end": 5.445
+  },
+  {
+    "word": "language.",
+    "start": 5.492,
+    "end": 6.188
+  },
+  {
+    "word": "It",
+    "start": 6.571,
+    "end": 6.722
+  },
+  {
+    "word": "draws",
+    "start": 6.769,
+    "end": 7.094
+  },
+  {
+    "word": "from",
+    "start": 7.152,
+    "end": 7.291
+  },
+  {
+    "word": "the",
+    "start": 7.338,
+    "end": 7.407
+  },
+  {
+    "word": "oldest",
+    "start": 7.488,
+    "end": 8.069
+  },
+  {
+    "word": "and",
+    "start": 8.127,
+    "end": 8.278
+  },
+  {
+    "word": "most",
+    "start": 8.336,
+    "end": 8.51
+  },
+  {
+    "word": "effective",
+    "start": 8.557,
+    "end": 9.021
+  },
+  {
+    "word": "methods",
+    "start": 9.067,
+    "end": 9.567
+  },
+  {
+    "word": "and",
+    "start": 9.694,
+    "end": 9.857
+  },
+  {
+    "word": "pairs",
+    "start": 9.927,
+    "end": 10.217
+  },
+  {
+    "word": "them",
+    "start": 10.252,
+    "end": 10.368
+  },
+  {
+    "word": "with",
+    "start": 10.403,
+    "end": 10.53
+  },
+  {
+    "word": "modern",
+    "start": 10.588,
+    "end": 10.867
+  },
+  {
+    "word": "technology",
+    "start": 10.913,
+    "end": 11.68
+  },
+  {
+    "word": "to",
+    "start": 11.854,
+    "end": 11.981
+  },
+  {
+    "word": "create",
+    "start": 12.063,
+    "end": 12.469
+  },
+  {
+    "word": "a",
+    "start": 12.504,
+    "end": 12.539
+  },
+  {
+    "word": "new",
+    "start": 12.632,
+    "end": 12.794
+  },
+  {
+    "word": "kind",
+    "start": 12.864,
+    "end": 13.131
+  },
+  {
+    "word": "of",
+    "start": 13.189,
+    "end": 13.247
+  },
+  {
+    "word": "learning",
+    "start": 13.317,
+    "end": 13.618
+  },
+  {
+    "word": "experience.",
+    "start": 13.688,
+    "end": 14.559
+  },
+  {
+    "word": "What",
+    "start": 14.803,
+    "end": 15.012
+  },
+  {
+    "word": "follows",
+    "start": 15.093,
+    "end": 15.558
+  },
+  {
+    "word": "are",
+    "start": 15.627,
+    "end": 15.778
+  },
+  {
+    "word": "the",
+    "start": 15.813,
+    "end": 15.883
+  },
+  {
+    "word": "principles",
+    "start": 15.929,
+    "end": 16.486
+  },
+  {
+    "word": "and",
+    "start": 16.533,
+    "end": 16.626
+  },
+  {
+    "word": "insights",
+    "start": 16.707,
+    "end": 17.288
+  },
+  {
+    "word": "that",
+    "start": 17.346,
+    "end": 17.497
+  },
+  {
+    "word": "shape",
+    "start": 17.555,
+    "end": 17.891
+  },
+  {
+    "word": "everything",
+    "start": 17.938,
+    "end": 18.332
+  },
+  {
+    "word": "we",
+    "start": 18.379,
+    "end": 18.472
+  },
+  {
+    "word": "build:",
+    "start": 18.53,
+    "end": 19.064
+  },
+  {
+    "word": "the",
+    "start": 19.389,
+    "end": 19.505
+  },
+  {
+    "word": "science,",
+    "start": 19.575,
+    "end": 20.353
+  },
+  {
+    "word": "the",
+    "start": 20.48,
+    "end": 20.585
+  },
+  {
+    "word": "psychology,",
+    "start": 20.62,
+    "end": 21.618
+  },
+  {
+    "word": "and",
+    "start": 21.769,
+    "end": 21.908
+  },
+  {
+    "word": "the",
+    "start": 21.955,
+    "end": 22.024
+  },
+  {
+    "word": "convictions",
+    "start": 22.082,
+    "end": 22.872
+  },
+  {
+    "word": "around",
+    "start": 22.953,
+    "end": 23.302
+  },
+  {
+    "word": "how",
+    "start": 23.371,
+    "end": 23.522
+  },
+  {
+    "word": "language",
+    "start": 23.615,
+    "end": 24.091
+  },
+  {
+    "word": "becomes",
+    "start": 24.126,
+    "end": 24.613
+  },
+  {
+    "word": "a",
+    "start": 24.672,
+    "end": 24.706
+  },
+  {
+    "word": "part",
+    "start": 24.764,
+    "end": 25.031
+  },
+  {
+    "word": "of",
+    "start": 25.078,
+    "end": 25.136
+  },
+  {
+    "word": "us.",
+    "start": 25.217,
+    "end": 25.624
+  },
+  {
+    "word": "Learning",
+    "start": 26.007,
+    "end": 26.483
+  },
+  {
+    "word": "through",
+    "start": 26.564,
+    "end": 26.831
+  },
+  {
+    "word": "living.",
+    "start": 26.877,
+    "end": 27.504
+  },
+  {
+    "word": "The",
+    "start": 27.829,
+    "end": 27.946
+  },
+  {
+    "word": "first",
+    "start": 28.027,
+    "end": 28.503
+  },
+  {
+    "word": "is",
+    "start": 28.561,
+    "end": 28.665
+  },
+  {
+    "word": "that",
+    "start": 28.723,
+    "end": 28.851
+  },
+  {
+    "word": "languages",
+    "start": 28.921,
+    "end": 29.443
+  },
+  {
+    "word": "settle",
+    "start": 29.501,
+    "end": 29.838
+  },
+  {
+    "word": "into",
+    "start": 29.873,
+    "end": 30.013
+  },
+  {
+    "word": "the",
+    "start": 30.071,
+    "end": 30.14
+  },
+  {
+    "word": "mind",
+    "start": 30.198,
+    "end": 30.64
+  },
+  {
+    "word": "through",
+    "start": 30.79,
+    "end": 31.081
+  },
+  {
+    "word": "lived",
+    "start": 31.127,
+    "end": 31.371
+  },
+  {
+    "word": "experience.",
+    "start": 31.417,
+    "end": 32.3
+  },
+  {
+    "word": "We",
+    "start": 32.625,
+    "end": 32.764
+  },
+  {
+    "word": "learn",
+    "start": 32.834,
+    "end": 33.066
+  },
+  {
+    "word": "by",
+    "start": 33.124,
+    "end": 33.24
+  },
+  {
+    "word": "moving",
+    "start": 33.321,
+    "end": 33.635
+  },
+  {
+    "word": "through",
+    "start": 33.693,
+    "end": 33.925
+  },
+  {
+    "word": "stories,",
+    "start": 33.972,
+    "end": 34.599
+  },
+  {
+    "word": "images,",
+    "start": 34.68,
+    "end": 35.225
+  },
+  {
+    "word": "and",
+    "start": 35.26,
+    "end": 35.376
+  },
+  {
+    "word": "ideas",
+    "start": 35.458,
+    "end": 36.119
+  },
+  {
+    "word": "that",
+    "start": 36.294,
+    "end": 36.468
+  },
+  {
+    "word": "carry",
+    "start": 36.526,
+    "end": 36.816
+  },
+  {
+    "word": "meaning.",
+    "start": 36.886,
+    "end": 37.455
+  },
+  {
+    "word": "Cognitive",
+    "start": 38.058,
+    "end": 38.72
+  },
+  {
+    "word": "science",
+    "start": 38.767,
+    "end": 39.243
+  },
+  {
+    "word": "describes",
+    "start": 39.289,
+    "end": 39.811
+  },
+  {
+    "word": "the",
+    "start": 39.858,
+    "end": 39.928
+  },
+  {
+    "word": "brain",
+    "start": 39.974,
+    "end": 40.299
+  },
+  {
+    "word": "as",
+    "start": 40.392,
+    "end": 40.52
+  },
+  {
+    "word": "a",
+    "start": 40.566,
+    "end": 40.601
+  },
+  {
+    "word": "prediction",
+    "start": 40.647,
+    "end": 41.147
+  },
+  {
+    "word": "system",
+    "start": 41.216,
+    "end": 41.669
+  },
+  {
+    "word": "that",
+    "start": 41.878,
+    "end": 42.064
+  },
+  {
+    "word": "absorbs",
+    "start": 42.122,
+    "end": 42.575
+  },
+  {
+    "word": "regularities",
+    "start": 42.644,
+    "end": 43.55
+  },
+  {
+    "word": "in",
+    "start": 43.666,
+    "end": 43.794
+  },
+  {
+    "word": "what",
+    "start": 43.84,
+    "end": 43.979
+  },
+  {
+    "word": "it",
+    "start": 44.026,
+    "end": 44.107
+  },
+  {
+    "word": "hears",
+    "start": 44.177,
+    "end": 44.467
+  },
+  {
+    "word": "and",
+    "start": 44.513,
+    "end": 44.606
+  },
+  {
+    "word": "sees,",
+    "start": 44.676,
+    "end": 45.28
+  },
+  {
+    "word": "building",
+    "start": 45.559,
+    "end": 45.965
+  },
+  {
+    "word": "intuition",
+    "start": 46.046,
+    "end": 46.696
+  },
+  {
+    "word": "over",
+    "start": 46.813,
+    "end": 47.045
+  },
+  {
+    "word": "time",
+    "start": 47.103,
+    "end": 47.567
+  },
+  {
+    "word": "(Rumelhart",
+    "start": 47.741,
+    "end": 48.74
+  },
+  {
+    "word": "et",
+    "start": 48.821,
+    "end": 48.984
+  },
+  {
+    "word": "al.,",
+    "start": 49.088,
+    "end": 49.68
+  },
+  {
+    "word": "1986;",
+    "start": 49.959,
+    "end": 51.213
+  },
+  {
+    "word": "Ellis,",
+    "start": 51.422,
+    "end": 52.002
+  },
+  {
+    "word": "2003).",
+    "start": 52.083,
+    "end": 53.221
+  },
+  {
+    "word": "This",
+    "start": 53.5,
+    "end": 53.72
+  },
+  {
+    "word": "view,",
+    "start": 53.802,
+    "end": 54.22
+  },
+  {
+    "word": "often",
+    "start": 54.394,
+    "end": 54.696
+  },
+  {
+    "word": "called",
+    "start": 54.754,
+    "end": 54.998
+  },
+  {
+    "word": "connectionism,",
+    "start": 55.056,
+    "end": 55.996
+  },
+  {
+    "word": "explains",
+    "start": 56.147,
+    "end": 56.739
+  },
+  {
+    "word": "how",
+    "start": 56.785,
+    "end": 56.913
+  },
+  {
+    "word": "structure",
+    "start": 56.983,
+    "end": 57.436
+  },
+  {
+    "word": "emerges",
+    "start": 57.459,
+    "end": 57.9
+  },
+  {
+    "word": "from",
+    "start": 57.958,
+    "end": 58.097
+  },
+  {
+    "word": "exposure.",
+    "start": 58.167,
+    "end": 58.957
+  },
+  {
+    "word": "Patterns",
+    "start": 59.235,
+    "end": 59.746
+  },
+  {
+    "word": "come",
+    "start": 59.804,
+    "end": 60.013
+  },
+  {
+    "word": "first.",
+    "start": 60.083,
+    "end": 60.675
+  },
+  {
+    "word": "Rules",
+    "start": 61,
+    "end": 61.395
+  },
+  {
+    "word": "can",
+    "start": 61.453,
+    "end": 61.58
+  },
+  {
+    "word": "be",
+    "start": 61.627,
+    "end": 61.708
+  },
+  {
+    "word": "named",
+    "start": 61.766,
+    "end": 62.022
+  },
+  {
+    "word": "later.",
+    "start": 62.091,
+    "end": 62.695
+  },
+  {
+    "word": "Amble",
+    "start": 62.939,
+    "end": 63.322
+  },
+  {
+    "word": "recreates",
+    "start": 63.38,
+    "end": 63.984
+  },
+  {
+    "word": "that",
+    "start": 64.03,
+    "end": 64.181
+  },
+  {
+    "word": "pathway",
+    "start": 64.239,
+    "end": 64.68
+  },
+  {
+    "word": "for",
+    "start": 64.738,
+    "end": 64.843
+  },
+  {
+    "word": "new",
+    "start": 64.889,
+    "end": 64.994
+  },
+  {
+    "word": "languages.",
+    "start": 65.052,
+    "end": 65.841
+  },
+  {
+    "word": "With",
+    "start": 66.167,
+    "end": 66.364
+  },
+  {
+    "word": "steady",
+    "start": 66.422,
+    "end": 66.747
+  },
+  {
+    "word": "contact",
+    "start": 66.817,
+    "end": 67.374
+  },
+  {
+    "word": "and",
+    "start": 67.432,
+    "end": 67.525
+  },
+  {
+    "word": "meaningful",
+    "start": 67.595,
+    "end": 68.036
+  },
+  {
+    "word": "material,",
+    "start": 68.094,
+    "end": 68.848
+  },
+  {
+    "word": "learners",
+    "start": 69.092,
+    "end": 69.475
+  },
+  {
+    "word": "begin",
+    "start": 69.533,
+    "end": 69.789
+  },
+  {
+    "word": "to",
+    "start": 69.847,
+    "end": 69.905
+  },
+  {
+    "word": "feel",
+    "start": 69.986,
+    "end": 70.23
+  },
+  {
+    "word": "the",
+    "start": 70.288,
+    "end": 70.358
+  },
+  {
+    "word": "rhythm",
+    "start": 70.416,
+    "end": 70.706
+  },
+  {
+    "word": "of",
+    "start": 70.764,
+    "end": 70.822
+  },
+  {
+    "word": "a",
+    "start": 70.88,
+    "end": 70.903
+  },
+  {
+    "word": "language",
+    "start": 70.973,
+    "end": 71.588
+  },
+  {
+    "word": "and",
+    "start": 71.67,
+    "end": 71.844
+  },
+  {
+    "word": "anticipate",
+    "start": 71.913,
+    "end": 72.587
+  },
+  {
+    "word": "what",
+    "start": 72.61,
+    "end": 72.738
+  },
+  {
+    "word": "comes",
+    "start": 72.796,
+    "end": 73.028
+  },
+  {
+    "word": "next.",
+    "start": 73.098,
+    "end": 73.69
+  },
+  {
+    "word": "Fluency",
+    "start": 74.015,
+    "end": 74.584
+  },
+  {
+    "word": "grows",
+    "start": 74.653,
+    "end": 75.095
+  },
+  {
+    "word": "from",
+    "start": 75.164,
+    "end": 75.315
+  },
+  {
+    "word": "recognition",
+    "start": 75.385,
+    "end": 76.058
+  },
+  {
+    "word": "and",
+    "start": 76.139,
+    "end": 76.29
+  },
+  {
+    "word": "use.",
+    "start": 76.383,
+    "end": 76.929
+  },
+  {
+    "word": "Context",
+    "start": 77.37,
+    "end": 78.102
+  },
+  {
+    "word": "and",
+    "start": 78.16,
+    "end": 78.299
+  },
+  {
+    "word": "culture.",
+    "start": 78.38,
+    "end": 79.088
+  },
+  {
+    "word": "Words",
+    "start": 79.53,
+    "end": 79.89
+  },
+  {
+    "word": "stick",
+    "start": 79.936,
+    "end": 80.377
+  },
+  {
+    "word": "when",
+    "start": 80.551,
+    "end": 80.725
+  },
+  {
+    "word": "they",
+    "start": 80.76,
+    "end": 80.865
+  },
+  {
+    "word": "belong",
+    "start": 80.911,
+    "end": 81.202
+  },
+  {
+    "word": "to",
+    "start": 81.271,
+    "end": 81.329
+  },
+  {
+    "word": "a",
+    "start": 81.41,
+    "end": 81.434
+  },
+  {
+    "word": "scene,",
+    "start": 81.503,
+    "end": 82.107
+  },
+  {
+    "word": "a",
+    "start": 82.188,
+    "end": 82.27
+  },
+  {
+    "word": "feeling,",
+    "start": 82.363,
+    "end": 82.943
+  },
+  {
+    "word": "or",
+    "start": 83.117,
+    "end": 83.28
+  },
+  {
+    "word": "a",
+    "start": 83.326,
+    "end": 83.349
+  },
+  {
+    "word": "purpose.",
+    "start": 83.419,
+    "end": 84.081
+  },
+  {
+    "word": "Psycholinguistic",
+    "start": 84.568,
+    "end": 85.555
+  },
+  {
+    "word": "research",
+    "start": 85.625,
+    "end": 86.147
+  },
+  {
+    "word": "shows",
+    "start": 86.322,
+    "end": 86.589
+  },
+  {
+    "word": "greater",
+    "start": 86.647,
+    "end": 86.995
+  },
+  {
+    "word": "retention",
+    "start": 87.041,
+    "end": 87.645
+  },
+  {
+    "word": "when",
+    "start": 87.808,
+    "end": 87.993
+  },
+  {
+    "word": "vocabulary",
+    "start": 88.051,
+    "end": 88.771
+  },
+  {
+    "word": "appears",
+    "start": 88.806,
+    "end": 89.154
+  },
+  {
+    "word": "in",
+    "start": 89.212,
+    "end": 89.282
+  },
+  {
+    "word": "context",
+    "start": 89.352,
+    "end": 90.048
+  },
+  {
+    "word": "rather",
+    "start": 90.211,
+    "end": 90.489
+  },
+  {
+    "word": "than",
+    "start": 90.524,
+    "end": 90.664
+  },
+  {
+    "word": "in",
+    "start": 90.722,
+    "end": 90.803
+  },
+  {
+    "word": "isolation",
+    "start": 90.919,
+    "end": 91.674
+  },
+  {
+    "word": "(Nation,",
+    "start": 91.871,
+    "end": 92.672
+  },
+  {
+    "word": "2001;",
+    "start": 92.707,
+    "end": 93.624
+  },
+  {
+    "word": "Webb,",
+    "start": 93.798,
+    "end": 94.24
+  },
+  {
+    "word": "2007).",
+    "start": 94.286,
+    "end": 95.412
+  },
+  {
+    "word": "For",
+    "start": 95.842,
+    "end": 95.958
+  },
+  {
+    "word": "that",
+    "start": 96.004,
+    "end": 96.155
+  },
+  {
+    "word": "reason,",
+    "start": 96.225,
+    "end": 96.747
+  },
+  {
+    "word": "Amble",
+    "start": 96.898,
+    "end": 97.258
+  },
+  {
+    "word": "anchors",
+    "start": 97.316,
+    "end": 97.746
+  },
+  {
+    "word": "learning",
+    "start": 97.862,
+    "end": 98.245
+  },
+  {
+    "word": "in",
+    "start": 98.315,
+    "end": 98.419
+  },
+  {
+    "word": "culture.",
+    "start": 98.5,
+    "end": 99.174
+  },
+  {
+    "word": "Lessons",
+    "start": 99.545,
+    "end": 99.975
+  },
+  {
+    "word": "draw",
+    "start": 100.021,
+    "end": 100.23
+  },
+  {
+    "word": "from",
+    "start": 100.288,
+    "end": 100.439
+  },
+  {
+    "word": "film,",
+    "start": 100.532,
+    "end": 101.089
+  },
+  {
+    "word": "design,",
+    "start": 101.205,
+    "end": 101.96
+  },
+  {
+    "word": "food,",
+    "start": 102.169,
+    "end": 102.784
+  },
+  {
+    "word": "local",
+    "start": 102.993,
+    "end": 103.295
+  },
+  {
+    "word": "history,",
+    "start": 103.353,
+    "end": 104.015
+  },
+  {
+    "word": "and",
+    "start": 104.096,
+    "end": 104.236
+  },
+  {
+    "word": "everyday",
+    "start": 104.317,
+    "end": 104.735
+  },
+  {
+    "word": "conversation.",
+    "start": 104.793,
+    "end": 105.71
+  },
+  {
+    "word": "A",
+    "start": 106.035,
+    "end": 106.116
+  },
+  {
+    "word": "single",
+    "start": 106.233,
+    "end": 106.627
+  },
+  {
+    "word": "word",
+    "start": 106.662,
+    "end": 106.999
+  },
+  {
+    "word": "arrives",
+    "start": 107.045,
+    "end": 107.452
+  },
+  {
+    "word": "inside",
+    "start": 107.51,
+    "end": 107.951
+  },
+  {
+    "word": "a",
+    "start": 107.986,
+    "end": 108.009
+  },
+  {
+    "word": "narrative,",
+    "start": 108.067,
+    "end": 108.775
+  },
+  {
+    "word": "and",
+    "start": 108.891,
+    "end": 109.019
+  },
+  {
+    "word": "the",
+    "start": 109.065,
+    "end": 109.135
+  },
+  {
+    "word": "narrative",
+    "start": 109.181,
+    "end": 109.634
+  },
+  {
+    "word": "anchors",
+    "start": 109.692,
+    "end": 110.052
+  },
+  {
+    "word": "memory.",
+    "start": 110.122,
+    "end": 110.714
+  },
+  {
+    "word": "Context",
+    "start": 110.958,
+    "end": 111.759
+  },
+  {
+    "word": "turns",
+    "start": 111.933,
+    "end": 112.27
+  },
+  {
+    "word": "exposure",
+    "start": 112.328,
+    "end": 112.92
+  },
+  {
+    "word": "into",
+    "start": 112.955,
+    "end": 113.117
+  },
+  {
+    "word": "understanding,",
+    "start": 113.21,
+    "end": 114.174
+  },
+  {
+    "word": "and",
+    "start": 114.301,
+    "end": 114.452
+  },
+  {
+    "word": "culture",
+    "start": 114.545,
+    "end": 114.94
+  },
+  {
+    "word": "supplies",
+    "start": 114.963,
+    "end": 115.393
+  },
+  {
+    "word": "depth.",
+    "start": 115.462,
+    "end": 115.997
+  },
+  {
+    "word": "Comprehensible",
+    "start": 116.322,
+    "end": 117.146
+  },
+  {
+    "word": "input",
+    "start": 117.204,
+    "end": 117.715
+  },
+  {
+    "word": "around",
+    "start": 117.796,
+    "end": 118.121
+  },
+  {
+    "word": "personal",
+    "start": 118.179,
+    "end": 118.597
+  },
+  {
+    "word": "interests.",
+    "start": 118.678,
+    "end": 119.491
+  },
+  {
+    "word": "Stephen",
+    "start": 119.874,
+    "end": 120.281
+  },
+  {
+    "word": "Krashen's",
+    "start": 120.35,
+    "end": 121.012
+  },
+  {
+    "word": "Input",
+    "start": 121.082,
+    "end": 121.476
+  },
+  {
+    "word": "Hypothesis",
+    "start": 121.535,
+    "end": 122.394
+  },
+  {
+    "word": "describes",
+    "start": 122.719,
+    "end": 123.288
+  },
+  {
+    "word": "progress",
+    "start": 123.346,
+    "end": 123.949
+  },
+  {
+    "word": "through",
+    "start": 124.031,
+    "end": 124.263
+  },
+  {
+    "word": "comprehensible",
+    "start": 124.309,
+    "end": 125.052
+  },
+  {
+    "word": "input:",
+    "start": 125.099,
+    "end": 125.679
+  },
+  {
+    "word": "language",
+    "start": 126.062,
+    "end": 126.527
+  },
+  {
+    "word": "that",
+    "start": 126.562,
+    "end": 126.689
+  },
+  {
+    "word": "is",
+    "start": 126.747,
+    "end": 126.817
+  },
+  {
+    "word": "largely",
+    "start": 126.887,
+    "end": 127.27
+  },
+  {
+    "word": "understandable",
+    "start": 127.351,
+    "end": 128.35
+  },
+  {
+    "word": "with",
+    "start": 128.477,
+    "end": 128.675
+  },
+  {
+    "word": "small,",
+    "start": 128.733,
+    "end": 129.104
+  },
+  {
+    "word": "consistent",
+    "start": 129.139,
+    "end": 129.743
+  },
+  {
+    "word": "stretches",
+    "start": 129.789,
+    "end": 130.312
+  },
+  {
+    "word": "beyond",
+    "start": 130.381,
+    "end": 130.648
+  },
+  {
+    "word": "the",
+    "start": 130.695,
+    "end": 130.764
+  },
+  {
+    "word": "current",
+    "start": 130.811,
+    "end": 131.101
+  },
+  {
+    "word": "level,",
+    "start": 131.159,
+    "end": 131.693
+  },
+  {
+    "word": "known",
+    "start": 131.844,
+    "end": 132.111
+  },
+  {
+    "word": "as",
+    "start": 132.181,
+    "end": 132.413
+  },
+  {
+    "word": "i+1",
+    "start": 132.529,
+    "end": 133.342
+  },
+  {
+    "word": "(Krashen,",
+    "start": 133.586,
+    "end": 134.456
+  },
+  {
+    "word": "1985).",
+    "start": 134.526,
+    "end": 135.734
+  },
+  {
+    "word": "That",
+    "start": 136.117,
+    "end": 136.326
+  },
+  {
+    "word": "is",
+    "start": 136.384,
+    "end": 136.465
+  },
+  {
+    "word": "the",
+    "start": 136.523,
+    "end": 136.604
+  },
+  {
+    "word": "zone",
+    "start": 136.674,
+    "end": 137.092
+  },
+  {
+    "word": "where",
+    "start": 137.173,
+    "end": 137.371
+  },
+  {
+    "word": "the",
+    "start": 137.405,
+    "end": 137.475
+  },
+  {
+    "word": "mind",
+    "start": 137.545,
+    "end": 137.847
+  },
+  {
+    "word": "infers",
+    "start": 137.916,
+    "end": 138.381
+  },
+  {
+    "word": "form",
+    "start": 138.45,
+    "end": 138.822
+  },
+  {
+    "word": "and",
+    "start": 138.915,
+    "end": 139.054
+  },
+  {
+    "word": "meaning",
+    "start": 139.124,
+    "end": 139.495
+  },
+  {
+    "word": "with",
+    "start": 139.611,
+    "end": 139.785
+  },
+  {
+    "word": "minimal",
+    "start": 139.843,
+    "end": 140.169
+  },
+  {
+    "word": "strain.",
+    "start": 140.227,
+    "end": 140.877
+  },
+  {
+    "word": "Amble",
+    "start": 141.318,
+    "end": 141.782
+  },
+  {
+    "word": "is",
+    "start": 141.84,
+    "end": 142.003
+  },
+  {
+    "word": "designed",
+    "start": 142.073,
+    "end": 142.549
+  },
+  {
+    "word": "to",
+    "start": 142.572,
+    "end": 142.63
+  },
+  {
+    "word": "keep",
+    "start": 142.688,
+    "end": 142.897
+  },
+  {
+    "word": "you",
+    "start": 142.943,
+    "end": 143.025
+  },
+  {
+    "word": "there.",
+    "start": 143.083,
+    "end": 143.512
+  },
+  {
+    "word": "Each",
+    "start": 144.023,
+    "end": 144.255
+  },
+  {
+    "word": "article,",
+    "start": 144.325,
+    "end": 144.882
+  },
+  {
+    "word": "story,",
+    "start": 144.929,
+    "end": 145.335
+  },
+  {
+    "word": "and",
+    "start": 145.358,
+    "end": 145.439
+  },
+  {
+    "word": "conversation",
+    "start": 145.521,
+    "end": 146.357
+  },
+  {
+    "word": "adapts",
+    "start": 146.635,
+    "end": 147.169
+  },
+  {
+    "word": "to",
+    "start": 147.216,
+    "end": 147.285
+  },
+  {
+    "word": "your",
+    "start": 147.355,
+    "end": 147.471
+  },
+  {
+    "word": "level",
+    "start": 147.529,
+    "end": 147.819
+  },
+  {
+    "word": "over",
+    "start": 147.912,
+    "end": 148.121
+  },
+  {
+    "word": "time",
+    "start": 148.179,
+    "end": 148.632
+  },
+  {
+    "word": "and",
+    "start": 148.957,
+    "end": 149.154
+  },
+  {
+    "word": "aligns",
+    "start": 149.224,
+    "end": 149.642
+  },
+  {
+    "word": "with",
+    "start": 149.677,
+    "end": 149.793
+  },
+  {
+    "word": "your",
+    "start": 149.839,
+    "end": 149.955
+  },
+  {
+    "word": "interests,",
+    "start": 150.014,
+    "end": 150.768
+  },
+  {
+    "word": "since",
+    "start": 151.012,
+    "end": 151.291
+  },
+  {
+    "word": "motivation",
+    "start": 151.337,
+    "end": 152.022
+  },
+  {
+    "word": "strengthens",
+    "start": 152.115,
+    "end": 152.661
+  },
+  {
+    "word": "attention",
+    "start": 152.719,
+    "end": 153.171
+  },
+  {
+    "word": "and",
+    "start": 153.218,
+    "end": 153.299
+  },
+  {
+    "word": "retention",
+    "start": 153.369,
+    "end": 154.007
+  },
+  {
+    "word": "(Dörnyei,",
+    "start": 154.286,
+    "end": 155.226
+  },
+  {
+    "word": "2009).",
+    "start": 155.342,
+    "end": 156.585
+  },
+  {
+    "word": "Challenge",
+    "start": 157.096,
+    "end": 157.583
+  },
+  {
+    "word": "remains",
+    "start": 157.63,
+    "end": 158.001
+  },
+  {
+    "word": "present,",
+    "start": 158.059,
+    "end": 158.709
+  },
+  {
+    "word": "yet",
+    "start": 159.034,
+    "end": 159.232
+  },
+  {
+    "word": "always",
+    "start": 159.29,
+    "end": 159.685
+  },
+  {
+    "word": "within",
+    "start": 159.719,
+    "end": 159.975
+  },
+  {
+    "word": "reach.",
+    "start": 160.056,
+    "end": 160.544
+  },
+  {
+    "word": "Calm",
+    "start": 160.927,
+    "end": 161.333
+  },
+  {
+    "word": "conditions",
+    "start": 161.415,
+    "end": 162.076
+  },
+  {
+    "word": "for",
+    "start": 162.134,
+    "end": 162.25
+  },
+  {
+    "word": "learning.",
+    "start": 162.308,
+    "end": 162.947
+  },
+  {
+    "word": "Emotion",
+    "start": 163.388,
+    "end": 163.969
+  },
+  {
+    "word": "shapes",
+    "start": 164.038,
+    "end": 164.433
+  },
+  {
+    "word": "cognition.",
+    "start": 164.491,
+    "end": 165.281
+  },
+  {
+    "word": "Krashen's",
+    "start": 165.791,
+    "end": 166.395
+  },
+  {
+    "word": "Affective",
+    "start": 166.511,
+    "end": 167.103
+  },
+  {
+    "word": "Filter",
+    "start": 167.138,
+    "end": 167.637
+  },
+  {
+    "word": "Hypothesis",
+    "start": 168.148,
+    "end": 168.972
+  },
+  {
+    "word": "shows",
+    "start": 169.042,
+    "end": 169.321
+  },
+  {
+    "word": "that",
+    "start": 169.356,
+    "end": 169.483
+  },
+  {
+    "word": "anxiety",
+    "start": 169.541,
+    "end": 170.215
+  },
+  {
+    "word": "and",
+    "start": 170.273,
+    "end": 170.342
+  },
+  {
+    "word": "performance",
+    "start": 170.412,
+    "end": 170.969
+  },
+  {
+    "word": "pressure",
+    "start": 171.016,
+    "end": 171.434
+  },
+  {
+    "word": "impede",
+    "start": 171.492,
+    "end": 172.026
+  },
+  {
+    "word": "acquisition,",
+    "start": 172.049,
+    "end": 172.897
+  },
+  {
+    "word": "while",
+    "start": 173.222,
+    "end": 173.442
+  },
+  {
+    "word": "curiosity",
+    "start": 173.489,
+    "end": 174.209
+  },
+  {
+    "word": "and",
+    "start": 174.255,
+    "end": 174.336
+  },
+  {
+    "word": "comfort",
+    "start": 174.417,
+    "end": 174.975
+  },
+  {
+    "word": "create",
+    "start": 175.219,
+    "end": 175.59
+  },
+  {
+    "word": "conditions",
+    "start": 175.625,
+    "end": 176.205
+  },
+  {
+    "word": "where",
+    "start": 176.24,
+    "end": 176.414
+  },
+  {
+    "word": "input",
+    "start": 176.461,
+    "end": 176.832
+  },
+  {
+    "word": "is",
+    "start": 176.89,
+    "end": 176.96
+  },
+  {
+    "word": "processed",
+    "start": 177.03,
+    "end": 177.645
+  },
+  {
+    "word": "deeply.",
+    "start": 177.738,
+    "end": 178.435
+  },
+  {
+    "word": "Amble's",
+    "start": 178.876,
+    "end": 179.352
+  },
+  {
+    "word": "interface",
+    "start": 179.421,
+    "end": 179.979
+  },
+  {
+    "word": "is",
+    "start": 180.014,
+    "end": 180.083
+  },
+  {
+    "word": "quiet",
+    "start": 180.153,
+    "end": 180.571
+  },
+  {
+    "word": "and",
+    "start": 180.629,
+    "end": 180.733
+  },
+  {
+    "word": "uncluttered.",
+    "start": 180.803,
+    "end": 181.592
+  },
+  {
+    "word": "There",
+    "start": 181.976,
+    "end": 182.185
+  },
+  {
+    "word": "are",
+    "start": 182.219,
+    "end": 182.324
+  },
+  {
+    "word": "no",
+    "start": 182.359,
+    "end": 182.452
+  },
+  {
+    "word": "leaderboards,",
+    "start": 182.568,
+    "end": 183.404
+  },
+  {
+    "word": "competitions,",
+    "start": 183.462,
+    "end": 184.484
+  },
+  {
+    "word": "or",
+    "start": 184.635,
+    "end": 184.832
+  },
+  {
+    "word": "punitive",
+    "start": 184.925,
+    "end": 185.424
+  },
+  {
+    "word": "feedback",
+    "start": 185.459,
+    "end": 185.877
+  },
+  {
+    "word": "loops.",
+    "start": 185.947,
+    "end": 186.457
+  },
+  {
+    "word": "The",
+    "start": 186.736,
+    "end": 186.852
+  },
+  {
+    "word": "conversational",
+    "start": 186.91,
+    "end": 187.677
+  },
+  {
+    "word": "experience",
+    "start": 187.735,
+    "end": 188.338
+  },
+  {
+    "word": "itself",
+    "start": 188.385,
+    "end": 188.942
+  },
+  {
+    "word": "is",
+    "start": 189.116,
+    "end": 189.279
+  },
+  {
+    "word": "a",
+    "start": 189.325,
+    "end": 189.348
+  },
+  {
+    "word": "low-stress",
+    "start": 189.406,
+    "end": 189.94
+  },
+  {
+    "word": "space.",
+    "start": 189.975,
+    "end": 190.544
+  },
+  {
+    "word": "Learners",
+    "start": 190.985,
+    "end": 191.392
+  },
+  {
+    "word": "can",
+    "start": 191.45,
+    "end": 191.577
+  },
+  {
+    "word": "speak",
+    "start": 191.636,
+    "end": 191.879
+  },
+  {
+    "word": "freely",
+    "start": 191.961,
+    "end": 192.367
+  },
+  {
+    "word": "without",
+    "start": 192.425,
+    "end": 192.75
+  },
+  {
+    "word": "fear",
+    "start": 192.831,
+    "end": 193.075
+  },
+  {
+    "word": "of",
+    "start": 193.133,
+    "end": 193.191
+  },
+  {
+    "word": "mistakes.",
+    "start": 193.261,
+    "end": 194.05
+  },
+  {
+    "word": "And",
+    "start": 194.225,
+    "end": 194.364
+  },
+  {
+    "word": "by",
+    "start": 194.41,
+    "end": 194.515
+  },
+  {
+    "word": "tailoring",
+    "start": 194.584,
+    "end": 195.026
+  },
+  {
+    "word": "content",
+    "start": 195.107,
+    "end": 195.653
+  },
+  {
+    "word": "to",
+    "start": 195.699,
+    "end": 195.78
+  },
+  {
+    "word": "personal",
+    "start": 195.896,
+    "end": 196.303
+  },
+  {
+    "word": "interests,",
+    "start": 196.372,
+    "end": 197.057
+  },
+  {
+    "word": "Amble",
+    "start": 197.232,
+    "end": 197.637
+  },
+  {
+    "word": "sustains",
+    "start": 197.672,
+    "end": 198.16
+  },
+  {
+    "word": "enjoyment",
+    "start": 198.23,
+    "end": 198.891
+  },
+  {
+    "word": "and",
+    "start": 198.973,
+    "end": 199.135
+  },
+  {
+    "word": "positive",
+    "start": 199.216,
+    "end": 199.658
+  },
+  {
+    "word": "emotion.",
+    "start": 199.681,
+    "end": 200.377
+  },
+  {
+    "word": "The",
+    "start": 200.819,
+    "end": 200.935
+  },
+  {
+    "word": "goal",
+    "start": 201.004,
+    "end": 201.283
+  },
+  {
+    "word": "is",
+    "start": 201.353,
+    "end": 201.457
+  },
+  {
+    "word": "a",
+    "start": 201.515,
+    "end": 201.55
+  },
+  {
+    "word": "steady",
+    "start": 201.643,
+    "end": 202.003
+  },
+  {
+    "word": "state",
+    "start": 202.061,
+    "end": 202.339
+  },
+  {
+    "word": "of",
+    "start": 202.374,
+    "end": 202.432
+  },
+  {
+    "word": "focus",
+    "start": 202.502,
+    "end": 203.048
+  },
+  {
+    "word": "and",
+    "start": 203.117,
+    "end": 203.291
+  },
+  {
+    "word": "ease",
+    "start": 203.408,
+    "end": 203.907
+  },
+  {
+    "word": "that",
+    "start": 204.058,
+    "end": 204.232
+  },
+  {
+    "word": "invites",
+    "start": 204.29,
+    "end": 204.824
+  },
+  {
+    "word": "return.",
+    "start": 204.94,
+    "end": 205.579
+  },
+  {
+    "word": "Calm",
+    "start": 206.182,
+    "end": 206.716
+  },
+  {
+    "word": "is",
+    "start": 207.1,
+    "end": 207.274
+  },
+  {
+    "word": "a",
+    "start": 207.32,
+    "end": 207.355
+  },
+  {
+    "word": "learning",
+    "start": 207.425,
+    "end": 207.738
+  },
+  {
+    "word": "design",
+    "start": 207.796,
+    "end": 208.144
+  },
+  {
+    "word": "choice,",
+    "start": 208.203,
+    "end": 208.748
+  },
+  {
+    "word": "not",
+    "start": 209.027,
+    "end": 209.213
+  },
+  {
+    "word": "only",
+    "start": 209.282,
+    "end": 209.514
+  },
+  {
+    "word": "a",
+    "start": 209.561,
+    "end": 209.584
+  },
+  {
+    "word": "visual",
+    "start": 209.642,
+    "end": 210.014
+  },
+  {
+    "word": "one.",
+    "start": 210.095,
+    "end": 210.478
+  },
+  {
+    "word": "From",
+    "start": 210.989,
+    "end": 211.186
+  },
+  {
+    "word": "input",
+    "start": 211.279,
+    "end": 211.825
+  },
+  {
+    "word": "to",
+    "start": 211.999,
+    "end": 212.15
+  },
+  {
+    "word": "use.",
+    "start": 212.266,
+    "end": 212.765
+  },
+  {
+    "word": "Understanding",
+    "start": 213.276,
+    "end": 214.031
+  },
+  {
+    "word": "consolidates",
+    "start": 214.1,
+    "end": 214.983
+  },
+  {
+    "word": "when",
+    "start": 215.099,
+    "end": 215.273
+  },
+  {
+    "word": "it",
+    "start": 215.319,
+    "end": 215.389
+  },
+  {
+    "word": "is",
+    "start": 215.447,
+    "end": 215.528
+  },
+  {
+    "word": "used.",
+    "start": 215.61,
+    "end": 216.155
+  },
+  {
+    "word": "Building",
+    "start": 216.666,
+    "end": 217.107
+  },
+  {
+    "word": "on",
+    "start": 217.2,
+    "end": 217.362
+  },
+  {
+    "word": "Krashen's",
+    "start": 217.444,
+    "end": 217.954
+  },
+  {
+    "word": "idea",
+    "start": 218.012,
+    "end": 218.465
+  },
+  {
+    "word": "of",
+    "start": 218.558,
+    "end": 218.674
+  },
+  {
+    "word": "comprehensible",
+    "start": 218.767,
+    "end": 219.487
+  },
+  {
+    "word": "input,",
+    "start": 219.533,
+    "end": 220.16
+  },
+  {
+    "word": "Long's",
+    "start": 220.474,
+    "end": 220.869
+  },
+  {
+    "word": "Interaction",
+    "start": 220.938,
+    "end": 221.519
+  },
+  {
+    "word": "Hypothesis",
+    "start": 221.588,
+    "end": 222.366
+  },
+  {
+    "word": "(1980,",
+    "start": 222.54,
+    "end": 223.771
+  },
+  {
+    "word": "1996)",
+    "start": 223.864,
+    "end": 225.222
+  },
+  {
+    "word": "shows",
+    "start": 225.489,
+    "end": 225.803
+  },
+  {
+    "word": "that",
+    "start": 225.849,
+    "end": 225.977
+  },
+  {
+    "word": "meaning-focused",
+    "start": 226.047,
+    "end": 226.801
+  },
+  {
+    "word": "communication",
+    "start": 226.848,
+    "end": 227.66
+  },
+  {
+    "word": "helps",
+    "start": 227.985,
+    "end": 228.276
+  },
+  {
+    "word": "learners",
+    "start": 228.357,
+    "end": 228.728
+  },
+  {
+    "word": "negotiate",
+    "start": 228.798,
+    "end": 229.413
+  },
+  {
+    "word": "understanding",
+    "start": 229.472,
+    "end": 230.249
+  },
+  {
+    "word": "and",
+    "start": 230.447,
+    "end": 230.644
+  },
+  {
+    "word": "internalize",
+    "start": 230.725,
+    "end": 231.41
+  },
+  {
+    "word": "form.",
+    "start": 231.468,
+    "end": 231.991
+  },
+  {
+    "word": "Complementing",
+    "start": 232.304,
+    "end": 232.978
+  },
+  {
+    "word": "this,",
+    "start": 233.036,
+    "end": 233.465
+  },
+  {
+    "word": "Swain's",
+    "start": 233.674,
+    "end": 234.139
+  },
+  {
+    "word": "work",
+    "start": 234.185,
+    "end": 234.406
+  },
+  {
+    "word": "on",
+    "start": 234.476,
+    "end": 234.557
+  },
+  {
+    "word": "output",
+    "start": 234.65,
+    "end": 235.219
+  },
+  {
+    "word": "(1985)",
+    "start": 235.335,
+    "end": 236.647
+  },
+  {
+    "word": "highlights",
+    "start": 236.89,
+    "end": 237.517
+  },
+  {
+    "word": "how",
+    "start": 237.587,
+    "end": 237.738
+  },
+  {
+    "word": "producing",
+    "start": 237.796,
+    "end": 238.284
+  },
+  {
+    "word": "language",
+    "start": 238.376,
+    "end": 238.771
+  },
+  {
+    "word": "supports",
+    "start": 238.806,
+    "end": 239.247
+  },
+  {
+    "word": "hypothesis",
+    "start": 239.317,
+    "end": 239.967
+  },
+  {
+    "word": "testing",
+    "start": 240.037,
+    "end": 240.524
+  },
+  {
+    "word": "and",
+    "start": 240.652,
+    "end": 240.838
+  },
+  {
+    "word": "self-monitoring.",
+    "start": 240.907,
+    "end": 241.929
+  },
+  {
+    "word": "Conversation",
+    "start": 242.254,
+    "end": 243.02
+  },
+  {
+    "word": "therefore",
+    "start": 243.079,
+    "end": 243.52
+  },
+  {
+    "word": "sits",
+    "start": 243.566,
+    "end": 243.856
+  },
+  {
+    "word": "at",
+    "start": 243.903,
+    "end": 243.984
+  },
+  {
+    "word": "the",
+    "start": 244.019,
+    "end": 244.089
+  },
+  {
+    "word": "center",
+    "start": 244.147,
+    "end": 244.448
+  },
+  {
+    "word": "of",
+    "start": 244.507,
+    "end": 244.565
+  },
+  {
+    "word": "Amble.",
+    "start": 244.657,
+    "end": 245.238
+  },
+  {
+    "word": "You",
+    "start": 245.482,
+    "end": 245.621
+  },
+  {
+    "word": "can",
+    "start": 245.668,
+    "end": 245.784
+  },
+  {
+    "word": "discuss",
+    "start": 245.83,
+    "end": 246.213
+  },
+  {
+    "word": "an",
+    "start": 246.248,
+    "end": 246.318
+  },
+  {
+    "word": "article,",
+    "start": 246.364,
+    "end": 247.014
+  },
+  {
+    "word": "explore",
+    "start": 247.258,
+    "end": 247.792
+  },
+  {
+    "word": "a",
+    "start": 247.827,
+    "end": 247.85
+  },
+  {
+    "word": "topic",
+    "start": 247.92,
+    "end": 248.257
+  },
+  {
+    "word": "that",
+    "start": 248.315,
+    "end": 248.431
+  },
+  {
+    "word": "matters",
+    "start": 248.477,
+    "end": 248.802
+  },
+  {
+    "word": "to",
+    "start": 248.849,
+    "end": 248.907
+  },
+  {
+    "word": "you,",
+    "start": 249,
+    "end": 249.383
+  },
+  {
+    "word": "or",
+    "start": 249.534,
+    "end": 249.696
+  },
+  {
+    "word": "ask",
+    "start": 249.766,
+    "end": 250.021
+  },
+  {
+    "word": "about",
+    "start": 250.068,
+    "end": 250.277
+  },
+  {
+    "word": "a",
+    "start": 250.312,
+    "end": 250.335
+  },
+  {
+    "word": "phrase",
+    "start": 250.393,
+    "end": 250.753
+  },
+  {
+    "word": "that",
+    "start": 250.788,
+    "end": 250.904
+  },
+  {
+    "word": "caught",
+    "start": 250.95,
+    "end": 251.159
+  },
+  {
+    "word": "your",
+    "start": 251.194,
+    "end": 251.298
+  },
+  {
+    "word": "attention.",
+    "start": 251.333,
+    "end": 252.065
+  },
+  {
+    "word": "Guidance",
+    "start": 252.448,
+    "end": 253.017
+  },
+  {
+    "word": "is",
+    "start": 253.075,
+    "end": 253.156
+  },
+  {
+    "word": "gentle",
+    "start": 253.249,
+    "end": 253.725
+  },
+  {
+    "word": "and",
+    "start": 253.783,
+    "end": 253.922
+  },
+  {
+    "word": "timely.",
+    "start": 253.98,
+    "end": 254.723
+  },
+  {
+    "word": "The",
+    "start": 255.048,
+    "end": 255.164
+  },
+  {
+    "word": "flow",
+    "start": 255.246,
+    "end": 255.49
+  },
+  {
+    "word": "of",
+    "start": 255.548,
+    "end": 255.606
+  },
+  {
+    "word": "dialogue",
+    "start": 255.675,
+    "end": 256.198
+  },
+  {
+    "word": "remains",
+    "start": 256.233,
+    "end": 256.581
+  },
+  {
+    "word": "intact,",
+    "start": 256.651,
+    "end": 257.486
+  },
+  {
+    "word": "so",
+    "start": 257.812,
+    "end": 257.974
+  },
+  {
+    "word": "confidence",
+    "start": 258.055,
+    "end": 258.613
+  },
+  {
+    "word": "grows",
+    "start": 258.647,
+    "end": 259.089
+  },
+  {
+    "word": "alongside",
+    "start": 259.205,
+    "end": 259.808
+  },
+  {
+    "word": "accuracy.",
+    "start": 259.855,
+    "end": 260.737
+  },
+  {
+    "word": "Remembering",
+    "start": 261.248,
+    "end": 261.921
+  },
+  {
+    "word": "through",
+    "start": 262.014,
+    "end": 262.281
+  },
+  {
+    "word": "repetition.",
+    "start": 262.328,
+    "end": 263.164
+  },
+  {
+    "word": "Durable",
+    "start": 263.489,
+    "end": 264
+  },
+  {
+    "word": "memory",
+    "start": 264.046,
+    "end": 264.511
+  },
+  {
+    "word": "forms",
+    "start": 264.685,
+    "end": 265.033
+  },
+  {
+    "word": "through",
+    "start": 265.079,
+    "end": 265.323
+  },
+  {
+    "word": "spaced",
+    "start": 265.37,
+    "end": 265.741
+  },
+  {
+    "word": "reencounters",
+    "start": 265.811,
+    "end": 266.716
+  },
+  {
+    "word": "rather",
+    "start": 267.158,
+    "end": 267.459
+  },
+  {
+    "word": "than",
+    "start": 267.506,
+    "end": 267.657
+  },
+  {
+    "word": "massed",
+    "start": 267.738,
+    "end": 268.086
+  },
+  {
+    "word": "review.",
+    "start": 268.144,
+    "end": 268.795
+  },
+  {
+    "word": "Ebbinghaus",
+    "start": 269.12,
+    "end": 269.677
+  },
+  {
+    "word": "mapped",
+    "start": 269.77,
+    "end": 270.141
+  },
+  {
+    "word": "the",
+    "start": 270.292,
+    "end": 270.408
+  },
+  {
+    "word": "forgetting",
+    "start": 270.466,
+    "end": 270.908
+  },
+  {
+    "word": "curve;",
+    "start": 270.989,
+    "end": 271.511
+  },
+  {
+    "word": "later",
+    "start": 271.836,
+    "end": 272.15
+  },
+  {
+    "word": "work",
+    "start": 272.196,
+    "end": 272.429
+  },
+  {
+    "word": "confirmed",
+    "start": 272.487,
+    "end": 272.963
+  },
+  {
+    "word": "the",
+    "start": 272.986,
+    "end": 273.056
+  },
+  {
+    "word": "power",
+    "start": 273.102,
+    "end": 273.404
+  },
+  {
+    "word": "of",
+    "start": 273.462,
+    "end": 273.508
+  },
+  {
+    "word": "spaced",
+    "start": 273.578,
+    "end": 273.949
+  },
+  {
+    "word": "retrieval",
+    "start": 273.984,
+    "end": 274.495
+  },
+  {
+    "word": "for",
+    "start": 274.576,
+    "end": 274.693
+  },
+  {
+    "word": "long-term",
+    "start": 274.751,
+    "end": 275.169
+  },
+  {
+    "word": "retention",
+    "start": 275.227,
+    "end": 275.842
+  },
+  {
+    "word": "(Ebbinghaus,",
+    "start": 276.016,
+    "end": 276.91
+  },
+  {
+    "word": "1885;",
+    "start": 276.933,
+    "end": 278.048
+  },
+  {
+    "word": "Cepeda",
+    "start": 278.257,
+    "end": 278.907
+  },
+  {
+    "word": "et",
+    "start": 279.232,
+    "end": 279.418
+  },
+  {
+    "word": "al.,",
+    "start": 279.499,
+    "end": 280.033
+  },
+  {
+    "word": "2006).",
+    "start": 280.184,
+    "end": 281.426
+  },
+  {
+    "word": "Amble",
+    "start": 282.03,
+    "end": 282.425
+  },
+  {
+    "word": "applies",
+    "start": 282.448,
+    "end": 282.831
+  },
+  {
+    "word": "spacing",
+    "start": 282.878,
+    "end": 283.342
+  },
+  {
+    "word": "within",
+    "start": 283.388,
+    "end": 283.62
+  },
+  {
+    "word": "context.",
+    "start": 283.702,
+    "end": 284.514
+  },
+  {
+    "word": "Words",
+    "start": 284.839,
+    "end": 285.188
+  },
+  {
+    "word": "and",
+    "start": 285.223,
+    "end": 285.315
+  },
+  {
+    "word": "structures",
+    "start": 285.385,
+    "end": 286
+  },
+  {
+    "word": "resurface",
+    "start": 286.082,
+    "end": 286.685
+  },
+  {
+    "word": "across",
+    "start": 286.72,
+    "end": 286.999
+  },
+  {
+    "word": "different",
+    "start": 287.045,
+    "end": 287.37
+  },
+  {
+    "word": "scenes",
+    "start": 287.417,
+    "end": 287.858
+  },
+  {
+    "word": "and",
+    "start": 287.928,
+    "end": 288.079
+  },
+  {
+    "word": "emotional",
+    "start": 288.137,
+    "end": 288.578
+  },
+  {
+    "word": "tones,",
+    "start": 288.648,
+    "end": 289.321
+  },
+  {
+    "word": "so",
+    "start": 289.6,
+    "end": 289.751
+  },
+  {
+    "word": "each",
+    "start": 289.867,
+    "end": 290.087
+  },
+  {
+    "word": "reappearance",
+    "start": 290.145,
+    "end": 290.877
+  },
+  {
+    "word": "adds",
+    "start": 290.935,
+    "end": 291.202
+  },
+  {
+    "word": "another",
+    "start": 291.248,
+    "end": 291.573
+  },
+  {
+    "word": "layer",
+    "start": 291.62,
+    "end": 291.864
+  },
+  {
+    "word": "of",
+    "start": 291.922,
+    "end": 291.98
+  },
+  {
+    "word": "meaning.",
+    "start": 292.049,
+    "end": 292.572
+  },
+  {
+    "word": "Flashcards",
+    "start": 293.013,
+    "end": 293.733
+  },
+  {
+    "word": "serve",
+    "start": 293.791,
+    "end": 294.104
+  },
+  {
+    "word": "this",
+    "start": 294.139,
+    "end": 294.278
+  },
+  {
+    "word": "goal",
+    "start": 294.348,
+    "end": 294.58
+  },
+  {
+    "word": "as",
+    "start": 294.638,
+    "end": 294.708
+  },
+  {
+    "word": "well,",
+    "start": 294.789,
+    "end": 295.312
+  },
+  {
+    "word": "always",
+    "start": 295.486,
+    "end": 295.892
+  },
+  {
+    "word": "tied",
+    "start": 295.939,
+    "end": 296.217
+  },
+  {
+    "word": "back",
+    "start": 296.252,
+    "end": 296.449
+  },
+  {
+    "word": "to",
+    "start": 296.508,
+    "end": 296.577
+  },
+  {
+    "word": "sentences",
+    "start": 296.658,
+    "end": 297.204
+  },
+  {
+    "word": "and",
+    "start": 297.251,
+    "end": 297.332
+  },
+  {
+    "word": "moments,",
+    "start": 297.39,
+    "end": 298.005
+  },
+  {
+    "word": "never",
+    "start": 298.179,
+    "end": 298.423
+  },
+  {
+    "word": "drifting",
+    "start": 298.469,
+    "end": 298.911
+  },
+  {
+    "word": "into",
+    "start": 299.027,
+    "end": 299.247
+  },
+  {
+    "word": "isolated",
+    "start": 299.363,
+    "end": 299.979
+  },
+  {
+    "word": "lists.",
+    "start": 300.037,
+    "end": 300.641
+  },
+  {
+    "word": "Behind",
+    "start": 301.082,
+    "end": 301.43
+  },
+  {
+    "word": "the",
+    "start": 301.488,
+    "end": 301.558
+  },
+  {
+    "word": "scenes,",
+    "start": 301.616,
+    "end": 302.115
+  },
+  {
+    "word": "Amble's",
+    "start": 302.231,
+    "end": 302.614
+  },
+  {
+    "word": "scheduling",
+    "start": 302.637,
+    "end": 303.264
+  },
+  {
+    "word": "is",
+    "start": 303.38,
+    "end": 303.531
+  },
+  {
+    "word": "powered",
+    "start": 303.601,
+    "end": 303.938
+  },
+  {
+    "word": "by",
+    "start": 303.973,
+    "end": 304.077
+  },
+  {
+    "word": "a",
+    "start": 304.147,
+    "end": 304.17
+  },
+  {
+    "word": "state-of-the-art",
+    "start": 304.24,
+    "end": 304.983
+  },
+  {
+    "word": "algorithm",
+    "start": 305.052,
+    "end": 305.621
+  },
+  {
+    "word": "(Su",
+    "start": 305.795,
+    "end": 306.353
+  },
+  {
+    "word": "et",
+    "start": 306.422,
+    "end": 306.527
+  },
+  {
+    "word": "al.,",
+    "start": 306.62,
+    "end": 307.072
+  },
+  {
+    "word": "2022;",
+    "start": 307.223,
+    "end": 308.431
+  },
+  {
+    "word": "Ye",
+    "start": 308.872,
+    "end": 309.232
+  },
+  {
+    "word": "et",
+    "start": 309.313,
+    "end": 309.487
+  },
+  {
+    "word": "al.,",
+    "start": 309.58,
+    "end": 309.975
+  },
+  {
+    "word": "2023),",
+    "start": 310.091,
+    "end": 311.217
+  },
+  {
+    "word": "which",
+    "start": 311.426,
+    "end": 311.635
+  },
+  {
+    "word": "optimizes",
+    "start": 311.693,
+    "end": 312.378
+  },
+  {
+    "word": "review",
+    "start": 312.459,
+    "end": 312.75
+  },
+  {
+    "word": "timing",
+    "start": 312.819,
+    "end": 313.249
+  },
+  {
+    "word": "based",
+    "start": 313.342,
+    "end": 313.632
+  },
+  {
+    "word": "on",
+    "start": 313.679,
+    "end": 313.748
+  },
+  {
+    "word": "current",
+    "start": 313.818,
+    "end": 314.108
+  },
+  {
+    "word": "research",
+    "start": 314.155,
+    "end": 314.654
+  },
+  {
+    "word": "in",
+    "start": 314.735,
+    "end": 314.851
+  },
+  {
+    "word": "memory",
+    "start": 314.921,
+    "end": 315.223
+  },
+  {
+    "word": "science.",
+    "start": 315.269,
+    "end": 315.884
+  },
+  {
+    "word": "A",
+    "start": 316.128,
+    "end": 316.198
+  },
+  {
+    "word": "continuous",
+    "start": 316.279,
+    "end": 316.941
+  },
+  {
+    "word": "loop.",
+    "start": 317.011,
+    "end": 317.696
+  },
+  {
+    "word": "Every",
+    "start": 317.696,
+    "end": 318.033
+  },
+  {
+    "word": "interaction",
+    "start": 318.091,
+    "end": 318.68300000000005
+  },
+  {
+    "word": "in",
+    "start": 318.74100000000004,
+    "end": 318.81100000000004
+  },
+  {
+    "word": "Amble",
+    "start": 318.88000000000005,
+    "end": 319.345
+  },
+  {
+    "word": "advances",
+    "start": 319.403,
+    "end": 320.01800000000003
+  },
+  {
+    "word": "a",
+    "start": 320.064,
+    "end": 320.09900000000005
+  },
+  {
+    "word": "simple",
+    "start": 320.16900000000004,
+    "end": 320.459
+  },
+  {
+    "word": "cycle.",
+    "start": 320.494,
+    "end": 321.156
+  },
+  {
+    "word": "Exposure",
+    "start": 321.48100000000005,
+    "end": 322.119
+  },
+  {
+    "word": "leads",
+    "start": 322.15400000000005,
+    "end": 322.398
+  },
+  {
+    "word": "to",
+    "start": 322.444,
+    "end": 322.50300000000004
+  },
+  {
+    "word": "recognition.",
+    "start": 322.584,
+    "end": 323.396
+  },
+  {
+    "word": "Recognition",
+    "start": 323.72200000000004,
+    "end": 324.38300000000004
+  },
+  {
+    "word": "leads",
+    "start": 324.46500000000003,
+    "end": 324.72
+  },
+  {
+    "word": "to",
+    "start": 324.766,
+    "end": 324.848
+  },
+  {
+    "word": "speaking.",
+    "start": 324.94100000000003,
+    "end": 325.62600000000003
+  },
+  {
+    "word": "Speaking",
+    "start": 325.869,
+    "end": 326.357
+  },
+  {
+    "word": "solidifies",
+    "start": 326.45000000000005,
+    "end": 327.19300000000004
+  },
+  {
+    "word": "reinforcement.",
+    "start": 327.26300000000003,
+    "end": 328.21500000000003
+  },
+  {
+    "word": "Spaced",
+    "start": 328.598,
+    "end": 329.074
+  },
+  {
+    "word": "repetition",
+    "start": 329.132,
+    "end": 329.82800000000003
+  },
+  {
+    "word": "consolidates",
+    "start": 330.00300000000004,
+    "end": 330.85
+  },
+  {
+    "word": "what",
+    "start": 330.88500000000005,
+    "end": 331.01300000000003
+  },
+  {
+    "word": "was",
+    "start": 331.047,
+    "end": 331.15200000000004
+  },
+  {
+    "word": "learned,",
+    "start": 331.233,
+    "end": 331.744
+  },
+  {
+    "word": "and",
+    "start": 331.918,
+    "end": 332.03400000000005
+  },
+  {
+    "word": "the",
+    "start": 332.081,
+    "end": 332.15000000000003
+  },
+  {
+    "word": "next",
+    "start": 332.197,
+    "end": 332.41700000000003
+  },
+  {
+    "word": "moment",
+    "start": 332.475,
+    "end": 332.73100000000005
+  },
+  {
+    "word": "of",
+    "start": 332.766,
+    "end": 332.812
+  },
+  {
+    "word": "contact",
+    "start": 332.882,
+    "end": 333.54400000000004
+  },
+  {
+    "word": "begins",
+    "start": 333.718,
+    "end": 334.15900000000005
+  },
+  {
+    "word": "the",
+    "start": 334.21700000000004,
+    "end": 334.28700000000003
+  },
+  {
+    "word": "cycle",
+    "start": 334.345,
+    "end": 334.71700000000004
+  },
+  {
+    "word": "again.",
+    "start": 334.74,
+    "end": 335.297
+  },
+  {
+    "word": "This",
+    "start": 335.73800000000006,
+    "end": 335.982
+  },
+  {
+    "word": "loop",
+    "start": 336.098,
+    "end": 336.41200000000003
+  },
+  {
+    "word": "mirrors",
+    "start": 336.62100000000004,
+    "end": 337.004
+  },
+  {
+    "word": "the",
+    "start": 337.05,
+    "end": 337.12
+  },
+  {
+    "word": "way",
+    "start": 337.16600000000005,
+    "end": 337.29400000000004
+  },
+  {
+    "word": "we",
+    "start": 337.341,
+    "end": 337.44500000000005
+  },
+  {
+    "word": "acquired",
+    "start": 337.49100000000004,
+    "end": 337.97900000000004
+  },
+  {
+    "word": "our",
+    "start": 338.026,
+    "end": 338.13000000000005
+  },
+  {
+    "word": "first",
+    "start": 338.20000000000005,
+    "end": 338.478
+  },
+  {
+    "word": "language:",
+    "start": 338.536,
+    "end": 339.233
+  },
+  {
+    "word": "through",
+    "start": 339.61600000000004,
+    "end": 339.89500000000004
+  },
+  {
+    "word": "repeated,",
+    "start": 339.95300000000003,
+    "end": 340.545
+  },
+  {
+    "word": "meaningful",
+    "start": 340.603,
+    "end": 341.10200000000003
+  },
+  {
+    "word": "contact",
+    "start": 341.172,
+    "end": 341.78700000000003
+  },
+  {
+    "word": "with",
+    "start": 341.915,
+    "end": 342.08900000000006
+  },
+  {
+    "word": "a",
+    "start": 342.124,
+    "end": 342.15900000000005
+  },
+  {
+    "word": "world",
+    "start": 342.21700000000004,
+    "end": 342.48400000000004
+  },
+  {
+    "word": "that",
+    "start": 342.53000000000003,
+    "end": 342.658
+  },
+  {
+    "word": "spoke",
+    "start": 342.716,
+    "end": 343.01800000000003
+  },
+  {
+    "word": "to",
+    "start": 343.053,
+    "end": 343.122
+  },
+  {
+    "word": "us.",
+    "start": 343.21500000000003,
+    "end": 343.58700000000005
+  },
+  {
+    "word": "Amble",
+    "start": 343.91200000000003,
+    "end": 344.33000000000004
+  },
+  {
+    "word": "makes",
+    "start": 344.37600000000003,
+    "end": 344.64300000000003
+  },
+  {
+    "word": "that",
+    "start": 344.69000000000005,
+    "end": 344.841
+  },
+  {
+    "word": "process",
+    "start": 344.899,
+    "end": 345.42100000000005
+  },
+  {
+    "word": "deliberate,",
+    "start": 345.468,
+    "end": 346.187
+  },
+  {
+    "word": "personal,",
+    "start": 346.362,
+    "end": 346.98800000000006
+  },
+  {
+    "word": "and",
+    "start": 347.012,
+    "end": 347.151
+  },
+  {
+    "word": "cultural.",
+    "start": 347.221,
+    "end": 347.94000000000005
+  },
+  {
+    "word": "Learn",
+    "start": 348.324,
+    "end": 348.718
+  },
+  {
+    "word": "by",
+    "start": 348.81100000000004,
+    "end": 348.96200000000005
+  },
+  {
+    "word": "living",
+    "start": 349.03200000000004,
+    "end": 349.28700000000003
+  },
+  {
+    "word": "inside",
+    "start": 349.333,
+    "end": 349.78600000000006
+  },
+  {
+    "word": "the",
+    "start": 349.821,
+    "end": 349.891
+  },
+  {
+    "word": "language.",
+    "start": 349.949,
+    "end": 350.634
+  },
+  {
+    "word": "Let",
+    "start": 351.01700000000005,
+    "end": 351.226
+  },
+  {
+    "word": "context",
+    "start": 351.295,
+    "end": 352.096
+  },
+  {
+    "word": "carry",
+    "start": 352.22400000000005,
+    "end": 352.50300000000004
+  },
+  {
+    "word": "meaning.",
+    "start": 352.56100000000004,
+    "end": 353.095
+  },
+  {
+    "word": "Stay",
+    "start": 353.478,
+    "end": 353.745
+  },
+  {
+    "word": "in",
+    "start": 353.79200000000003,
+    "end": 353.85
+  },
+  {
+    "word": "the",
+    "start": 353.884,
+    "end": 353.942
+  },
+  {
+    "word": "right",
+    "start": 354,
+    "end": 354.18600000000004
+  },
+  {
+    "word": "kind",
+    "start": 354.233,
+    "end": 354.418
+  },
+  {
+    "word": "of",
+    "start": 354.46500000000003,
+    "end": 354.523
+  },
+  {
+    "word": "challenge.",
+    "start": 354.55800000000005,
+    "end": 355.13800000000003
+  },
+  {
+    "word": "Keep",
+    "start": 355.51000000000005,
+    "end": 355.71900000000005
+  },
+  {
+    "word": "the",
+    "start": 355.76500000000004,
+    "end": 355.82300000000004
+  },
+  {
+    "word": "mind",
+    "start": 355.87,
+    "end": 356.10200000000003
+  },
+  {
+    "word": "calm.",
+    "start": 356.172,
+    "end": 356.71700000000004
+  },
+  {
+    "word": "Speak",
+    "start": 357.14700000000005,
+    "end": 357.47200000000004
+  },
+  {
+    "word": "to",
+    "start": 357.53000000000003,
+    "end": 357.62300000000005
+  },
+  {
+    "word": "strengthen.",
+    "start": 357.692,
+    "end": 358.389
+  },
+  {
+    "word": "Return",
+    "start": 358.71400000000006,
+    "end": 359.062
+  },
+  {
+    "word": "to",
+    "start": 359.10900000000004,
+    "end": 359.15500000000003
+  },
+  {
+    "word": "remember.",
+    "start": 359.225,
+    "end": 359.829
+  },
+  {
+    "word": "Over",
+    "start": 360.27000000000004,
+    "end": 360.47900000000004
+  },
+  {
+    "word": "time,",
+    "start": 360.52500000000003,
+    "end": 360.99
+  },
+  {
+    "word": "the",
+    "start": 361.199,
+    "end": 361.29200000000003
+  },
+  {
+    "word": "language",
+    "start": 361.338,
+    "end": 361.68600000000004
+  },
+  {
+    "word": "feels",
+    "start": 361.721,
+    "end": 361.95300000000003
+  },
+  {
+    "word": "less",
+    "start": 362.023,
+    "end": 362.209
+  },
+  {
+    "word": "studied",
+    "start": 362.232,
+    "end": 362.66200000000003
+  },
+  {
+    "word": "and",
+    "start": 362.78900000000004,
+    "end": 362.963
+  },
+  {
+    "word": "more",
+    "start": 363.01000000000005,
+    "end": 363.149
+  },
+  {
+    "word": "lived.",
+    "start": 363.184,
+    "end": 363.66
+  },
+  {
+    "word": "References.",
+    "start": 364.09000000000003,
+    "end": 364.949
+  },
+  {
+    "word": "Rumelhart,",
+    "start": 365.32000000000005,
+    "end": 366.07500000000005
+  },
+  {
+    "word": "D.",
+    "start": 366.226,
+    "end": 366.458
+  },
+  {
+    "word": "E.,",
+    "start": 366.47,
+    "end": 366.88800000000003
+  },
+  {
+    "word": "Hinton,",
+    "start": 366.946,
+    "end": 367.607
+  },
+  {
+    "word": "G.",
+    "start": 368.03700000000003,
+    "end": 368.269
+  },
+  {
+    "word": "E.,",
+    "start": 368.281,
+    "end": 368.67600000000004
+  },
+  {
+    "word": "&",
+    "start": 368.86100000000005,
+    "end": 368.93100000000004
+  },
+  {
+    "word": "McClelland,",
+    "start": 369.00100000000003,
+    "end": 369.62800000000004
+  },
+  {
+    "word": "J.",
+    "start": 369.72,
+    "end": 369.94100000000003
+  },
+  {
+    "word": "L.",
+    "start": 369.987,
+    "end": 370.31300000000005
+  },
+  {
+    "word": "(1986).",
+    "start": 370.37100000000004,
+    "end": 371.45000000000005
+  },
+  {
+    "word": "A",
+    "start": 371.764,
+    "end": 371.833
+  },
+  {
+    "word": "general",
+    "start": 371.915,
+    "end": 372.21700000000004
+  },
+  {
+    "word": "framework",
+    "start": 372.28600000000006,
+    "end": 372.75100000000003
+  },
+  {
+    "word": "for",
+    "start": 372.809,
+    "end": 372.90200000000004
+  },
+  {
+    "word": "parallel",
+    "start": 372.93600000000004,
+    "end": 373.285
+  },
+  {
+    "word": "distributed",
+    "start": 373.343,
+    "end": 373.84200000000004
+  },
+  {
+    "word": "processing.",
+    "start": 373.88800000000003,
+    "end": 374.562
+  },
+  {
+    "word": "Parallel",
+    "start": 374.84000000000003,
+    "end": 375.25800000000004
+  },
+  {
+    "word": "distributed",
+    "start": 375.31600000000003,
+    "end": 375.827
+  },
+  {
+    "word": "processing:",
+    "start": 375.862,
+    "end": 376.547
+  },
+  {
+    "word": "Explorations",
+    "start": 376.814,
+    "end": 377.60400000000004
+  },
+  {
+    "word": "in",
+    "start": 377.65000000000003,
+    "end": 377.708
+  },
+  {
+    "word": "the",
+    "start": 377.731,
+    "end": 377.78900000000004
+  },
+  {
+    "word": "microstructure",
+    "start": 377.824,
+    "end": 378.47400000000005
+  },
+  {
+    "word": "of",
+    "start": 378.509,
+    "end": 378.54400000000004
+  },
+  {
+    "word": "cognition,",
+    "start": 378.60200000000003,
+    "end": 379.29900000000004
+  },
+  {
+    "word": "1(45-76),",
+    "start": 379.473,
+    "end": 381.644
+  },
+  {
+    "word": "26.",
+    "start": 382.01500000000004,
+    "end": 382.689
+  },
+  {
+    "word": "Ellis,",
+    "start": 382.86300000000006,
+    "end": 383.374
+  },
+  {
+    "word": "N.",
+    "start": 383.45500000000004,
+    "end": 383.629
+  },
+  {
+    "word": "C.",
+    "start": 383.65200000000004,
+    "end": 384.03600000000006
+  },
+  {
+    "word": "(2003).",
+    "start": 384.059,
+    "end": 385.058
+  },
+  {
+    "word": "Constructions,",
+    "start": 385.487,
+    "end": 386.23
+  },
+  {
+    "word": "chunking,",
+    "start": 386.26500000000004,
+    "end": 386.776
+  },
+  {
+    "word": "and",
+    "start": 386.788,
+    "end": 386.915
+  },
+  {
+    "word": "connectionism:",
+    "start": 386.973,
+    "end": 387.774
+  },
+  {
+    "word": "The",
+    "start": 387.949,
+    "end": 388.053
+  },
+  {
+    "word": "emergence",
+    "start": 388.09900000000005,
+    "end": 388.529
+  },
+  {
+    "word": "of",
+    "start": 388.564,
+    "end": 388.61
+  },
+  {
+    "word": "second",
+    "start": 388.68,
+    "end": 388.97
+  },
+  {
+    "word": "language",
+    "start": 389.028,
+    "end": 389.365
+  },
+  {
+    "word": "structure.",
+    "start": 389.377,
+    "end": 390.004
+  },
+  {
+    "word": "The",
+    "start": 390.29400000000004,
+    "end": 390.398
+  },
+  {
+    "word": "handbook",
+    "start": 390.44500000000005,
+    "end": 390.851
+  },
+  {
+    "word": "of",
+    "start": 390.886,
+    "end": 390.944
+  },
+  {
+    "word": "second",
+    "start": 391.002,
+    "end": 391.24600000000004
+  },
+  {
+    "word": "language",
+    "start": 391.30400000000003,
+    "end": 391.59400000000005
+  },
+  {
+    "word": "acquisition,",
+    "start": 391.629,
+    "end": 392.40700000000004
+  },
+  {
+    "word": "63-103.",
+    "start": 392.74300000000005,
+    "end": 394.601
+  },
+  {
+    "word": "Nation,",
+    "start": 395.05400000000003,
+    "end": 395.634
+  },
+  {
+    "word": "I.",
+    "start": 395.76200000000006,
+    "end": 395.98300000000006
+  },
+  {
+    "word": "S.,",
+    "start": 396.00600000000003,
+    "end": 396.285
+  },
+  {
+    "word": "&",
+    "start": 396.35400000000004,
+    "end": 396.41200000000003
+  },
+  {
+    "word": "Nation,",
+    "start": 396.49300000000005,
+    "end": 396.958
+  },
+  {
+    "word": "I.",
+    "start": 397.028,
+    "end": 397.237
+  },
+  {
+    "word": "S.",
+    "start": 397.24800000000005,
+    "end": 397.457
+  },
+  {
+    "word": "P.",
+    "start": 397.48,
+    "end": 397.817
+  },
+  {
+    "word": "(2001).",
+    "start": 398.038,
+    "end": 398.92
+  },
+  {
+    "word": "Learning",
+    "start": 399.199,
+    "end": 399.466
+  },
+  {
+    "word": "vocabulary",
+    "start": 399.51200000000006,
+    "end": 400.17400000000004
+  },
+  {
+    "word": "in",
+    "start": 400.255,
+    "end": 400.348
+  },
+  {
+    "word": "another",
+    "start": 400.394,
+    "end": 400.627
+  },
+  {
+    "word": "language",
+    "start": 400.68500000000006,
+    "end": 401.16100000000006
+  },
+  {
+    "word": "(Vol.",
+    "start": 401.3,
+    "end": 401.72900000000004
+  },
+  {
+    "word": "10,",
+    "start": 401.88,
+    "end": 402.27500000000003
+  },
+  {
+    "word": "pp.",
+    "start": 402.345,
+    "end": 402.68100000000004
+  },
+  {
+    "word": "126-132).",
+    "start": 402.78600000000006,
+    "end": 404.957
+  },
+  {
+    "word": "Cambridge:",
+    "start": 405.247,
+    "end": 405.83900000000006
+  },
+  {
+    "word": "Cambridge",
+    "start": 405.932,
+    "end": 406.281
+  },
+  {
+    "word": "university",
+    "start": 406.31500000000005,
+    "end": 406.75700000000006
+  },
+  {
+    "word": "press.",
+    "start": 406.803,
+    "end": 407.151
+  },
+  {
+    "word": "Webb,",
+    "start": 407.29100000000005,
+    "end": 407.66200000000003
+  },
+  {
+    "word": "S.",
+    "start": 407.70900000000006,
+    "end": 407.987
+  },
+  {
+    "word": "(2007).",
+    "start": 408.01,
+    "end": 409.009
+  },
+  {
+    "word": "Learning",
+    "start": 409.264,
+    "end": 409.555
+  },
+  {
+    "word": "word",
+    "start": 409.58900000000006,
+    "end": 409.78700000000003
+  },
+  {
+    "word": "pairs",
+    "start": 409.833,
+    "end": 410.12300000000005
+  },
+  {
+    "word": "and",
+    "start": 410.158,
+    "end": 410.24
+  },
+  {
+    "word": "glossed",
+    "start": 410.28600000000006,
+    "end": 410.59900000000005
+  },
+  {
+    "word": "sentences:",
+    "start": 410.646,
+    "end": 411.34200000000004
+  },
+  {
+    "word": "The",
+    "start": 411.51700000000005,
+    "end": 411.61
+  },
+  {
+    "word": "effects",
+    "start": 411.644,
+    "end": 411.93500000000006
+  },
+  {
+    "word": "of",
+    "start": 411.96900000000005,
+    "end": 412.02700000000004
+  },
+  {
+    "word": "a",
+    "start": 412.062,
+    "end": 412.074
+  },
+  {
+    "word": "single",
+    "start": 412.12,
+    "end": 412.341
+  },
+  {
+    "word": "context",
+    "start": 412.37600000000003,
+    "end": 412.84000000000003
+  },
+  {
+    "word": "on",
+    "start": 412.898,
+    "end": 412.98
+  },
+  {
+    "word": "vocabulary",
+    "start": 413.038,
+    "end": 413.583
+  },
+  {
+    "word": "knowledge.",
+    "start": 413.61800000000005,
+    "end": 414.082
+  },
+  {
+    "word": "Language",
+    "start": 414.34900000000005,
+    "end": 414.69800000000004
+  },
+  {
+    "word": "teaching",
+    "start": 414.73300000000006,
+    "end": 415
+  },
+  {
+    "word": "research,",
+    "start": 415.04600000000005,
+    "end": 415.58000000000004
+  },
+  {
+    "word": "11(1),",
+    "start": 415.603,
+    "end": 416.439
+  },
+  {
+    "word": "63-81.",
+    "start": 416.625,
+    "end": 417.682
+  },
+  {
+    "word": "Krashen,",
+    "start": 417.98300000000006,
+    "end": 418.576
+  },
+  {
+    "word": "S.",
+    "start": 418.784,
+    "end": 418.958
+  },
+  {
+    "word": "D.",
+    "start": 418.97,
+    "end": 419.249
+  },
+  {
+    "word": "(1985).",
+    "start": 419.27200000000005,
+    "end": 420.27000000000004
+  },
+  {
+    "word": "The",
+    "start": 420.456,
+    "end": 420.56100000000004
+  },
+  {
+    "word": "Input",
+    "start": 420.619,
+    "end": 420.932
+  },
+  {
+    "word": "Hypothesis.",
+    "start": 420.97900000000004,
+    "end": 421.745
+  },
+  {
+    "word": "Dornyei,",
+    "start": 421.96500000000003,
+    "end": 422.627
+  },
+  {
+    "word": "Z.",
+    "start": 422.778,
+    "end": 423.21900000000005
+  },
+  {
+    "word": "(2013).",
+    "start": 423.37,
+    "end": 424.57800000000003
+  },
+  {
+    "word": "The",
+    "start": 424.903,
+    "end": 424.99600000000004
+  },
+  {
+    "word": "psychology",
+    "start": 425.04200000000003,
+    "end": 425.553
+  },
+  {
+    "word": "of",
+    "start": 425.59900000000005,
+    "end": 425.634
+  },
+  {
+    "word": "second",
+    "start": 425.704,
+    "end": 425.95900000000006
+  },
+  {
+    "word": "language",
+    "start": 426.00600000000003,
+    "end": 426.36600000000004
+  },
+  {
+    "word": "acquisition.",
+    "start": 426.40000000000003,
+    "end": 427.10900000000004
+  },
+  {
+    "word": "Oxford",
+    "start": 427.492,
+    "end": 427.898
+  },
+  {
+    "word": "University",
+    "start": 427.94500000000005,
+    "end": 428.444
+  },
+  {
+    "word": "Press.",
+    "start": 428.502,
+    "end": 428.966
+  },
+  {
+    "word": "Long,",
+    "start": 429.175,
+    "end": 429.64000000000004
+  },
+  {
+    "word": "M.",
+    "start": 429.79100000000005,
+    "end": 430.04600000000005
+  },
+  {
+    "word": "H.",
+    "start": 430.069,
+    "end": 430.452
+  },
+  {
+    "word": "(1980).",
+    "start": 430.63800000000003,
+    "end": 431.625
+  },
+  {
+    "word": "Input,",
+    "start": 432.00800000000004,
+    "end": 432.55400000000003
+  },
+  {
+    "word": "interaction,",
+    "start": 432.58900000000006,
+    "end": 433.285
+  },
+  {
+    "word": "and",
+    "start": 433.32000000000005,
+    "end": 433.44800000000004
+  },
+  {
+    "word": "second",
+    "start": 433.50600000000003,
+    "end": 433.761
+  },
+  {
+    "word": "language",
+    "start": 433.808,
+    "end": 434.12100000000004
+  },
+  {
+    "word": "acquisition.",
+    "start": 434.144,
+    "end": 434.81800000000004
+  },
+  {
+    "word": "University",
+    "start": 435.201,
+    "end": 435.723
+  },
+  {
+    "word": "of",
+    "start": 435.77000000000004,
+    "end": 435.805
+  },
+  {
+    "word": "California,",
+    "start": 435.851,
+    "end": 436.51300000000003
+  },
+  {
+    "word": "Los",
+    "start": 436.582,
+    "end": 436.75700000000006
+  },
+  {
+    "word": "Angeles.",
+    "start": 436.81500000000005,
+    "end": 437.40700000000004
+  },
+  {
+    "word": "Long,",
+    "start": 437.79,
+    "end": 438.24300000000005
+  },
+  {
+    "word": "M.",
+    "start": 438.34700000000004,
+    "end": 438.56800000000004
+  },
+  {
+    "word": "H.",
+    "start": 438.58000000000004,
+    "end": 438.951
+  },
+  {
+    "word": "(1996).",
+    "start": 439.09000000000003,
+    "end": 440.321
+  },
+  {
+    "word": "The",
+    "start": 440.6,
+    "end": 440.704
+  },
+  {
+    "word": "role",
+    "start": 440.76200000000006,
+    "end": 440.971
+  },
+  {
+    "word": "of",
+    "start": 440.994,
+    "end": 441.053
+  },
+  {
+    "word": "the",
+    "start": 441.09900000000005,
+    "end": 441.16900000000004
+  },
+  {
+    "word": "linguistic",
+    "start": 441.23800000000006,
+    "end": 441.749
+  },
+  {
+    "word": "environment",
+    "start": 441.79600000000005,
+    "end": 442.46900000000005
+  },
+  {
+    "word": "in",
+    "start": 442.53900000000004,
+    "end": 442.66600000000005
+  },
+  {
+    "word": "second",
+    "start": 442.74800000000005,
+    "end": 443.04900000000004
+  },
+  {
+    "word": "language",
+    "start": 443.096,
+    "end": 443.456
+  },
+  {
+    "word": "acquisition.",
+    "start": 443.514,
+    "end": 444.303
+  },
+  {
+    "word": "The",
+    "start": 444.51200000000006,
+    "end": 444.62800000000004
+  },
+  {
+    "word": "Handbook",
+    "start": 444.68600000000004,
+    "end": 445.12800000000004
+  },
+  {
+    "word": "of",
+    "start": 445.18600000000004,
+    "end": 445.244
+  },
+  {
+    "word": "second",
+    "start": 445.31300000000005,
+    "end": 445.59200000000004
+  },
+  {
+    "word": "language",
+    "start": 445.63800000000003,
+    "end": 445.975
+  },
+  {
+    "word": "acquisition",
+    "start": 446.01,
+    "end": 446.649
+  },
+  {
+    "word": "(pp.",
+    "start": 446.82300000000004,
+    "end": 447.357
+  },
+  {
+    "word": "413–468).",
+    "start": 447.635,
+    "end": 449.934
+  },
+  {
+    "word": "Swain,",
+    "start": 450.44500000000005,
+    "end": 451.06000000000006
+  },
+  {
+    "word": "M.",
+    "start": 451.269,
+    "end": 451.65200000000004
+  },
+  {
+    "word": "(1985).",
+    "start": 451.73400000000004,
+    "end": 452.96400000000006
+  },
+  {
+    "word": "Communicative",
+    "start": 453.34700000000004,
+    "end": 454.091
+  },
+  {
+    "word": "Competence:",
+    "start": 454.125,
+    "end": 454.92600000000004
+  },
+  {
+    "word": "Some",
+    "start": 455.17,
+    "end": 455.437
+  },
+  {
+    "word": "Roles",
+    "start": 455.48400000000004,
+    "end": 455.797
+  },
+  {
+    "word": "of",
+    "start": 455.84400000000005,
+    "end": 455.90200000000004
+  },
+  {
+    "word": "Comprehensible",
+    "start": 455.97200000000004,
+    "end": 456.68000000000006
+  },
+  {
+    "word": "Input",
+    "start": 456.726,
+    "end": 457.226
+  },
+  {
+    "word": "and",
+    "start": 457.295,
+    "end": 457.446
+  },
+  {
+    "word": "Comprehensible",
+    "start": 457.516,
+    "end": 458.16600000000005
+  },
+  {
+    "word": "Output",
+    "start": 458.201,
+    "end": 458.58400000000006
+  },
+  {
+    "word": "in",
+    "start": 458.654,
+    "end": 458.74600000000004
+  },
+  {
+    "word": "its",
+    "start": 458.793,
+    "end": 458.89700000000005
+  },
+  {
+    "word": "Development.",
+    "start": 458.944,
+    "end": 459.65200000000004
+  },
+  {
+    "word": "in",
+    "start": 459.93100000000004,
+    "end": 460.058
+  },
+  {
+    "word": "S.",
+    "start": 460.15100000000007,
+    "end": 460.32500000000005
+  },
+  {
+    "word": "Gass",
+    "start": 460.34900000000005,
+    "end": 460.67400000000004
+  },
+  {
+    "word": "and",
+    "start": 460.755,
+    "end": 460.894
+  },
+  {
+    "word": "C.",
+    "start": 460.94100000000003,
+    "end": 461.16100000000006
+  },
+  {
+    "word": "Madden",
+    "start": 461.18500000000006,
+    "end": 461.54400000000004
+  },
+  {
+    "word": "(Eds.).",
+    "start": 461.71900000000005,
+    "end": 462.52000000000004
+  },
+  {
+    "word": "Input",
+    "start": 462.798,
+    "end": 463.20500000000004
+  },
+  {
+    "word": "in",
+    "start": 463.28600000000006,
+    "end": 463.414
+  },
+  {
+    "word": "Second",
+    "start": 463.50700000000006,
+    "end": 463.797
+  },
+  {
+    "word": "Language",
+    "start": 463.855,
+    "end": 464.20300000000003
+  },
+  {
+    "word": "Acquisition",
+    "start": 464.23800000000006,
+    "end": 464.807
+  },
+  {
+    "word": "(pp.",
+    "start": 464.981,
+    "end": 465.422
+  },
+  {
+    "word": "235-253).",
+    "start": 465.933,
+    "end": 468.56800000000004
+  },
+  {
+    "word": "Rowley,",
+    "start": 468.99800000000005,
+    "end": 469.567
+  },
+  {
+    "word": "MA:",
+    "start": 469.66,
+    "end": 470.182
+  },
+  {
+    "word": "Newbury",
+    "start": 470.42600000000004,
+    "end": 470.809
+  },
+  {
+    "word": "House.",
+    "start": 470.856,
+    "end": 471.32000000000005
+  },
+  {
+    "word": "Ebbinghaus,",
+    "start": 471.692,
+    "end": 472.33000000000004
+  },
+  {
+    "word": "H.",
+    "start": 472.41100000000006,
+    "end": 472.81800000000004
+  },
+  {
+    "word": "(1885).",
+    "start": 472.841,
+    "end": 474.083
+  },
+  {
+    "word": "Über",
+    "start": 474.362,
+    "end": 474.53600000000006
+  },
+  {
+    "word": "das",
+    "start": 474.559,
+    "end": 474.664
+  },
+  {
+    "word": "gedächtnis:",
+    "start": 474.71000000000004,
+    "end": 475.37100000000004
+  },
+  {
+    "word": "untersuchungen",
+    "start": 475.52200000000005,
+    "end": 476.184
+  },
+  {
+    "word": "zur",
+    "start": 476.242,
+    "end": 476.37
+  },
+  {
+    "word": "experimentellen",
+    "start": 476.40500000000003,
+    "end": 477.183
+  },
+  {
+    "word": "psychologie.",
+    "start": 477.217,
+    "end": 477.90200000000004
+  },
+  {
+    "word": "Duncker",
+    "start": 478.158,
+    "end": 478.437
+  },
+  {
+    "word": "&",
+    "start": 478.471,
+    "end": 478.529
+  },
+  {
+    "word": "Humblot.",
+    "start": 478.576,
+    "end": 479.098
+  },
+  {
+    "word": "Cepeda,",
+    "start": 479.40000000000003,
+    "end": 480.039
+  },
+  {
+    "word": "N.",
+    "start": 480.178,
+    "end": 480.29400000000004
+  },
+  {
+    "word": "J.,",
+    "start": 480.32900000000006,
+    "end": 480.70000000000005
+  },
+  {
+    "word": "Vul,",
+    "start": 480.77000000000004,
+    "end": 481.188
+  },
+  {
+    "word": "E.,",
+    "start": 481.327,
+    "end": 481.699
+  },
+  {
+    "word": "Rohrer,",
+    "start": 481.827,
+    "end": 482.303
+  },
+  {
+    "word": "D.,",
+    "start": 482.361,
+    "end": 482.79
+  },
+  {
+    "word": "Wixted,",
+    "start": 482.88300000000004,
+    "end": 483.452
+  },
+  {
+    "word": "J.",
+    "start": 483.591,
+    "end": 483.89300000000003
+  },
+  {
+    "word": "T.,",
+    "start": 484.021,
+    "end": 484.39200000000005
+  },
+  {
+    "word": "&",
+    "start": 484.509,
+    "end": 484.567
+  },
+  {
+    "word": "Pashler,",
+    "start": 484.636,
+    "end": 485.194
+  },
+  {
+    "word": "H.",
+    "start": 485.333,
+    "end": 485.62300000000005
+  },
+  {
+    "word": "(2008).",
+    "start": 485.646,
+    "end": 486.54
+  },
+  {
+    "word": "Spacing",
+    "start": 486.842,
+    "end": 487.202
+  },
+  {
+    "word": "effects",
+    "start": 487.237,
+    "end": 487.52700000000004
+  },
+  {
+    "word": "in",
+    "start": 487.574,
+    "end": 487.62
+  },
+  {
+    "word": "learning:",
+    "start": 487.678,
+    "end": 488.189
+  },
+  {
+    "word": "A",
+    "start": 488.409,
+    "end": 488.468
+  },
+  {
+    "word": "temporal",
+    "start": 488.53700000000003,
+    "end": 488.862
+  },
+  {
+    "word": "ridgeline",
+    "start": 488.909,
+    "end": 489.31500000000005
+  },
+  {
+    "word": "of",
+    "start": 489.327,
+    "end": 489.37300000000005
+  },
+  {
+    "word": "optimal",
+    "start": 489.43100000000004,
+    "end": 489.721
+  },
+  {
+    "word": "retention.",
+    "start": 489.76800000000003,
+    "end": 490.36
+  },
+  {
+    "word": "Psychological",
+    "start": 490.65000000000003,
+    "end": 491.231
+  },
+  {
+    "word": "science,",
+    "start": 491.27700000000004,
+    "end": 491.73
+  },
+  {
+    "word": "19(11),",
+    "start": 491.77600000000007,
+    "end": 492.717
+  },
+  {
+    "word": "1095-1102.",
+    "start": 492.833,
+    "end": 494.62100000000004
+  },
+  {
+    "word": "Ye,",
+    "start": 494.87600000000003,
+    "end": 495.15500000000003
+  },
+  {
+    "word": "J.,",
+    "start": 495.213,
+    "end": 495.422
+  },
+  {
+    "word": "Su,",
+    "start": 495.44500000000005,
+    "end": 495.736
+  },
+  {
+    "word": "J.,",
+    "start": 495.77000000000004,
+    "end": 495.97900000000004
+  },
+  {
+    "word": "&",
+    "start": 496.03700000000003,
+    "end": 496.119
+  },
+  {
+    "word": "Cao,",
+    "start": 496.188,
+    "end": 496.595
+  },
+  {
+    "word": "Y.",
+    "start": 496.61800000000005,
+    "end": 496.97800000000007
+  },
+  {
+    "word": "(2022,",
+    "start": 497.117,
+    "end": 498.116
+  },
+  {
+    "word": "August).",
+    "start": 498.208,
+    "end": 498.708
+  },
+  {
+    "word": "A",
+    "start": 499.033,
+    "end": 499.091
+  },
+  {
+    "word": "stochastic",
+    "start": 499.16,
+    "end": 499.706
+  },
+  {
+    "word": "shortest",
+    "start": 499.741,
+    "end": 500.07800000000003
+  },
+  {
+    "word": "path",
+    "start": 500.136,
+    "end": 500.36800000000005
+  },
+  {
+    "word": "algorithm",
+    "start": 500.414,
+    "end": 500.89
+  },
+  {
+    "word": "for",
+    "start": 501.04100000000005,
+    "end": 501.16900000000004
+  },
+  {
+    "word": "optimizing",
+    "start": 501.20400000000006,
+    "end": 501.71500000000003
+  },
+  {
+    "word": "spaced",
+    "start": 501.773,
+    "end": 502.05100000000004
+  },
+  {
+    "word": "repetition",
+    "start": 502.086,
+    "end": 502.516
+  },
+  {
+    "word": "scheduling.",
+    "start": 502.562,
+    "end": 503.154
+  },
+  {
+    "word": "In",
+    "start": 503.32800000000003,
+    "end": 503.433
+  },
+  {
+    "word": "Proceedings",
+    "start": 503.468,
+    "end": 503.944
+  },
+  {
+    "word": "of",
+    "start": 503.97900000000004,
+    "end": 504.03700000000003
+  },
+  {
+    "word": "the",
+    "start": 504.071,
+    "end": 504.13
+  },
+  {
+    "word": "28th",
+    "start": 504.17600000000004,
+    "end": 504.69800000000004
+  },
+  {
+    "word": "ACM",
+    "start": 504.79100000000005,
+    "end": 505.19800000000004
+  },
+  {
+    "word": "SIGKDD",
+    "start": 505.279,
+    "end": 505.836
+  },
+  {
+    "word": "conference",
+    "start": 505.92900000000003,
+    "end": 506.44000000000005
+  },
+  {
+    "word": "on",
+    "start": 506.49800000000005,
+    "end": 506.62600000000003
+  },
+  {
+    "word": "knowledge",
+    "start": 506.66,
+    "end": 506.951
+  },
+  {
+    "word": "discovery",
+    "start": 506.97400000000005,
+    "end": 507.369
+  },
+  {
+    "word": "and",
+    "start": 507.404,
+    "end": 507.461
+  },
+  {
+    "word": "data",
+    "start": 507.50800000000004,
+    "end": 507.717
+  },
+  {
+    "word": "mining",
+    "start": 507.75100000000003,
+    "end": 508.077
+  },
+  {
+    "word": "(pp.",
+    "start": 508.216,
+    "end": 508.72700000000003
+  },
+  {
+    "word": "4381-4390).",
+    "start": 508.866,
+    "end": 510.64200000000005
+  },
+  {
+    "word": "Su,",
+    "start": 510.875,
+    "end": 511.30400000000003
+  },
+  {
+    "word": "J.,",
+    "start": 511.39700000000005,
+    "end": 511.687
+  },
+  {
+    "word": "Ye,",
+    "start": 511.803,
+    "end": 512.1980000000001
+  },
+  {
+    "word": "J.,",
+    "start": 512.349,
+    "end": 512.662
+  },
+  {
+    "word": "Nie,",
+    "start": 512.744,
+    "end": 513.22
+  },
+  {
+    "word": "L.,",
+    "start": 513.3710000000001,
+    "end": 513.777
+  },
+  {
+    "word": "Cao,",
+    "start": 513.951,
+    "end": 514.52
+  },
+  {
+    "word": "Y.,",
+    "start": 514.648,
+    "end": 515.124
+  },
+  {
+    "word": "&",
+    "start": 515.2750000000001,
+    "end": 515.3910000000001
+  },
+  {
+    "word": "Chen,",
+    "start": 515.472,
+    "end": 515.96
+  },
+  {
+    "word": "Y.",
+    "start": 516.053,
+    "end": 516.494
+  },
+  {
+    "word": "(2023).",
+    "start": 516.61,
+    "end": 517.759
+  },
+  {
+    "word": "Optimizing",
+    "start": 518.2,
+    "end": 518.885
+  },
+  {
+    "word": "spaced",
+    "start": 518.967,
+    "end": 519.35
+  },
+  {
+    "word": "repetition",
+    "start": 519.408,
+    "end": 519.9190000000001
+  },
+  {
+    "word": "schedule",
+    "start": 519.988,
+    "end": 520.604
+  },
+  {
+    "word": "by",
+    "start": 520.662,
+    "end": 520.813
+  },
+  {
+    "word": "capturing",
+    "start": 520.8820000000001,
+    "end": 521.3240000000001
+  },
+  {
+    "word": "the",
+    "start": 521.3580000000001,
+    "end": 521.428
+  },
+  {
+    "word": "dynamics",
+    "start": 521.474,
+    "end": 521.985
+  },
+  {
+    "word": "of",
+    "start": 522.032,
+    "end": 522.09
+  },
+  {
+    "word": "memory.",
+    "start": 522.148,
+    "end": 522.705
+  },
+  {
+    "word": "IEEE",
+    "start": 522.984,
+    "end": 523.796
+  },
+  {
+    "word": "Transactions",
+    "start": 523.866,
+    "end": 524.6560000000001
+  },
+  {
+    "word": "on",
+    "start": 524.725,
+    "end": 524.818
+  },
+  {
+    "word": "Knowledge",
+    "start": 524.876,
+    "end": 525.213
+  },
+  {
+    "word": "and",
+    "start": 525.236,
+    "end": 525.317
+  },
+  {
+    "word": "Data",
+    "start": 525.364,
+    "end": 525.6310000000001
+  },
+  {
+    "word": "Engineering,",
+    "start": 525.7,
+    "end": 526.444
+  },
+  {
+    "word": "35(10),",
+    "start": 526.618,
+    "end": 527.663
+  },
+  {
+    "word": "10085-10097.",
+    "start": 527.837,
+    "end": 530.344
+  }
+]

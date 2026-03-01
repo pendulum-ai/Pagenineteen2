@@ -27,7 +27,6 @@ const JournalCard = ({ article, variant = 'default', label }) => {
         {article.authorName && (
           <span className="journal-item-author">{article.authorName}</span>
         )}
-        <p className="journal-item-excerpt">{article.excerpt}</p>
       </div>
 
       <div className="journal-action">

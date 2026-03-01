@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import BlurReveal from '../components/ui/BlurReveal';
 import JournalCard from '../components/ui/JournalCard';
@@ -64,6 +64,68 @@ const ArticleDetail = () => {
   const [nextArticle, setNextArticle] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [wordTimestamps, setWordTimestamps] = useState(null);
+  const activeWordRef = useRef(-1);
+  const articleBodyRef = useRef(null);
+  const wordsWrappedRef = useRef(false);
+
+  // Fetch word timestamps JSON (404 is fine — just means no highlighting)
+  useEffect(() => {
+    if (!slug) return;
+    wordsWrappedRef.current = false;
+    fetch(`/audio/${slug}.json`)
+      .then(res => res.ok ? res.json() : null)
+      .then(data => setWordTimestamps(data))
+      .catch(() => setWordTimestamps(null));
+  }, [slug]);
+
+  // After both article + timestamps are in the DOM, walk text nodes and wrap words in spans
+  useEffect(() => {
+    const el = articleBodyRef.current;
+    if (!el || !wordTimestamps || wordsWrappedRef.current) return;
+
+    let wordIndex = 0;
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null);
+    const textNodes = [];
+    while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+    for (const textNode of textNodes) {
+      const text = textNode.textContent;
+      if (!text || !text.trim()) continue;
+
+      const parts = text.split(/(\s+)/);
+      const frag = document.createDocumentFragment();
+      for (const part of parts) {
+        if (!part) continue;
+        if (/^\s+$/.test(part)) {
+          frag.appendChild(document.createTextNode(part));
+        } else {
+          const span = document.createElement('span');
+          span.setAttribute('data-word-index', String(wordIndex++));
+          span.textContent = part;
+          frag.appendChild(span);
+        }
+      }
+      textNode.parentNode.replaceChild(frag, textNode);
+    }
+
+    wordsWrappedRef.current = true;
+  }, [article, wordTimestamps]);
+
+  // Toggle .word-active class via direct DOM manipulation (no React re-renders)
+  const handleWordChange = useCallback((index) => {
+    const prev = activeWordRef.current;
+    if (prev === index) return;
+    if (prev >= 0) {
+      const el = document.querySelector(`[data-word-index="${prev}"]`);
+      if (el) el.classList.remove('word-active');
+    }
+    if (index >= 0) {
+      const el = document.querySelector(`[data-word-index="${index}"]`);
+      if (el) el.classList.add('word-active');
+    }
+    activeWordRef.current = index;
+  }, []);
 
   useEffect(() => {
     const fetchArticle = async () => {
@@ -174,19 +236,19 @@ const ArticleDetail = () => {
 
       </header>
 
-      <article className="article-body">
+      <article className="article-body" ref={articleBodyRef}>
          {/* Render DatoCMS Structured Text content with image block support */}
          {article.content && article.content.value && (
-           <StructuredText 
+           <StructuredText
              data={article.content}
              renderBlock={({ record }) => {
                if (record.__typename === 'ImageBlockRecord') {
                  return (
                    <figure className="article-image-block">
                      {record.image && (
-                       <img 
-                         src={record.image.url} 
-                         alt={record.image.alt || ''} 
+                       <img
+                         src={record.image.url}
+                         alt={record.image.alt || ''}
                          width={record.image.width}
                          height={record.image.height}
                        />
@@ -203,7 +265,14 @@ const ArticleDetail = () => {
          )}
       </article>
 
-      {article.content && <AudioNarration content={article.content} slug={article.slug} />}
+      {article.content && (
+        <AudioNarration
+          content={article.content}
+          slug={article.slug}
+          wordTimestamps={wordTimestamps}
+          onWordChange={handleWordChange}
+        />
+      )}
 
       {nextArticle && (
         <div className="article-footer">

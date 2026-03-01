@@ -421,6 +421,16 @@
   margin-top: 0.75em;
 }
 
+/* Word-level audio highlighting */
+.article-body [data-word-index] {
+  transition: background-color 0.15s ease;
+  border-radius: 2px;
+}
+
+.article-body .word-active {
+  background-color: rgba(255, 107, 53, 0.15);
+}
+
 /* Links in content */
 .article-body a {
   color: var(--color-accent, #ff6b35);

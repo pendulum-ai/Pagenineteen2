@@ -54,12 +54,11 @@ const STATIC_AUDIO = {
   'earned-simplicity': '/audio/earned-simplicity.mp3',
   'field-notes-in-creative-tooling': '/audio/field-notes-in-creative-tooling.mp3',
   'how-pendulum-searches': '/audio/how-pendulum-searches.mp3',
-  'how-we-work': '/audio/how-we-work.mp3',
   'the-fluency-gap': '/audio/the-fluency-gap.mp3',
   'the-science-behind-amble': '/audio/the-science-behind-amble.mp3',
 };
 
-const AudioNarration = ({ content, slug }) => {
+const AudioNarration = ({ content, slug, wordTimestamps, onWordChange }) => {
   const [status, setStatus] = useState('idle'); // idle | loading | playing | paused
   const [progress, setProgress] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
@@ -150,6 +149,44 @@ const AudioNarration = ({ content, slug }) => {
       setCurrentTime(audio.currentTime);
       setDuration(audio.duration || 0);
       setProgress(audio.duration ? audio.currentTime / audio.duration : 0);
+
+      // Find current word: binary search for the last word whose start ≤ t,
+      // then hold it until the next word begins (so even short words get highlighted)
+      if (wordTimestamps && onWordChange) {
+        const t = audio.currentTime;
+        let lo = 0;
+        let hi = wordTimestamps.length - 1;
+        let idx = -1;
+
+        // Find rightmost word where start ≤ t
+        while (lo <= hi) {
+          const mid = (lo + hi) >>> 1;
+          if (wordTimestamps[mid].start <= t) {
+            idx = mid;
+            lo = mid + 1;
+          } else {
+            hi = mid - 1;
+          }
+        }
+
+        // Only highlight if we haven't passed well beyond this word's end
+        // (handles silence gaps between paragraphs)
+        if (idx >= 0) {
+          const word = wordTimestamps[idx];
+          const nextStart = idx + 1 < wordTimestamps.length
+            ? wordTimestamps[idx + 1].start
+            : word.end;
+          // If we're past the next word's start, show next word;
+          // if we're in a long gap after this word ended, clear highlight
+          if (t > nextStart) {
+            idx = idx + 1 < wordTimestamps.length ? idx + 1 : -1;
+          } else if (t > word.end + 0.5) {
+            idx = -1; // silence gap > 500ms, clear highlight
+          }
+        }
+
+        onWordChange(idx);
+      }
     }
   };
 
@@ -157,6 +194,7 @@ const AudioNarration = ({ content, slug }) => {
     setStatus('idle');
     setProgress(0);
     setCurrentTime(0);
+    if (onWordChange) onWordChange(-1);
   };
 
   const handleLoadedMetadata = () => {

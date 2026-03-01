@@ -11,7 +11,7 @@ export const teamMembers = [
     name: 'William Usdin', 
     role: 'Founder & CEO', 
     previously: 'Google, Oxford, Fulbright',
-    bio: 'Product, Strategy, Ops.',
+    bio: 'Product and GTM.',
     linkedin: 'https://www.linkedin.com/in/williamusdin/',
     image: willImg
   },
