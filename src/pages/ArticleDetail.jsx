@@ -214,7 +214,6 @@ const ArticleDetail = () => {
         <BlurReveal delay={0}>
             <div className="article-meta-top">
             <span className="article-tag">{article.tag}</span>
-            <span className="article-date">{article.date}</span>
             </div>
         </BlurReveal>
         

@@ -56,6 +56,7 @@ const STATIC_AUDIO = {
   'how-pendulum-searches': '/audio/how-pendulum-searches.mp3',
   'the-fluency-gap': '/audio/the-fluency-gap.mp3',
   'the-science-behind-amble': '/audio/the-science-behind-amble.mp3',
+  'designing-behaviour': '/audio/designing-behaviour.mp3',
 };
 
 const AudioNarration = ({ content, slug, wordTimestamps, onWordChange }) => {

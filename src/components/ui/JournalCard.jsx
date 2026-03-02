@@ -12,7 +12,7 @@ const JournalCard = ({ article, variant = 'default', label }) => {
     >
       {!isMinimal && (
         <div className="journal-meta">
-            <span className="journal-date">{article.date}</span>
+            {article.authorName && <span className="journal-date">{article.authorName}</span>}
             <span className="journal-date">{article.readingTime}</span>
             <span className="journal-tag-badge">{article.tag}</span>
         </div>
@@ -23,9 +23,6 @@ const JournalCard = ({ article, variant = 'default', label }) => {
         <h2 className="journal-item-title">{article.title}</h2>
         {article.subcopy && (
           <p className="journal-item-subcopy">{article.subcopy}</p>
-        )}
-        {article.authorName && (
-          <span className="journal-item-author">{article.authorName}</span>
         )}
       </div>
 

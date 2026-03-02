@@ -33,30 +33,30 @@ export const teamMembers = [
     linkedin: 'https://www.linkedin.com/in/tarikaltuncu/',
     image: tarikImg
   },
-  { 
-    id: 6, 
-    name: 'Altai Tseveen', 
-    role: 'Founding Engineer', 
+  {
+    id: 7,
+    name: 'Pedro Ferreira Martins',
+    role: 'Founding Engineer',
+    previously: 'Amazon Polly and Alexa',
+    bio: 'Speech, NLP and ML.',
+    linkedin: 'https://www.linkedin.com/in/pedro-ferreira-martins-004020170/',
+    image: pedroImg
+  },
+  {
+    id: 6,
+    name: 'Altai Tseveen',
+    role: 'Founding Engineer',
     previously: 'Google, Meta',
     bio: 'iOS and Android.',
     linkedin: 'https://www.linkedin.com/in/altaibayar/',
     image: altaiImg
   },
   { 
-    id: 7, 
-    name: 'Pedro Ferreira Martins', 
-    role: 'Founding Engineer', 
-    previously: 'Amazon Polly and Alexa',
-    bio: 'Voice and NLP.',
-    linkedin: 'https://www.linkedin.com/in/pedro-ferreira-martins-004020170/',
-    image: pedroImg
-  },
-  { 
     id: 5, 
     name: 'Oliver Mayes', 
     role: 'Founding Designer', 
     previously: 'Bumble, Motorway',
-    bio: 'Design Engineer.',
+    bio: 'Product Designer.',
     linkedin: 'https://www.linkedin.com/in/omayes/',
     image: ollyImg
   }

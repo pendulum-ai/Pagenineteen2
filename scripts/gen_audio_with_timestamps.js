@@ -2,7 +2,7 @@ import { buildClient } from '@datocms/cma-client-node';
 import fs from 'fs';
 
 const client = buildClient({ apiToken: 'd0beb732911976fa5efdcaaca1b3eb' });
-const VOICE_ID = '1hlpeD1ydbI2ow0Tt3EW';
+const VOICE_ID = 'ZF6FPAbjXT4488VcRRnw';
 const API_KEY = 'sk_ca6e3cd816baf2831e942cd9a7ef407fb45a42e24e4172e1';
 const outDir = new URL('../public/audio/', import.meta.url).pathname;
 fs.mkdirSync(outDir, { recursive: true });
