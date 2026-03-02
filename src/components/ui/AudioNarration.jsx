@@ -57,6 +57,7 @@ const STATIC_AUDIO = {
   'the-fluency-gap': '/audio/the-fluency-gap.mp3',
   'the-science-behind-amble': '/audio/the-science-behind-amble.mp3',
   'designing-behaviour': '/audio/designing-behaviour.mp3',
+  'building-amble': '/audio/building-amble.mp3',
 };
 
 const AudioNarration = ({ content, slug, wordTimestamps, onWordChange }) => {
