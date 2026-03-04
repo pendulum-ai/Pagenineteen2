@@ -275,11 +275,7 @@ const AudioNarration = ({ content, slug, wordTimestamps, onWordChange }) => {
             {formatTime(currentTime)} / {formatTime(duration)}
           </span>
 
-          <button
-            className="audio-narration__speed"
-            onClick={handleSpeed}
-            style={{ border: '1px solid red', opacity: 1, display: 'inline-block', fontSize: '0.75rem', padding: '2px 6px' }}
-          >
+          <button className="audio-narration__speed" onClick={handleSpeed}>
             {speed}x
           </button>
         </div>
