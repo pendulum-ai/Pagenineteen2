@@ -50,9 +50,8 @@ const PauseIcon = () => (
 // Pre-generated static audio files
 const STATIC_AUDIO = {
   'a-permanent-platform-for-personal-histories': '/audio/a-permanent-platform-for-personal-histories.mp3',
-  'a-present-future-of-creative-software': '/audio/a-present-future-of-creative-software.mp3',
   'earned-simplicity': '/audio/earned-simplicity.mp3',
-  'field-notes-in-creative-tooling': '/audio/field-notes-in-creative-tooling.mp3',
+  'building-lightnote': '/audio/building-lightnote.mp3',
   'how-pendulum-searches': '/audio/how-pendulum-searches.mp3',
   'the-fluency-gap': '/audio/the-fluency-gap.mp3',
   'the-science-behind-amble': '/audio/the-science-behind-amble.mp3',

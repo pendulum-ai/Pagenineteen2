@@ -12,7 +12,7 @@ export const projects = [
       'Voice activity detection and real-time translation',
       'Agentic content-production pipelines with auto-eval loops'
     ],
-    stack: ['WebRTC', 'VAD', 'Whisper', 'LLM', 'TTS'],
+    stack: ['WebRTC', 'Pipecat', 'STT', 'LLM', 'TTS', 'Mem0'],
     bgColor: '#F5F0EB',
     visualType: 'voice',
     screenshotUrl: '/images/Amble.webp',
@@ -31,7 +31,7 @@ export const projects = [
       'Scalable distributed ingestion pipeline for media workloads',
       'Natural-language retrieval integrated into multimodal RAG'
     ],
-    stack: ['Vector DB', 'CLIP', 'LLM Metadata', 'DAG', 'Kandji'],
+    stack: ['pgvector', 'CLIP', 'Voyage', 'Vision API', 'Modal'],
     bgColor: '#F0F2F0',
     visualType: 'network',
     screenshotUrl: '/images/Pendulum.webp',
