@@ -102,6 +102,25 @@
   white-space: nowrap;
 }
 
+.audio-narration__speed {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  opacity: 0.4;
+  font-family: var(--font-mono, monospace);
+  white-space: nowrap;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.3s ease;
+}
+
+.audio-narration__speed:hover {
+  opacity: 1;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .audio-narration {

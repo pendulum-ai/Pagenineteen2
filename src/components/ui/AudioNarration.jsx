@@ -57,13 +57,17 @@ const STATIC_AUDIO = {
   'the-science-behind-amble': '/audio/the-science-behind-amble.mp3',
   'designing-behaviour': '/audio/designing-behaviour.mp3',
   'building-amble': '/audio/building-amble.mp3',
+  'on-building-a-low-latency-voice-agent': '/audio/on-building-a-low-latency-voice-agent.mp3',
 };
+
+const SPEED_OPTIONS = [1, 1.2, 1.5, 2];
 
 const AudioNarration = ({ content, slug, wordTimestamps, onWordChange }) => {
   const [status, setStatus] = useState('idle'); // idle | loading | playing | paused
   const [progress, setProgress] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
+  const [speed, setSpeed] = useState(1);
   const audioRef = useRef(null);
 
   const { text, estimatedDuration } = useMemo(() => {
@@ -89,6 +93,7 @@ const AudioNarration = ({ content, slug, wordTimestamps, onWordChange }) => {
 
     // Resume from pause
     if (status === 'paused') {
+      audio.playbackRate = speed;
       audio.play();
       setStatus('playing');
       return;
@@ -98,6 +103,7 @@ const AudioNarration = ({ content, slug, wordTimestamps, onWordChange }) => {
       // Set src and play synchronously in tap handler for iOS
       audio.src = staticPath;
       audio.load();
+      audio.playbackRate = speed;
       const playPromise = audio.play();
       if (playPromise) {
         playPromise.catch((err) => {
@@ -125,6 +131,7 @@ const AudioNarration = ({ content, slug, wordTimestamps, onWordChange }) => {
         const url = URL.createObjectURL(blob);
         audio.src = url;
         audio.load();
+        audio.playbackRate = speed;
         return audio.play();
       })
       .then(() => {
@@ -134,6 +141,15 @@ const AudioNarration = ({ content, slug, wordTimestamps, onWordChange }) => {
         console.error('Narration error:', err);
         setStatus('idle');
       });
+  };
+
+  const handleSpeed = () => {
+    const idx = SPEED_OPTIONS.indexOf(speed);
+    const next = SPEED_OPTIONS[(idx + 1) % SPEED_OPTIONS.length];
+    setSpeed(next);
+    if (audioRef.current) {
+      audioRef.current.playbackRate = next;
+    }
   };
 
   const handlePause = () => {
@@ -258,6 +274,10 @@ const AudioNarration = ({ content, slug, wordTimestamps, onWordChange }) => {
           <span className="audio-narration__time">
             {formatTime(currentTime)} / {formatTime(duration)}
           </span>
+
+          <button className="audio-narration__speed" onClick={handleSpeed}>
+            {speed}×
+          </button>
         </div>
       )}
     </div>,
