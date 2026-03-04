@@ -670,4 +670,8 @@
   .article-title {
     font-size: 2.5rem;
   }
+
+  .article-body h2 {
+    line-height: 1.1;
+  }
 }
