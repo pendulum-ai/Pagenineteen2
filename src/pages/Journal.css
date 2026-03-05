@@ -348,6 +348,15 @@
 }
 
 /* Headings in content */
+.article-body h1 {
+  font-size: 2rem;
+  margin-top: 2.5em;
+  margin-bottom: 0.75em;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
 .article-body h2 {
   font-size: 2rem;
   margin-top: 2.5em;
@@ -672,7 +681,78 @@
     line-height: 1.1;
   }
 
+  .article-body h1 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+
   .article-body h2 {
     line-height: 1.1;
+  }
+}
+
+/* HTML Block — data tables */
+.article-html-block {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 2em 0;
+}
+
+.article-html-block table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.article-html-block th {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid var(--color-text, #1a1a1a);
+  white-space: nowrap;
+}
+
+.article-html-block td {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--color-border, rgba(0,0,0,0.12));
+}
+
+.article-html-block th.num,
+.article-html-block td.num {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.article-html-block tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .article-html-block {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background:
+      linear-gradient(to right, var(--color-bg, #fff) 30%, transparent),
+      linear-gradient(to left, var(--color-bg, #fff) 30%, transparent),
+      linear-gradient(to right, rgba(0,0,0,0.08), transparent 40%),
+      linear-gradient(to left, rgba(0,0,0,0.08), transparent 40%);
+    background-position: left center, right center, left center, right center;
+    background-size: 20px 100%, 20px 100%, 20px 100%, 20px 100%;
+    background-repeat: no-repeat;
+    background-attachment: local, local, scroll, scroll;
+  }
+
+  .article-html-block table {
+    font-size: 0.8rem;
+  }
+
+  .article-html-block th,
+  .article-html-block td {
+    padding: 6px 8px;
   }
 }

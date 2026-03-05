@@ -34,6 +34,10 @@ const ARTICLE_QUERY = `
             }
             caption
           }
+          ... on HtmlBlockRecord {
+            id
+            htmlContent
+          }
         }
       }
     }
@@ -256,6 +260,14 @@ const ArticleDetail = () => {
                        <figcaption>{record.caption}</figcaption>
                      )}
                    </figure>
+                 );
+               }
+               if (record.__typename === 'HtmlBlockRecord') {
+                 return (
+                   <div
+                     className="article-html-block"
+                     dangerouslySetInnerHTML={{ __html: record.htmlContent }}
+                   />
                  );
                }
                return null;
