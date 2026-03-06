@@ -445,6 +445,20 @@
   overflow: hidden;
 }
 
+.article-body figure img {
+  margin: 0;
+}
+
+/* Tighten gap when image directly follows a heading */
+.article-body h1 + figure,
+.article-body h1 + .article-image-block,
+.article-body h2 + figure,
+.article-body h2 + .article-image-block,
+.article-body h3 + figure,
+.article-body h3 + .article-image-block {
+  margin-top: 0.5em;
+}
+
 .article-body figcaption {
   font-size: 0.9rem;
   opacity: 0.6;

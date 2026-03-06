@@ -110,10 +110,15 @@ const ProjectCard = ({ project }) => {
                  View Project <span className="arrow">↗</span>
                </a>
              )}
-             {project.github && (
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link secondary">
-                  Github <span className="arrow">↗</span>
+             {project.github && project.github.startsWith('http') && (
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
+                  View Repo <span className="arrow">↗</span>
                 </a>
+             )}
+             {project.github && !project.github.startsWith('http') && (
+                <span className="project-link secondary" style={{ opacity: 0.4, cursor: 'default' }}>
+                  View Repo <span className="arrow">↗</span>
+                </span>
              )}
           </div>
         </div>

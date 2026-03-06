@@ -147,10 +147,15 @@ const HorizontalProjectCard = ({ project, index, scrollProgress }) => {
               View Project <span className="arrow">↗</span>
             </a>
           )}
-          {project.github && (
-            <a href={project.github} target="_blank" rel="noopener noreferrer" className="h-project-link secondary">
-              Github <span className="arrow">↗</span>
+          {project.github && project.github.startsWith('http') && (
+            <a href={project.github} target="_blank" rel="noopener noreferrer" className="h-project-link">
+              View Repo <span className="arrow">↗</span>
             </a>
+          )}
+          {project.github && !project.github.startsWith('http') && (
+            <span className="h-project-link secondary" style={{ opacity: 0.4, cursor: 'default' }}>
+              View Repo <span className="arrow">↗</span>
+            </span>
           )}
         </div>
       </div>

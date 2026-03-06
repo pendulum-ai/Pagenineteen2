@@ -41,16 +41,16 @@ export const projects = [
     id: 'lightnote',
     title: 'lightnote',
     tagline: 'Composable creative workflows for generative media',
-    description: "Lightnote explores what creative software looks like when AI is native to the interface rather than layered on top. A canvas-based environment for composing fine-tuned generative models and AI tools into repeatable creative workflows.",
-    link: 'https://google.com', // TODO: Replace with real demo URL
-    github: 'https://google.com', // TODO: Replace with real GitHub URL
+    description: "Lightnote explores what creative software looks like when AI is native to the interface rather than layered on top. A canvas-based environment for composing fine-tuned generative models and AI tools into repeatable creative workflows. Open source under MIT license.",
+    link: null,
+    github: 'https://github.com/pendulum-ai/lightnote',
     focus: [
       'Automated LoRA fine-tuning pipelines',
       'Support for multiple model families (Flux, SDXL)',
       'Workflow-specific tools: Inpainting, style transfer, background removal',
       'Canvas-style interface for composing models and tools'
     ],
-    stack: ['React Flow', 'Diffusers', 'LoRA', 'Flux', 'SDXL'],
+    stack: ['CLIP', 'Stability AI', 'Flux', 'SDXL', 'LoRA', 'FastAPI'],
     bgColor: '#FAF9F6',
     visualType: 'particles',
     screenshotUrl: '/images/Lightnote_v2.webp',
