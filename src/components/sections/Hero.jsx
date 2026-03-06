@@ -35,7 +35,7 @@ const Hero = () => {
             style={{ y: yDesc }}
             className="hero-description"
           >
-            Building at the intersection of language, vision, and sound.
+            Building at the intersection of language, vision, and voice.
           </motion.p>
         </BlurReveal>
       </div>

@@ -49,15 +49,13 @@ const PauseIcon = () => (
 
 // Pre-generated static audio files
 const STATIC_AUDIO = {
-  'a-permanent-platform-for-personal-histories': '/audio/a-permanent-platform-for-personal-histories.mp3',
-  'earned-simplicity': '/audio/earned-simplicity.mp3',
   'building-lightnote': '/audio/building-lightnote.mp3',
-  'how-pendulum-searches': '/audio/how-pendulum-searches.mp3',
-  'the-fluency-gap': '/audio/the-fluency-gap.mp3',
+  'building-pendulum': '/audio/building-pendulum.mp3',
   'the-science-behind-amble': '/audio/the-science-behind-amble.mp3',
   'designing-behaviour': '/audio/designing-behaviour.mp3',
   'building-amble': '/audio/building-amble.mp3',
   'on-building-a-low-latency-voice-agent': '/audio/on-building-a-low-latency-voice-agent.mp3',
+  'benchmarking-ambles-ears': '/audio/benchmarking-ambles-ears.mp3',
 };
 
 const SPEED_OPTIONS = [1, 1.2, 1.5, 2];
