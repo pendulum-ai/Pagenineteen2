@@ -55,7 +55,7 @@
   font-weight: var(--weight-regular);
   color: var(--color-text);
   margin-bottom: var(--space-md);
-  text-wrap: balance; /* Magically prevents single-word orphans (the "gap tooth") */
+  text-wrap: balance;
 }
 
 .mission-belief-text {
