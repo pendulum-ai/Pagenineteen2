@@ -1,0 +1,2057 @@
+[
+  {
+    "word": "Designers",
+    "start": 0,
+    "end": 0.639
+  },
+  {
+    "word": "and",
+    "start": 0.708,
+    "end": 0.848
+  },
+  {
+    "word": "engineers",
+    "start": 0.906,
+    "end": 1.428
+  },
+  {
+    "word": "have",
+    "start": 1.498,
+    "end": 1.672
+  },
+  {
+    "word": "always",
+    "start": 1.718,
+    "end": 2.125
+  },
+  {
+    "word": "worked",
+    "start": 2.194,
+    "end": 2.508
+  },
+  {
+    "word": "in",
+    "start": 2.554,
+    "end": 2.612
+  },
+  {
+    "word": "parallel",
+    "start": 2.67,
+    "end": 3.135
+  },
+  {
+    "word": "worlds.",
+    "start": 3.204,
+    "end": 3.843
+  },
+  {
+    "word": "The",
+    "start": 4.284,
+    "end": 4.4
+  },
+  {
+    "word": "designer",
+    "start": 4.458,
+    "end": 4.992
+  },
+  {
+    "word": "builds",
+    "start": 5.108,
+    "end": 5.457
+  },
+  {
+    "word": "in",
+    "start": 5.515,
+    "end": 5.584
+  },
+  {
+    "word": "Figma.",
+    "start": 5.666,
+    "end": 6.304
+  },
+  {
+    "word": "The",
+    "start": 6.687,
+    "end": 6.815
+  },
+  {
+    "word": "engineer",
+    "start": 6.896,
+    "end": 7.326
+  },
+  {
+    "word": "picks",
+    "start": 7.396,
+    "end": 7.686
+  },
+  {
+    "word": "it",
+    "start": 7.732,
+    "end": 7.802
+  },
+  {
+    "word": "up",
+    "start": 7.86,
+    "end": 8.011
+  },
+  {
+    "word": "and",
+    "start": 8.104,
+    "end": 8.243
+  },
+  {
+    "word": "codes",
+    "start": 8.324,
+    "end": 8.661
+  },
+  {
+    "word": "it.",
+    "start": 8.742,
+    "end": 9.021
+  },
+  {
+    "word": "The",
+    "start": 9.625,
+    "end": 9.752
+  },
+  {
+    "word": "handoff",
+    "start": 9.834,
+    "end": 10.275
+  },
+  {
+    "word": "between",
+    "start": 10.333,
+    "end": 10.681
+  },
+  {
+    "word": "them",
+    "start": 10.716,
+    "end": 10.902
+  },
+  {
+    "word": "has",
+    "start": 10.995,
+    "end": 11.169
+  },
+  {
+    "word": "always",
+    "start": 11.25,
+    "end": 11.656
+  },
+  {
+    "word": "been",
+    "start": 11.714,
+    "end": 11.865
+  },
+  {
+    "word": "messy.",
+    "start": 11.9,
+    "end": 12.469
+  },
+  {
+    "word": "And",
+    "start": 12.98,
+    "end": 13.131
+  },
+  {
+    "word": "I’ve",
+    "start": 13.189,
+    "end": 13.317
+  },
+  {
+    "word": "failed",
+    "start": 13.351,
+    "end": 13.595
+  },
+  {
+    "word": "to",
+    "start": 13.618,
+    "end": 13.665
+  },
+  {
+    "word": "fix",
+    "start": 13.723,
+    "end": 13.944
+  },
+  {
+    "word": "it",
+    "start": 14.013,
+    "end": 14.083
+  },
+  {
+    "word": "more",
+    "start": 14.118,
+    "end": 14.245
+  },
+  {
+    "word": "than",
+    "start": 14.269,
+    "end": 14.385
+  },
+  {
+    "word": "once.",
+    "start": 14.443,
+    "end": 14.942
+  },
+  {
+    "word": "The",
+    "start": 15.546,
+    "end": 15.673
+  },
+  {
+    "word": "version",
+    "start": 15.743,
+    "end": 16.172
+  },
+  {
+    "word": "control",
+    "start": 16.289,
+    "end": 16.695
+  },
+  {
+    "word": "problem.",
+    "start": 16.753,
+    "end": 17.287
+  },
+  {
+    "word": "Instead",
+    "start": 17.891,
+    "end": 18.251
+  },
+  {
+    "word": "of",
+    "start": 18.274,
+    "end": 18.332
+  },
+  {
+    "word": "screen.png,",
+    "start": 18.436,
+    "end": 20.143
+  },
+  {
+    "word": "screen_2.png,",
+    "start": 20.387,
+    "end": 21.409
+  },
+  {
+    "word": "screen_final.png,",
+    "start": 21.467,
+    "end": 23.231
+  },
+  {
+    "word": "screen_final_final.png",
+    "start": 23.324,
+    "end": 25.553
+  },
+  {
+    "word": "buried",
+    "start": 25.681,
+    "end": 26.029
+  },
+  {
+    "word": "in",
+    "start": 26.076,
+    "end": 26.157
+  },
+  {
+    "word": "Dropbox",
+    "start": 26.215,
+    "end": 26.679
+  },
+  {
+    "word": "—",
+    "start": 26.854,
+    "end": 26.923
+  },
+  {
+    "word": "just",
+    "start": 27.434,
+    "end": 27.864
+  },
+  {
+    "word": "use",
+    "start": 28.003,
+    "end": 28.386
+  },
+  {
+    "word": "Git.",
+    "start": 28.491,
+    "end": 28.978
+  },
+  {
+    "word": "It’s",
+    "start": 29.083,
+    "end": 29.269
+  },
+  {
+    "word": "easy.",
+    "start": 29.315,
+    "end": 29.721
+  },
+  {
+    "word": "Except",
+    "start": 29.803,
+    "end": 30.093
+  },
+  {
+    "word": "it",
+    "start": 30.116,
+    "end": 30.174
+  },
+  {
+    "word": "wasn’t.",
+    "start": 30.197,
+    "end": 30.511
+  },
+  {
+    "word": "Designers",
+    "start": 30.882,
+    "end": 31.382
+  },
+  {
+    "word": "don’t",
+    "start": 31.451,
+    "end": 31.66
+  },
+  {
+    "word": "live",
+    "start": 31.683,
+    "end": 31.811
+  },
+  {
+    "word": "in",
+    "start": 31.834,
+    "end": 31.881
+  },
+  {
+    "word": "the",
+    "start": 31.916,
+    "end": 31.974
+  },
+  {
+    "word": "terminal.",
+    "start": 31.997,
+    "end": 32.415
+  },
+  {
+    "word": "It",
+    "start": 32.45,
+    "end": 32.554
+  },
+  {
+    "word": "didn’t",
+    "start": 32.601,
+    "end": 32.775
+  },
+  {
+    "word": "stick.",
+    "start": 32.833,
+    "end": 33.251
+  },
+  {
+    "word": "The",
+    "start": 33.622,
+    "end": 33.739
+  },
+  {
+    "word": "theme",
+    "start": 33.808,
+    "end": 34.134
+  },
+  {
+    "word": "update",
+    "start": 34.261,
+    "end": 34.772
+  },
+  {
+    "word": "problem.",
+    "start": 34.807,
+    "end": 35.26
+  },
+  {
+    "word": "Update",
+    "start": 35.631,
+    "end": 36.096
+  },
+  {
+    "word": "colors",
+    "start": 36.142,
+    "end": 36.467
+  },
+  {
+    "word": "directly",
+    "start": 36.514,
+    "end": 36.955
+  },
+  {
+    "word": "in",
+    "start": 37.001,
+    "end": 37.071
+  },
+  {
+    "word": "code.",
+    "start": 37.152,
+    "end": 37.64
+  },
+  {
+    "word": "Open",
+    "start": 37.965,
+    "end": 38.348
+  },
+  {
+    "word": "Theme.m",
+    "start": 38.499,
+    "end": 39.567
+  },
+  {
+    "word": "and",
+    "start": 39.66,
+    "end": 39.788
+  },
+  {
+    "word": "change",
+    "start": 39.846,
+    "end": 40.182
+  },
+  {
+    "word": "the",
+    "start": 40.217,
+    "end": 40.287
+  },
+  {
+    "word": "values:",
+    "start": 40.333,
+    "end": 41.007
+  },
+  {
+    "word": "Just",
+    "start": 41.39,
+    "end": 41.622
+  },
+  {
+    "word": "remember",
+    "start": 41.668,
+    "end": 42.017
+  },
+  {
+    "word": "to",
+    "start": 42.075,
+    "end": 42.144
+  },
+  {
+    "word": "also",
+    "start": 42.214,
+    "end": 42.458
+  },
+  {
+    "word": "update",
+    "start": 42.516,
+    "end": 42.934
+  },
+  {
+    "word": "Theme.h.",
+    "start": 42.992,
+    "end": 44.35
+  },
+  {
+    "word": "And",
+    "start": 44.385,
+    "end": 44.501
+  },
+  {
+    "word": "use",
+    "start": 44.559,
+    "end": 44.71
+  },
+  {
+    "word": "decimals,",
+    "start": 44.745,
+    "end": 45.314
+  },
+  {
+    "word": "not",
+    "start": 45.372,
+    "end": 45.558
+  },
+  {
+    "word": "integers.",
+    "start": 45.627,
+    "end": 46.312
+  },
+  {
+    "word": "It’s",
+    "start": 46.823,
+    "end": 47.021
+  },
+  {
+    "word": "easy.",
+    "start": 47.067,
+    "end": 47.52
+  },
+  {
+    "word": "Also",
+    "start": 47.543,
+    "end": 47.973
+  },
+  {
+    "word": "didn’t",
+    "start": 48.089,
+    "end": 48.333
+  },
+  {
+    "word": "stick.",
+    "start": 48.379,
+    "end": 48.832
+  },
+  {
+    "word": "The",
+    "start": 49.215,
+    "end": 49.331
+  },
+  {
+    "word": "code",
+    "start": 49.401,
+    "end": 49.912
+  },
+  {
+    "word": "generation",
+    "start": 49.981,
+    "end": 50.585
+  },
+  {
+    "word": "problem.",
+    "start": 50.631,
+    "end": 51.154
+  },
+  {
+    "word": "Figma",
+    "start": 51.479,
+    "end": 51.885
+  },
+  {
+    "word": "generates",
+    "start": 51.967,
+    "end": 52.408
+  },
+  {
+    "word": "code",
+    "start": 52.466,
+    "end": 52.861
+  },
+  {
+    "word": "on",
+    "start": 52.919,
+    "end": 53.035
+  },
+  {
+    "word": "click.",
+    "start": 53.104,
+    "end": 53.569
+  },
+  {
+    "word": "But",
+    "start": 54.01,
+    "end": 54.172
+  },
+  {
+    "word": "copy-paste",
+    "start": 54.23,
+    "end": 54.915
+  },
+  {
+    "word": "rarely",
+    "start": 55.066,
+    "end": 55.484
+  },
+  {
+    "word": "just",
+    "start": 55.577,
+    "end": 55.786
+  },
+  {
+    "word": "works:",
+    "start": 55.844,
+    "end": 56.506
+  },
+  {
+    "word": "Gradients",
+    "start": 56.785,
+    "end": 57.377
+  },
+  {
+    "word": "are",
+    "start": 57.446,
+    "end": 57.551
+  },
+  {
+    "word": "calculated",
+    "start": 57.586,
+    "end": 58.213
+  },
+  {
+    "word": "differently",
+    "start": 58.248,
+    "end": 58.665
+  },
+  {
+    "word": "per",
+    "start": 58.758,
+    "end": 59.002
+  },
+  {
+    "word": "platform",
+    "start": 59.06,
+    "end": 59.606
+  },
+  {
+    "word": "Font",
+    "start": 60.117,
+    "end": 60.546
+  },
+  {
+    "word": "and",
+    "start": 60.628,
+    "end": 60.779
+  },
+  {
+    "word": "color",
+    "start": 60.848,
+    "end": 61.196
+  },
+  {
+    "word": "constant",
+    "start": 61.707,
+    "end": 62.183
+  },
+  {
+    "word": "names",
+    "start": 62.241,
+    "end": 62.566
+  },
+  {
+    "word": "don’t",
+    "start": 62.659,
+    "end": 62.892
+  },
+  {
+    "word": "match",
+    "start": 62.938,
+    "end": 63.275
+  },
+  {
+    "word": "A",
+    "start": 63.785,
+    "end": 63.936
+  },
+  {
+    "word": "child",
+    "start": 64.006,
+    "end": 64.32
+  },
+  {
+    "word": "element’s",
+    "start": 64.366,
+    "end": 64.726
+  },
+  {
+    "word": "shadow",
+    "start": 64.761,
+    "end": 65.144
+  },
+  {
+    "word": "gets",
+    "start": 65.237,
+    "end": 65.457
+  },
+  {
+    "word": "clipped",
+    "start": 65.515,
+    "end": 65.829
+  },
+  {
+    "word": "by",
+    "start": 65.887,
+    "end": 65.991
+  },
+  {
+    "word": "the",
+    "start": 66.038,
+    "end": 66.107
+  },
+  {
+    "word": "parent",
+    "start": 66.166,
+    "end": 66.56
+  },
+  {
+    "word": "view",
+    "start": 66.618,
+    "end": 66.897
+  },
+  {
+    "word": "RoundedRectangle",
+    "start": 67.408,
+    "end": 68.511
+  },
+  {
+    "word": "vs.",
+    "start": 68.592,
+    "end": 68.964
+  },
+  {
+    "word": "Capsule",
+    "start": 68.999,
+    "end": 69.452
+  },
+  {
+    "word": "vs.",
+    "start": 69.498,
+    "end": 69.846
+  },
+  {
+    "word": "hardcoded",
+    "start": 69.893,
+    "end": 70.531
+  },
+  {
+    "word": "Figma",
+    "start": 70.578,
+    "end": 70.903
+  },
+  {
+    "word": "values",
+    "start": 70.949,
+    "end": 71.483
+  },
+  {
+    "word": "And",
+    "start": 71.994,
+    "end": 72.192
+  },
+  {
+    "word": "that’s",
+    "start": 72.238,
+    "end": 72.435
+  },
+  {
+    "word": "only",
+    "start": 72.505,
+    "end": 72.737
+  },
+  {
+    "word": "for",
+    "start": 72.795,
+    "end": 72.911
+  },
+  {
+    "word": "a",
+    "start": 72.958,
+    "end": 72.981
+  },
+  {
+    "word": "static",
+    "start": 73.027,
+    "end": 73.411
+  },
+  {
+    "word": "element.",
+    "start": 73.469,
+    "end": 73.933
+  },
+  {
+    "word": "None",
+    "start": 74.537,
+    "end": 74.734
+  },
+  {
+    "word": "of",
+    "start": 74.769,
+    "end": 74.815
+  },
+  {
+    "word": "it",
+    "start": 74.862,
+    "end": 74.932
+  },
+  {
+    "word": "covers:",
+    "start": 74.978,
+    "end": 75.651
+  },
+  {
+    "word": "Animations",
+    "start": 76.093,
+    "end": 76.905
+  },
+  {
+    "word": "Haptic",
+    "start": 77.346,
+    "end": 77.776
+  },
+  {
+    "word": "feedback",
+    "start": 77.846,
+    "end": 78.38
+  },
+  {
+    "word": "Disabled,",
+    "start": 79.076,
+    "end": 79.947
+  },
+  {
+    "word": "loading",
+    "start": 80.098,
+    "end": 80.551
+  },
+  {
+    "word": "or",
+    "start": 80.667,
+    "end": 80.818
+  },
+  {
+    "word": "element",
+    "start": 80.887,
+    "end": 81.224
+  },
+  {
+    "word": "becoming",
+    "start": 81.259,
+    "end": 81.607
+  },
+  {
+    "word": "visible",
+    "start": 81.654,
+    "end": 82.223
+  },
+  {
+    "word": "states",
+    "start": 82.733,
+    "end": 83.209
+  },
+  {
+    "word": "Transitions",
+    "start": 83.36,
+    "end": 84.034
+  },
+  {
+    "word": "between",
+    "start": 84.103,
+    "end": 84.417
+  },
+  {
+    "word": "selected",
+    "start": 84.463,
+    "end": 84.997
+  },
+  {
+    "word": "and",
+    "start": 85.055,
+    "end": 85.148
+  },
+  {
+    "word": "unselected",
+    "start": 85.23,
+    "end": 85.775
+  },
+  {
+    "word": "states",
+    "start": 85.81,
+    "end": 86.274
+  },
+  {
+    "word": "iOS",
+    "start": 86.716,
+    "end": 87.192
+  },
+  {
+    "word": "alone",
+    "start": 87.273,
+    "end": 87.621
+  },
+  {
+    "word": "has",
+    "start": 87.656,
+    "end": 87.784
+  },
+  {
+    "word": "a",
+    "start": 87.83,
+    "end": 87.865
+  },
+  {
+    "word": "dozen",
+    "start": 87.923,
+    "end": 88.225
+  },
+  {
+    "word": "haptic",
+    "start": 88.283,
+    "end": 88.632
+  },
+  {
+    "word": "types",
+    "start": 88.69,
+    "end": 89.084
+  },
+  {
+    "word": "—",
+    "start": 89.328,
+    "end": 89.433
+  },
+  {
+    "word": "start,",
+    "start": 89.827,
+    "end": 90.501
+  },
+  {
+    "word": "stop,",
+    "start": 90.687,
+    "end": 91.232
+  },
+  {
+    "word": "success,",
+    "start": 91.337,
+    "end": 92.184
+  },
+  {
+    "word": "error,",
+    "start": 92.347,
+    "end": 92.869
+  },
+  {
+    "word": "selection,",
+    "start": 93.032,
+    "end": 93.868
+  },
+  {
+    "word": "light-impact,",
+    "start": 94.111,
+    "end": 94.994
+  },
+  {
+    "word": "medium-impact,",
+    "start": 95.04,
+    "end": 96.19
+  },
+  {
+    "word": "heavy-impact",
+    "start": 96.375,
+    "end": 97.165
+  },
+  {
+    "word": "etc.",
+    "start": 97.223,
+    "end": 97.873
+  },
+  {
+    "word": "Every",
+    "start": 98.872,
+    "end": 99.104
+  },
+  {
+    "word": "one",
+    "start": 99.15,
+    "end": 99.255
+  },
+  {
+    "word": "of",
+    "start": 99.29,
+    "end": 99.324
+  },
+  {
+    "word": "them",
+    "start": 99.359,
+    "end": 99.464
+  },
+  {
+    "word": "had",
+    "start": 99.522,
+    "end": 99.649
+  },
+  {
+    "word": "to",
+    "start": 99.684,
+    "end": 99.731
+  },
+  {
+    "word": "be",
+    "start": 99.754,
+    "end": 99.835
+  },
+  {
+    "word": "communicated",
+    "start": 99.87,
+    "end": 100.543
+  },
+  {
+    "word": "between",
+    "start": 100.601,
+    "end": 100.938
+  },
+  {
+    "word": "“the",
+    "start": 101.124,
+    "end": 101.333
+  },
+  {
+    "word": "artist”",
+    "start": 101.391,
+    "end": 101.925
+  },
+  {
+    "word": "and",
+    "start": 101.948,
+    "end": 102.076
+  },
+  {
+    "word": "“the",
+    "start": 102.111,
+    "end": 102.192
+  },
+  {
+    "word": "technician.”",
+    "start": 102.227,
+    "end": 103.005
+  },
+  {
+    "word": "Back",
+    "start": 103.457,
+    "end": 103.678
+  },
+  {
+    "word": "and",
+    "start": 103.725,
+    "end": 103.806
+  },
+  {
+    "word": "forth.",
+    "start": 103.864,
+    "end": 104.444
+  },
+  {
+    "word": "What",
+    "start": 105.164,
+    "end": 105.35
+  },
+  {
+    "word": "changed.",
+    "start": 105.396,
+    "end": 106.058
+  },
+  {
+    "word": "AI",
+    "start": 106.453,
+    "end": 106.882
+  },
+  {
+    "word": "and",
+    "start": 106.94,
+    "end": 107.022
+  },
+  {
+    "word": "Xcode",
+    "start": 107.103,
+    "end": 107.533
+  },
+  {
+    "word": "Live",
+    "start": 107.567,
+    "end": 107.8
+  },
+  {
+    "word": "Preview",
+    "start": 107.834,
+    "end": 108.194
+  },
+  {
+    "word": "changed",
+    "start": 108.252,
+    "end": 108.577
+  },
+  {
+    "word": "everything.",
+    "start": 108.635,
+    "end": 109.309
+  },
+  {
+    "word": "Designers",
+    "start": 109.82,
+    "end": 110.412
+  },
+  {
+    "word": "can",
+    "start": 110.481,
+    "end": 110.586
+  },
+  {
+    "word": "now",
+    "start": 110.621,
+    "end": 110.725
+  },
+  {
+    "word": "generate",
+    "start": 110.783,
+    "end": 111.201
+  },
+  {
+    "word": "SwiftUI",
+    "start": 111.259,
+    "end": 111.886
+  },
+  {
+    "word": "view",
+    "start": 111.944,
+    "end": 112.107
+  },
+  {
+    "word": "code",
+    "start": 112.165,
+    "end": 112.467
+  },
+  {
+    "word": "with",
+    "start": 112.49,
+    "end": 112.606
+  },
+  {
+    "word": "animations,",
+    "start": 112.653,
+    "end": 113.663
+  },
+  {
+    "word": "haptic",
+    "start": 113.79,
+    "end": 114.197
+  },
+  {
+    "word": "feedback,",
+    "start": 114.266,
+    "end": 114.963
+  },
+  {
+    "word": "and",
+    "start": 115.056,
+    "end": 115.207
+  },
+  {
+    "word": "all",
+    "start": 115.3,
+    "end": 115.601
+  },
+  {
+    "word": "interactive",
+    "start": 115.683,
+    "end": 116.228
+  },
+  {
+    "word": "states",
+    "start": 116.263,
+    "end": 116.704
+  },
+  {
+    "word": "—",
+    "start": 116.948,
+    "end": 116.995
+  },
+  {
+    "word": "and",
+    "start": 117.436,
+    "end": 117.598
+  },
+  {
+    "word": "see",
+    "start": 117.68,
+    "end": 117.842
+  },
+  {
+    "word": "it",
+    "start": 117.877,
+    "end": 117.947
+  },
+  {
+    "word": "running",
+    "start": 117.993,
+    "end": 118.237
+  },
+  {
+    "word": "on",
+    "start": 118.295,
+    "end": 118.353
+  },
+  {
+    "word": "a",
+    "start": 118.388,
+    "end": 118.411
+  },
+  {
+    "word": "physical",
+    "start": 118.457,
+    "end": 118.817
+  },
+  {
+    "word": "device",
+    "start": 118.875,
+    "end": 119.27
+  },
+  {
+    "word": "in",
+    "start": 119.317,
+    "end": 119.398
+  },
+  {
+    "word": "real",
+    "start": 119.468,
+    "end": 119.63
+  },
+  {
+    "word": "time.",
+    "start": 119.688,
+    "end": 120.211
+  },
+  {
+    "word": "Not",
+    "start": 120.721,
+    "end": 121.058
+  },
+  {
+    "word": "a",
+    "start": 121.232,
+    "end": 121.313
+  },
+  {
+    "word": "mockup.",
+    "start": 121.406,
+    "end": 122.033
+  },
+  {
+    "word": "The",
+    "start": 122.474,
+    "end": 122.602
+  },
+  {
+    "word": "actual",
+    "start": 122.683,
+    "end": 123.194
+  },
+  {
+    "word": "code.",
+    "start": 123.275,
+    "end": 123.867
+  },
+  {
+    "word": "The",
+    "start": 124.378,
+    "end": 124.494
+  },
+  {
+    "word": "ping-pong",
+    "start": 124.552,
+    "end": 125.121
+  },
+  {
+    "word": "is",
+    "start": 125.237,
+    "end": 125.435
+  },
+  {
+    "word": "gone.",
+    "start": 125.528,
+    "end": 126.027
+  },
+  {
+    "word": "At",
+    "start": 126.619,
+    "end": 126.793
+  },
+  {
+    "word": "Amble,",
+    "start": 126.863,
+    "end": 127.362
+  },
+  {
+    "word": "we",
+    "start": 127.409,
+    "end": 127.536
+  },
+  {
+    "word": "built",
+    "start": 127.606,
+    "end": 127.815
+  },
+  {
+    "word": "a",
+    "start": 127.85,
+    "end": 127.873
+  },
+  {
+    "word": "dedicated",
+    "start": 127.954,
+    "end": 128.57
+  },
+  {
+    "word": "framework",
+    "start": 128.628,
+    "end": 129.196
+  },
+  {
+    "word": "—",
+    "start": 129.359,
+    "end": 129.522
+  },
+  {
+    "word": "AmbleUIComponents",
+    "start": 129.638,
+    "end": 131.077
+  },
+  {
+    "word": "—",
+    "start": 131.321,
+    "end": 131.426
+  },
+  {
+    "word": "that",
+    "start": 131.53,
+    "end": 131.704
+  },
+  {
+    "word": "lives",
+    "start": 131.762,
+    "end": 132.006
+  },
+  {
+    "word": "outside",
+    "start": 132.087,
+    "end": 132.54
+  },
+  {
+    "word": "the",
+    "start": 132.563,
+    "end": 132.633
+  },
+  {
+    "word": "main",
+    "start": 132.668,
+    "end": 132.83
+  },
+  {
+    "word": "app",
+    "start": 132.888,
+    "end": 133.144
+  },
+  {
+    "word": "and",
+    "start": 133.237,
+    "end": 133.364
+  },
+  {
+    "word": "contains",
+    "start": 133.411,
+    "end": 133.829
+  },
+  {
+    "word": "only",
+    "start": 133.922,
+    "end": 134.154
+  },
+  {
+    "word": "UI",
+    "start": 134.258,
+    "end": 134.525
+  },
+  {
+    "word": "components",
+    "start": 134.607,
+    "end": 135.257
+  },
+  {
+    "word": "and",
+    "start": 135.582,
+    "end": 135.779
+  },
+  {
+    "word": "their",
+    "start": 135.826,
+    "end": 135.965
+  },
+  {
+    "word": "behaviors.",
+    "start": 136,
+    "end": 136.813
+  },
+  {
+    "word": "It’s",
+    "start": 137.312,
+    "end": 137.509
+  },
+  {
+    "word": "the",
+    "start": 137.556,
+    "end": 137.637
+  },
+  {
+    "word": "only",
+    "start": 137.753,
+    "end": 138.043
+  },
+  {
+    "word": "place",
+    "start": 138.113,
+    "end": 138.496
+  },
+  {
+    "word": "designers",
+    "start": 138.577,
+    "end": 139.135
+  },
+  {
+    "word": "need",
+    "start": 139.216,
+    "end": 139.437
+  },
+  {
+    "word": "to",
+    "start": 139.495,
+    "end": 139.588
+  },
+  {
+    "word": "work.",
+    "start": 139.657,
+    "end": 140.18
+  },
+  {
+    "word": "No",
+    "start": 140.865,
+    "end": 141.039
+  },
+  {
+    "word": "business",
+    "start": 141.097,
+    "end": 141.445
+  },
+  {
+    "word": "logic,",
+    "start": 141.492,
+    "end": 141.91
+  },
+  {
+    "word": "no",
+    "start": 141.956,
+    "end": 142.084
+  },
+  {
+    "word": "networking,",
+    "start": 142.177,
+    "end": 142.908
+  },
+  {
+    "word": "just",
+    "start": 142.955,
+    "end": 143.175
+  },
+  {
+    "word": "views.",
+    "start": 143.245,
+    "end": 143.86
+  },
+  {
+    "word": "Live",
+    "start": 144.139,
+    "end": 144.406
+  },
+  {
+    "word": "Preview",
+    "start": 144.441,
+    "end": 144.87
+  },
+  {
+    "word": "is",
+    "start": 144.94,
+    "end": 145.056
+  },
+  {
+    "word": "instant.",
+    "start": 145.137,
+    "end": 145.834
+  },
+  {
+    "word": "Change",
+    "start": 146.008,
+    "end": 146.38
+  },
+  {
+    "word": "the",
+    "start": 146.414,
+    "end": 146.473
+  },
+  {
+    "word": "font",
+    "start": 146.519,
+    "end": 146.728
+  },
+  {
+    "word": "size,",
+    "start": 146.786,
+    "end": 147.39
+  },
+  {
+    "word": "see",
+    "start": 147.668,
+    "end": 147.924
+  },
+  {
+    "word": "the",
+    "start": 147.97,
+    "end": 148.051
+  },
+  {
+    "word": "whole",
+    "start": 148.098,
+    "end": 148.388
+  },
+  {
+    "word": "UI",
+    "start": 148.504,
+    "end": 148.76
+  },
+  {
+    "word": "update",
+    "start": 148.853,
+    "end": 149.317
+  },
+  {
+    "word": "immediately.",
+    "start": 149.34,
+    "end": 150.13
+  },
+  {
+    "word": "When",
+    "start": 150.722,
+    "end": 150.931
+  },
+  {
+    "word": "the",
+    "start": 150.966,
+    "end": 151.035
+  },
+  {
+    "word": "designer",
+    "start": 151.082,
+    "end": 151.511
+  },
+  {
+    "word": "is",
+    "start": 151.558,
+    "end": 151.639
+  },
+  {
+    "word": "ready,",
+    "start": 151.697,
+    "end": 152.092
+  },
+  {
+    "word": "they",
+    "start": 152.208,
+    "end": 152.37
+  },
+  {
+    "word": "open",
+    "start": 152.44,
+    "end": 152.719
+  },
+  {
+    "word": "a",
+    "start": 152.753,
+    "end": 152.777
+  },
+  {
+    "word": "pull",
+    "start": 152.823,
+    "end": 152.997
+  },
+  {
+    "word": "request.",
+    "start": 153.055,
+    "end": 153.798
+  },
+  {
+    "word": "That’s",
+    "start": 154.483,
+    "end": 154.797
+  },
+  {
+    "word": "it.",
+    "start": 154.855,
+    "end": 155.087
+  },
+  {
+    "word": "It’s",
+    "start": 155.203,
+    "end": 155.482
+  },
+  {
+    "word": "finally",
+    "start": 155.586,
+    "end": 156.202
+  },
+  {
+    "word": "easy.",
+    "start": 156.306,
+    "end": 156.887
+  },
+  {
+    "word": "Where",
+    "start": 157.386,
+    "end": 157.607
+  },
+  {
+    "word": "it’s",
+    "start": 157.642,
+    "end": 157.781
+  },
+  {
+    "word": "going.",
+    "start": 157.827,
+    "end": 158.28
+  },
+  {
+    "word": "But",
+    "start": 158.872,
+    "end": 159.023
+  },
+  {
+    "word": "it",
+    "start": 159.058,
+    "end": 159.116
+  },
+  {
+    "word": "doesn’t",
+    "start": 159.162,
+    "end": 159.395
+  },
+  {
+    "word": "stop",
+    "start": 159.43,
+    "end": 159.627
+  },
+  {
+    "word": "here.",
+    "start": 159.697,
+    "end": 160.033
+  },
+  {
+    "word": "Our",
+    "start": 160.846,
+    "end": 160.997
+  },
+  {
+    "word": "designer",
+    "start": 161.043,
+    "end": 161.566
+  },
+  {
+    "word": "didn’t",
+    "start": 161.635,
+    "end": 161.856
+  },
+  {
+    "word": "stop",
+    "start": 161.891,
+    "end": 162.088
+  },
+  {
+    "word": "at",
+    "start": 162.135,
+    "end": 162.193
+  },
+  {
+    "word": "single",
+    "start": 162.239,
+    "end": 162.541
+  },
+  {
+    "word": "components",
+    "start": 162.576,
+    "end": 163.156
+  },
+  {
+    "word": "like",
+    "start": 163.203,
+    "end": 163.354
+  },
+  {
+    "word": "buttons",
+    "start": 163.412,
+    "end": 163.888
+  },
+  {
+    "word": "and",
+    "start": 163.934,
+    "end": 164.039
+  },
+  {
+    "word": "text",
+    "start": 164.097,
+    "end": 164.41
+  },
+  {
+    "word": "views.",
+    "start": 164.468,
+    "end": 165.049
+  },
+  {
+    "word": "They",
+    "start": 165.56,
+    "end": 165.745
+  },
+  {
+    "word": "moved",
+    "start": 165.815,
+    "end": 166.047
+  },
+  {
+    "word": "on",
+    "start": 166.105,
+    "end": 166.245
+  },
+  {
+    "word": "to",
+    "start": 166.326,
+    "end": 166.43
+  },
+  {
+    "word": "building",
+    "start": 166.5,
+    "end": 166.813
+  },
+  {
+    "word": "whole",
+    "start": 166.872,
+    "end": 167.185
+  },
+  {
+    "word": "functional",
+    "start": 167.255,
+    "end": 167.754
+  },
+  {
+    "word": "screens.",
+    "start": 167.8,
+    "end": 168.52
+  },
+  {
+    "word": "The",
+    "start": 169.217,
+    "end": 169.344
+  },
+  {
+    "word": "engineer",
+    "start": 169.402,
+    "end": 169.844
+  },
+  {
+    "word": "then",
+    "start": 169.902,
+    "end": 170.006
+  },
+  {
+    "word": "connects",
+    "start": 170.076,
+    "end": 170.459
+  },
+  {
+    "word": "them",
+    "start": 170.505,
+    "end": 170.703
+  },
+  {
+    "word": "to",
+    "start": 170.784,
+    "end": 170.889
+  },
+  {
+    "word": "real",
+    "start": 170.97,
+    "end": 171.167
+  },
+  {
+    "word": "data",
+    "start": 171.225,
+    "end": 171.562
+  },
+  {
+    "word": "by",
+    "start": 171.62,
+    "end": 171.724
+  },
+  {
+    "word": "implementing",
+    "start": 171.782,
+    "end": 172.363
+  },
+  {
+    "word": "the",
+    "start": 172.397,
+    "end": 172.467
+  },
+  {
+    "word": "interfaces",
+    "start": 172.514,
+    "end": 173.152
+  },
+  {
+    "word": "the",
+    "start": 173.233,
+    "end": 173.315
+  },
+  {
+    "word": "designer",
+    "start": 173.384,
+    "end": 173.791
+  },
+  {
+    "word": "prepared.",
+    "start": 173.837,
+    "end": 174.522
+  },
+  {
+    "word": "With",
+    "start": 175.219,
+    "end": 175.404
+  },
+  {
+    "word": "Figma",
+    "start": 175.462,
+    "end": 175.811
+  },
+  {
+    "word": "MCP,",
+    "start": 175.857,
+    "end": 176.612
+  },
+  {
+    "word": "even",
+    "start": 176.821,
+    "end": 177.088
+  },
+  {
+    "word": "that",
+    "start": 177.134,
+    "end": 177.308
+  },
+  {
+    "word": "could",
+    "start": 177.366,
+    "end": 177.506
+  },
+  {
+    "word": "be",
+    "start": 177.541,
+    "end": 177.622
+  },
+  {
+    "word": "automated.",
+    "start": 177.657,
+    "end": 178.458
+  },
+  {
+    "word": "A",
+    "start": 179.154,
+    "end": 179.236
+  },
+  {
+    "word": "designer",
+    "start": 179.317,
+    "end": 179.828
+  },
+  {
+    "word": "rebrands",
+    "start": 179.921,
+    "end": 180.466
+  },
+  {
+    "word": "the",
+    "start": 180.524,
+    "end": 180.594
+  },
+  {
+    "word": "entire",
+    "start": 180.652,
+    "end": 181.047
+  },
+  {
+    "word": "app",
+    "start": 181.093,
+    "end": 181.314
+  },
+  {
+    "word": "in",
+    "start": 181.407,
+    "end": 181.488
+  },
+  {
+    "word": "Figma",
+    "start": 181.569,
+    "end": 181.964
+  },
+  {
+    "word": "and",
+    "start": 182.022,
+    "end": 182.103
+  },
+  {
+    "word": "presses",
+    "start": 182.161,
+    "end": 182.591
+  },
+  {
+    "word": "“Apply.”",
+    "start": 182.8,
+    "end": 183.717
+  },
+  {
+    "word": "Component",
+    "start": 184.321,
+    "end": 184.878
+  },
+  {
+    "word": "libraries",
+    "start": 184.913,
+    "end": 185.389
+  },
+  {
+    "word": "restyle",
+    "start": 185.482,
+    "end": 186.004
+  },
+  {
+    "word": "themselves",
+    "start": 186.039,
+    "end": 186.469
+  },
+  {
+    "word": "automatically.",
+    "start": 186.504,
+    "end": 187.374
+  },
+  {
+    "word": "The",
+    "start": 187.978,
+    "end": 188.106
+  },
+  {
+    "word": "gap",
+    "start": 188.164,
+    "end": 188.384
+  },
+  {
+    "word": "between",
+    "start": 188.466,
+    "end": 188.767
+  },
+  {
+    "word": "design",
+    "start": 188.814,
+    "end": 189.209
+  },
+  {
+    "word": "and",
+    "start": 189.278,
+    "end": 189.36
+  },
+  {
+    "word": "code",
+    "start": 189.429,
+    "end": 189.777
+  },
+  {
+    "word": "is",
+    "start": 189.812,
+    "end": 189.894
+  },
+  {
+    "word": "closing",
+    "start": 189.952,
+    "end": 190.393
+  },
+  {
+    "word": "—",
+    "start": 190.544,
+    "end": 190.602
+  },
+  {
+    "word": "not",
+    "start": 190.985,
+    "end": 191.147
+  },
+  {
+    "word": "because",
+    "start": 191.194,
+    "end": 191.473
+  },
+  {
+    "word": "one",
+    "start": 191.531,
+    "end": 191.728
+  },
+  {
+    "word": "side",
+    "start": 191.774,
+    "end": 192.041
+  },
+  {
+    "word": "crossed",
+    "start": 192.076,
+    "end": 192.366
+  },
+  {
+    "word": "over,",
+    "start": 192.413,
+    "end": 192.784
+  },
+  {
+    "word": "but",
+    "start": 192.819,
+    "end": 193.063
+  },
+  {
+    "word": "because",
+    "start": 193.446,
+    "end": 193.748
+  },
+  {
+    "word": "the",
+    "start": 193.783,
+    "end": 193.853
+  },
+  {
+    "word": "tools",
+    "start": 193.899,
+    "end": 194.201
+  },
+  {
+    "word": "finally",
+    "start": 194.271,
+    "end": 194.642
+  },
+  {
+    "word": "met",
+    "start": 194.712,
+    "end": 194.874
+  },
+  {
+    "word": "in",
+    "start": 194.944,
+    "end": 195.002
+  },
+  {
+    "word": "the",
+    "start": 195.037,
+    "end": 195.106
+  },
+  {
+    "word": "middle.",
+    "start": 195.13,
+    "end": 195.745
+  }
+]

@@ -56,6 +56,8 @@ const STATIC_AUDIO = {
   'building-amble': '/audio/building-amble.mp3',
   'on-building-a-low-latency-voice-agent': '/audio/on-building-a-low-latency-voice-agent.mp3',
   'benchmarking-ambles-ears': '/audio/benchmarking-ambles-ears.mp3',
+  'what-language-learners-taught-us-about-voice-ai': '/audio/what-language-learners-taught-us-about-voice-ai.mp3',
+  'bridging-design-and-code': '/audio/bridging-design-and-code.mp3',
 };
 
 const SPEED_OPTIONS = [1, 1.2, 1.5, 2];

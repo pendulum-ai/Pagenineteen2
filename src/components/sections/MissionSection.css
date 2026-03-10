@@ -38,8 +38,9 @@
 .mission-right {
   justify-content: flex-start;
   /* Push content down INTENSELY (var(--mission-stagger-height)) so it appears on the "next screen" relative to left content */
-  padding-top: var(--mission-stagger-height); 
+  padding-top: var(--mission-stagger-height);
   padding-bottom: var(--space-lg);
+  padding-right: clamp(2rem, 4vw, 5rem); /* Reduced from --layout-padding-x to give belief text more width */
 }
 
 .mission-text-block {

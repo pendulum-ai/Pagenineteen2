@@ -1,4222 +1,4572 @@
 [
   {
-    "word": "We",
+    "word": "Designing",
     "start": 0,
-    "end": 0.174
+    "end": 0.58
+  },
+  {
+    "word": "for",
+    "start": 0.65,
+    "end": 0.755
+  },
+  {
+    "word": "language",
+    "start": 0.801,
+    "end": 1.173
+  },
+  {
+    "word": "acquisition.",
+    "start": 1.207,
+    "end": 2.009
+  },
+  {
+    "word": "We",
+    "start": 2.612,
+    "end": 2.74
   },
   {
     "word": "set",
-    "start": 0.232,
-    "end": 0.43
-  },
-  {
-    "word": "out",
-    "start": 0.488,
-    "end": 0.604
-  },
-  {
-    "word": "to",
-    "start": 0.639,
-    "end": 0.697
-  },
-  {
-    "word": "build",
-    "start": 0.755,
-    "end": 0.975
-  },
-  {
-    "word": "Amble",
-    "start": 1.045,
-    "end": 1.544
-  },
-  {
-    "word": "to",
-    "start": 1.602,
-    "end": 1.741
-  },
-  {
-    "word": "offer",
-    "start": 1.823,
-    "end": 2.078
-  },
-  {
-    "word": "an",
-    "start": 2.148,
-    "end": 2.229
-  },
-  {
-    "word": "immersive",
-    "start": 2.276,
-    "end": 2.879
-  },
-  {
-    "word": "and",
-    "start": 2.914,
+    "start": 2.798,
     "end": 2.995
   },
   {
-    "word": "personalised",
-    "start": 3.065,
-    "end": 3.785
-  },
-  {
-    "word": "language",
-    "start": 3.831,
-    "end": 4.226
-  },
-  {
-    "word": "learning",
-    "start": 4.261,
-    "end": 4.528
-  },
-  {
-    "word": "experience,",
-    "start": 4.586,
-    "end": 5.375
-  },
-  {
-    "word": "based",
-    "start": 5.7,
-    "end": 6.014
-  },
-  {
-    "word": "on",
-    "start": 6.06,
-    "end": 6.142
-  },
-  {
-    "word": "years",
-    "start": 6.235,
-    "end": 6.606
-  },
-  {
-    "word": "of",
-    "start": 6.687,
-    "end": 6.769
-  },
-  {
-    "word": "research",
-    "start": 6.838,
-    "end": 7.268
-  },
-  {
-    "word": "in",
-    "start": 7.326,
-    "end": 7.407
-  },
-  {
-    "word": "language",
-    "start": 7.477,
-    "end": 7.814
-  },
-  {
-    "word": "acquisition.",
-    "start": 7.837,
-    "end": 8.603
-  },
-  {
-    "word": "Designing",
-    "start": 9.3,
-    "end": 9.892
-  },
-  {
-    "word": "for",
-    "start": 10.008,
-    "end": 10.147
-  },
-  {
-    "word": "language",
-    "start": 10.194,
-    "end": 10.565
-  },
-  {
-    "word": "acquisition.",
-    "start": 10.6,
-    "end": 11.401
-  },
-  {
-    "word": "Our",
-    "start": 12.353,
-    "end": 12.516
-  },
-  {
-    "word": "learning",
-    "start": 12.574,
-    "end": 12.864
-  },
-  {
-    "word": "model",
-    "start": 12.91,
-    "end": 13.131
-  },
-  {
-    "word": "for",
-    "start": 13.177,
-    "end": 13.27
-  },
-  {
-    "word": "language",
-    "start": 13.305,
-    "end": 13.607
-  },
-  {
-    "word": "acquisition",
-    "start": 13.63,
-    "end": 14.153
-  },
-  {
-    "word": "is",
-    "start": 14.211,
-    "end": 14.292
-  },
-  {
-    "word": "based",
-    "start": 14.35,
-    "end": 14.64
-  },
-  {
-    "word": "on:",
-    "start": 14.698,
-    "end": 14.989
-  },
-  {
-    "word": "Comprehensible",
-    "start": 15.314,
-    "end": 16.185
-  },
-  {
-    "word": "input",
-    "start": 16.243,
-    "end": 16.661
-  },
-  {
-    "word": "around",
-    "start": 16.719,
-    "end": 16.962
-  },
-  {
-    "word": "personal",
-    "start": 17.02,
-    "end": 17.473
-  },
-  {
-    "word": "interests",
-    "start": 17.531,
-    "end": 18.251
-  },
-  {
-    "word": "Meaning-focused",
-    "start": 18.762,
-    "end": 19.563
-  },
-  {
-    "word": "communication",
-    "start": 19.586,
-    "end": 20.26
-  },
-  {
-    "word": "Retention",
-    "start": 20.318,
-    "end": 20.921
-  },
-  {
-    "word": "through",
-    "start": 21.038,
-    "end": 21.293
-  },
-  {
-    "word": "spaced",
-    "start": 21.339,
-    "end": 21.711
-  },
-  {
-    "word": "repetition",
-    "start": 21.757,
-    "end": 22.408
-  },
-  {
-    "word": "With",
-    "start": 23.522,
-    "end": 23.696
-  },
-  {
-    "word": "this",
-    "start": 23.731,
-    "end": 23.87
-  },
-  {
-    "word": "in",
-    "start": 23.917,
-    "end": 23.986
-  },
-  {
-    "word": "mind,",
-    "start": 24.045,
-    "end": 24.509
-  },
-  {
-    "word": "we",
-    "start": 24.579,
-    "end": 24.695
-  },
-  {
-    "word": "built",
-    "start": 24.753,
-    "end": 24.95
-  },
-  {
-    "word": "a",
-    "start": 24.997,
-    "end": 25.02
-  },
-  {
-    "word": "design",
-    "start": 25.078,
-    "end": 25.473
+    "word": "out",
+    "start": 3.053,
+    "end": 3.193
   },
   {
     "word": "to",
-    "start": 25.531,
-    "end": 25.6
+    "start": 3.228,
+    "end": 3.286
   },
   {
-    "word": "support",
-    "start": 25.658,
-    "end": 26.018
+    "word": "build",
+    "start": 3.332,
+    "end": 3.553
   },
   {
-    "word": "personalisation",
-    "start": 26.088,
-    "end": 26.993
-  },
-  {
-    "word": "across:",
-    "start": 27.04,
-    "end": 27.678
-  },
-  {
-    "word": "Input:",
-    "start": 28.12,
-    "end": 28.863
-  },
-  {
-    "word": "content",
-    "start": 29.037,
-    "end": 29.582
+    "word": "Amble",
+    "start": 3.634,
+    "end": 3.994
   },
   {
     "word": "to",
-    "start": 29.652,
-    "end": 29.757
+    "start": 4.029,
+    "end": 4.087
   },
   {
-    "word": "read",
-    "start": 29.838,
-    "end": 30.093
-  },
-  {
-    "word": "and",
-    "start": 30.163,
-    "end": 30.279
-  },
-  {
-    "word": "listen",
-    "start": 30.337,
-    "end": 30.604
-  },
-  {
-    "word": "to",
-    "start": 30.662,
-    "end": 30.859
-  },
-  {
-    "word": "Output:",
-    "start": 31.556,
-    "end": 32.346
-  },
-  {
-    "word": "conversation",
-    "start": 32.462,
-    "end": 33.263
-  },
-  {
-    "word": "Retention:",
-    "start": 33.866,
-    "end": 34.668
-  },
-  {
-    "word": "spaced",
-    "start": 34.877,
-    "end": 35.387
-  },
-  {
-    "word": "repetition",
-    "start": 35.503,
-    "end": 36.2
-  },
-  {
-    "word": "learning",
-    "start": 37.14,
-    "end": 37.605
-  },
-  {
-    "word": "Importantly,",
-    "start": 38.696,
-    "end": 39.637
-  },
-  {
-    "word": "these",
-    "start": 39.811,
-    "end": 40.066
-  },
-  {
-    "word": "three",
-    "start": 40.113,
-    "end": 40.345
-  },
-  {
-    "word": "pillars",
-    "start": 40.391,
-    "end": 40.763
-  },
-  {
-    "word": "work",
-    "start": 40.844,
-    "end": 41.088
-  },
-  {
-    "word": "together",
-    "start": 41.146,
-    "end": 41.61
-  },
-  {
-    "word": "to",
-    "start": 41.935,
-    "end": 42.04
-  },
-  {
-    "word": "provide",
-    "start": 42.11,
-    "end": 42.481
-  },
-  {
-    "word": "a",
-    "start": 42.516,
-    "end": 42.539
-  },
-  {
-    "word": "seamless",
-    "start": 42.62,
-    "end": 43.154
-  },
-  {
-    "word": "language",
-    "start": 43.247,
-    "end": 43.747
-  },
-  {
-    "word": "immersion",
-    "start": 43.781,
-    "end": 44.199
-  },
-  {
-    "word": "experience:",
-    "start": 44.246,
-    "end": 45.14
-  },
-  {
-    "word": "users",
-    "start": 45.732,
-    "end": 46.08
-  },
-  {
-    "word": "can",
-    "start": 46.127,
-    "end": 46.243
-  },
-  {
-    "word": "speak",
-    "start": 46.289,
-    "end": 46.545
-  },
-  {
-    "word": "about",
-    "start": 46.591,
-    "end": 46.812
-  },
-  {
-    "word": "any",
-    "start": 46.881,
-    "end": 47.044
-  },
-  {
-    "word": "piece",
-    "start": 47.102,
-    "end": 47.311
-  },
-  {
-    "word": "of",
-    "start": 47.334,
-    "end": 47.38
-  },
-  {
-    "word": "content,",
-    "start": 47.427,
-    "end": 48.1
-  },
-  {
-    "word": "conversations",
-    "start": 48.425,
-    "end": 49.238
-  },
-  {
-    "word": "can",
-    "start": 49.307,
-    "end": 49.423
-  },
-  {
-    "word": "lead",
-    "start": 49.47,
-    "end": 49.632
-  },
-  {
-    "word": "to",
-    "start": 49.679,
-    "end": 49.737
-  },
-  {
-    "word": "new",
-    "start": 49.795,
-    "end": 49.911
-  },
-  {
-    "word": "topics",
-    "start": 49.957,
-    "end": 50.41
-  },
-  {
-    "word": "and",
-    "start": 50.457,
-    "end": 50.573
-  },
-  {
-    "word": "content,",
-    "start": 50.631,
-    "end": 51.246
-  },
-  {
-    "word": "and",
-    "start": 51.525,
-    "end": 51.687
-  },
-  {
-    "word": "our",
-    "start": 51.734,
-    "end": 51.815
-  },
-  {
-    "word": "spaced",
-    "start": 51.862,
-    "end": 52.233
-  },
-  {
-    "word": "repetition",
-    "start": 52.268,
-    "end": 52.767
-  },
-  {
-    "word": "system",
-    "start": 52.825,
-    "end": 53.255
-  },
-  {
-    "word": "can",
-    "start": 53.371,
-    "end": 53.533
-  },
-  {
-    "word": "be",
-    "start": 53.568,
-    "end": 53.649
-  },
-  {
-    "word": "used",
-    "start": 53.719,
-    "end": 53.916
-  },
-  {
-    "word": "from",
-    "start": 53.94,
-    "end": 54.067
-  },
-  {
-    "word": "any",
-    "start": 54.16,
-    "end": 54.381
-  },
-  {
-    "word": "modality.",
-    "start": 54.451,
-    "end": 55.263
-  },
-  {
-    "word": "Overall",
-    "start": 56.215,
-    "end": 56.854
-  },
-  {
-    "word": "design.",
-    "start": 56.982,
-    "end": 57.713
-  },
-  {
-    "word": "To",
-    "start": 58.665,
-    "end": 58.793
-  },
-  {
-    "word": "support",
-    "start": 58.862,
-    "end": 59.362
-  },
-  {
-    "word": "those",
-    "start": 59.478,
-    "end": 59.745
-  },
-  {
-    "word": "three",
-    "start": 59.78,
-    "end": 59.988
-  },
-  {
-    "word": "pillars,",
-    "start": 60.035,
-    "end": 60.615
-  },
-  {
-    "word": "we",
-    "start": 60.79,
-    "end": 60.929
-  },
-  {
-    "word": "built",
-    "start": 60.987,
-    "end": 61.196
-  },
-  {
-    "word": "a",
-    "start": 61.231,
-    "end": 61.254
-  },
-  {
-    "word": "single",
-    "start": 61.324,
-    "end": 61.684
-  },
-  {
-    "word": "client-facing",
-    "start": 61.718,
-    "end": 62.403
-  },
-  {
-    "word": "API",
-    "start": 62.461,
-    "end": 63.019
-  },
-  {
-    "word": "and",
-    "start": 63.402,
-    "end": 63.634
-  },
-  {
-    "word": "a",
-    "start": 63.68,
-    "end": 63.704
-  },
-  {
-    "word": "set",
-    "start": 63.75,
-    "end": 63.924
-  },
-  {
-    "word": "of",
-    "start": 63.982,
-    "end": 64.029
-  },
-  {
-    "word": "focused",
-    "start": 64.098,
-    "end": 64.505
-  },
-  {
-    "word": "backend",
-    "start": 64.528,
-    "end": 64.876
-  },
-  {
-    "word": "services:",
-    "start": 64.934,
-    "end": 65.759
-  },
-  {
-    "word": "API",
-    "start": 66.362,
-    "end": 66.908
-  },
-  {
-    "word": "Recommendation",
-    "start": 67.059,
-    "end": 67.744
-  },
-  {
-    "word": "service",
-    "start": 67.86,
-    "end": 68.545
-  },
-  {
-    "word": "Content",
-    "start": 68.928,
-    "end": 69.392
-  },
-  {
-    "word": "generation",
-    "start": 69.45,
-    "end": 69.984
-  },
-  {
-    "word": "service",
-    "start": 70.1,
-    "end": 70.832
-  },
-  {
-    "word": "Voice",
-    "start": 71.006,
-    "end": 71.366
-  },
-  {
-    "word": "agent",
-    "start": 71.412,
-    "end": 71.842
-  },
-  {
-    "word": "Notification",
-    "start": 71.958,
-    "end": 72.597
-  },
-  {
-    "word": "service",
-    "start": 72.655,
-    "end": 73.305
-  },
-  {
-    "word": "Embedding",
-    "start": 73.63,
-    "end": 74.175
-  },
-  {
-    "word": "generation",
-    "start": 74.268,
-    "end": 74.814
-  },
-  {
-    "word": "service",
-    "start": 74.884,
-    "end": 75.569
-  },
-  {
-    "word": "The",
-    "start": 76.497,
-    "end": 76.625
-  },
-  {
-    "word": "client",
-    "start": 76.672,
-    "end": 77.008
-  },
-  {
-    "word": "talks",
-    "start": 77.043,
-    "end": 77.357
-  },
-  {
-    "word": "to",
-    "start": 77.403,
-    "end": 77.461
-  },
-  {
-    "word": "the",
-    "start": 77.519,
-    "end": 77.589
-  },
-  {
-    "word": "API",
-    "start": 77.647,
-    "end": 78.181
-  },
-  {
-    "word": "giving",
-    "start": 78.309,
-    "end": 78.576
-  },
-  {
-    "word": "us",
-    "start": 78.645,
-    "end": 78.75
-  },
-  {
-    "word": "one",
-    "start": 78.831,
-    "end": 79.028
-  },
-  {
-    "word": "coherent",
-    "start": 79.087,
-    "end": 79.586
-  },
-  {
-    "word": "product",
-    "start": 79.621,
-    "end": 79.946
-  },
-  {
-    "word": "surface,",
-    "start": 79.98,
-    "end": 80.7
-  },
-  {
-    "word": "while",
-    "start": 80.863,
-    "end": 81.083
-  },
-  {
-    "word": "letting",
-    "start": 81.107,
-    "end": 81.408
-  },
-  {
-    "word": "each",
-    "start": 81.467,
-    "end": 81.687
-  },
-  {
-    "word": "concern",
-    "start": 81.745,
-    "end": 82.326
-  },
-  {
-    "word": "(personalisation,",
-    "start": 82.535,
-    "end": 84.126
-  },
-  {
-    "word": "voice,",
-    "start": 84.242,
-    "end": 84.718
-  },
-  {
-    "word": "notifications)",
-    "start": 84.799,
-    "end": 85.879
-  },
-  {
-    "word": "evolve",
-    "start": 86.041,
-    "end": 86.471
-  },
-  {
-    "word": "independently.",
-    "start": 86.506,
-    "end": 87.365
-  },
-  {
-    "word": "One",
-    "start": 88.305,
-    "end": 88.526
-  },
-  {
-    "word": "API,",
-    "start": 88.572,
-    "end": 89.211
-  },
-  {
-    "word": "several",
-    "start": 89.28,
-    "end": 89.652
-  },
-  {
-    "word": "focused",
-    "start": 89.733,
-    "end": 90.128
-  },
-  {
-    "word": "services.",
-    "start": 90.151,
-    "end": 90.987
-  },
-  {
-    "word": "The",
-    "start": 91.417,
-    "end": 91.544
-  },
-  {
-    "word": "API",
-    "start": 91.602,
-    "end": 91.974
-  },
-  {
-    "word": "service",
-    "start": 92.09,
-    "end": 92.52
-  },
-  {
-    "word": "is",
-    "start": 92.566,
-    "end": 92.659
-  },
-  {
-    "word": "a",
-    "start": 92.705,
-    "end": 92.74
-  },
-  {
-    "word": "FastAPI",
-    "start": 92.798,
-    "end": 93.495
-  },
-  {
-    "word": "application",
-    "start": 93.565,
-    "end": 94.261
-  },
-  {
-    "word": "and",
-    "start": 94.575,
-    "end": 94.83
-  },
-  {
-    "word": "the",
-    "start": 94.876,
-    "end": 94.946
-  },
-  {
-    "word": "single",
-    "start": 94.993,
-    "end": 95.306
-  },
-  {
-    "word": "client",
-    "start": 95.341,
-    "end": 95.654
-  },
-  {
-    "word": "entry",
-    "start": 95.712,
-    "end": 95.968
-  },
-  {
-    "word": "point.",
-    "start": 96.026,
-    "end": 96.455
-  },
-  {
-    "word": "It",
-    "start": 97.14,
-    "end": 97.268
-  },
-  {
-    "word": "maintains:",
-    "start": 97.315,
-    "end": 98.069
-  },
-  {
-    "word": "Authentication,",
-    "start": 98.104,
-    "end": 99.056
-  },
-  {
-    "word": "sessions,",
-    "start": 99.172,
-    "end": 99.776
-  },
-  {
-    "word": "and",
-    "start": 99.811,
-    "end": 99.962
-  },
-  {
-    "word": "user-facing",
-    "start": 100.02,
-    "end": 100.693
-  },
-  {
-    "word": "routes",
-    "start": 100.751,
-    "end": 101.111
-  },
-  {
-    "word": "Access",
-    "start": 101.796,
-    "end": 102.307
-  },
-  {
-    "word": "to",
-    "start": 102.353,
-    "end": 102.423
-  },
-  {
-    "word": "our",
-    "start": 102.492,
-    "end": 102.585
-  },
-  {
-    "word": "database",
-    "start": 102.632,
-    "end": 103.398
-  },
-  {
-    "word": "Three",
-    "start": 103.839,
-    "end": 104.188
-  },
-  {
-    "word": "separate",
-    "start": 104.246,
-    "end": 104.617
-  },
-  {
-    "word": "Redis",
-    "start": 104.652,
-    "end": 104.907
-  },
-  {
-    "word": "usages:",
-    "start": 104.965,
-    "end": 105.674
-  },
-  {
-    "word": "A",
-    "start": 106.184,
-    "end": 106.277
-  },
-  {
-    "word": "cache",
-    "start": 106.37,
-    "end": 106.753
-  },
-  {
-    "word": "to",
-    "start": 106.8,
-    "end": 106.881
-  },
-  {
-    "word": "maintain",
-    "start": 106.939,
-    "end": 107.392
-  },
-  {
-    "word": "article",
-    "start": 107.462,
-    "end": 107.868
-  },
-  {
-    "word": "streaming",
-    "start": 107.903,
-    "end": 108.251
-  },
-  {
-    "word": "states",
-    "start": 108.309,
-    "end": 108.727
-  },
-  {
-    "word": "and",
-    "start": 108.808,
-    "end": 108.948
-  },
-  {
-    "word": "cached",
-    "start": 109.006,
-    "end": 109.366
-  },
-  {
-    "word": "chunks",
-    "start": 109.447,
-    "end": 109.946
-  },
-  {
-    "word": "An",
-    "start": 110.55,
-    "end": 110.759
-  },
-  {
-    "word": "L2",
-    "start": 110.84,
-    "end": 111.142
-  },
-  {
-    "word": "cache",
-    "start": 111.2,
-    "end": 111.571
-  },
-  {
-    "word": "for",
-    "start": 111.653,
-    "end": 111.757
-  },
-  {
-    "word": "mostly",
-    "start": 111.792,
-    "end": 112.071
-  },
-  {
-    "word": "static",
-    "start": 112.117,
-    "end": 112.5
-  },
-  {
-    "word": "data",
-    "start": 112.558,
-    "end": 112.941
-  },
-  {
-    "word": "(voice",
-    "start": 113.116,
-    "end": 113.719
-  },
-  {
-    "word": "assistant,",
-    "start": 113.743,
-    "end": 114.288
-  },
-  {
-    "word": "languages,",
-    "start": 114.358,
-    "end": 115.043
-  },
-  {
-    "word": "proficiency",
-    "start": 115.089,
-    "end": 115.67
-  },
-  {
-    "word": "levels)",
-    "start": 115.716,
-    "end": 116.39
-  },
-  {
-    "word": "A",
-    "start": 117.086,
-    "end": 117.179
-  },
-  {
-    "word": "warm-pool",
-    "start": 117.272,
-    "end": 117.957
-  },
-  {
-    "word": "to",
-    "start": 118.073,
-    "end": 118.189
-  },
-  {
-    "word": "track",
-    "start": 118.247,
-    "end": 118.491
-  },
-  {
-    "word": "a",
-    "start": 118.561,
-    "end": 118.584
-  },
-  {
-    "word": "pool",
-    "start": 118.654,
-    "end": 118.967
-  },
-  {
-    "word": "of",
-    "start": 119.037,
-    "end": 119.118
-  },
-  {
-    "word": "pre-warmed",
-    "start": 119.211,
-    "end": 119.849
-  },
-  {
-    "word": "voice",
-    "start": 119.919,
-    "end": 120.186
-  },
-  {
-    "word": "bots",
-    "start": 120.233,
-    "end": 120.627
-  },
-  {
-    "word": "(rooms,",
-    "start": 120.836,
-    "end": 121.521
-  },
-  {
-    "word": "tokens,",
-    "start": 121.556,
-    "end": 122.125
-  },
-  {
-    "word": "status)",
-    "start": 122.16,
-    "end": 123.042
-  },
-  {
-    "word": "for",
-    "start": 123.17,
-    "end": 123.309
-  },
-  {
-    "word": "low-latency",
-    "start": 123.356,
-    "end": 124.017
-  },
-  {
-    "word": "conversation",
-    "start": 124.075,
-    "end": 124.726
-  },
-  {
-    "word": "starts",
-    "start": 124.807,
-    "end": 125.295
-  },
-  {
-    "word": "Other",
-    "start": 126.409,
-    "end": 126.676
-  },
-  {
-    "word": "upstream",
-    "start": 126.734,
-    "end": 127.106
-  },
-  {
-    "word": "components",
-    "start": 127.164,
-    "end": 127.814
-  },
-  {
-    "word": "are",
-    "start": 128.023,
-    "end": 128.301
-  },
-  {
-    "word": "specialised",
-    "start": 128.325,
-    "end": 128.847
-  },
-  {
-    "word": "services:",
-    "start": 128.882,
-    "end": 129.625
-  },
-  {
-    "word": "Recommendation",
-    "start": 130.066,
-    "end": 130.798
-  },
-  {
-    "word": "service:",
-    "start": 130.867,
-    "end": 131.529
-  },
-  {
-    "word": "decides",
-    "start": 131.912,
-    "end": 132.516
-  },
-  {
-    "word": "what",
-    "start": 132.574,
-    "end": 132.736
-  },
-  {
-    "word": "content",
-    "start": 132.795,
-    "end": 133.259
-  },
-  {
-    "word": "a",
-    "start": 133.294,
-    "end": 133.329
-  },
-  {
-    "word": "user",
-    "start": 133.421,
-    "end": 133.747
-  },
-  {
-    "word": "should",
-    "start": 133.805,
-    "end": 133.99
-  },
-  {
-    "word": "see",
-    "start": 134.025,
-    "end": 134.165
-  },
-  {
-    "word": "next",
-    "start": 134.211,
-    "end": 134.664
-  },
-  {
-    "word": "Content",
-    "start": 135.36,
-    "end": 135.813
-  },
-  {
-    "word": "Generation",
-    "start": 135.86,
-    "end": 136.347
-  },
-  {
-    "word": "Service:",
-    "start": 136.417,
-    "end": 137.078
-  },
-  {
-    "word": "turns",
-    "start": 137.682,
-    "end": 138.123
-  },
-  {
-    "word": "those",
-    "start": 138.181,
-    "end": 138.437
-  },
-  {
-    "word": "abstract",
-    "start": 138.518,
-    "end": 139.133
-  },
-  {
-    "word": "ideas",
-    "start": 139.191,
-    "end": 139.691
-  },
-  {
-    "word": "(or",
-    "start": 139.888,
-    "end": 140.329
-  },
-  {
-    "word": "\"seeds\")",
-    "start": 140.422,
-    "end": 141.2
-  },
-  {
-    "word": "into",
-    "start": 141.374,
-    "end": 141.595
-  },
-  {
-    "word": "concrete",
-    "start": 141.664,
-    "end": 142.106
-  },
-  {
-    "word": "articles,",
-    "start": 142.152,
-    "end": 142.849
-  },
-  {
-    "word": "conversation",
-    "start": 143.011,
-    "end": 143.592
-  },
-  {
-    "word": "topics",
-    "start": 143.65,
-    "end": 144.079
-  },
-  {
-    "word": "and",
-    "start": 144.288,
-    "end": 144.474
-  },
-  {
-    "word": "custom",
-    "start": 144.555,
-    "end": 144.892
-  },
-  {
-    "word": "notifications",
-    "start": 144.95,
-    "end": 145.798
-  },
-  {
-    "word": "Voice",
-    "start": 146.877,
-    "end": 147.179
-  },
-  {
-    "word": "Agent:",
-    "start": 147.214,
-    "end": 147.725
-  },
-  {
-    "word": "runs",
-    "start": 147.992,
-    "end": 148.294
-  },
-  {
-    "word": "the",
-    "start": 148.352,
-    "end": 148.41
-  },
-  {
-    "word": "real-time",
-    "start": 148.468,
-    "end": 148.909
-  },
-  {
-    "word": "voice",
-    "start": 148.955,
-    "end": 149.188
-  },
-  {
-    "word": "loop",
-    "start": 149.222,
-    "end": 149.431
-  },
-  {
-    "word": "Notification",
-    "start": 150.349,
-    "end": 151.01
-  },
-  {
-    "word": "Service:",
-    "start": 151.08,
-    "end": 151.684
-  },
-  {
-    "word": "decides",
-    "start": 151.997,
-    "end": 152.52
-  },
-  {
-    "word": "when",
-    "start": 152.566,
-    "end": 152.705
-  },
-  {
-    "word": "to",
-    "start": 152.752,
-    "end": 152.81
-  },
-  {
-    "word": "notify",
-    "start": 152.868,
-    "end": 153.263
-  },
-  {
-    "word": "users",
-    "start": 153.344,
-    "end": 153.762
-  },
-  {
-    "word": "and",
-    "start": 154.133,
-    "end": 154.366
-  },
-  {
-    "word": "delivers",
-    "start": 154.424,
-    "end": 154.772
-  },
-  {
-    "word": "the",
-    "start": 154.842,
-    "end": 154.911
-  },
-  {
-    "word": "push",
-    "start": 154.958,
-    "end": 155.283
-  },
-  {
-    "word": "Embedding",
-    "start": 155.771,
-    "end": 156.281
-  },
-  {
-    "word": "Generation",
-    "start": 156.339,
-    "end": 156.85
-  },
-  {
-    "word": "Service:",
-    "start": 156.92,
-    "end": 157.489
-  },
-  {
-    "word": "provides",
-    "start": 157.64,
-    "end": 158.093
+    "word": "offer",
+    "start": 4.133,
+    "end": 4.319
   },
   {
     "word": "an",
-    "start": 158.116,
-    "end": 158.174
+    "start": 4.365,
+    "end": 4.423
   },
   {
-    "word": "API",
-    "start": 158.22,
-    "end": 158.673
-  },
-  {
-    "word": "for",
-    "start": 158.754,
-    "end": 158.859
-  },
-  {
-    "word": "embedding",
-    "start": 158.894,
-    "end": 159.254
-  },
-  {
-    "word": "generation,",
-    "start": 159.3,
-    "end": 160.124
-  },
-  {
-    "word": "supporting",
-    "start": 160.333,
-    "end": 160.891
-  },
-  {
-    "word": "similarity",
-    "start": 160.949,
-    "end": 161.506
-  },
-  {
-    "word": "filtering",
-    "start": 161.564,
-    "end": 162.04
+    "word": "immersive",
+    "start": 4.458,
+    "end": 5.097
   },
   {
     "word": "and",
-    "start": 162.11,
-    "end": 162.214
+    "start": 5.143,
+    "end": 5.271
   },
   {
-    "word": "semantic",
-    "start": 162.261,
-    "end": 162.679
+    "word": "personalised",
+    "start": 5.364,
+    "end": 6.188
   },
   {
-    "word": "matching",
-    "start": 162.737,
-    "end": 163.155
-  },
-  {
-    "word": "The",
-    "start": 163.758,
-    "end": 163.898
-  },
-  {
-    "word": "following",
-    "start": 163.956,
-    "end": 164.304
-  },
-  {
-    "word": "sections",
-    "start": 164.362,
-    "end": 164.826
-  },
-  {
-    "word": "map",
-    "start": 164.908,
-    "end": 165.117
-  },
-  {
-    "word": "those",
-    "start": 165.186,
-    "end": 165.372
-  },
-  {
-    "word": "services",
-    "start": 165.395,
-    "end": 165.848
-  },
-  {
-    "word": "back",
-    "start": 165.906,
-    "end": 166.103
-  },
-  {
-    "word": "to",
-    "start": 166.161,
-    "end": 166.231
-  },
-  {
-    "word": "the",
-    "start": 166.312,
-    "end": 166.382
-  },
-  {
-    "word": "three",
-    "start": 166.44,
-    "end": 166.707
+    "word": "language",
+    "start": 6.258,
+    "end": 6.676
   },
   {
     "word": "learning",
-    "start": 166.765,
-    "end": 167.067
+    "start": 6.722,
+    "end": 7.024
   },
   {
-    "word": "pillars,",
-    "start": 167.114,
-    "end": 167.717
+    "word": "experience,",
+    "start": 7.094,
+    "end": 7.941
   },
   {
-    "word": "and",
-    "start": 167.996,
-    "end": 168.147
+    "word": "based",
+    "start": 8.185,
+    "end": 8.475
   },
   {
-    "word": "how",
-    "start": 168.228,
-    "end": 168.414
+    "word": "on",
+    "start": 8.522,
+    "end": 8.603
   },
   {
-    "word": "they",
-    "start": 168.472,
-    "end": 168.599
+    "word": "years",
+    "start": 8.673,
+    "end": 8.975
   },
   {
-    "word": "reinforce",
-    "start": 168.669,
-    "end": 169.18
+    "word": "of",
+    "start": 9.033,
+    "end": 9.091
   },
   {
-    "word": "each",
-    "start": 169.203,
-    "end": 169.354
+    "word": "research",
+    "start": 9.16,
+    "end": 9.555
   },
   {
-    "word": "other",
-    "start": 169.401,
-    "end": 169.621
+    "word": "in",
+    "start": 9.601,
+    "end": 9.659
   },
   {
-    "word": "through",
-    "start": 169.737,
-    "end": 169.969
+    "word": "language",
+    "start": 9.718,
+    "end": 10.043
+  },
+  {
+    "word": "acquisition.",
+    "start": 10.066,
+    "end": 10.809
+  },
+  {
+    "word": "The",
+    "start": 11.622,
+    "end": 11.761
+  },
+  {
+    "word": "end",
+    "start": 11.854,
+    "end": 12.109
+  },
+  {
+    "word": "product",
+    "start": 12.19,
+    "end": 12.62
+  },
+  {
+    "word": "is",
+    "start": 12.678,
+    "end": 12.794
   },
   {
     "word": "a",
-    "start": 170.004,
-    "end": 170.027
+    "start": 12.852,
+    "end": 12.875
   },
   {
-    "word": "feedback",
-    "start": 170.074,
-    "end": 170.48
+    "word": "space",
+    "start": 12.934,
+    "end": 13.27
   },
   {
-    "word": "loop.",
-    "start": 170.538,
-    "end": 170.875
+    "word": "where",
+    "start": 13.305,
+    "end": 13.444
   },
   {
-    "word": "Personalised",
-    "start": 171.572,
-    "end": 172.21
+    "word": "users",
+    "start": 13.514,
+    "end": 13.793
   },
   {
-    "word": "content:",
-    "start": 172.257,
-    "end": 172.86
+    "word": "can",
+    "start": 13.839,
+    "end": 13.955
   },
   {
-    "word": "recommending",
-    "start": 173.104,
-    "end": 173.824
+    "word": "immerse",
+    "start": 13.99,
+    "end": 14.326
+  },
+  {
+    "word": "themselves",
+    "start": 14.361,
+    "end": 14.791
+  },
+  {
+    "word": "in",
+    "start": 14.826,
+    "end": 14.884
+  },
+  {
+    "word": "content",
+    "start": 14.942,
+    "end": 15.325
+  },
+  {
+    "word": "they",
+    "start": 15.36,
+    "end": 15.487
+  },
+  {
+    "word": "care",
+    "start": 15.534,
+    "end": 15.731
+  },
+  {
+    "word": "about.",
+    "start": 15.766,
+    "end": 16.184
+  },
+  {
+    "word": "In",
+    "start": 16.788,
+    "end": 16.915
+  },
+  {
+    "word": "the",
+    "start": 16.962,
+    "end": 17.031
+  },
+  {
+    "word": "background,",
+    "start": 17.078,
+    "end": 17.798
+  },
+  {
+    "word": "we",
+    "start": 17.972,
+    "end": 18.123
+  },
+  {
+    "word": "orchestrate",
+    "start": 18.192,
+    "end": 18.785
+  },
+  {
+    "word": "between",
+    "start": 18.819,
+    "end": 19.086
+  },
+  {
+    "word": "different",
+    "start": 19.133,
+    "end": 19.423
+  },
+  {
+    "word": "services",
+    "start": 19.47,
+    "end": 20.027
   },
   {
     "word": "and",
-    "start": 173.905,
-    "end": 174.021
+    "start": 20.097,
+    "end": 20.224
   },
   {
-    "word": "generating",
-    "start": 174.079,
-    "end": 174.695
+    "word": "third-party",
+    "start": 20.282,
+    "end": 20.886
   },
   {
-    "word": "comprehensible",
-    "start": 174.776,
-    "end": 175.589
+    "word": "models",
+    "start": 20.944,
+    "end": 21.316
   },
   {
-    "word": "input.",
-    "start": 175.647,
-    "end": 176.216
+    "word": "to",
+    "start": 21.559,
+    "end": 21.664
   },
   {
-    "word": "For",
-    "start": 176.819,
-    "end": 176.97
+    "word": "provide",
+    "start": 21.722,
+    "end": 22.059
   },
   {
-    "word": "each",
-    "start": 177.028,
-    "end": 177.237
+    "word": "this",
+    "start": 22.082,
+    "end": 22.21
   },
   {
-    "word": "user,",
-    "start": 177.319,
-    "end": 177.783
+    "word": "experience.",
+    "start": 22.268,
+    "end": 23.115
   },
   {
-    "word": "our",
-    "start": 177.876,
-    "end": 177.992
+    "word": "With",
+    "start": 23.812,
+    "end": 23.986
   },
   {
-    "word": "recommendation",
-    "start": 178.027,
-    "end": 178.7
+    "word": "this",
+    "start": 24.021,
+    "end": 24.172
   },
   {
-    "word": "layer",
-    "start": 178.758,
-    "end": 178.956
+    "word": "in",
+    "start": 24.23,
+    "end": 24.299
   },
   {
-    "word": "does",
-    "start": 179.014,
-    "end": 179.188
+    "word": "mind,",
+    "start": 24.346,
+    "end": 24.868
+  },
+  {
+    "word": "we",
+    "start": 25.042,
+    "end": 25.17
+  },
+  {
+    "word": "built",
+    "start": 25.228,
+    "end": 25.425
+  },
+  {
+    "word": "a",
+    "start": 25.484,
+    "end": 25.507
+  },
+  {
+    "word": "design",
+    "start": 25.553,
+    "end": 25.936
+  },
+  {
+    "word": "to",
+    "start": 25.983,
+    "end": 26.064
+  },
+  {
+    "word": "support",
+    "start": 26.122,
+    "end": 26.517
+  },
+  {
+    "word": "personalisation",
+    "start": 26.586,
+    "end": 27.492
+  },
+  {
+    "word": "across:",
+    "start": 27.538,
+    "end": 28.189
+  },
+  {
+    "word": "Input:",
+    "start": 28.792,
+    "end": 29.512
+  },
+  {
+    "word": "content",
+    "start": 29.837,
+    "end": 30.29
+  },
+  {
+    "word": "to",
+    "start": 30.336,
+    "end": 30.406
+  },
+  {
+    "word": "read",
+    "start": 30.487,
+    "end": 30.731
+  },
+  {
+    "word": "and",
+    "start": 30.801,
+    "end": 30.905
+  },
+  {
+    "word": "listen",
+    "start": 30.963,
+    "end": 31.219
+  },
+  {
+    "word": "to",
+    "start": 31.277,
+    "end": 31.474
+  },
+  {
+    "word": "Output:",
+    "start": 32.264,
+    "end": 33.192
+  },
+  {
+    "word": "conversation",
+    "start": 33.332,
+    "end": 34.133
+  },
+  {
+    "word": "Retention:",
+    "start": 34.818,
+    "end": 35.654
+  },
+  {
+    "word": "spaced",
+    "start": 35.967,
+    "end": 36.548
+  },
+  {
+    "word": "repetition",
+    "start": 36.664,
+    "end": 37.36
+  },
+  {
+    "word": "learning",
+    "start": 37.511,
+    "end": 37.976
+  },
+  {
+    "word": "Importantly,",
+    "start": 38.893,
+    "end": 39.787
+  },
+  {
+    "word": "these",
+    "start": 39.868,
+    "end": 40.135
   },
   {
     "word": "three",
-    "start": 179.257,
-    "end": 179.559
+    "start": 40.17,
+    "end": 40.402
+  },
+  {
+    "word": "pillars",
+    "start": 40.46,
+    "end": 40.809
+  },
+  {
+    "word": "work",
+    "start": 40.89,
+    "end": 41.145
+  },
+  {
+    "word": "together",
+    "start": 41.227,
+    "end": 41.714
+  },
+  {
+    "word": "to",
+    "start": 41.981,
+    "end": 42.097
+  },
+  {
+    "word": "provide",
+    "start": 42.167,
+    "end": 42.562
+  },
+  {
+    "word": "a",
+    "start": 42.608,
+    "end": 42.643
+  },
+  {
+    "word": "seamless",
+    "start": 42.748,
+    "end": 43.224
+  },
+  {
+    "word": "language",
+    "start": 43.27,
+    "end": 43.641
+  },
+  {
+    "word": "immersion",
+    "start": 43.676,
+    "end": 44.048
+  },
+  {
+    "word": "experience:",
+    "start": 44.094,
+    "end": 44.965
+  },
+  {
+    "word": "users",
+    "start": 45.557,
+    "end": 45.905
+  },
+  {
+    "word": "can",
+    "start": 45.963,
+    "end": 46.091
+  },
+  {
+    "word": "speak",
+    "start": 46.149,
+    "end": 46.428
+  },
+  {
+    "word": "about",
+    "start": 46.486,
+    "end": 46.718
+  },
+  {
+    "word": "any",
+    "start": 46.788,
+    "end": 46.997
+  },
+  {
+    "word": "piece",
+    "start": 47.055,
+    "end": 47.275
+  },
+  {
+    "word": "of",
+    "start": 47.31,
+    "end": 47.357
+  },
+  {
+    "word": "content,",
+    "start": 47.415,
+    "end": 48.03
+  },
+  {
+    "word": "conversations",
+    "start": 48.309,
+    "end": 49.121
+  },
+  {
+    "word": "can",
+    "start": 49.191,
+    "end": 49.319
+  },
+  {
+    "word": "lead",
+    "start": 49.365,
+    "end": 49.528
+  },
+  {
+    "word": "to",
+    "start": 49.574,
+    "end": 49.632
+  },
+  {
+    "word": "new",
+    "start": 49.702,
+    "end": 49.818
+  },
+  {
+    "word": "topics",
+    "start": 49.864,
+    "end": 50.329
+  },
+  {
+    "word": "and",
+    "start": 50.375,
+    "end": 50.503
+  },
+  {
+    "word": "content,",
+    "start": 50.584,
+    "end": 51.304
+  },
+  {
+    "word": "and",
+    "start": 51.583,
+    "end": 51.826
+  },
+  {
+    "word": "our",
+    "start": 51.896,
+    "end": 51.977
+  },
+  {
+    "word": "spaced",
+    "start": 52.035,
+    "end": 52.43
+  },
+  {
+    "word": "repetition",
+    "start": 52.477,
+    "end": 52.953
+  },
+  {
+    "word": "system",
+    "start": 53.011,
+    "end": 53.44
+  },
+  {
+    "word": "can",
+    "start": 53.719,
+    "end": 53.881
+  },
+  {
+    "word": "be",
+    "start": 53.916,
+    "end": 53.997
+  },
+  {
+    "word": "used",
+    "start": 54.067,
+    "end": 54.276
+  },
+  {
+    "word": "from",
+    "start": 54.299,
+    "end": 54.427
+  },
+  {
+    "word": "any",
+    "start": 54.497,
+    "end": 54.694
+  },
+  {
+    "word": "modality.",
+    "start": 54.764,
+    "end": 55.576
+  },
+  {
+    "word": "Overall",
+    "start": 56.087,
+    "end": 56.563
+  },
+  {
+    "word": "design.",
+    "start": 56.633,
+    "end": 57.213
+  },
+  {
+    "word": "To",
+    "start": 58.165,
+    "end": 58.282
+  },
+  {
+    "word": "support",
+    "start": 58.34,
+    "end": 58.723
+  },
+  {
+    "word": "those",
+    "start": 58.769,
+    "end": 59.001
+  },
+  {
+    "word": "three",
+    "start": 59.036,
+    "end": 59.245
+  },
+  {
+    "word": "pillars,",
+    "start": 59.292,
+    "end": 59.895
+  },
+  {
+    "word": "we",
+    "start": 60.046,
+    "end": 60.162
+  },
+  {
+    "word": "built",
+    "start": 60.22,
+    "end": 60.418
+  },
+  {
+    "word": "a",
+    "start": 60.453,
+    "end": 60.476
+  },
+  {
+    "word": "single",
+    "start": 60.557,
+    "end": 60.94
+  },
+  {
+    "word": "client-facing",
+    "start": 60.987,
+    "end": 61.695
+  },
+  {
+    "word": "API",
+    "start": 61.753,
+    "end": 62.264
+  },
+  {
+    "word": "and",
+    "start": 62.38,
+    "end": 62.519
+  },
+  {
+    "word": "a",
+    "start": 62.577,
+    "end": 62.6
+  },
+  {
+    "word": "set",
+    "start": 62.658,
+    "end": 62.867
+  },
+  {
+    "word": "of",
+    "start": 62.925,
+    "end": 62.983
+  },
+  {
+    "word": "focused",
+    "start": 63.053,
+    "end": 63.448
+  },
+  {
+    "word": "backend",
+    "start": 63.471,
+    "end": 63.796
+  },
+  {
+    "word": "services:",
+    "start": 63.842,
+    "end": 64.585
+  },
+  {
+    "word": "API",
+    "start": 65.026,
+    "end": 65.7
+  },
+  {
+    "word": "Recommendation",
+    "start": 65.874,
+    "end": 66.605
+  },
+  {
+    "word": "service",
+    "start": 66.687,
+    "end": 67.383
+  },
+  {
+    "word": "Content",
+    "start": 67.534,
+    "end": 68.057
+  },
+  {
+    "word": "generation",
+    "start": 68.126,
+    "end": 68.649
+  },
+  {
+    "word": "service",
+    "start": 68.718,
+    "end": 69.485
+  },
+  {
+    "word": "Voice",
+    "start": 69.659,
+    "end": 70.019
+  },
+  {
+    "word": "agent",
+    "start": 70.065,
+    "end": 70.541
+  },
+  {
+    "word": "Notification",
+    "start": 70.657,
+    "end": 71.377
+  },
+  {
+    "word": "service",
+    "start": 71.447,
+    "end": 72.155
+  },
+  {
+    "word": "Embedding",
+    "start": 72.538,
+    "end": 73.049
+  },
+  {
+    "word": "generation",
+    "start": 73.119,
+    "end": 73.641
+  },
+  {
+    "word": "service",
+    "start": 73.711,
+    "end": 74.442
+  },
+  {
+    "word": "The",
+    "start": 75.139,
+    "end": 75.266
+  },
+  {
+    "word": "client",
+    "start": 75.313,
+    "end": 75.65
+  },
+  {
+    "word": "talks",
+    "start": 75.696,
+    "end": 75.963
+  },
+  {
+    "word": "to",
+    "start": 76.01,
+    "end": 76.068
+  },
+  {
+    "word": "the",
+    "start": 76.126,
+    "end": 76.195
+  },
+  {
+    "word": "API",
+    "start": 76.253,
+    "end": 76.66
+  },
+  {
+    "word": "giving",
+    "start": 76.753,
+    "end": 77.008
+  },
+  {
+    "word": "us",
+    "start": 77.066,
+    "end": 77.171
+  },
+  {
+    "word": "one",
+    "start": 77.263,
+    "end": 77.519
+  },
+  {
+    "word": "coherent",
+    "start": 77.588,
+    "end": 78.146
+  },
+  {
+    "word": "product",
+    "start": 78.215,
+    "end": 78.564
+  },
+  {
+    "word": "surface,",
+    "start": 78.61,
+    "end": 79.33
+  },
+  {
+    "word": "while",
+    "start": 79.574,
+    "end": 79.806
+  },
+  {
+    "word": "letting",
+    "start": 79.841,
+    "end": 80.143
+  },
+  {
+    "word": "each",
+    "start": 80.201,
+    "end": 80.386
+  },
+  {
+    "word": "concern",
+    "start": 80.444,
+    "end": 81.048
+  },
+  {
+    "word": "(personalisation,",
+    "start": 81.222,
+    "end": 82.975
+  },
+  {
+    "word": "voice,",
+    "start": 83.115,
+    "end": 83.567
+  },
+  {
+    "word": "notifications)",
+    "start": 83.672,
+    "end": 84.752
+  },
+  {
+    "word": "evolve",
+    "start": 84.914,
+    "end": 85.541
+  },
+  {
+    "word": "independently.",
+    "start": 85.68,
+    "end": 86.551
+  },
+  {
+    "word": "One",
+    "start": 87.434,
+    "end": 87.677
+  },
+  {
+    "word": "API,",
+    "start": 87.724,
+    "end": 88.362
+  },
+  {
+    "word": "several",
+    "start": 88.444,
+    "end": 88.769
+  },
+  {
+    "word": "focused",
+    "start": 88.838,
+    "end": 89.233
+  },
+  {
+    "word": "services.",
+    "start": 89.291,
+    "end": 89.999
+  },
+  {
+    "word": "The",
+    "start": 90.638,
+    "end": 90.766
+  },
+  {
+    "word": "API",
+    "start": 90.812,
+    "end": 91.149
+  },
+  {
+    "word": "service",
+    "start": 91.253,
+    "end": 91.602
+  },
+  {
+    "word": "is",
+    "start": 91.636,
+    "end": 91.718
+  },
+  {
+    "word": "a",
+    "start": 91.764,
+    "end": 91.787
+  },
+  {
+    "word": "FastAPI",
+    "start": 91.834,
+    "end": 92.403
+  },
+  {
+    "word": "application",
+    "start": 92.472,
+    "end": 93.088
+  },
+  {
+    "word": "and",
+    "start": 93.389,
+    "end": 93.61
+  },
+  {
+    "word": "the",
+    "start": 93.657,
+    "end": 93.715
+  },
+  {
+    "word": "single",
+    "start": 93.749,
+    "end": 94.098
+  },
+  {
+    "word": "client",
+    "start": 94.121,
+    "end": 94.481
+  },
+  {
+    "word": "entry",
+    "start": 94.539,
+    "end": 94.771
+  },
+  {
+    "word": "point.",
+    "start": 94.829,
+    "end": 95.212
+  },
+  {
+    "word": "It",
+    "start": 95.619,
+    "end": 95.758
+  },
+  {
+    "word": "maintains:",
+    "start": 95.804,
+    "end": 96.559
+  },
+  {
+    "word": "Authentication,",
+    "start": 96.664,
+    "end": 97.686
+  },
+  {
+    "word": "sessions,",
+    "start": 97.883,
+    "end": 98.638
+  },
+  {
+    "word": "and",
+    "start": 98.731,
+    "end": 98.881
+  },
+  {
+    "word": "user-facing",
+    "start": 98.951,
+    "end": 99.578
+  },
+  {
+    "word": "routes",
+    "start": 99.625,
+    "end": 99.938
+  },
+  {
+    "word": "Access",
+    "start": 100.704,
+    "end": 101.169
+  },
+  {
+    "word": "to",
+    "start": 101.203,
+    "end": 101.262
+  },
+  {
+    "word": "our",
+    "start": 101.32,
+    "end": 101.401
+  },
+  {
+    "word": "database",
+    "start": 101.447,
+    "end": 102.225
+  },
+  {
+    "word": "Three",
+    "start": 102.782,
+    "end": 103.177
+  },
+  {
+    "word": "separate",
+    "start": 103.316,
+    "end": 103.758
+  },
+  {
+    "word": "Redis",
+    "start": 103.793,
+    "end": 104.083
+  },
+  {
+    "word": "usages:",
+    "start": 104.164,
+    "end": 104.884
+  },
+  {
+    "word": "A",
+    "start": 105.29,
+    "end": 105.371
+  },
+  {
+    "word": "cache",
+    "start": 105.476,
+    "end": 106.045
+  },
+  {
+    "word": "to",
+    "start": 106.184,
+    "end": 106.312
+  },
+  {
+    "word": "maintain",
+    "start": 106.37,
+    "end": 106.811
+  },
+  {
+    "word": "article",
+    "start": 106.892,
+    "end": 107.299
+  },
+  {
+    "word": "streaming",
+    "start": 107.345,
+    "end": 107.67
+  },
+  {
+    "word": "states",
+    "start": 107.717,
+    "end": 108.111
+  },
+  {
+    "word": "and",
+    "start": 108.309,
+    "end": 108.471
+  },
+  {
+    "word": "cached",
+    "start": 108.529,
+    "end": 108.889
+  },
+  {
+    "word": "chunks",
+    "start": 108.971,
+    "end": 109.423
+  },
+  {
+    "word": "An",
+    "start": 109.992,
+    "end": 110.213
+  },
+  {
+    "word": "L2",
+    "start": 110.282,
+    "end": 110.584
+  },
+  {
+    "word": "cache",
+    "start": 110.666,
+    "end": 110.979
+  },
+  {
+    "word": "for",
+    "start": 111.037,
+    "end": 111.165
+  },
+  {
+    "word": "mostly",
+    "start": 111.211,
+    "end": 111.467
+  },
+  {
+    "word": "static",
+    "start": 111.525,
+    "end": 111.85
+  },
+  {
+    "word": "data",
+    "start": 111.896,
+    "end": 112.256
+  },
+  {
+    "word": "(voice",
+    "start": 112.454,
+    "end": 113.185
+  },
+  {
+    "word": "assistant,",
+    "start": 113.22,
+    "end": 113.882
+  },
+  {
+    "word": "languages,",
+    "start": 114.102,
+    "end": 114.752
+  },
+  {
+    "word": "proficiency",
+    "start": 114.799,
+    "end": 115.368
+  },
+  {
+    "word": "levels)",
+    "start": 115.414,
+    "end": 116.053
+  },
+  {
+    "word": "A",
+    "start": 116.703,
+    "end": 116.784
+  },
+  {
+    "word": "warm-pool",
+    "start": 116.901,
+    "end": 117.539
+  },
+  {
+    "word": "to",
+    "start": 117.771,
+    "end": 117.876
+  },
+  {
+    "word": "track",
+    "start": 117.934,
+    "end": 118.131
+  },
+  {
+    "word": "a",
+    "start": 118.178,
+    "end": 118.201
+  },
+  {
+    "word": "pool",
+    "start": 118.247,
+    "end": 118.538
+  },
+  {
+    "word": "of",
+    "start": 118.619,
+    "end": 118.7
+  },
+  {
+    "word": "pre-warmed",
+    "start": 118.793,
+    "end": 119.397
+  },
+  {
+    "word": "voice",
+    "start": 119.455,
+    "end": 119.699
+  },
+  {
+    "word": "bots",
+    "start": 119.745,
+    "end": 120.047
+  },
+  {
+    "word": "(rooms,",
+    "start": 120.198,
+    "end": 120.767
+  },
+  {
+    "word": "tokens,",
+    "start": 120.825,
+    "end": 121.487
+  },
+  {
+    "word": "status)",
+    "start": 121.579,
+    "end": 122.404
+  },
+  {
+    "word": "for",
+    "start": 122.578,
+    "end": 122.706
+  },
+  {
+    "word": "low-latency",
+    "start": 122.764,
+    "end": 123.46
+  },
+  {
+    "word": "conversation",
+    "start": 123.518,
+    "end": 124.11
+  },
+  {
+    "word": "starts",
+    "start": 124.18,
+    "end": 124.633
+  },
+  {
+    "word": "Other",
+    "start": 125.933,
+    "end": 126.258
+  },
+  {
+    "word": "upstream",
+    "start": 126.339,
+    "end": 126.804
+  },
+  {
+    "word": "components",
+    "start": 126.874,
+    "end": 127.466
+  },
+  {
+    "word": "are",
+    "start": 127.524,
+    "end": 127.64
+  },
+  {
+    "word": "specialised",
+    "start": 127.675,
+    "end": 128.209
+  },
+  {
+    "word": "services:",
+    "start": 128.232,
+    "end": 128.987
+  },
+  {
+    "word": "Recommendation",
+    "start": 129.37,
+    "end": 130.101
+  },
+  {
+    "word": "service:",
+    "start": 130.182,
+    "end": 130.891
+  },
+  {
+    "word": "decides",
+    "start": 131.332,
+    "end": 131.831
+  },
+  {
+    "word": "what",
+    "start": 131.877,
+    "end": 132.017
+  },
+  {
+    "word": "content",
+    "start": 132.075,
+    "end": 132.528
+  },
+  {
+    "word": "a",
+    "start": 132.586,
+    "end": 132.62
+  },
+  {
+    "word": "user",
+    "start": 132.702,
+    "end": 132.969
+  },
+  {
+    "word": "should",
+    "start": 133.004,
+    "end": 133.178
+  },
+  {
+    "word": "see",
+    "start": 133.225,
+    "end": 133.399
+  },
+  {
+    "word": "next",
+    "start": 133.457,
+    "end": 133.921
+  },
+  {
+    "word": "Content",
+    "start": 134.525,
+    "end": 134.955
+  },
+  {
+    "word": "Generation",
+    "start": 134.989,
+    "end": 135.477
+  },
+  {
+    "word": "Service:",
+    "start": 135.547,
+    "end": 136.162
+  },
+  {
+    "word": "turns",
+    "start": 136.487,
+    "end": 136.975
+  },
+  {
+    "word": "those",
+    "start": 137.033,
+    "end": 137.288
+  },
+  {
+    "word": "abstract",
+    "start": 137.358,
+    "end": 137.88
+  },
+  {
+    "word": "ideas",
+    "start": 137.938,
+    "end": 138.426
+  },
+  {
+    "word": "(or",
+    "start": 138.6,
+    "end": 139.111
+  },
+  {
+    "word": "\"seeds\")",
+    "start": 139.262,
+    "end": 140.376
+  },
+  {
+    "word": "into",
+    "start": 140.446,
+    "end": 140.667
+  },
+  {
+    "word": "concrete",
+    "start": 140.76,
+    "end": 141.363
+  },
+  {
+    "word": "articles,",
+    "start": 141.41,
+    "end": 142.164
+  },
+  {
+    "word": "conversation",
+    "start": 142.373,
+    "end": 143.035
+  },
+  {
+    "word": "topics",
+    "start": 143.093,
+    "end": 143.558
+  },
+  {
+    "word": "and",
+    "start": 143.639,
+    "end": 143.778
+  },
+  {
+    "word": "custom",
+    "start": 143.848,
+    "end": 144.208
+  },
+  {
+    "word": "notifications",
+    "start": 144.266,
+    "end": 145.113
+  },
+  {
+    "word": "Voice",
+    "start": 146.065,
+    "end": 146.367
+  },
+  {
+    "word": "Agent:",
+    "start": 146.402,
+    "end": 146.971
+  },
+  {
+    "word": "runs",
+    "start": 147.249,
+    "end": 147.575
+  },
+  {
+    "word": "the",
+    "start": 147.633,
+    "end": 147.702
+  },
+  {
+    "word": "real-time",
+    "start": 147.76,
+    "end": 148.248
+  },
+  {
+    "word": "voice",
+    "start": 148.283,
+    "end": 148.527
+  },
+  {
+    "word": "loop",
+    "start": 148.561,
+    "end": 148.794
+  },
+  {
+    "word": "Notification",
+    "start": 149.606,
+    "end": 150.28
+  },
+  {
+    "word": "Service:",
+    "start": 150.338,
+    "end": 150.895
+  },
+  {
+    "word": "decides",
+    "start": 151.069,
+    "end": 151.569
+  },
+  {
+    "word": "when",
+    "start": 151.627,
+    "end": 151.847
+  },
+  {
+    "word": "to",
+    "start": 151.929,
+    "end": 151.998
+  },
+  {
+    "word": "notify",
+    "start": 152.056,
+    "end": 152.463
+  },
+  {
+    "word": "users",
+    "start": 152.544,
+    "end": 152.962
+  },
+  {
+    "word": "and",
+    "start": 153.032,
+    "end": 153.171
+  },
+  {
+    "word": "delivers",
+    "start": 153.217,
+    "end": 153.612
+  },
+  {
+    "word": "the",
+    "start": 153.67,
+    "end": 153.74
+  },
+  {
+    "word": "push",
+    "start": 153.786,
+    "end": 154.007
+  },
+  {
+    "word": "Embedding",
+    "start": 154.042,
+    "end": 154.413
+  },
+  {
+    "word": "Generation",
+    "start": 154.471,
+    "end": 154.994
+  },
+  {
+    "word": "Service:",
+    "start": 155.063,
+    "end": 155.667
+  },
+  {
+    "word": "provides",
+    "start": 155.992,
+    "end": 156.48
+  },
+  {
+    "word": "an",
+    "start": 156.515,
+    "end": 156.584
+  },
+  {
+    "word": "API",
+    "start": 156.642,
+    "end": 157.072
+  },
+  {
+    "word": "for",
+    "start": 157.188,
+    "end": 157.304
+  },
+  {
+    "word": "embedding",
+    "start": 157.35,
+    "end": 157.722
+  },
+  {
+    "word": "generation,",
+    "start": 157.768,
+    "end": 158.511
+  },
+  {
+    "word": "supporting",
+    "start": 158.79,
+    "end": 159.301
+  },
+  {
+    "word": "similarity",
+    "start": 159.359,
+    "end": 159.939
+  },
+  {
+    "word": "filtering",
+    "start": 159.998,
+    "end": 160.462
+  },
+  {
+    "word": "and",
+    "start": 160.543,
+    "end": 160.764
+  },
+  {
+    "word": "semantic",
+    "start": 160.857,
+    "end": 161.251
+  },
+  {
+    "word": "matching",
+    "start": 161.298,
+    "end": 161.681
+  },
+  {
+    "word": "The",
+    "start": 162.796,
+    "end": 162.946
+  },
+  {
+    "word": "following",
+    "start": 163.004,
+    "end": 163.341
+  },
+  {
+    "word": "sections",
+    "start": 163.399,
+    "end": 164.026
+  },
+  {
+    "word": "map",
+    "start": 164.351,
+    "end": 164.595
+  },
+  {
+    "word": "those",
+    "start": 164.665,
+    "end": 164.874
+  },
+  {
+    "word": "services",
+    "start": 164.909,
+    "end": 165.373
+  },
+  {
+    "word": "back",
+    "start": 165.431,
+    "end": 165.628
+  },
+  {
+    "word": "to",
+    "start": 165.686,
+    "end": 165.744
+  },
+  {
+    "word": "the",
+    "start": 165.826,
+    "end": 165.895
+  },
+  {
+    "word": "three",
+    "start": 165.942,
+    "end": 166.162
+  },
+  {
+    "word": "learning",
+    "start": 166.208,
+    "end": 166.487
+  },
+  {
+    "word": "pillars,",
+    "start": 166.534,
+    "end": 167.091
+  },
+  {
+    "word": "and",
+    "start": 167.265,
+    "end": 167.416
+  },
+  {
+    "word": "how",
+    "start": 167.486,
+    "end": 167.636
+  },
+  {
+    "word": "they",
+    "start": 167.706,
+    "end": 167.834
+  },
+  {
+    "word": "reinforce",
+    "start": 167.903,
+    "end": 168.414
+  },
+  {
+    "word": "each",
+    "start": 168.438,
+    "end": 168.588
+  },
+  {
+    "word": "other",
+    "start": 168.635,
+    "end": 168.856
+  },
+  {
+    "word": "through",
+    "start": 168.914,
+    "end": 169.157
+  },
+  {
+    "word": "a",
+    "start": 169.181,
+    "end": 169.204
+  },
+  {
+    "word": "feedback",
+    "start": 169.262,
+    "end": 169.657
+  },
+  {
+    "word": "loop.",
+    "start": 169.703,
+    "end": 170.063
+  },
+  {
+    "word": "Personalised",
+    "start": 170.667,
+    "end": 171.503
+  },
+  {
+    "word": "content:",
+    "start": 171.572,
+    "end": 172.246
+  },
+  {
+    "word": "recommending",
+    "start": 172.849,
+    "end": 173.592
+  },
+  {
+    "word": "and",
+    "start": 173.708,
+    "end": 173.917
+  },
+  {
+    "word": "generating",
+    "start": 173.999,
+    "end": 174.637
+  },
+  {
+    "word": "comprehensible",
+    "start": 174.73,
+    "end": 175.508
+  },
+  {
+    "word": "input.",
+    "start": 175.554,
+    "end": 176.077
+  },
+  {
+    "word": "For",
+    "start": 176.774,
+    "end": 176.924
+  },
+  {
+    "word": "each",
+    "start": 176.982,
+    "end": 177.168
+  },
+  {
+    "word": "user,",
+    "start": 177.238,
+    "end": 177.667
+  },
+  {
+    "word": "our",
+    "start": 177.818,
+    "end": 177.946
+  },
+  {
+    "word": "recommendation",
+    "start": 177.993,
+    "end": 178.643
+  },
+  {
+    "word": "layer",
+    "start": 178.701,
+    "end": 178.91
+  },
+  {
+    "word": "does",
+    "start": 178.979,
+    "end": 179.177
+  },
+  {
+    "word": "three",
+    "start": 179.258,
+    "end": 179.548
   },
   {
     "word": "main",
-    "start": 179.617,
+    "start": 179.606,
     "end": 179.815
   },
   {
     "word": "things:",
-    "start": 179.884,
-    "end": 180.476
+    "start": 179.897,
+    "end": 180.489
   },
   {
     "word": "Recommend",
-    "start": 180.987,
-    "end": 181.498
+    "start": 181.301,
+    "end": 181.824
   },
   {
     "word": "content-type",
-    "start": 181.591,
-    "end": 182.357
+    "start": 181.905,
+    "end": 182.695
   },
   {
     "word": "agnostic",
-    "start": 182.404,
-    "end": 182.949
+    "start": 182.741,
+    "end": 183.275
   },
   {
     "word": "candidate",
-    "start": 183.007,
-    "end": 183.542
+    "start": 183.333,
+    "end": 183.844
   },
   {
     "word": "\"seeds\",",
-    "start": 183.611,
-    "end": 184.621
+    "start": 183.867,
+    "end": 184.541
   },
   {
     "word": "based",
-    "start": 184.796,
-    "end": 185.086
+    "start": 184.75,
+    "end": 185.04
   },
   {
     "word": "on",
-    "start": 185.132,
-    "end": 185.202
+    "start": 185.075,
+    "end": 185.145
   },
   {
     "word": "user",
-    "start": 185.283,
-    "end": 185.562
+    "start": 185.226,
+    "end": 185.493
   },
   {
     "word": "signals",
-    "start": 185.597,
-    "end": 186.119
+    "start": 185.528,
+    "end": 186.062
   },
   {
     "word": "Use",
-    "start": 186.92,
-    "end": 187.164
+    "start": 187.014,
+    "end": 187.258
   },
   {
     "word": "one",
-    "start": 187.234,
-    "end": 187.582
+    "start": 187.316,
+    "end": 187.617
   },
   {
     "word": "embedding",
-    "start": 187.652,
-    "end": 188.104
+    "start": 187.675,
+    "end": 188.14
   },
   {
     "word": "space",
-    "start": 188.174,
-    "end": 188.511
+    "start": 188.21,
+    "end": 188.558
   },
   {
     "word": "for",
-    "start": 188.546,
-    "end": 188.65
+    "start": 188.593,
+    "end": 188.697
   },
   {
     "word": "filtering:",
-    "start": 188.696,
-    "end": 189.381
+    "start": 188.744,
+    "end": 189.452
   },
   {
     "word": "we",
-    "start": 190.066,
-    "end": 190.252
+    "start": 190.148,
+    "end": 190.299
   },
   {
     "word": "use",
-    "start": 190.333,
-    "end": 190.693
+    "start": 190.381,
+    "end": 190.578
   },
   {
     "word": "our",
-    "start": 190.763,
-    "end": 190.902
+    "start": 190.624,
+    "end": 190.729
   },
   {
     "word": "Embedding",
-    "start": 190.949,
-    "end": 191.39
+    "start": 190.764,
+    "end": 191.147
   },
   {
     "word": "Generation",
-    "start": 191.46,
-    "end": 192.029
+    "start": 191.205,
+    "end": 191.704
   },
   {
     "word": "Service",
-    "start": 192.11,
-    "end": 192.795
+    "start": 191.785,
+    "end": 192.215
   },
   {
     "word": "to",
-    "start": 192.969,
-    "end": 193.097
+    "start": 192.25,
+    "end": 192.331
   },
   {
     "word": "transform",
-    "start": 193.166,
-    "end": 193.863
+    "start": 192.389,
+    "end": 192.935
   },
   {
     "word": "user",
-    "start": 193.956,
-    "end": 194.188
+    "start": 193.028,
+    "end": 193.283
   },
   {
     "word": "context",
-    "start": 194.234,
-    "end": 194.931
+    "start": 193.33,
+    "end": 193.922
   },
   {
     "word": "and",
-    "start": 194.989,
-    "end": 195.128
+    "start": 194.247,
+    "end": 194.444
   },
   {
     "word": "candidate",
-    "start": 195.198,
-    "end": 195.732
+    "start": 194.502,
+    "end": 194.978
   },
   {
     "word": "seeds",
-    "start": 195.767,
-    "end": 196.185
+    "start": 195.013,
+    "end": 195.326
   },
   {
     "word": "into",
-    "start": 196.301,
-    "end": 196.568
+    "start": 195.384,
+    "end": 195.593
   },
   {
     "word": "embeddings.",
-    "start": 196.649,
-    "end": 197.485
+    "start": 195.663,
+    "end": 196.429
   },
   {
     "word": "This",
-    "start": 198.286,
-    "end": 198.484
+    "start": 197.033,
+    "end": 197.23
   },
   {
     "word": "allows",
-    "start": 198.53,
-    "end": 198.913
+    "start": 197.277,
+    "end": 197.625
   },
   {
     "word": "us",
-    "start": 198.983,
-    "end": 199.111
+    "start": 197.683,
+    "end": 197.788
   },
   {
     "word": "to:",
-    "start": 199.18,
-    "end": 199.784
+    "start": 197.857,
+    "end": 198.322
   },
   {
     "word": "exclude",
-    "start": 200.156,
-    "end": 200.852
+    "start": 198.833,
+    "end": 199.634
   },
   {
     "word": "seeds",
-    "start": 200.91,
-    "end": 201.34
+    "start": 199.68,
+    "end": 200.156
   },
   {
     "word": "that",
-    "start": 201.398,
-    "end": 201.549
+    "start": 200.307,
+    "end": 200.481
   },
   {
     "word": "aren't",
-    "start": 201.607,
-    "end": 201.897
+    "start": 200.528,
+    "end": 200.725
   },
   {
     "word": "relevant",
-    "start": 201.955,
-    "end": 202.396
+    "start": 200.76,
+    "end": 201.166
   },
   {
     "word": "to",
-    "start": 202.443,
-    "end": 202.501
+    "start": 201.201,
+    "end": 201.259
   },
   {
     "word": "the",
-    "start": 202.547,
-    "end": 202.617
+    "start": 201.317,
+    "end": 201.387
   },
   {
     "word": "user's",
-    "start": 202.698,
-    "end": 202.977
+    "start": 201.457,
+    "end": 201.712
   },
   {
     "word": "current",
-    "start": 203.047,
-    "end": 203.348
+    "start": 201.77,
+    "end": 202.084
   },
   {
     "word": "interests",
-    "start": 203.395,
-    "end": 204.126
+    "start": 202.13,
+    "end": 202.838
   },
   {
     "word": "exclude",
-    "start": 204.718,
-    "end": 205.345
+    "start": 203.279,
+    "end": 203.837
   },
   {
     "word": "seeds",
-    "start": 205.403,
-    "end": 205.833
+    "start": 203.872,
+    "end": 204.243
   },
   {
     "word": "that",
-    "start": 205.903,
-    "end": 206.054
+    "start": 204.29,
+    "end": 204.417
   },
   {
     "word": "are",
-    "start": 206.088,
-    "end": 206.193
+    "start": 204.452,
+    "end": 204.557
   },
   {
     "word": "too",
-    "start": 206.228,
-    "end": 206.413
+    "start": 204.591,
+    "end": 204.789
   },
   {
     "word": "similar",
-    "start": 206.483,
-    "end": 206.855
+    "start": 204.87,
+    "end": 205.334
   },
   {
     "word": "to",
-    "start": 206.913,
-    "end": 206.971
+    "start": 205.509,
+    "end": 205.636
   },
   {
     "word": "what",
-    "start": 207.029,
-    "end": 207.168
+    "start": 205.694,
+    "end": 205.822
   },
   {
     "word": "they've",
-    "start": 207.203,
-    "end": 207.412
+    "start": 205.857,
+    "end": 206.17
   },
   {
     "word": "already",
-    "start": 207.447,
-    "end": 207.737
+    "start": 206.205,
+    "end": 206.495
   },
   {
     "word": "seen",
-    "start": 207.795,
-    "end": 208.12
+    "start": 206.553,
+    "end": 206.832
   },
   {
     "word": "filter",
-    "start": 209.072,
-    "end": 209.56
+    "start": 207.645,
+    "end": 207.993
   },
   {
     "word": "near-duplicates",
-    "start": 209.711,
-    "end": 210.628
+    "start": 208.04,
+    "end": 208.899
   },
   {
     "word": "in",
-    "start": 210.686,
-    "end": 210.767
+    "start": 208.957,
+    "end": 209.015
   },
   {
     "word": "newly",
-    "start": 210.849,
-    "end": 211.116
+    "start": 209.073,
+    "end": 209.34
   },
   {
     "word": "generated",
-    "start": 211.162,
-    "end": 211.65
+    "start": 209.398,
+    "end": 209.909
   },
   {
     "word": "content",
-    "start": 211.684,
-    "end": 212.16
+    "start": 209.955,
+    "end": 210.501
   },
   {
     "word": "with",
-    "start": 212.218,
-    "end": 212.358
+    "start": 210.745,
+    "end": 210.93
   },
   {
     "word": "agglomerative",
-    "start": 212.404,
-    "end": 213.02
+    "start": 210.965,
+    "end": 211.546
   },
   {
     "word": "clustering",
-    "start": 213.054,
-    "end": 213.6
+    "start": 211.569,
+    "end": 212.115
   },
   {
     "word": "Shape",
-    "start": 214.552,
-    "end": 214.866
+    "start": 212.927,
+    "end": 213.299
   },
   {
     "word": "the",
-    "start": 214.889,
-    "end": 214.958
+    "start": 213.345,
+    "end": 213.427
   },
   {
     "word": "final",
-    "start": 215.016,
-    "end": 215.307
+    "start": 213.485,
+    "end": 213.81
   },
   {
     "word": "mix",
-    "start": 215.353,
-    "end": 215.551
+    "start": 213.856,
+    "end": 214.123
   },
   {
     "word": "with",
-    "start": 215.597,
-    "end": 215.701
+    "start": 214.193,
+    "end": 214.332
   },
   {
     "word": "constraints:",
-    "start": 215.748,
-    "end": 216.595
+    "start": 214.379,
+    "end": 215.308
   },
   {
     "word": "when",
-    "start": 217.037,
-    "end": 217.211
+    "start": 215.749,
+    "end": 215.923
   },
   {
     "word": "we",
-    "start": 217.246,
-    "end": 217.315
+    "start": 215.969,
+    "end": 216.051
   },
   {
     "word": "build",
-    "start": 217.373,
-    "end": 217.571
+    "start": 216.109,
+    "end": 216.329
   },
   {
     "word": "the",
-    "start": 217.606,
-    "end": 217.675
+    "start": 216.364,
+    "end": 216.434
   },
   {
     "word": "feed,",
-    "start": 217.722,
-    "end": 218.279
+    "start": 216.504,
+    "end": 216.933
   },
   {
     "word": "we",
-    "start": 218.662,
-    "end": 218.79
+    "start": 216.98,
+    "end": 217.096
   },
   {
     "word": "apply",
-    "start": 218.836,
-    "end": 219.243
+    "start": 217.142,
+    "end": 217.444
   },
   {
     "word": "a",
-    "start": 219.336,
-    "end": 219.371
+    "start": 217.514,
+    "end": 217.537
   },
   {
     "word": "flexible",
-    "start": 219.487,
-    "end": 220.079
+    "start": 217.606,
+    "end": 218.106
   },
   {
     "word": "distribution",
-    "start": 220.125,
-    "end": 220.833
+    "start": 218.141,
+    "end": 218.849
   },
   {
     "word": "(min/ideal/max",
-    "start": 221.008,
-    "end": 223.341
+    "start": 219.127,
+    "end": 221.914
   },
   {
     "word": "per",
-    "start": 223.515,
-    "end": 223.701
+    "start": 222.297,
+    "end": 222.494
   },
   {
     "word": "type/subtype)",
-    "start": 223.771,
-    "end": 225.257
+    "start": 222.552,
+    "end": 224.271
   },
   {
     "word": "to",
-    "start": 225.628,
-    "end": 225.768
+    "start": 224.445,
+    "end": 224.561
   },
   {
     "word": "obtain",
-    "start": 225.837,
-    "end": 226.22
+    "start": 224.642,
+    "end": 225.025
   },
   {
     "word": "a",
-    "start": 226.302,
-    "end": 226.337
+    "start": 225.107,
+    "end": 225.141
   },
   {
     "word": "controlled",
-    "start": 226.418,
-    "end": 226.871
+    "start": 225.223,
+    "end": 225.675
   },
   {
     "word": "mix",
-    "start": 226.929,
-    "end": 227.289
+    "start": 225.745,
+    "end": 226.035
   },
   {
     "word": "rather",
-    "start": 227.66,
-    "end": 227.962
+    "start": 226.186,
+    "end": 226.511
   },
   {
     "word": "than",
-    "start": 228.008,
-    "end": 228.148
+    "start": 226.558,
+    "end": 226.709
   },
   {
     "word": "simply",
-    "start": 228.229,
-    "end": 228.67
+    "start": 226.778,
+    "end": 227.243
   },
   {
     "word": "the",
-    "start": 228.775,
-    "end": 228.879
+    "start": 227.359,
+    "end": 227.463
   },
   {
     "word": "best",
-    "start": 228.937,
-    "end": 229.169
+    "start": 227.521,
+    "end": 227.742
   },
   {
     "word": "matches.",
-    "start": 229.251,
-    "end": 229.994
+    "start": 227.8,
+    "end": 228.531
   },
   {
     "word": "The",
-    "start": 230.667,
-    "end": 230.795
+    "start": 229.483,
+    "end": 229.611
   },
   {
     "word": "Content",
-    "start": 230.853,
-    "end": 231.259
+    "start": 229.669,
+    "end": 230.041
   },
   {
     "word": "Generation",
-    "start": 231.306,
-    "end": 231.782
+    "start": 230.087,
+    "end": 230.586
   },
   {
     "word": "Service",
-    "start": 231.84,
-    "end": 232.327
+    "start": 230.656,
+    "end": 231.074
   },
   {
     "word": "then",
-    "start": 232.385,
-    "end": 232.629
+    "start": 231.12,
+    "end": 231.306
   },
   {
     "word": "reads",
-    "start": 232.734,
-    "end": 233.094
+    "start": 231.376,
+    "end": 231.62
   },
   {
     "word": "the",
-    "start": 233.175,
-    "end": 233.256
+    "start": 231.666,
+    "end": 231.736
   },
   {
     "word": "recommended",
-    "start": 233.314,
-    "end": 233.825
+    "start": 231.806,
+    "end": 232.351
   },
   {
     "word": "seeds",
-    "start": 233.883,
-    "end": 234.336
+    "start": 232.398,
+    "end": 232.734
   },
   {
     "word": "from",
-    "start": 234.649,
-    "end": 234.835
+    "start": 232.781,
+    "end": 232.92
   },
   {
     "word": "a",
-    "start": 234.881,
-    "end": 234.905
+    "start": 232.967,
+    "end": 232.99
   },
   {
     "word": "Redis",
-    "start": 234.974,
-    "end": 235.241
+    "start": 233.06,
+    "end": 233.315
   },
   {
     "word": "queue",
-    "start": 235.323,
-    "end": 235.764
+    "start": 233.396,
+    "end": 233.756
   },
   {
     "word": "to",
-    "start": 236.135,
-    "end": 236.252
+    "start": 233.884,
+    "end": 234
   },
   {
     "word": "turn",
-    "start": 236.31,
-    "end": 236.542
+    "start": 234.058,
+    "end": 234.267
   },
   {
     "word": "them",
-    "start": 236.589,
-    "end": 236.705
+    "start": 234.302,
+    "end": 234.406
   },
   {
     "word": "into",
-    "start": 236.751,
-    "end": 237.088
+    "start": 234.453,
+    "end": 234.592
   },
   {
     "word": "language",
-    "start": 237.459,
-    "end": 238.028
+    "start": 234.65,
+    "end": 235.08
   },
   {
     "word": "and",
-    "start": 238.063,
-    "end": 238.179
+    "start": 235.126,
+    "end": 235.242
   },
   {
     "word": "level",
-    "start": 238.272,
-    "end": 238.574
+    "start": 235.3,
+    "end": 235.602
   },
   {
     "word": "appropriate",
-    "start": 238.643,
-    "end": 239.27
+    "start": 235.672,
+    "end": 236.206
   },
   {
     "word": "content",
-    "start": 239.317,
-    "end": 239.781
+    "start": 236.241,
+    "end": 236.705
   },
   {
     "word": "for",
-    "start": 239.851,
-    "end": 239.955
+    "start": 236.775,
+    "end": 236.914
   },
   {
     "word": "users",
-    "start": 240.025,
-    "end": 240.362
+    "start": 236.984,
+    "end": 237.309
   },
   {
     "word": "to",
-    "start": 240.408,
-    "end": 240.466
+    "start": 237.367,
+    "end": 237.425
   },
   {
     "word": "consume.",
-    "start": 240.536,
-    "end": 241.221
+    "start": 237.495,
+    "end": 238.133
   },
   {
     "word": "It",
-    "start": 241.917,
-    "end": 242.08
+    "start": 238.644,
+    "end": 238.795
   },
   {
     "word": "also",
-    "start": 242.138,
-    "end": 242.51
+    "start": 238.841,
+    "end": 239.085
   },
   {
     "word": "generates",
-    "start": 242.626,
-    "end": 243.09
+    "start": 239.143,
+    "end": 239.573
   },
   {
     "word": "custom",
-    "start": 243.16,
-    "end": 243.496
+    "start": 239.631,
+    "end": 239.944
   },
   {
     "word": "notifications",
-    "start": 243.555,
-    "end": 244.39
+    "start": 240.002,
+    "end": 240.827
   },
   {
     "word": "that",
-    "start": 244.774,
-    "end": 244.936
+    "start": 241.07,
+    "end": 241.233
   },
   {
     "word": "are",
-    "start": 244.971,
-    "end": 245.064
+    "start": 241.268,
+    "end": 241.349
   },
   {
     "word": "used",
-    "start": 245.122,
-    "end": 245.319
+    "start": 241.395,
+    "end": 241.581
   },
   {
     "word": "downstream",
-    "start": 245.366,
-    "end": 246.155
+    "start": 241.616,
+    "end": 242.197
   },
   {
     "word": "by",
-    "start": 246.329,
-    "end": 246.48
+    "start": 242.266,
+    "end": 242.371
   },
   {
     "word": "the",
-    "start": 246.527,
-    "end": 246.596
+    "start": 242.417,
+    "end": 242.487
   },
   {
     "word": "notification",
-    "start": 246.643,
-    "end": 247.27
+    "start": 242.533,
+    "end": 243.149
   },
   {
     "word": "service.",
-    "start": 247.339,
-    "end": 247.943
+    "start": 243.218,
+    "end": 243.845
   },
   {
     "word": "Immersive",
-    "start": 249.243,
-    "end": 249.859
+    "start": 244.449,
+    "end": 245.076
   },
   {
     "word": "conversation.",
-    "start": 249.905,
-    "end": 250.822
+    "start": 245.122,
+    "end": 245.958
   },
   {
     "word": "To",
-    "start": 251.774,
-    "end": 251.914
+    "start": 246.562,
+    "end": 246.678
   },
   {
     "word": "support",
-    "start": 251.983,
-    "end": 252.541
+    "start": 246.748,
+    "end": 247.236
   },
   {
     "word": "meaning-focused",
-    "start": 252.75,
-    "end": 253.504
+    "start": 247.41,
+    "end": 248.234
   },
   {
     "word": "communication,",
-    "start": 253.55,
-    "end": 254.444
+    "start": 248.269,
+    "end": 249.209
   },
   {
     "word": "we",
-    "start": 254.688,
-    "end": 254.804
+    "start": 249.534,
+    "end": 249.65
   },
   {
     "word": "wanted",
-    "start": 254.862,
-    "end": 255.164
+    "start": 249.708,
+    "end": 250.173
   },
   {
     "word": "conversations",
-    "start": 255.211,
-    "end": 255.965
+    "start": 250.266,
+    "end": 251.055
   },
   {
     "word": "to",
-    "start": 256.035,
-    "end": 256.093
+    "start": 251.113,
+    "end": 251.171
   },
   {
     "word": "feel",
-    "start": 256.163,
-    "end": 256.337
+    "start": 251.241,
+    "end": 251.427
   },
   {
     "word": "instant",
-    "start": 256.418,
-    "end": 257.01
+    "start": 251.496,
+    "end": 252.007
   },
   {
     "word": "and",
-    "start": 257.126,
-    "end": 257.289
+    "start": 252.077,
+    "end": 252.205
   },
   {
     "word": "personalised.",
-    "start": 257.359,
-    "end": 258.392
+    "start": 252.263,
+    "end": 253.296
   },
   {
     "word": "When",
-    "start": 258.996,
-    "end": 259.17
+    "start": 253.993,
+    "end": 254.178
   },
   {
     "word": "a",
-    "start": 259.216,
-    "end": 259.239
+    "start": 254.213,
+    "end": 254.236
   },
   {
     "word": "user",
-    "start": 259.332,
-    "end": 259.623
+    "start": 254.318,
+    "end": 254.631
   },
   {
     "word": "wishes",
-    "start": 259.669,
-    "end": 259.948
+    "start": 254.701,
+    "end": 255.003
   },
   {
     "word": "to",
-    "start": 259.994,
-    "end": 260.064
+    "start": 255.061,
+    "end": 255.119
   },
   {
     "word": "talk,",
-    "start": 260.122,
-    "end": 260.493
+    "start": 255.177,
+    "end": 255.548
   },
   {
     "word": "we",
-    "start": 260.516,
-    "end": 260.621
+    "start": 255.583,
+    "end": 255.699
   },
   {
     "word": "want",
-    "start": 260.679,
-    "end": 260.842
+    "start": 255.757,
+    "end": 255.955
   },
   {
     "word": "them",
-    "start": 260.876,
-    "end": 260.992
+    "start": 255.989,
+    "end": 256.106
   },
   {
     "word": "in",
-    "start": 261.039,
-    "end": 261.097
+    "start": 256.152,
+    "end": 256.21
   },
   {
     "word": "a",
-    "start": 261.143,
-    "end": 261.167
+    "start": 256.245,
+    "end": 256.268
   },
   {
     "word": "conversation",
-    "start": 261.225,
-    "end": 261.886
+    "start": 256.326,
+    "end": 256.988
   },
   {
     "word": "within",
-    "start": 261.933,
-    "end": 262.177
+    "start": 257.046,
+    "end": 257.301
   },
   {
     "word": "seconds,",
-    "start": 262.27,
-    "end": 262.989
+    "start": 257.417,
+    "end": 258.219
   },
   {
     "word": "with",
-    "start": 263.314,
-    "end": 263.477
+    "start": 258.544,
+    "end": 258.706
   },
   {
     "word": "an",
-    "start": 263.523,
-    "end": 263.582
+    "start": 258.741,
+    "end": 258.799
   },
   {
     "word": "agent",
-    "start": 263.64,
-    "end": 263.988
+    "start": 258.857,
+    "end": 259.252
   },
   {
     "word": "that",
-    "start": 264.023,
-    "end": 264.139
+    "start": 259.298,
+    "end": 259.426
   },
   {
     "word": "already",
-    "start": 264.185,
-    "end": 264.534
+    "start": 259.472,
+    "end": 259.832
   },
   {
     "word": "knows",
-    "start": 264.568,
-    "end": 264.801
+    "start": 259.879,
+    "end": 260.111
   },
   {
     "word": "their",
-    "start": 264.835,
-    "end": 264.986
+    "start": 260.146,
+    "end": 260.297
   },
   {
     "word": "language,",
-    "start": 265.033,
-    "end": 265.59
+    "start": 260.332,
+    "end": 260.924
   },
   {
     "word": "level,",
-    "start": 265.706,
-    "end": 266.24
+    "start": 261.203,
+    "end": 261.83
   },
   {
     "word": "and",
-    "start": 266.368,
-    "end": 266.519
+    "start": 261.946,
+    "end": 262.097
   },
   {
     "word": "the",
-    "start": 266.565,
-    "end": 266.635
+    "start": 262.143,
+    "end": 262.213
   },
   {
     "word": "topics",
-    "start": 266.681,
-    "end": 267.099
+    "start": 262.259,
+    "end": 262.7
   },
   {
     "word": "they",
-    "start": 267.146,
-    "end": 267.285
+    "start": 262.735,
+    "end": 262.863
   },
   {
     "word": "care",
-    "start": 267.332,
-    "end": 267.54
+    "start": 262.921,
+    "end": 263.153
   },
   {
     "word": "about.",
-    "start": 267.575,
-    "end": 268.051
+    "start": 263.188,
+    "end": 263.641
   },
   {
     "word": "At",
-    "start": 268.747,
-    "end": 268.933
+    "start": 264.337,
+    "end": 264.511
   },
   {
     "word": "a",
-    "start": 268.98,
-    "end": 269.003
+    "start": 264.546,
+    "end": 264.569
   },
   {
     "word": "high",
-    "start": 269.073,
-    "end": 269.258
+    "start": 264.628,
+    "end": 264.802
   },
   {
     "word": "level:",
-    "start": 269.305,
-    "end": 269.781
+    "start": 264.837,
+    "end": 265.324
   },
   {
     "word": "The",
-    "start": 270.106,
-    "end": 270.234
+    "start": 265.498,
+    "end": 265.649
   },
   {
     "word": "API",
-    "start": 270.303,
-    "end": 270.791
+    "start": 265.73,
+    "end": 266.276
   },
   {
     "word": "handles",
-    "start": 270.884,
-    "end": 271.29
+    "start": 266.369,
+    "end": 266.752
   },
   {
     "word": "the",
-    "start": 271.336,
-    "end": 271.406
+    "start": 266.787,
+    "end": 266.857
   },
   {
     "word": "connection",
-    "start": 271.464,
-    "end": 271.882
+    "start": 266.891,
+    "end": 267.275
   },
   {
     "word": "flow:",
-    "start": 271.952,
-    "end": 272.405
+    "start": 267.333,
+    "end": 267.797
   },
   {
     "word": "Creates",
-    "start": 272.915,
-    "end": 273.299
+    "start": 268.18,
+    "end": 268.668
   },
   {
     "word": "a",
-    "start": 273.333,
-    "end": 273.368
+    "start": 268.737,
+    "end": 268.772
   },
   {
     "word": "new",
-    "start": 273.449,
-    "end": 273.589
+    "start": 268.888,
+    "end": 269.051
   },
   {
     "word": "conversation",
-    "start": 273.647,
-    "end": 274.309
+    "start": 269.121,
+    "end": 269.736
   },
   {
     "word": "ID.",
-    "start": 274.378,
-    "end": 274.912
+    "start": 269.794,
+    "end": 270.282
   },
   {
     "word": "Reuses",
-    "start": 275.423,
-    "end": 275.946
+    "start": 270.792,
+    "end": 271.361
   },
   {
     "word": "a",
-    "start": 276.015,
-    "end": 276.062
+    "start": 271.419,
+    "end": 271.454
   },
   {
     "word": "pre-warmed",
-    "start": 276.143,
-    "end": 276.619
+    "start": 271.547,
+    "end": 272.302
   },
   {
     "word": "bot",
-    "start": 276.677,
-    "end": 277.014
+    "start": 272.371,
+    "end": 272.731
   },
   {
     "word": "or",
-    "start": 277.13,
-    "end": 277.281
+    "start": 273.114,
+    "end": 273.277
   },
   {
     "word": "starts",
-    "start": 277.339,
-    "end": 277.699
+    "start": 273.347,
+    "end": 273.753
   },
   {
     "word": "a",
-    "start": 277.734,
-    "end": 277.757
+    "start": 273.788,
+    "end": 273.811
   },
   {
     "word": "new",
-    "start": 277.826,
-    "end": 277.943
+    "start": 273.881,
+    "end": 274.02
   },
   {
     "word": "one.",
-    "start": 278.012,
-    "end": 278.268
+    "start": 274.09,
+    "end": 274.415
   },
   {
     "word": "Loads",
-    "start": 278.964,
-    "end": 279.417
+    "start": 275.018,
+    "end": 275.367
   },
   {
     "word": "the",
-    "start": 279.487,
-    "end": 279.568
+    "start": 275.425,
+    "end": 275.494
   },
   {
     "word": "right",
-    "start": 279.626,
-    "end": 279.812
+    "start": 275.564,
+    "end": 275.785
   },
   {
     "word": "context",
-    "start": 279.87,
-    "end": 280.532
+    "start": 275.866,
+    "end": 276.539
   },
   {
     "word": "(assistant,",
-    "start": 280.682,
-    "end": 281.576
+    "start": 276.714,
+    "end": 277.584
   },
   {
     "word": "article,",
-    "start": 281.611,
-    "end": 282.238
+    "start": 277.619,
+    "end": 278.118
   },
   {
     "word": "topic)",
-    "start": 282.308,
-    "end": 282.958
+    "start": 278.141,
+    "end": 278.791
   },
   {
     "word": "from",
-    "start": 283.132,
-    "end": 283.306
+    "start": 279,
+    "end": 279.175
   },
   {
     "word": "the",
-    "start": 283.353,
-    "end": 283.422
+    "start": 279.221,
+    "end": 279.291
   },
   {
     "word": "database",
-    "start": 283.457,
-    "end": 284.165
+    "start": 279.337,
+    "end": 279.929
   },
   {
     "word": "and",
-    "start": 284.316,
-    "end": 284.525
+    "start": 279.976,
+    "end": 280.115
   },
   {
     "word": "sends",
-    "start": 284.595,
-    "end": 284.874
+    "start": 280.173,
+    "end": 280.44
   },
   {
     "word": "it",
-    "start": 284.92,
-    "end": 285.001
+    "start": 280.486,
+    "end": 280.568
   },
   {
     "word": "to",
-    "start": 285.036,
-    "end": 285.094
+    "start": 280.603,
+    "end": 280.661
   },
   {
     "word": "the",
-    "start": 285.152,
-    "end": 285.222
+    "start": 280.719,
+    "end": 280.788
   },
   {
     "word": "bot.",
-    "start": 285.257,
-    "end": 285.722
+    "start": 280.823,
+    "end": 281.241
   },
   {
     "word": "Returns",
-    "start": 286.674,
-    "end": 287.185
+    "start": 282.054,
+    "end": 282.6
   },
   {
     "word": "a",
-    "start": 287.243,
-    "end": 287.277
+    "start": 282.669,
+    "end": 282.704
   },
   {
     "word": "URL",
-    "start": 287.394,
-    "end": 287.823
+    "start": 282.82,
+    "end": 283.203
   },
   {
     "word": "the",
-    "start": 287.939,
-    "end": 288.02
+    "start": 283.284,
+    "end": 283.366
   },
   {
     "word": "client",
-    "start": 288.067,
-    "end": 288.38
+    "start": 283.412,
+    "end": 283.726
   },
   {
     "word": "can",
-    "start": 288.415,
-    "end": 288.52
+    "start": 283.772,
+    "end": 283.865
   },
   {
     "word": "join",
-    "start": 288.566,
-    "end": 288.729
+    "start": 283.911,
+    "end": 284.097
   },
   {
     "word": "immediately.",
-    "start": 288.763,
-    "end": 289.541
+    "start": 284.132,
+    "end": 284.91
   },
   {
     "word": "The",
-    "start": 290.842,
-    "end": 290.958
+    "start": 285.606,
+    "end": 285.723
   },
   {
     "word": "voice",
-    "start": 291.016,
-    "end": 291.283
+    "start": 285.781,
+    "end": 286.048
   },
   {
     "word": "agent",
-    "start": 291.318,
-    "end": 291.62
+    "start": 286.082,
+    "end": 286.454
   },
   {
     "word": "then",
-    "start": 291.666,
-    "end": 291.805
+    "start": 286.5,
+    "end": 286.663
   },
   {
     "word": "runs",
-    "start": 291.863,
-    "end": 292.096
+    "start": 286.721,
+    "end": 286.942
   },
   {
     "word": "the",
-    "start": 292.154,
-    "end": 292.223
+    "start": 286.988,
+    "end": 287.058
   },
   {
     "word": "real-time",
-    "start": 292.27,
-    "end": 292.688
+    "start": 287.093,
+    "end": 287.534
   },
   {
     "word": "loop:",
-    "start": 292.722,
-    "end": 293.175
+    "start": 287.58,
+    "end": 287.998
   },
   {
     "word": "it",
-    "start": 293.616,
-    "end": 293.744
+    "start": 288.602,
+    "end": 288.741
   },
   {
     "word": "listens",
-    "start": 293.791,
-    "end": 294.116
+    "start": 288.788,
+    "end": 289.113
   },
   {
     "word": "to",
-    "start": 294.162,
-    "end": 294.232
+    "start": 289.159,
+    "end": 289.229
   },
   {
     "word": "the",
-    "start": 294.29,
-    "end": 294.359
+    "start": 289.287,
+    "end": 289.356
   },
   {
     "word": "user's",
-    "start": 294.418,
-    "end": 294.685
+    "start": 289.426,
+    "end": 289.705
   },
   {
     "word": "audio,",
-    "start": 294.743,
-    "end": 295.23
+    "start": 289.763,
+    "end": 290.297
   },
   {
     "word": "turns",
-    "start": 295.3,
-    "end": 295.637
+    "start": 290.355,
+    "end": 290.692
   },
   {
     "word": "it",
-    "start": 295.683,
-    "end": 295.753
+    "start": 290.738,
+    "end": 290.808
   },
   {
     "word": "into",
-    "start": 295.788,
-    "end": 295.95
+    "start": 290.854,
+    "end": 291.017
   },
   {
     "word": "text,",
-    "start": 296.008,
-    "end": 296.623
+    "start": 291.075,
+    "end": 291.609
   },
   {
     "word": "calls",
-    "start": 296.867,
-    "end": 297.134
+    "start": 291.702,
+    "end": 291.98
   },
   {
     "word": "an",
-    "start": 297.169,
-    "end": 297.239
+    "start": 292.015,
+    "end": 292.073
   },
   {
     "word": "LLM",
-    "start": 297.297,
-    "end": 297.831
+    "start": 292.131,
+    "end": 292.503
   },
   {
     "word": "to",
-    "start": 297.947,
-    "end": 298.04
+    "start": 292.596,
+    "end": 292.665
   },
   {
     "word": "decide",
-    "start": 298.11,
-    "end": 298.458
+    "start": 292.723,
+    "end": 293.095
   },
   {
     "word": "what",
-    "start": 298.481,
-    "end": 298.609
+    "start": 293.13,
+    "end": 293.281
   },
   {
     "word": "to",
-    "start": 298.644,
-    "end": 298.69
+    "start": 293.315,
+    "end": 293.374
   },
   {
     "word": "say",
-    "start": 298.736,
-    "end": 298.864
+    "start": 293.432,
+    "end": 293.606
   },
   {
     "word": "next,",
-    "start": 298.934,
-    "end": 299.538
+    "start": 293.664,
+    "end": 294.268
   },
   {
     "word": "and",
-    "start": 299.863,
-    "end": 300.048
+    "start": 294.477,
+    "end": 294.639
   },
   {
     "word": "turns",
-    "start": 300.106,
-    "end": 300.431
+    "start": 294.697,
+    "end": 295.034
   },
   {
     "word": "that",
-    "start": 300.478,
-    "end": 300.629
+    "start": 295.08,
+    "end": 295.22
   },
   {
     "word": "back",
-    "start": 300.675,
-    "end": 300.861
+    "start": 295.278,
+    "end": 295.452
   },
   {
     "word": "into",
-    "start": 300.919,
-    "end": 301.07
+    "start": 295.51,
+    "end": 295.673
   },
   {
     "word": "speech.",
-    "start": 301.128,
-    "end": 301.743
+    "start": 295.731,
+    "end": 296.392
   },
   {
     "word": "To",
-    "start": 302.44,
-    "end": 302.556
+    "start": 297.205,
+    "end": 297.321
   },
   {
     "word": "keep",
-    "start": 302.614,
-    "end": 302.811
+    "start": 297.379,
+    "end": 297.577
   },
   {
     "word": "things",
-    "start": 302.858,
-    "end": 303.09
+    "start": 297.635,
+    "end": 297.879
   },
   {
     "word": "fast,",
-    "start": 303.16,
-    "end": 303.717
+    "start": 297.948,
+    "end": 298.447
   },
   {
     "word": "we",
-    "start": 303.775,
-    "end": 303.903
+    "start": 298.494,
+    "end": 298.61
   },
   {
     "word": "maintain",
-    "start": 303.972,
-    "end": 304.356
+    "start": 298.68,
+    "end": 299.039
   },
   {
     "word": "a",
-    "start": 304.437,
-    "end": 304.472
+    "start": 299.098,
+    "end": 299.121
   },
   {
     "word": "warm",
-    "start": 304.553,
-    "end": 304.855
+    "start": 299.19,
+    "end": 299.504
   },
   {
     "word": "pool",
-    "start": 304.971,
-    "end": 305.273
+    "start": 299.597,
+    "end": 299.875
   },
   {
     "word": "of",
-    "start": 305.319,
-    "end": 305.377
+    "start": 299.922,
+    "end": 299.968
   },
   {
     "word": "standby",
-    "start": 305.435,
-    "end": 305.911
+    "start": 300.038,
+    "end": 300.491
   },
   {
     "word": "bots:",
-    "start": 305.981,
-    "end": 306.515
+    "start": 300.56,
+    "end": 301.129
   },
   {
     "word": "background",
-    "start": 306.794,
-    "end": 307.27
+    "start": 301.826,
+    "end": 302.302
   },
   {
     "word": "jobs",
-    "start": 307.328,
-    "end": 307.606
+    "start": 302.348,
+    "end": 302.639
   },
   {
     "word": "spin",
-    "start": 307.641,
-    "end": 307.862
+    "start": 302.662,
+    "end": 302.917
   },
   {
     "word": "these",
-    "start": 307.908,
-    "end": 308.071
+    "start": 302.975,
+    "end": 303.138
   },
   {
     "word": "up",
-    "start": 308.117,
-    "end": 308.256
+    "start": 303.184,
+    "end": 303.289
   },
   {
     "word": "ahead",
-    "start": 308.326,
-    "end": 308.547
+    "start": 303.335,
+    "end": 303.533
   },
   {
     "word": "of",
-    "start": 308.582,
-    "end": 308.64
+    "start": 303.567,
+    "end": 303.614
   },
   {
     "word": "time",
-    "start": 308.686,
-    "end": 308.965
+    "start": 303.672,
+    "end": 304.125
   },
   {
     "word": "and",
-    "start": 309.011,
-    "end": 309.127
+    "start": 304.252,
+    "end": 304.508
   },
   {
     "word": "record",
-    "start": 309.185,
-    "end": 309.534
+    "start": 304.566,
+    "end": 304.926
   },
   {
     "word": "them",
-    "start": 309.568,
-    "end": 309.685
+    "start": 304.972,
+    "end": 305.1
   },
   {
     "word": "in",
-    "start": 309.731,
-    "end": 309.777
+    "start": 305.158,
+    "end": 305.216
   },
   {
     "word": "Redis.",
-    "start": 309.835,
-    "end": 310.428
+    "start": 305.274,
+    "end": 305.866
   },
   {
     "word": "When",
-    "start": 311.031,
-    "end": 311.205
+    "start": 306.679,
+    "end": 306.865
   },
   {
     "word": "the",
-    "start": 311.24,
-    "end": 311.31
+    "start": 306.888,
+    "end": 306.957
   },
   {
     "word": "API",
-    "start": 311.368,
-    "end": 311.786
+    "start": 307.004,
+    "end": 307.422
   },
   {
     "word": "is",
-    "start": 311.856,
-    "end": 311.948
+    "start": 307.492,
+    "end": 307.573
   },
   {
     "word": "called,",
-    "start": 312.018,
-    "end": 312.424
+    "start": 307.642,
+    "end": 308.142
   },
   {
     "word": "we",
-    "start": 312.494,
-    "end": 312.622
+    "start": 308.293,
+    "end": 308.42
   },
   {
     "word": "try",
-    "start": 312.68,
-    "end": 312.9
+    "start": 308.467,
+    "end": 308.653
   },
   {
     "word": "to",
-    "start": 312.97,
-    "end": 313.028
+    "start": 308.711,
+    "end": 308.769
   },
   {
     "word": "claim",
-    "start": 313.086,
-    "end": 313.33
+    "start": 308.815,
+    "end": 309.036
   },
   {
     "word": "one",
-    "start": 313.423,
-    "end": 313.562
+    "start": 309.117,
+    "end": 309.245
   },
   {
     "word": "of",
-    "start": 313.597,
-    "end": 313.655
+    "start": 309.268,
+    "end": 309.326
   },
   {
     "word": "these",
-    "start": 313.713,
-    "end": 314.061
+    "start": 309.372,
+    "end": 309.628
   },
   {
     "word": "ready-to-go",
-    "start": 314.236,
-    "end": 314.886
+    "start": 309.779,
+    "end": 310.475
   },
   {
     "word": "bots",
-    "start": 314.967,
-    "end": 315.269
+    "start": 310.545,
+    "end": 310.858
   },
   {
     "word": "first.",
-    "start": 315.385,
-    "end": 316.116
+    "start": 310.951,
+    "end": 311.648
   },
   {
     "word": "Spaced",
-    "start": 316.813,
-    "end": 317.243
+    "start": 312.159,
+    "end": 312.588
   },
   {
     "word": "repetition",
-    "start": 317.289,
-    "end": 317.881
+    "start": 312.646,
+    "end": 313.238
   },
   {
     "word": "across",
-    "start": 317.951,
-    "end": 318.357
+    "start": 313.32,
+    "end": 313.715
   },
   {
     "word": "modalities.",
-    "start": 318.415,
-    "end": 319.507
+    "start": 313.773,
+    "end": 314.91
   },
   {
     "word": "To",
-    "start": 319.507,
-    "end": 319.646
+    "start": 314.91,
+    "end": 315.06100000000004
   },
   {
     "word": "make",
-    "start": 319.704,
-    "end": 319.867
+    "start": 315.13100000000003,
+    "end": 315.305
   },
   {
     "word": "vocabulary",
-    "start": 319.902,
-    "end": 320.471
+    "start": 315.351,
+    "end": 315.85
   },
   {
     "word": "stick,",
-    "start": 320.529,
-    "end": 320.865
+    "start": 315.89700000000005,
+    "end": 316.315
   },
   {
     "word": "we",
-    "start": 320.889,
-    "end": 320.981
+    "start": 316.48900000000003,
+    "end": 316.617
   },
   {
     "word": "use",
-    "start": 321.051,
-    "end": 321.202
+    "start": 316.68600000000004,
+    "end": 316.86
   },
   {
     "word": "a",
-    "start": 321.225,
-    "end": 321.248
+    "start": 316.89500000000004,
+    "end": 316.91900000000004
   },
   {
     "word": "state-of-the-art",
-    "start": 321.307,
-    "end": 322.247
+    "start": 316.96500000000003,
+    "end": 317.708
   },
   {
     "word": "FSRS",
-    "start": 322.363,
-    "end": 323.29200000000003
+    "start": 317.78900000000004,
+    "end": 318.32300000000004
   },
   {
     "word": "scheduler",
-    "start": 323.466,
-    "end": 324.081
+    "start": 318.38100000000003,
+    "end": 318.90400000000005
   },
   {
     "word": "that's",
-    "start": 324.36,
-    "end": 324.592
+    "start": 319.07800000000003,
+    "end": 319.29900000000004
   },
   {
     "word": "personalised",
-    "start": 324.65,
-    "end": 325.3
+    "start": 319.345,
+    "end": 319.96000000000004
   },
   {
     "word": "per",
-    "start": 325.335,
-    "end": 325.463
+    "start": 319.995,
+    "end": 320.12300000000005
   },
   {
     "word": "learner",
-    "start": 325.498,
-    "end": 325.823
+    "start": 320.158,
+    "end": 320.494
   },
   {
     "word": "and",
-    "start": 325.892,
-    "end": 325.997
+    "start": 320.61,
+    "end": 320.843
   },
   {
     "word": "per",
-    "start": 326.067,
-    "end": 326.194
+    "start": 320.93600000000004,
+    "end": 321.098
   },
   {
     "word": "word.",
-    "start": 326.252,
-    "end": 326.821
+    "start": 321.156,
+    "end": 321.66700000000003
   },
   {
     "word": "Words",
-    "start": 327.425,
-    "end": 327.82
+    "start": 322.178,
+    "end": 322.50300000000004
   },
   {
     "word": "can",
-    "start": 327.878,
-    "end": 328.00600000000003
+    "start": 322.54900000000004,
+    "end": 322.654
   },
   {
     "word": "be",
-    "start": 328.052,
-    "end": 328.133
+    "start": 322.70000000000005,
+    "end": 322.77000000000004
   },
   {
     "word": "added",
-    "start": 328.18,
-    "end": 328.47
+    "start": 322.81600000000003,
+    "end": 323.083
   },
   {
     "word": "from",
-    "start": 328.516,
-    "end": 328.644
+    "start": 323.13000000000005,
+    "end": 323.269
   },
   {
     "word": "any",
-    "start": 328.725,
-    "end": 328.923
+    "start": 323.339,
+    "end": 323.559
   },
   {
     "word": "article",
-    "start": 328.992,
-    "end": 329.434
+    "start": 323.629,
+    "end": 324.047
   },
   {
     "word": "or",
-    "start": 329.48,
-    "end": 329.55
+    "start": 324.093,
+    "end": 324.163
   },
   {
     "word": "conversation,",
-    "start": 329.608,
-    "end": 330.525
+    "start": 324.21000000000004,
+    "end": 325.04600000000005
   },
   {
     "word": "turning",
-    "start": 330.769,
-    "end": 331.129
+    "start": 325.254,
+    "end": 325.58000000000004
   },
   {
     "word": "Amble",
-    "start": 331.198,
-    "end": 331.605
+    "start": 325.649,
+    "end": 326.021
   },
   {
     "word": "into",
-    "start": 331.651,
-    "end": 331.848
+    "start": 326.067,
+    "end": 326.24100000000004
   },
   {
     "word": "a",
-    "start": 331.918,
-    "end": 331.95300000000003
+    "start": 326.31100000000004,
+    "end": 326.334
   },
   {
     "word": "personalised",
-    "start": 332.011,
-    "end": 332.684
+    "start": 326.39200000000005,
+    "end": 326.95000000000005
   },
   {
     "word": "vocabulary",
-    "start": 332.731,
-    "end": 333.346
+    "start": 326.973,
+    "end": 327.507
   },
   {
     "word": "mining",
-    "start": 333.404,
-    "end": 333.706
+    "start": 327.565,
+    "end": 327.84400000000005
   },
   {
     "word": "platform.",
-    "start": 333.764,
-    "end": 334.426
+    "start": 327.89000000000004,
+    "end": 328.529
   },
   {
     "word": "Personal",
-    "start": 335.03000000000003,
-    "end": 335.587
+    "start": 329.225,
+    "end": 329.69
   },
   {
     "word": "schedules",
-    "start": 335.657,
-    "end": 336.225
+    "start": 329.73600000000005,
+    "end": 330.247
   },
   {
     "word": "per",
-    "start": 336.353,
-    "end": 336.597
+    "start": 330.34000000000003,
+    "end": 330.56
   },
   {
     "word": "word.",
-    "start": 336.66700000000003,
-    "end": 337.224
+    "start": 330.63000000000005,
+    "end": 331.141
   },
   {
     "word": "On",
-    "start": 337.921,
-    "end": 338.083
+    "start": 331.745,
+    "end": 331.896
   },
   {
     "word": "every",
-    "start": 338.164,
-    "end": 338.48900000000003
+    "start": 331.988,
+    "end": 332.302
   },
   {
     "word": "review",
-    "start": 338.547,
-    "end": 338.954
+    "start": 332.372,
+    "end": 332.766
   },
   {
     "word": "we",
-    "start": 339.232,
-    "end": 339.407
+    "start": 333.091,
+    "end": 333.21900000000005
   },
   {
     "word": "use",
-    "start": 339.488,
-    "end": 339.697
+    "start": 333.28900000000004,
+    "end": 333.463
   },
   {
     "word": "the",
-    "start": 339.743,
-    "end": 339.813
+    "start": 333.49800000000005,
+    "end": 333.567
   },
   {
     "word": "word's",
-    "start": 339.859,
-    "end": 340.161
+    "start": 333.61400000000003,
+    "end": 333.96200000000005
   },
   {
     "word": "past",
-    "start": 340.219,
-    "end": 340.544
+    "start": 334.043,
+    "end": 334.461
   },
   {
     "word": "review",
-    "start": 340.591,
-    "end": 340.846
+    "start": 334.519,
+    "end": 334.786
   },
   {
     "word": "history",
-    "start": 340.904,
-    "end": 341.404
+    "start": 334.845,
+    "end": 335.34400000000005
   },
   {
     "word": "as",
-    "start": 341.78700000000003,
-    "end": 341.984
+    "start": 335.785,
+    "end": 335.947
   },
   {
     "word": "well",
-    "start": 342.04200000000003,
-    "end": 342.193
+    "start": 336.00600000000003,
+    "end": 336.18
   },
   {
     "word": "as",
-    "start": 342.23900000000003,
-    "end": 342.309
+    "start": 336.226,
+    "end": 336.307
   },
   {
     "word": "the",
-    "start": 342.367,
-    "end": 342.437
+    "start": 336.365,
+    "end": 336.435
   },
   {
     "word": "new",
-    "start": 342.495,
-    "end": 342.634
+    "start": 336.49300000000005,
+    "end": 336.632
   },
   {
     "word": "rating",
-    "start": 342.704,
-    "end": 343.133
+    "start": 336.69100000000003,
+    "end": 337.074
   },
   {
     "word": "to",
-    "start": 343.20300000000003,
-    "end": 343.284
+    "start": 337.132,
+    "end": 337.19000000000005
   },
   {
     "word": "get",
-    "start": 343.342,
-    "end": 343.482
+    "start": 337.23600000000005,
+    "end": 337.37600000000003
   },
   {
     "word": "the",
-    "start": 343.528,
-    "end": 343.598
+    "start": 337.422,
+    "end": 337.492
   },
   {
     "word": "next",
-    "start": 343.644,
-    "end": 343.88800000000003
+    "start": 337.526,
+    "end": 337.77000000000004
   },
   {
     "word": "due",
-    "start": 343.934,
-    "end": 344.12
+    "start": 337.817,
+    "end": 338.026
   },
   {
     "word": "date.",
-    "start": 344.14300000000003,
-    "end": 344.736
+    "start": 338.04900000000004,
+    "end": 338.53700000000003
   },
   {
     "word": "If",
-    "start": 345.432,
-    "end": 345.572
+    "start": 339.047,
+    "end": 339.221
   },
   {
     "word": "a",
-    "start": 345.63,
-    "end": 345.664
+    "start": 339.28000000000003,
+    "end": 339.314
   },
   {
     "word": "user",
-    "start": 345.757,
-    "end": 346.094
+    "start": 339.40700000000004,
+    "end": 339.75600000000003
   },
   {
     "word": "remembers",
-    "start": 346.14,
-    "end": 346.57
+    "start": 339.872,
+    "end": 340.324
   },
   {
     "word": "a",
-    "start": 346.616,
-    "end": 346.64
+    "start": 340.35900000000004,
+    "end": 340.382
   },
   {
     "word": "word,",
-    "start": 346.698,
-    "end": 347.058
+    "start": 340.44100000000003,
+    "end": 340.78900000000004
   },
   {
     "word": "it's",
-    "start": 347.092,
-    "end": 347.232
+    "start": 340.84700000000004,
+    "end": 341.021
   },
   {
     "word": "scheduled",
-    "start": 347.255,
-    "end": 347.661
+    "start": 341.04400000000004,
+    "end": 341.47400000000005
   },
   {
     "word": "for",
-    "start": 347.685,
-    "end": 347.789
+    "start": 341.509,
+    "end": 341.613
   },
   {
     "word": "later;",
-    "start": 347.835,
-    "end": 348.38100000000003
+    "start": 341.66,
+    "end": 342.182
   },
   {
     "word": "if",
-    "start": 348.822,
-    "end": 348.962
+    "start": 342.507,
+    "end": 342.646
   },
   {
     "word": "they",
-    "start": 349.02,
-    "end": 349.159
+    "start": 342.704,
+    "end": 342.84400000000005
   },
   {
     "word": "struggle,",
-    "start": 349.229,
-    "end": 349.73900000000003
+    "start": 342.913,
+    "end": 343.44800000000004
   },
   {
     "word": "it",
-    "start": 349.798,
-    "end": 349.937
+    "start": 343.50600000000003,
+    "end": 343.63300000000004
   },
   {
     "word": "comes",
-    "start": 349.995,
-    "end": 350.23900000000003
+    "start": 343.68,
+    "end": 343.90000000000003
   },
   {
     "word": "back",
-    "start": 350.297,
-    "end": 350.471
+    "start": 343.958,
+    "end": 344.144
   },
   {
     "word": "sooner.",
-    "start": 350.552,
-    "end": 351.121
+    "start": 344.225,
+    "end": 344.76000000000005
   },
   {
     "word": "Two",
-    "start": 351.934,
-    "end": 352.212
+    "start": 345.36400000000003,
+    "end": 345.64200000000005
   },
   {
     "word": "learners",
-    "start": 352.294,
-    "end": 352.712
+    "start": 345.735,
+    "end": 346.14200000000005
   },
   {
     "word": "can",
-    "start": 352.781,
-    "end": 352.921
+    "start": 346.211,
+    "end": 346.339
   },
   {
     "word": "see",
-    "start": 352.979,
-    "end": 353.165
+    "start": 346.38500000000005,
+    "end": 346.52500000000003
   },
   {
     "word": "the",
-    "start": 353.199,
-    "end": 353.281
+    "start": 346.559,
+    "end": 346.629
   },
   {
     "word": "same",
-    "start": 353.327,
-    "end": 353.606
+    "start": 346.66400000000004,
+    "end": 346.908
   },
   {
     "word": "word",
-    "start": 353.652,
-    "end": 353.954
+    "start": 346.94300000000004,
+    "end": 347.233
   },
   {
     "word": "on",
-    "start": 354.035,
-    "end": 354.128
+    "start": 347.303,
+    "end": 347.384
   },
   {
     "word": "completely",
-    "start": 354.18600000000004,
-    "end": 354.79
+    "start": 347.442,
+    "end": 347.89500000000004
   },
   {
     "word": "different",
-    "start": 354.848,
-    "end": 355.173
+    "start": 347.94100000000003,
+    "end": 348.208
   },
   {
     "word": "schedules.",
-    "start": 355.208,
-    "end": 355.916
+    "start": 348.24300000000005,
+    "end": 348.90500000000003
   },
   {
     "word": "Logs",
-    "start": 356.52,
-    "end": 356.856
+    "start": 349.41600000000005,
+    "end": 349.706
   },
   {
     "word": "for",
-    "start": 356.926,
-    "end": 357.04200000000003
+    "start": 349.752,
+    "end": 349.857
   },
   {
     "word": "adapting",
-    "start": 357.089,
-    "end": 357.565
+    "start": 349.903,
+    "end": 350.40200000000004
   },
   {
     "word": "to",
-    "start": 357.623,
-    "end": 357.692
+    "start": 350.47200000000004,
+    "end": 350.553
   },
   {
     "word": "memory",
-    "start": 357.774,
-    "end": 358.064
+    "start": 350.62300000000005,
+    "end": 350.93600000000004
   },
   {
     "word": "patterns.",
-    "start": 358.11,
-    "end": 358.807
+    "start": 350.994,
+    "end": 351.668
   },
   {
     "word": "Every",
-    "start": 359.504,
-    "end": 359.852
+    "start": 352.10900000000004,
+    "end": 352.399
   },
   {
     "word": "review",
-    "start": 359.933,
-    "end": 360.351
+    "start": 352.46900000000005,
+    "end": 352.922
   },
   {
     "word": "also",
-    "start": 360.467,
-    "end": 360.839
+    "start": 353.038,
+    "end": 353.40900000000005
   },
   {
     "word": "writes",
-    "start": 360.908,
-    "end": 361.164
+    "start": 353.46700000000004,
+    "end": 353.711
   },
   {
     "word": "a",
-    "start": 361.199,
-    "end": 361.222
+    "start": 353.74600000000004,
+    "end": 353.769
   },
   {
     "word": "review",
-    "start": 361.291,
-    "end": 361.628
+    "start": 353.827,
+    "end": 354.129
   },
   {
     "word": "log",
-    "start": 361.68600000000004,
-    "end": 361.895
+    "start": 354.199,
+    "end": 354.454
   },
   {
     "word": "that",
-    "start": 361.953,
-    "end": 362.069
+    "start": 354.524,
+    "end": 354.69800000000004
   },
   {
     "word": "is",
-    "start": 362.116,
-    "end": 362.185
+    "start": 354.745,
+    "end": 354.803
   },
   {
     "word": "stored",
-    "start": 362.22,
-    "end": 362.534
+    "start": 354.84900000000005,
+    "end": 355.221
   },
   {
     "word": "in",
-    "start": 362.569,
-    "end": 362.627
+    "start": 355.255,
+    "end": 355.31300000000005
   },
   {
     "word": "our",
-    "start": 362.685,
-    "end": 362.778
+    "start": 355.36,
+    "end": 355.45300000000003
   },
   {
     "word": "database.",
-    "start": 362.824,
-    "end": 363.602
+    "start": 355.499,
+    "end": 356.26500000000004
   },
   {
     "word": "Those",
-    "start": 364.415,
-    "end": 364.716
+    "start": 356.869,
+    "end": 357.15900000000005
   },
   {
     "word": "logs",
-    "start": 364.76300000000003,
-    "end": 365.053
+    "start": 357.206,
+    "end": 357.473
   },
   {
     "word": "give",
-    "start": 365.123,
-    "end": 365.297
+    "start": 357.543,
+    "end": 357.69300000000004
   },
   {
     "word": "us",
-    "start": 365.332,
-    "end": 365.425
+    "start": 357.728,
+    "end": 357.821
   },
   {
     "word": "the",
-    "start": 365.483,
-    "end": 365.552
+    "start": 357.879,
+    "end": 357.949
   },
   {
     "word": "data",
-    "start": 365.599,
-    "end": 365.959
+    "start": 357.995,
+    "end": 358.34400000000005
   },
   {
     "word": "to",
-    "start": 366.028,
-    "end": 366.133
+    "start": 358.40200000000004,
+    "end": 358.46000000000004
   },
   {
     "word": "tune",
-    "start": 366.203,
-    "end": 366.562
+    "start": 358.51800000000003,
+    "end": 358.80800000000005
   },
   {
     "word": "the",
-    "start": 366.597,
-    "end": 366.66700000000003
+    "start": 358.843,
+    "end": 358.91200000000003
   },
   {
     "word": "scheduler",
-    "start": 366.725,
-    "end": 367.178
+    "start": 358.947,
+    "end": 359.35400000000004
   },
   {
     "word": "parameter",
-    "start": 367.225,
-    "end": 367.759
+    "start": 359.40000000000003,
+    "end": 359.934
   },
   {
     "word": "on",
-    "start": 367.852,
-    "end": 367.968
+    "start": 360.26000000000005,
+    "end": 360.411
   },
   {
     "word": "a",
-    "start": 368.014,
-    "end": 368.03700000000003
+    "start": 360.457,
+    "end": 360.48
   },
   {
     "word": "per-user",
-    "start": 368.095,
-    "end": 368.722
+    "start": 360.55,
+    "end": 361.27000000000004
   },
   {
     "word": "basis",
-    "start": 368.757,
-    "end": 369.222
+    "start": 361.30400000000003,
+    "end": 361.769
   },
   {
     "word": "-",
-    "start": 369.373,
-    "end": 369.431
+    "start": 361.978,
+    "end": 362.01300000000003
   },
   {
     "word": "this",
-    "start": 369.709,
-    "end": 369.883
+    "start": 362.454,
+    "end": 362.62800000000004
   },
   {
     "word": "means",
-    "start": 369.953,
-    "end": 370.208
+    "start": 362.69800000000004,
+    "end": 362.93
   },
   {
     "word": "each",
-    "start": 370.325,
-    "end": 370.568
+    "start": 363.023,
+    "end": 363.232
   },
   {
     "word": "user",
-    "start": 370.65,
-    "end": 371.056
+    "start": 363.31300000000005,
+    "end": 363.65000000000003
   },
   {
     "word": "can",
-    "start": 371.137,
-    "end": 371.3
+    "start": 363.731,
+    "end": 363.882
   },
   {
     "word": "have",
-    "start": 371.358,
-    "end": 371.509
+    "start": 363.928,
+    "end": 364.06800000000004
   },
   {
     "word": "a",
-    "start": 371.544,
-    "end": 371.567
+    "start": 364.10200000000003,
+    "end": 364.12600000000003
   },
   {
     "word": "personalised",
-    "start": 371.636,
-    "end": 372.414
+    "start": 364.242,
+    "end": 364.95000000000005
   },
   {
     "word": "scheduler",
-    "start": 372.496,
-    "end": 372.995
+    "start": 364.973,
+    "end": 365.43800000000005
   },
   {
     "word": "model",
-    "start": 373.03000000000003,
-    "end": 373.343
+    "start": 365.47200000000004,
+    "end": 365.774
   },
   {
     "word": "based",
-    "start": 373.784,
-    "end": 374.156
+    "start": 366.15700000000004,
+    "end": 366.529
   },
   {
     "word": "on",
-    "start": 374.214,
-    "end": 374.318
+    "start": 366.58700000000005,
+    "end": 366.65700000000004
   },
   {
     "word": "their",
-    "start": 374.353,
-    "end": 374.504
+    "start": 366.692,
+    "end": 366.84200000000004
   },
   {
     "word": "actual",
-    "start": 374.562,
-    "end": 374.992
+    "start": 366.90000000000003,
+    "end": 367.307
   },
   {
     "word": "memory",
-    "start": 375.06100000000004,
-    "end": 375.352
+    "start": 367.37600000000003,
+    "end": 367.678
   },
   {
     "word": "patterns.",
-    "start": 375.41,
-    "end": 376.106
+    "start": 367.73600000000005,
+    "end": 368.49100000000004
   },
   {
     "word": "Putting",
-    "start": 376.803,
-    "end": 377.151
+    "start": 369.095,
+    "end": 369.42
   },
   {
     "word": "it",
-    "start": 377.198,
-    "end": 377.314
+    "start": 369.478,
+    "end": 369.675
   },
   {
     "word": "all",
-    "start": 377.36,
-    "end": 377.558
+    "start": 369.84900000000005,
+    "end": 370.12800000000004
   },
   {
     "word": "together.",
-    "start": 377.639,
-    "end": 378.243
+    "start": 370.244,
+    "end": 370.918
   },
   {
-    "word": "We",
-    "start": 378.939,
-    "end": 379.09000000000003
+    "word": "Amble",
+    "start": 372.218,
+    "end": 372.601
   },
   {
-    "word": "orchestrate",
-    "start": 379.171,
-    "end": 379.729
+    "word": "works",
+    "start": 372.636,
+    "end": 373.112
   },
   {
-    "word": "these",
-    "start": 379.752,
-    "end": 379.938
+    "word": "because",
+    "start": 373.20500000000004,
+    "end": 373.495
   },
   {
-    "word": "components",
-    "start": 379.984,
-    "end": 380.681
+    "word": "we",
+    "start": 373.51800000000003,
+    "end": 373.588
   },
   {
-    "word": "into",
-    "start": 381.064,
-    "end": 381.319
+    "word": "treat",
+    "start": 373.634,
+    "end": 373.843
+  },
+  {
+    "word": "language",
+    "start": 373.901,
+    "end": 374.331
+  },
+  {
+    "word": "acquisition",
+    "start": 374.377,
+    "end": 375.03900000000004
+  },
+  {
+    "word": "as",
+    "start": 375.31800000000004,
+    "end": 375.51500000000004
   },
   {
     "word": "a",
-    "start": 381.4,
-    "end": 381.424
+    "start": 375.562,
+    "end": 375.58500000000004
   },
   {
-    "word": "personalisation",
-    "start": 381.493,
-    "end": 382.376
+    "word": "continuous",
+    "start": 375.64300000000003,
+    "end": 376.351
   },
   {
     "word": "feedback",
-    "start": 382.457,
-    "end": 382.875
+    "start": 376.42100000000005,
+    "end": 376.862
   },
   {
-    "word": "loop:",
-    "start": 382.933,
-    "end": 383.339
+    "word": "system,",
+    "start": 376.93100000000004,
+    "end": 377.524
   },
   {
-    "word": "What",
-    "start": 383.943,
-    "end": 384.14
+    "word": "rather",
+    "start": 377.802,
+    "end": 378.127
   },
   {
-    "word": "users",
-    "start": 384.21000000000004,
-    "end": 384.698
+    "word": "than",
+    "start": 378.17400000000004,
+    "end": 378.37100000000004
   },
   {
-    "word": "speak",
-    "start": 384.872,
-    "end": 385.243
+    "word": "a",
+    "start": 378.452,
+    "end": 378.487
   },
   {
-    "word": "or",
-    "start": 385.336,
-    "end": 385.487
+    "word": "set",
+    "start": 378.569,
+    "end": 378.78900000000004
   },
   {
-    "word": "read",
-    "start": 385.557,
-    "end": 385.731
+    "word": "of",
+    "start": 378.84700000000004,
+    "end": 378.90500000000003
   },
   {
-    "word": "about",
-    "start": 385.766,
-    "end": 386.184
+    "word": "disconnected",
+    "start": 378.975,
+    "end": 379.567
   },
   {
-    "word": "is",
-    "start": 386.567,
-    "end": 386.764
+    "word": "features.",
+    "start": 379.61300000000006,
+    "end": 380.322
   },
   {
-    "word": "fed",
-    "start": 386.834,
-    "end": 387.043
+    "word": "Comprehensible",
+    "start": 381.01800000000003,
+    "end": 381.831
   },
   {
-    "word": "back",
-    "start": 387.112,
-    "end": 387.33299999999997
+    "word": "input,",
+    "start": 381.877,
+    "end": 382.562
   },
   {
-    "word": "into",
-    "start": 387.426,
-    "end": 387.658
+    "word": "meaning-focused",
+    "start": 382.771,
+    "end": 383.607
   },
   {
-    "word": "user",
-    "start": 387.774,
-    "end": 388.088
+    "word": "conversation,",
+    "start": 383.64200000000005,
+    "end": 384.571
+  },
+  {
+    "word": "and",
+    "start": 384.72200000000004,
+    "end": 384.93100000000004
+  },
+  {
+    "word": "spaced",
+    "start": 385.024,
+    "end": 385.511
+  },
+  {
+    "word": "repetition",
+    "start": 385.569,
+    "end": 386.254
+  },
+  {
+    "word": "all",
+    "start": 386.579,
+    "end": 386.82300000000004
+  },
+  {
+    "word": "generate",
+    "start": 386.89300000000003,
+    "end": 387.31100000000004
+  },
+  {
+    "word": "signals,",
+    "start": 387.346,
+    "end": 388.06500000000005
+  },
+  {
+    "word": "and",
+    "start": 388.391,
+    "end": 388.553
+  },
+  {
+    "word": "those",
+    "start": 388.611,
+    "end": 388.855
   },
   {
     "word": "signals",
-    "start": 388.146,
-    "end": 388.69100000000003
+    "start": 388.89000000000004,
+    "end": 389.42400000000004
   },
   {
-    "word": "User",
-    "start": 389.992,
-    "end": 390.305
+    "word": "refine",
+    "start": 389.749,
+    "end": 390.271
   },
   {
-    "word": "signals",
-    "start": 390.34000000000003,
-    "end": 390.804
+    "word": "what",
+    "start": 390.295,
+    "end": 390.422
   },
   {
-    "word": "are",
-    "start": 390.862,
-    "end": 391.002
+    "word": "the",
+    "start": 390.457,
+    "end": 390.52700000000004
   },
   {
-    "word": "used",
-    "start": 391.06,
-    "end": 391.327
+    "word": "learner",
+    "start": 390.596,
+    "end": 390.922
   },
   {
-    "word": "to",
-    "start": 391.373,
-    "end": 391.466
+    "word": "sees",
+    "start": 390.98,
+    "end": 391.223
   },
   {
-    "word": "recommend",
-    "start": 391.536,
-    "end": 391.954
+    "word": "next:",
+    "start": 391.305,
+    "end": 391.92
   },
   {
-    "word": "new",
-    "start": 392.07,
-    "end": 392.221
-  },
-  {
-    "word": "content",
-    "start": 392.279,
-    "end": 392.85900000000004
-  },
-  {
-    "word": "as",
-    "start": 393.301,
-    "end": 393.498
-  },
-  {
-    "word": "well",
-    "start": 393.579,
-    "end": 393.823
-  },
-  {
-    "word": "as",
-    "start": 393.89300000000003,
-    "end": 394.009
-  },
-  {
-    "word": "to",
-    "start": 394.067,
-    "end": 394.136
-  },
-  {
-    "word": "filter",
-    "start": 394.218,
-    "end": 394.612
-  },
-  {
-    "word": "recommended",
-    "start": 394.67,
-    "end": 395.193
-  },
-  {
-    "word": "content",
-    "start": 395.23900000000003,
-    "end": 395.785
-  },
-  {
-    "word": "Our",
-    "start": 397.08500000000004,
-    "end": 397.329
-  },
-  {
-    "word": "spaced-repetition",
-    "start": 397.36400000000003,
-    "end": 398.165
-  },
-  {
-    "word": "system",
-    "start": 398.223,
-    "end": 398.641
-  },
-  {
-    "word": "adapts",
-    "start": 398.757,
-    "end": 399.291
-  },
-  {
-    "word": "to",
-    "start": 399.349,
-    "end": 399.43100000000004
-  },
-  {
-    "word": "how",
-    "start": 399.512,
-    "end": 399.663
-  },
-  {
-    "word": "each",
-    "start": 399.779,
-    "end": 400.023
-  },
-  {
-    "word": "user",
-    "start": 400.104,
-    "end": 400.35900000000004
-  },
-  {
-    "word": "remembers",
-    "start": 400.406,
-    "end": 401.01
-  },
-  {
-    "word": "or",
-    "start": 401.33500000000004,
-    "end": 401.497
-  },
-  {
-    "word": "forgets",
-    "start": 401.555,
-    "end": 401.996
-  },
-  {
-    "word": "specific",
-    "start": 402.043,
-    "end": 402.519
-  },
-  {
-    "word": "vocabulary",
-    "start": 402.577,
-    "end": 403.227
+    "word": "what",
+    "start": 392.524,
+    "end": 392.721
   },
   {
     "word": "they",
-    "start": 403.552,
-    "end": 403.726
+    "start": 392.75600000000003,
+    "end": 392.89500000000004
   },
   {
-    "word": "may",
-    "start": 403.784,
-    "end": 403.91200000000003
+    "word": "read,",
+    "start": 393.011,
+    "end": 393.66100000000006
   },
   {
-    "word": "have",
-    "start": 403.959,
-    "end": 404.075
+    "word": "what",
+    "start": 394.04400000000004,
+    "end": 394.242
   },
   {
-    "word": "encountered",
-    "start": 404.098,
-    "end": 404.655
+    "word": "they",
+    "start": 394.276,
+    "end": 394.41600000000005
   },
   {
-    "word": "in",
-    "start": 404.713,
-    "end": 404.794
+    "word": "talk",
+    "start": 394.47400000000005,
+    "end": 394.752
   },
   {
-    "word": "articles",
-    "start": 404.86400000000003,
-    "end": 405.41
+    "word": "about,",
+    "start": 394.81100000000004,
+    "end": 395.403
   },
   {
-    "word": "or",
-    "start": 405.491,
-    "end": 405.584
+    "word": "and",
+    "start": 395.84400000000005,
+    "end": 396.03000000000003
   },
   {
-    "word": "conversation.",
-    "start": 405.642,
-    "end": 406.675
+    "word": "which",
+    "start": 396.122,
+    "end": 396.45900000000006
+  },
+  {
+    "word": "words",
+    "start": 396.61,
+    "end": 397.12100000000004
+  },
+  {
+    "word": "come",
+    "start": 397.202,
+    "end": 397.41100000000006
+  },
+  {
+    "word": "back",
+    "start": 397.458,
+    "end": 397.66700000000003
+  },
+  {
+    "word": "at",
+    "start": 397.725,
+    "end": 397.771
+  },
+  {
+    "word": "the",
+    "start": 397.80600000000004,
+    "end": 397.87600000000003
+  },
+  {
+    "word": "right",
+    "start": 397.922,
+    "end": 398.119
+  },
+  {
+    "word": "time.",
+    "start": 398.154,
+    "end": 398.735
+  },
+  {
+    "word": "The",
+    "start": 399.547,
+    "end": 399.69800000000004
+  },
+  {
+    "word": "architecture",
+    "start": 399.78000000000003,
+    "end": 400.46500000000003
+  },
+  {
+    "word": "mirrors",
+    "start": 400.534,
+    "end": 400.96400000000006
+  },
+  {
+    "word": "that",
+    "start": 401.045,
+    "end": 401.21900000000005
+  },
+  {
+    "word": "idea:",
+    "start": 401.27700000000004,
+    "end": 401.88100000000003
+  },
+  {
+    "word": "one",
+    "start": 402.485,
+    "end": 402.798
+  },
+  {
+    "word": "client-facing",
+    "start": 402.86800000000005,
+    "end": 403.71500000000003
+  },
+  {
+    "word": "API",
+    "start": 403.785,
+    "end": 404.284
+  },
+  {
+    "word": "for",
+    "start": 404.40000000000003,
+    "end": 404.516
+  },
+  {
+    "word": "a",
+    "start": 404.56300000000005,
+    "end": 404.586
+  },
+  {
+    "word": "coherent",
+    "start": 404.644,
+    "end": 405.15500000000003
+  },
+  {
+    "word": "product",
+    "start": 405.201,
+    "end": 405.52700000000004
+  },
+  {
+    "word": "surface,",
+    "start": 405.57300000000004,
+    "end": 406.25800000000004
+  },
+  {
+    "word": "backed",
+    "start": 406.583,
+    "end": 406.89700000000005
+  },
+  {
+    "word": "by",
+    "start": 406.95500000000004,
+    "end": 407.059
+  },
+  {
+    "word": "specialised",
+    "start": 407.129,
+    "end": 407.732
+  },
+  {
+    "word": "services",
+    "start": 407.76700000000005,
+    "end": 408.38300000000004
+  },
+  {
+    "word": "that",
+    "start": 408.708,
+    "end": 408.87
+  },
+  {
+    "word": "can",
+    "start": 408.90500000000003,
+    "end": 409.021
+  },
+  {
+    "word": "evolve",
+    "start": 409.06800000000004,
+    "end": 409.497
+  },
+  {
+    "word": "independently.",
+    "start": 409.555,
+    "end": 410.54200000000003
+  },
+  {
+    "word": "Better",
+    "start": 411.494,
+    "end": 411.93600000000004
+  },
+  {
+    "word": "recommendations",
+    "start": 412.14500000000004,
+    "end": 413.08500000000004
+  },
+  {
+    "word": "make",
+    "start": 413.178,
+    "end": 413.36400000000003
+  },
+  {
+    "word": "conversations",
+    "start": 413.399,
+    "end": 414.23400000000004
+  },
+  {
+    "word": "and",
+    "start": 414.30400000000003,
+    "end": 414.42
+  },
+  {
+    "word": "content",
+    "start": 414.50100000000003,
+    "end": 415.082
+  },
+  {
+    "word": "more",
+    "start": 415.175,
+    "end": 415.39500000000004
+  },
+  {
+    "word": "engaging;",
+    "start": 415.43,
+    "end": 416.127
+  },
+  {
+    "word": "better",
+    "start": 416.82300000000004,
+    "end": 417.288
+  },
+  {
+    "word": "conversations",
+    "start": 417.439,
+    "end": 418.36800000000005
+  },
+  {
+    "word": "and",
+    "start": 418.41400000000004,
+    "end": 418.553
+  },
+  {
+    "word": "content",
+    "start": 418.62300000000005,
+    "end": 419.09900000000005
+  },
+  {
+    "word": "engagement",
+    "start": 419.15700000000004,
+    "end": 419.83000000000004
+  },
+  {
+    "word": "create",
+    "start": 420.21400000000006,
+    "end": 420.608
+  },
+  {
+    "word": "richer",
+    "start": 420.65500000000003,
+    "end": 420.968
+  },
+  {
+    "word": "signals;",
+    "start": 421.038,
+    "end": 421.74600000000004
+  },
+  {
+    "word": "richer",
+    "start": 422.69800000000004,
+    "end": 423.07000000000005
+  },
+  {
+    "word": "signals",
+    "start": 423.163,
+    "end": 423.66200000000003
+  },
+  {
+    "word": "improve",
+    "start": 423.74300000000005,
+    "end": 424.173
+  },
+  {
+    "word": "the",
+    "start": 424.207,
+    "end": 424.27700000000004
+  },
+  {
+    "word": "next",
+    "start": 424.312,
+    "end": 424.521
+  },
+  {
+    "word": "content",
+    "start": 424.567,
+    "end": 424.939
+  },
+  {
+    "word": "mix;",
+    "start": 424.985,
+    "end": 425.48400000000004
+  },
+  {
+    "word": "and",
+    "start": 426.088,
+    "end": 426.25100000000003
+  },
+  {
+    "word": "vocabulary",
+    "start": 426.309,
+    "end": 426.982
+  },
+  {
+    "word": "mined",
+    "start": 427.098,
+    "end": 427.365
+  },
+  {
+    "word": "anywhere",
+    "start": 427.447,
+    "end": 427.946
+  },
+  {
+    "word": "becomes",
+    "start": 428.01500000000004,
+    "end": 428.375
+  },
+  {
+    "word": "durable",
+    "start": 428.433,
+    "end": 428.86300000000006
+  },
+  {
+    "word": "knowledge",
+    "start": 428.909,
+    "end": 429.30400000000003
+  },
+  {
+    "word": "through",
+    "start": 429.33900000000006,
+    "end": 429.571
+  },
+  {
+    "word": "FSRS.",
+    "start": 429.629,
+    "end": 430.54600000000005
+  },
+  {
+    "word": "Each",
+    "start": 431.35900000000004,
+    "end": 431.58000000000004
+  },
+  {
+    "word": "part",
+    "start": 431.63800000000003,
+    "end": 431.87
+  },
+  {
+    "word": "gets",
+    "start": 431.91600000000005,
+    "end": 432.079
+  },
+  {
+    "word": "stronger",
+    "start": 432.10200000000003,
+    "end": 432.543
+  },
+  {
+    "word": "because",
+    "start": 432.636,
+    "end": 432.92600000000004
+  },
+  {
+    "word": "the",
+    "start": 432.95000000000005,
+    "end": 433.019
+  },
+  {
+    "word": "other",
+    "start": 433.06600000000003,
+    "end": 433.24
+  },
+  {
+    "word": "parts",
+    "start": 433.28600000000006,
+    "end": 433.576
+  },
+  {
+    "word": "exist.",
+    "start": 433.635,
+    "end": 434.54
   }
 ]
