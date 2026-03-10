@@ -90,18 +90,18 @@ const getLayouts = () => {
         if (i < 6) {
             const col = i % 3;
             const row = Math.floor(i / 3);
-            layout4.push(p(25 + col*10, 25 + row*10, 15, 1)); 
+            layout4.push(p(25 + col*10, 25 + row*10, 15, 1));
         } else {
             const j = i - 6;
             const col = j % 3;
             const row = Math.floor(j / 3);
-            layout4.push(p(55 + col*10, 55 + row*10, 15, 1)); 
+            layout4.push(p(55 + col*10, 55 + row*10, 15, 1));
         }
     }
 
     // State 5: "Interfaces" - The Cube (3D Isometric)
     const layout5 = [];
-    
+
     // Perfect Isometric Cube Coordinates centered at 50,50
     // Generated via rotation matrices to ensure equal edge lengths
     const visiblePoints = [
@@ -121,7 +121,7 @@ const getLayouts = () => {
 
     // Fill remaining 4 points (hidden at center)
     for(let i=0; i<4; i++) {
-        layout5.push({ x: 50, y: 50, r: 0, o: 0 }); 
+        layout5.push({ x: 50, y: 50, r: 0, o: 0 });
     }
 
     // Return 7 states: Start -> 5 Shapes -> End

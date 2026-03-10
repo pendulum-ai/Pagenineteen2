@@ -22,12 +22,12 @@ export const FRAMES = [
   },
   {
     range: [0.61, 0.71],
-    title: "Instrumentation.",
-    text: "We instrument systems to understand how they behave in production and refine them based on real data."
+    title: "Architecture.",
+    text: "Models evolve quickly. We design systems that remain coherent as underlying capabilities change."
   },
   {
     range: [0.74, 0.98],
-    title: "Architecture.",
-    text: "Models evolve quickly. We design systems that remain coherent as underlying capabilities change."
+    title: "Ship, observe, rebuild.",
+    text: "We watch how people use what we build. Then we redesign around what we learn."
   }
 ];
