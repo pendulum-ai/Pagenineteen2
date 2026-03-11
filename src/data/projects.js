@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 'amble',
     title: 'amble',
-    tagline: 'Real-time, personalized language learning',
+    tagline: 'Real-time, personalized language education',
     description: "Amble gets to know each user, their proficiency and their interests, and bends curriculums around them. Built on real-time voice interfaces and adaptive learning driven by continuous feedback.",
     link: 'https://www.amble.app/',
     github: null,

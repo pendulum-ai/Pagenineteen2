@@ -24,7 +24,7 @@ const MissionSection = () => {
           <div className="mission-text-block">
             <BlurReveal delay={0.3}>
               <p className="mission-belief-text">
-                Designed and built as unified systems,<br className="desktop-br" />{' '}from model orchestration<br className="desktop-br" />{' '}to interface design.
+                Each product is designed end to end, from the model layer through to the interface people use.
               </p>
             </BlurReveal>
           </div>

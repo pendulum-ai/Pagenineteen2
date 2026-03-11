@@ -61,6 +61,7 @@
 
 .mission-belief-text {
   color: var(--color-text-secondary);
+  text-wrap: wrap;
 }
 
 @media (max-width: 1024px) {
