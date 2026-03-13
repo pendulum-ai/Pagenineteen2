@@ -41,10 +41,7 @@ const Footer = ({ isVisible }) => {
 
                 <div className="footer-right">
                     <div className="link-group">
-                        <span className="group-label">Connect</span>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer-link">Twitter</a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
-                        <a href="mailto:hello@pagenineteen.ai" className="footer-link">Email</a>
+                        <a href="https://linkedin.com/company/pagenineteen" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
                     </div>
                 </div>
             </div>
